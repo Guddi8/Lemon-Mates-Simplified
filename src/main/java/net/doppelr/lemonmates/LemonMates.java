@@ -22,7 +22,7 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(LemonMates.MOD_ID)
 public class LemonMates {
-    public static final String MOD_ID = "lemon_mates";
+    public static final String MOD_ID = "lemonmates";
     public static final Logger LOGGER = LogUtils.getLogger();
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
