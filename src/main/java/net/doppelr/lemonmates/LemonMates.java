@@ -51,7 +51,24 @@ public class LemonMates {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey()== CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.BOTTLE_CAP);
+            event.accept(ModItems.BOTTLE_EMPTY);
+            event.accept(ModItems.CITRON_LEMONADE);
+            event.accept(ModItems.CITRON_LEMONADE_EMPTY);
+            event.accept(ModItems.CITRON_LEMONADE_LABEL);
+            event.accept(ModItems.ORANGE_LEMONADE);
+            event.accept(ModItems.ORANGE_LEMONADE_EMPTY);
+            event.accept(ModItems.ORANGE_LEMONADE_LABEL);
             event.accept(ModItems.WATERMELON_LEMONADE);
+            event.accept(ModItems.WATERMELON_LEMONADE_EMPTY);
+            event.accept(ModItems.WATERMELON_LEMONADE_LABEL);
+            event.accept(ModItems.RASPBERRY_SODA);
+            event.accept(ModItems.RASPBERRY_SODA_EMPTY);
+            event.accept(ModItems.RASPBERRY_SODA_LABEL);
+            event.accept(ModItems.SUMMER_MIX);
+            event.accept(ModItems.SUMMER_MIX_EMPTY);
+            event.accept(ModItems.SUMMER_MIX_LABEL);
+
         }
     }
 
