@@ -51,23 +51,49 @@ public class LemonMates {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey()== CreativeModeTabs.FOOD_AND_DRINKS) {
+            // Bottle, Cap
             event.accept(ModItems.BOTTLE_CAP);
             event.accept(ModItems.BOTTLE_EMPTY);
-            event.accept(ModItems.CITRON_LEMONADE);
-            event.accept(ModItems.CITRON_LEMONADE_EMPTY);
-            event.accept(ModItems.CITRON_LEMONADE_LABEL);
-            event.accept(ModItems.ORANGE_LEMONADE);
-            event.accept(ModItems.ORANGE_LEMONADE_EMPTY);
-            event.accept(ModItems.ORANGE_LEMONADE_LABEL);
-            event.accept(ModItems.WATERMELON_LEMONADE);
-            event.accept(ModItems.WATERMELON_LEMONADE_EMPTY);
-            event.accept(ModItems.WATERMELON_LEMONADE_LABEL);
-            event.accept(ModItems.RASPBERRY_SODA);
-            event.accept(ModItems.RASPBERRY_SODA_EMPTY);
-            event.accept(ModItems.RASPBERRY_SODA_LABEL);
-            event.accept(ModItems.SUMMER_MIX);
-            event.accept(ModItems.SUMMER_MIX_EMPTY);
-            event.accept(ModItems.SUMMER_MIX_LABEL);
+
+            // Citron
+            event.accept(ModItems.BOTTLE_CITRON_LABEL);
+            event.accept(ModItems.BOTTLE_CITRON_LEMONADE);
+            event.accept(ModItems.BOTTLE_CITRON_LABEL_CAP);
+            event.accept(ModItems.BOTTLE_CITRON_LABEL_LEMONADE_CAP);
+            event.accept(ModItems.BOTTLE_CITRON_LEMONADE_CAP);
+            event.accept(ModItems.BOTTLE_CITRON_LABEL_LEMONADE);
+
+            // Orange
+            event.accept(ModItems.BOTTLE_ORANGE_LABEL);
+            event.accept(ModItems.BOTTLE_ORANGE_LEMONADE);
+            event.accept(ModItems.BOTTLE_ORANGE_LABEL_CAP);
+            event.accept(ModItems.BOTTLE_ORANGE_LABEL_LEMONADE_CAP);
+            event.accept(ModItems.BOTTLE_ORANGE_LEMONADE_CAP);
+            event.accept(ModItems.BOTTLE_ORANGE_LABEL_LEMONADE);
+
+            // Raspberry
+            event.accept(ModItems.BOTTLE_RASPBERRY_LABEL);
+            event.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE);
+            event.accept(ModItems.BOTTLE_RASPBERRY_LABEL_CAP);
+            event.accept(ModItems.BOTTLE_RASPBERRY_LABEL_LEMONADE_CAP);
+            event.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE_CAP);
+            event.accept(ModItems.BOTTLE_RASPBERRY_LABEL_LEMONADE);
+
+            // Summer Mix
+            event.accept(ModItems.BOTTLE_SUMMERMIX_LABEL);
+            event.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE);
+            event.accept(ModItems.BOTTLE_SUMMERMIX_LABEL_CAP);
+            event.accept(ModItems.BOTTLE_SUMMERMIX_LABEL_LEMONADE_CAP);
+            event.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE_CAP);
+            event.accept(ModItems.BOTTLE_SUMMERMIX_LABEL_LEMONADE);
+
+            // Watermelon
+            event.accept(ModItems.BOTTLE_WATERMELON_LABEL);
+            event.accept(ModItems.BOTTLE_WATERMELON_LEMONADE);
+            event.accept(ModItems.BOTTLE_WATERMELON_LABEL_CAP);
+            event.accept(ModItems.BOTTLE_WATERMELON_LABEL_LEMONADE_CAP);
+            event.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_CAP);
+            event.accept(ModItems.BOTTLE_WATERMELON_LABEL_LEMONADE);
 
         }
     }

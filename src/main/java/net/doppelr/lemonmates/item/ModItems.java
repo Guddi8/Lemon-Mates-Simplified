@@ -9,39 +9,85 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(LemonMates.MOD_ID);
 
+    // Bottle Basics
     public static final DeferredItem<Item> BOTTLE_EMPTY = ITEMS.register("bottle_empty",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_CAP = ITEMS.register("bottle_cap",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> CITRON_LEMONADE = ITEMS.register("citron_lemonade",
+
+    // Citron
+    public static final DeferredItem<Item> BOTTLE_CITRON_LABEL = ITEMS.register("bottle_citron_label",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> CITRON_LEMONADE_EMPTY = ITEMS.register("citron_lemonade_empty",
+    public static final DeferredItem<Item> BOTTLE_CITRON_LEMONADE = ITEMS.register("bottle_citron_lemonade",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> CITRON_LEMONADE_LABEL = ITEMS.register("citron_lemonade_label",
+
+    public static final DeferredItem<Item> BOTTLE_CITRON_LABEL_CAP = ITEMS.register("bottle_citron_label_cap",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> ORANGE_LEMONADE = ITEMS.register("orange_lemonade",
+    public static final DeferredItem<Item> BOTTLE_CITRON_LABEL_LEMONADE_CAP = ITEMS.register("bottle_citron_label_lemonade_cap",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> ORANGE_LEMONADE_EMPTY = ITEMS.register("orange_lemonade_empty",
+    public static final DeferredItem<Item> BOTTLE_CITRON_LEMONADE_CAP = ITEMS.register("bottle_citron_lemonade_cap",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> ORANGE_LEMONADE_LABEL = ITEMS.register("orange_lemonade_label",
+    public static final DeferredItem<Item> BOTTLE_CITRON_LABEL_LEMONADE = ITEMS.register("bottle_citron_label_lemonade",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> WATERMELON_LEMONADE = ITEMS.register("watermelon_lemonade",
+
+    // Orange
+    public static final DeferredItem<Item> BOTTLE_ORANGE_LABEL = ITEMS.register("bottle_orange_label",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> WATERMELON_LEMONADE_EMPTY = ITEMS.register("watermelon_lemonade_empty",
+    public static final DeferredItem<Item> BOTTLE_ORANGE_LEMONADE = ITEMS.register("bottle_orange_lemonade",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> WATERMELON_LEMONADE_LABEL = ITEMS.register("watermelon_lemonade_label",
+
+    public static final DeferredItem<Item> BOTTLE_ORANGE_LABEL_CAP = ITEMS.register("bottle_orange_label_cap",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> RASPBERRY_SODA = ITEMS.register("raspberry_soda",
+    public static final DeferredItem<Item> BOTTLE_ORANGE_LABEL_LEMONADE_CAP = ITEMS.register("bottle_orange_label_lemonade_cap",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> RASPBERRY_SODA_EMPTY = ITEMS.register("raspberry_soda_empty",
+    public static final DeferredItem<Item> BOTTLE_ORANGE_LEMONADE_CAP = ITEMS.register("bottle_orange_lemonade_cap",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> RASPBERRY_SODA_LABEL = ITEMS.register("raspberry_soda_label",
+    public static final DeferredItem<Item> BOTTLE_ORANGE_LABEL_LEMONADE = ITEMS.register("bottle_orange_label_lemonade",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> SUMMER_MIX = ITEMS.register("summer_mix",
+
+    // Raspberry
+    public static final DeferredItem<Item> BOTTLE_RASPBERRY_LABEL = ITEMS.register("bottle_raspberry_label",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> SUMMER_MIX_EMPTY = ITEMS.register("summer_mix_empty",
+    public static final DeferredItem<Item> BOTTLE_RASPBERRY_LEMONADE = ITEMS.register("bottle_raspberry_lemonade",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> SUMMER_MIX_LABEL = ITEMS.register("summer_mix_label",
+
+    public static final DeferredItem<Item> BOTTLE_RASPBERRY_LABEL_CAP = ITEMS.register("bottle_raspberry_label_cap",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BOTTLE_RASPBERRY_LABEL_LEMONADE_CAP = ITEMS.register("bottle_raspberry_label_lemonade_cap",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BOTTLE_RASPBERRY_LEMONADE_CAP = ITEMS.register("bottle_raspberry_lemonade_cap",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BOTTLE_RASPBERRY_LABEL_LEMONADE = ITEMS.register("bottle_raspberry_label_lemonade",
+            () -> new Item(new Item.Properties()));
+
+    // Summer Mix
+    public static final DeferredItem<Item> BOTTLE_SUMMERMIX_LABEL = ITEMS.register("bottle_summermix_label",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BOTTLE_SUMMERMIX_LEMONADE = ITEMS.register("bottle_summermix_lemonade",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> BOTTLE_SUMMERMIX_LABEL_CAP = ITEMS.register("bottle_summermix_label_cap",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BOTTLE_SUMMERMIX_LABEL_LEMONADE_CAP = ITEMS.register("bottle_summermix_label_lemonade_cap",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BOTTLE_SUMMERMIX_LEMONADE_CAP = ITEMS.register("bottle_summermix_lemonade_cap",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BOTTLE_SUMMERMIX_LABEL_LEMONADE = ITEMS.register("bottle_summermix_label_lemonade",
+            () -> new Item(new Item.Properties()));
+
+    // Watermelon
+    public static final DeferredItem<Item> BOTTLE_WATERMELON_LABEL = ITEMS.register("bottle_watermelon_label",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BOTTLE_WATERMELON_LEMONADE = ITEMS.register("bottle_watermelon_lemonade",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> BOTTLE_WATERMELON_LABEL_CAP = ITEMS.register("bottle_watermelon_label_cap",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BOTTLE_WATERMELON_LABEL_LEMONADE_CAP = ITEMS.register("bottle_watermelon_label_lemonade_cap",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BOTTLE_WATERMELON_LEMONADE_CAP = ITEMS.register("bottle_watermelon_lemonade_cap",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BOTTLE_WATERMELON_LABEL_LEMONADE = ITEMS.register("bottle_watermelon_label_lemonade",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
