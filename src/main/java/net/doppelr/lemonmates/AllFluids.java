@@ -50,3 +50,7 @@ import net.neoforged.neoforge.fluids.FluidInteractionRegistry;
 import net.neoforged.neoforge.fluids.FluidInteractionRegistry.InteractionInformation;
 import net.neoforged.neoforge.fluids.FluidStack;
 import net.neoforged.neoforge.fluids.FluidType;
+
+public class AllFluids {
+
+}
