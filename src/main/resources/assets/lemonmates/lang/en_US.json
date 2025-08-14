@@ -1,19 +1,45 @@
 {
   "item.lemonmates.bottle_cap": "Bottle Cap",
   "item.lemonmates.bottle_empty": "Empty Bottle",
-  "item.lemonmates.citron_lemonade": "Citron Lemonade",
-  "item.lemonmates.citron_lemonade_empty": "Empty Citron Lemonade Bottle",
+
   "item.lemonmates.citron_lemonade_label": "Citron Lemonade Label",
-  "item.lemonmates.orange_lemonade": "Orange Lemonade",
-  "item.lemonmates.orange_lemonade_empty": "Empty Orange Lemonade Bottle",
   "item.lemonmates.orange_lemonade_label": "Orange Lemonade Label",
-  "item.lemonmates.watermelon_lemonade": "Watermelon Lemonade",
-  "item.lemonmates.watermelon_lemonade_empty": "Empty Watermelon Lemonade Bottle",
+  "item.lemonmates.raspberry_lemonade_label": "Raspberry Lemonade Label",
+  "item.lemonmates.summer_mix_label": "Summer-Mix Lemonade Label",
   "item.lemonmates.watermelon_lemonade_label": "Watermelon Lemonade Label",
-  "item.lemonmates.summer_mix": "Summer Mix Lemonade",
-  "item.lemonmates.summer_mix_empty": "Empty Summer Mix Lemonade Bottle",
-  "item.lemonmates.summer_mix_label": "Summer Mix Lemonade Label",
-  "item.lemonmates.raspberry_soda": "Raspberry Soda",
-  "item.lemonmates.raspberry_soda_empty": "Empty Raspberry Soda Bottle",
-  "item.lemonmates.raspberry_soda_label": "Raspberry Soda Label"
+
+  "item.lemonmates.bottle_citron_label": "Bottle with Citron Lemonade Label",
+  "item.lemonmates.bottle_citron_lemonade": "Bottle with Citron Lemonade",
+  "item.lemonmates.bottle_citron_label_cap": "Capped Bottle with Citron Label",
+  "item.lemonmates.bottle_citron_label_lemonade_cap": "Citron Lemonade",
+  "item.lemonmates.bottle_citron_lemonade_cap": "Capped Bottle with Citron Lemonade",
+  "item.lemonmates.bottle_citron_label_lemonade": "Labeled Bottle with Citron Lemonade",
+
+  "item.lemonmates.bottle_orange_label": "Bottle with Orange Lemonade Label",
+  "item.lemonmates.bottle_orange_lemonade": "Bottle with Orange Lemonade",
+  "item.lemonmates.bottle_orange_label_cap": "Capped Bottle with Orange Label",
+  "item.lemonmates.bottle_orange_label_lemonade_cap": "Orange Lemonade",
+  "item.lemonmates.bottle_orange_lemonade_cap": "Capped Bottle with Orange Lemonade",
+  "item.lemonmates.bottle_orange_label_lemonade": "Labeled Bottle with Orange Lemonade",
+
+  "item.lemonmates.bottle_raspberry_label": "Bottle with Raspberry Lemonade Label",
+  "item.lemonmates.bottle_raspberry_lemonade": "Bottle with Raspberry Lemonade",
+  "item.lemonmates.bottle_raspberry_label_cap": "Capped Bottle with Raspberry Label",
+  "item.lemonmates.bottle_raspberry_label_lemonade_cap": "Raspberry Lemonade",
+  "item.lemonmates.bottle_raspberry_lemonade_cap": "Capped Bottle with Raspberry Lemonade",
+  "item.lemonmates.bottle_raspberry_label_lemonade": "Labeled Bottle with Raspberry Lemonade",
+
+  "item.lemonmates.bottle_summermix_label": "Bottle with Summer-Mix Lemonade Label",
+  "item.lemonmates.bottle_summermix_lemonade": "Bottle with Summer-Mix Lemonade",
+  "item.lemonmates.bottle_summermix_label_cap": "Capped Bottle with Summer-Mix Label",
+  "item.lemonmates.bottle_summermix_label_lemonade_cap": "Summer-Mix Lemonade",
+  "item.lemonmates.bottle_summermix_lemonade_cap": "Capped Bottle with Summer-Mix Lemonade",
+  "item.lemonmates.bottle_summermix_label_lemonade": "Labeled Bottle with Summer-Mix Lemonade",
+
+  "item.lemonmates.bottle_watermelon_label": "Bottle with Watermelon Lemonade Label",
+  "item.lemonmates.bottle_watermelon_lemonade": "Bottle with Watermelon Lemonade",
+  "item.lemonmates.bottle_watermelon_label_cap": "Capped Bottle with Watermelon Label",
+  "item.lemonmates.bottle_watermelon_label_lemonade_cap": "Watermelon Lemonade",
+  "item.lemonmates.bottle_watermelon_lemonade_cap": "Capped Bottle with Watermelon Lemonade",
+  "item.lemonmates.bottle_watermelon_label_lemonade": "Labeled Bottle with Watermelon Lemonade"
 }

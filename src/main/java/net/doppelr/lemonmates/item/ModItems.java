@@ -15,6 +15,18 @@ public class ModItems {
     public static final DeferredItem<Item> BOTTLE_CAP = ITEMS.register("bottle_cap",
             () -> new Item(new Item.Properties()));
 
+    // Labels
+    public static final DeferredItem<Item> CITRON_LEMONADE_LABEL = ITEMS.register("citron_lemonade_label",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ORANGE_LEMONADE_LABEL = ITEMS.register("orange_lemonade_label",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RASPBERRY_LEMONADE_LABEL = ITEMS.register("raspberry_lemonade_label",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SUMMER_MIX_LABEL = ITEMS.register("summer_mix_label",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> WATERMELON_LEMONADE_LABEL = ITEMS.register("watermelon_lemonade_label",
+            () -> new Item(new Item.Properties()));
+
     // Citron
     public static final DeferredItem<Item> BOTTLE_CITRON_LABEL = ITEMS.register("bottle_citron_label",
             () -> new Item(new Item.Properties()));
