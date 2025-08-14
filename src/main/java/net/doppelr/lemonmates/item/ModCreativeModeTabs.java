@@ -35,42 +35,42 @@ public class ModCreativeModeTabs {
                 // Citron
                 output.accept(ModItems.BOTTLE_CITRON_LABEL);
                 output.accept(ModItems.BOTTLE_CITRON_LEMONADE);
-                output.accept(ModItems.BOTTLE_CITRON_LABEL_CAP);
-                output.accept(ModItems.BOTTLE_CITRON_LABEL_LEMONADE_CAP);
+                output.accept(ModItems.BOTTLE_CITRON_CAP_LABEL);
+                output.accept(ModItems.BOTTLE_CITRON_LEMONADE_CAP_LABEL);
                 output.accept(ModItems.BOTTLE_CITRON_LEMONADE_CAP);
-                output.accept(ModItems.BOTTLE_CITRON_LABEL_LEMONADE);
+                output.accept(ModItems.BOTTLE_CITRON_LEMONADE_LABEL);
 
                 // Orange
                 output.accept(ModItems.BOTTLE_ORANGE_LABEL);
                 output.accept(ModItems.BOTTLE_ORANGE_LEMONADE);
-                output.accept(ModItems.BOTTLE_ORANGE_LABEL_CAP);
-                output.accept(ModItems.BOTTLE_ORANGE_LABEL_LEMONADE_CAP);
+                output.accept(ModItems.BOTTLE_ORANGE_CAP_LABEL);
+                output.accept(ModItems.BOTTLE_ORANGE_LEMONADE_CAP_LABEL);
                 output.accept(ModItems.BOTTLE_ORANGE_LEMONADE_CAP);
-                output.accept(ModItems.BOTTLE_ORANGE_LABEL_LEMONADE);
+                output.accept(ModItems.BOTTLE_ORANGE_LEMONADE_LABEL);
 
                 // Raspberry
                 output.accept(ModItems.BOTTLE_RASPBERRY_LABEL);
                 output.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE);
-                output.accept(ModItems.BOTTLE_RASPBERRY_LABEL_CAP);
-                output.accept(ModItems.BOTTLE_RASPBERRY_LABEL_LEMONADE_CAP);
+                output.accept(ModItems.BOTTLE_RASPBERRY_CAP_LABEL);
+                output.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE_CAP_LABEL);
                 output.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE_CAP);
-                output.accept(ModItems.BOTTLE_RASPBERRY_LABEL_LEMONADE);
+                output.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE_LABEL);
 
                 // Summer Mix
                 output.accept(ModItems.BOTTLE_SUMMERMIX_LABEL);
                 output.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE);
-                output.accept(ModItems.BOTTLE_SUMMERMIX_LABEL_CAP);
-                output.accept(ModItems.BOTTLE_SUMMERMIX_LABEL_LEMONADE_CAP);
+                output.accept(ModItems.BOTTLE_SUMMERMIX_CAP_LABEL);
+                output.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE_CAP_LABEL);
                 output.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE_CAP);
-                output.accept(ModItems.BOTTLE_SUMMERMIX_LABEL_LEMONADE);
+                output.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE_LABEL);
 
                 // Watermelon
                 output.accept(ModItems.BOTTLE_WATERMELON_LABEL);
                 output.accept(ModItems.BOTTLE_WATERMELON_LEMONADE);
-                output.accept(ModItems.BOTTLE_WATERMELON_LABEL_CAP);
-                output.accept(ModItems.BOTTLE_WATERMELON_LABEL_LEMONADE_CAP);
+                output.accept(ModItems.BOTTLE_WATERMELON_CAP_LABEL);
+                output.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_CAP_LABEL);
                 output.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_CAP);
-                output.accept(ModItems.BOTTLE_WATERMELON_LABEL_LEMONADE);
+                output.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_LABEL);
             })
             .build()
     );
