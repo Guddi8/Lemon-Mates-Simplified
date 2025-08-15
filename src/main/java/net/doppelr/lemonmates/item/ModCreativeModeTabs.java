@@ -94,6 +94,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ORANGE_SAPLING);
                         output.accept(ModItems.RASPBERRY);
                         output.accept(ModBlocks.CITRON_LOG);
+                        output.accept(ModBlocks.CITRON_LEAF);
+                        output.accept(ModBlocks.ORANGE_LOG);
+                        output.accept(ModBlocks.ORANGE_LEAF);
                     })
 
                     .build()

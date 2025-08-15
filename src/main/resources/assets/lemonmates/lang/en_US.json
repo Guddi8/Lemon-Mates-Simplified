@@ -55,5 +55,8 @@
   "item.lemonmates.citron_sapling": "Orange Sapling",
   "item.lemonmates.orange_sapling": "Orange Sapling",
 
-  "block.lemonmates.citron_log": "Citron Tree Log"
+  "block.lemonmates.citron_log": "Citron Tree Log",
+  "block.lemonmates.citron_leaf": "Citron Tree Leaf",
+  "block.lemonmates.orange_log": "Orange Tree Log",
+  "block.lemonmates.orange_leaf": "Orange Tree Leaf"
 }
