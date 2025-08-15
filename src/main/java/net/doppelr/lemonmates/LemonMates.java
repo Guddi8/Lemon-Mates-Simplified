@@ -59,11 +59,15 @@ public class LemonMates {
             event.accept(ModItems.BOTTLE_EMPTY);
 
             // Labels
-            event.accept(ModItems.CITRON_LEMONADE_LABEL);
-            event.accept(ModItems.ORANGE_LEMONADE_LABEL);
-            event.accept(ModItems.RASPBERRY_LEMONADE_LABEL);
-            event.accept(ModItems.SUMMER_MIX_LABEL);
-            event.accept(ModItems.WATERMELON_LEMONADE_LABEL);
+            event.accept(ModItems.LABEL_EMPTY);
+            event.accept(ModItems.LABEL_TEXT);
+            event.accept(ModItems.LABEL_TEXT_COMPANY);
+
+            event.accept(ModItems.LABEL_CITRON_LEMONADE);
+            event.accept(ModItems.LABEL_ORANGE_LEMONADE);
+            event.accept(ModItems.LABEL_RASPBERRY_LEMONADE);
+            event.accept(ModItems.LABEL_SUMMER_MIX);
+            event.accept(ModItems.LABEL_WATERMELON_LEMONADE);
 
             // Citron
             event.accept(ModItems.BOTTLE_CITRON_LABEL);

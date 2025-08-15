@@ -15,16 +15,24 @@ public class ModItems {
     public static final DeferredItem<Item> BOTTLE_CAP = ITEMS.register("bottle_cap",
             () -> new Item(new Item.Properties()));
 
-    // Labels
-    public static final DeferredItem<Item> CITRON_LEMONADE_LABEL = ITEMS.register("citron_lemonade_label",
+    // Labels Basic
+    public static final DeferredItem<Item> LABEL_EMPTY = ITEMS.register("label_empty",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> ORANGE_LEMONADE_LABEL = ITEMS.register("orange_lemonade_label",
+    public static final DeferredItem<Item> LABEL_TEXT = ITEMS.register("label_text",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> RASPBERRY_LEMONADE_LABEL = ITEMS.register("raspberry_lemonade_label",
+    public static final DeferredItem<Item> LABEL_TEXT_COMPANY = ITEMS.register("label_text_company",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> SUMMER_MIX_LABEL = ITEMS.register("summer_mix_label",
+
+    // Labels Lemonades
+    public static final DeferredItem<Item> LABEL_CITRON_LEMONADE = ITEMS.register("label_citron_lemonade",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> WATERMELON_LEMONADE_LABEL = ITEMS.register("watermelon_lemonade_label",
+    public static final DeferredItem<Item> LABEL_ORANGE_LEMONADE = ITEMS.register("label_orange_lemonade",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> LABEL_RASPBERRY_LEMONADE = ITEMS.register("label_raspberry_lemonade",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> LABEL_SUMMER_MIX = ITEMS.register("label_summer_mix",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> LABEL_WATERMELON_LEMONADE = ITEMS.register("label_watermelon_lemonade",
             () -> new Item(new Item.Properties()));
 
     // Citron

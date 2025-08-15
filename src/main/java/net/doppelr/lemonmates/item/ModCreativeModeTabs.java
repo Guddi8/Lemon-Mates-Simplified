@@ -26,11 +26,15 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.BOTTLE_EMPTY);
 
                 // Labels
-                output.accept(ModItems.CITRON_LEMONADE_LABEL);
-                output.accept(ModItems.ORANGE_LEMONADE_LABEL);
-                output.accept(ModItems.RASPBERRY_LEMONADE_LABEL);
-                output.accept(ModItems.SUMMER_MIX_LABEL);
-                output.accept(ModItems.WATERMELON_LEMONADE_LABEL);
+                output.accept(ModItems.LABEL_EMPTY);
+                output.accept(ModItems.LABEL_TEXT);
+                output.accept(ModItems.LABEL_TEXT_COMPANY);
+
+                output.accept(ModItems.LABEL_CITRON_LEMONADE);
+                output.accept(ModItems.LABEL_ORANGE_LEMONADE);
+                output.accept(ModItems.LABEL_RASPBERRY_LEMONADE);
+                output.accept(ModItems.LABEL_SUMMER_MIX);
+                output.accept(ModItems.LABEL_WATERMELON_LEMONADE);
 
                 // Citron
                 output.accept(ModItems.BOTTLE_CITRON_LABEL);
