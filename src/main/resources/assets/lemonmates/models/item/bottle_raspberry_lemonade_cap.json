@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "lemonmates:item/bottle_empty_cap",
-    "layer1": "lemonmates:item/bottle_fluid/raspberry"
+    "layer0": "lemonmates:item/bottle_fluid/raspberry",
+    "layer1": "lemonmates:item/bottle_empty_cap"
   }
 }
