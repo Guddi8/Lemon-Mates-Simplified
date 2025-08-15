@@ -76,6 +76,14 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_CAP_LABEL);
                 output.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_CAP);
                 output.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_LABEL);
+
+
+                // Plants
+                output.accept(ModItems.CITRON);
+                output.accept(ModItems.CITRON_SAPLING);
+                output.accept(ModItems.ORANGE);
+                output.accept(ModItems.ORANGE_SAPLING);
+                output.accept(ModItems.RASPBERRY);
             })
             .build()
     );

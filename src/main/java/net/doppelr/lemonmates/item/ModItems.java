@@ -15,6 +15,8 @@ public class ModItems {
     public static final DeferredItem<Item> BOTTLE_CAP = ITEMS.register("bottle_cap",
             () -> new Item(new Item.Properties()));
 
+
+    // Lemonade related
     // Labels Basic
     public static final DeferredItem<Item> LABEL_EMPTY = ITEMS.register("label_empty",
             () -> new Item(new Item.Properties()));
@@ -103,6 +105,19 @@ public class ModItems {
     public static final DeferredItem<Item> BOTTLE_WATERMELON_LABEL = ITEMS.register("bottle_watermelon_label",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_WATERMELON_LEMONADE_LABEL = ITEMS.register("bottle_watermelon_lemonade_label",
+            () -> new Item(new Item.Properties()));
+
+
+    // Plants
+    public static final DeferredItem<Item> CITRON = ITEMS.register("citron",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ORANGE = ITEMS.register("orange",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RASPBERRY = ITEMS.register("raspberry",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CITRON_SAPLING = ITEMS.register("citron_sapling",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ORANGE_SAPLING = ITEMS.register("orange_sapling",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

@@ -45,5 +45,12 @@
   "item.lemonmates.bottle_watermelon_cap_label": "Capped Bottle with Watermelon Label",
   "item.lemonmates.bottle_watermelon_lemonade_cap_label": "Watermelon Lemonade",
   "item.lemonmates.bottle_watermelon_lemonade_cap": "Capped Bottle with Watermelon Lemonade",
-  "item.lemonmates.bottle_watermelon_lemonade_label": "Labeled Bottle with Watermelon Lemonade"
+  "item.lemonmates.bottle_watermelon_lemonade_label": "Labeled Bottle with Watermelon Lemonade",
+
+
+  "item.lemonmates.citron": "Citron Fruit",
+  "item.lemonmates.orange": "Orange Fruit",
+  "item.lemonmates.raspberry": "Raspberry",
+  "item.lemonmates.citron_sapling": "Orange Sapling",
+  "item.lemonmates.orange_sapling": "Orange Sapling"
 }
