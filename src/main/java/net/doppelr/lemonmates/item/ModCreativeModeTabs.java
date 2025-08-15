@@ -19,7 +19,7 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup." + LemonMates.MOD_ID + ".lemonmates"))
             .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
-            .icon(() -> new ItemStack(ModItems.BOTTLE_CAP.get()))
+            .icon(() -> new ItemStack(ModItems.BOTTLE_WATERMELON_LEMONADE_CAP_LABEL.get()))
             .displayItems((params, output) -> {
                 // Bottle, Cap
                 output.accept(ModItems.BOTTLE_CAP);
