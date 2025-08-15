@@ -8,6 +8,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
 
 import java.util.function.Supplier;
 
@@ -15,7 +16,7 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, LemonMates.MOD_ID);
 
-    public static final Supplier<CreativeModeTab> LEMONMATES_TAB = CREATIVE_MODE_TAB.register("lemonmates_tab",
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> LEMONMATES_TAB = CREATIVE_MODE_TAB.register("lemonmates_tab",
             () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup." + LemonMates.MOD_ID + ".lemonmates"))
             .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
