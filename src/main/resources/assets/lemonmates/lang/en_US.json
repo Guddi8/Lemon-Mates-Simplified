@@ -1,5 +1,6 @@
 {
-  "itemGroup.lemonmates.lemonmates": "Lemonmates",
+  "itemGroup.lemonmates.lemonmates": "Lemonmates Lemonades",
+  "itemGroup.lemonmates.lemonmates_plants": "Lemonmates Plants",
 
   "item.lemonmates.bottle_cap": "Bottle Cap",
   "item.lemonmates.bottle_empty": "Empty Bottle",
@@ -52,5 +53,7 @@
   "item.lemonmates.orange": "Orange Fruit",
   "item.lemonmates.raspberry": "Raspberry",
   "item.lemonmates.citron_sapling": "Orange Sapling",
-  "item.lemonmates.orange_sapling": "Orange Sapling"
+  "item.lemonmates.orange_sapling": "Orange Sapling",
+
+  "block.lemonmates.citron_log": "Citron Tree Log"
 }

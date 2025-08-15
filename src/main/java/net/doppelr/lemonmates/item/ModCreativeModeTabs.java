@@ -1,6 +1,7 @@
 package net.doppelr.lemonmates.item;
 
 import net.doppelr.lemonmates.LemonMates;
+import net.doppelr.lemonmates.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -76,16 +77,26 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_CAP_LABEL);
                 output.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_CAP);
                 output.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_LABEL);
-
-
-                // Plants
-                output.accept(ModItems.CITRON);
-                output.accept(ModItems.CITRON_SAPLING);
-                output.accept(ModItems.ORANGE);
-                output.accept(ModItems.ORANGE_SAPLING);
-                output.accept(ModItems.RASPBERRY);
             })
             .build()
+    );
+
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> LEMONMATES_PLANTS_TAB = CREATIVE_MODE_TAB.register("lemonmates_plants_tab",
+            () -> CreativeModeTab.builder()
+                    .title(Component.translatable("itemGroup." + LemonMates.MOD_ID + ".lemonmates_plants"))
+                    .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
+                    .icon(() -> new ItemStack(ModItems.CITRON.get()))
+                    .displayItems((params, output) -> {
+                        // Plants
+                        output.accept(ModItems.CITRON);
+                        output.accept(ModItems.CITRON_SAPLING);
+                        output.accept(ModItems.ORANGE);
+                        output.accept(ModItems.ORANGE_SAPLING);
+                        output.accept(ModItems.RASPBERRY);
+                        output.accept(ModBlocks.CITRON_LOG);
+                    })
+
+                    .build()
     );
 
     public static void register(IEventBus eventBus) {

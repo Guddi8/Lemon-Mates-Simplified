@@ -5,6 +5,7 @@ import com.simibubi.create.foundation.item.ItemDescription;
 import com.simibubi.create.foundation.item.KineticStats;
 import com.simibubi.create.foundation.item.TooltipModifier;
 import net.createmod.catnip.lang.FontHelper;
+import net.doppelr.lemonmates.block.ModBlocks;
 import net.doppelr.lemonmates.item.ModCreativeModeTabs;
 import net.doppelr.lemonmates.item.ModItems;
 import net.minecraft.resources.ResourceKey;
@@ -49,6 +50,7 @@ public class LemonMates {
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
