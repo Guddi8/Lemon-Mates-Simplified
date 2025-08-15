@@ -1,7 +1,14 @@
 package net.doppelr.lemonmates;
 
+import com.simibubi.create.foundation.data.CreateRegistrate;
+import com.simibubi.create.foundation.item.ItemDescription;
+import com.simibubi.create.foundation.item.KineticStats;
+import com.simibubi.create.foundation.item.TooltipModifier;
+import net.createmod.catnip.lang.FontHelper;
 import net.doppelr.lemonmates.item.ModCreativeModeTabs;
 import net.doppelr.lemonmates.item.ModItems;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -22,6 +29,9 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(LemonMates.MOD_ID)
 public class LemonMates {
+
+    public static final String ID = "lemonmates";
+    public static final String NAME = "Lemon Mates";
     public static final String MOD_ID = "lemonmates";
     public static final Logger LOGGER = LogUtils.getLogger();
 
@@ -51,65 +61,15 @@ public class LemonMates {
 
     }
 
+    private static final CreateRegistrate REGISTRATE = CreateRegistrate.create(ID)
+            .defaultCreativeTab((ResourceKey<CreativeModeTab>) null)
+            .setTooltipModifierFactory(item ->
+                    new ItemDescription.Modifier(item, FontHelper.Palette.STANDARD_CREATE)
+                        .andThen(TooltipModifier.mapNull(KineticStats.create(item)))
+            );
+
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey()== CreativeModeTabs.FOOD_AND_DRINKS) {
-            // Bottle, Cap
-            event.accept(ModItems.BOTTLE_CAP);
-            event.accept(ModItems.BOTTLE_EMPTY);
-
-            // Labels
-            event.accept(ModItems.LABEL_EMPTY);
-            event.accept(ModItems.LABEL_TEXT);
-            event.accept(ModItems.LABEL_TEXT_COMPANY);
-
-            event.accept(ModItems.LABEL_CITRON_LEMONADE);
-            event.accept(ModItems.LABEL_ORANGE_LEMONADE);
-            event.accept(ModItems.LABEL_RASPBERRY_LEMONADE);
-            event.accept(ModItems.LABEL_SUMMER_MIX);
-            event.accept(ModItems.LABEL_WATERMELON_LEMONADE);
-
-            // Citron
-            event.accept(ModItems.BOTTLE_CITRON_LABEL);
-            event.accept(ModItems.BOTTLE_CITRON_LEMONADE);
-            event.accept(ModItems.BOTTLE_CITRON_CAP_LABEL);
-            event.accept(ModItems.BOTTLE_CITRON_LEMONADE_CAP_LABEL);
-            event.accept(ModItems.BOTTLE_CITRON_LEMONADE_CAP);
-            event.accept(ModItems.BOTTLE_CITRON_LEMONADE_LABEL);
-
-            // Orange
-            event.accept(ModItems.BOTTLE_ORANGE_LABEL);
-            event.accept(ModItems.BOTTLE_ORANGE_LEMONADE);
-            event.accept(ModItems.BOTTLE_ORANGE_CAP_LABEL);
-            event.accept(ModItems.BOTTLE_ORANGE_LEMONADE_CAP_LABEL);
-            event.accept(ModItems.BOTTLE_ORANGE_LEMONADE_CAP);
-            event.accept(ModItems.BOTTLE_ORANGE_LEMONADE_LABEL);
-
-            // Raspberry
-            event.accept(ModItems.BOTTLE_RASPBERRY_LABEL);
-            event.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE);
-            event.accept(ModItems.BOTTLE_RASPBERRY_CAP_LABEL);
-            event.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE_CAP_LABEL);
-            event.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE_CAP);
-            event.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE_LABEL);
-
-            // Summer Mix
-            event.accept(ModItems.BOTTLE_SUMMERMIX_LABEL);
-            event.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE);
-            event.accept(ModItems.BOTTLE_SUMMERMIX_CAP_LABEL);
-            event.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE_CAP_LABEL);
-            event.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE_CAP);
-            event.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE_LABEL);
-
-            // Watermelon
-            event.accept(ModItems.BOTTLE_WATERMELON_LABEL);
-            event.accept(ModItems.BOTTLE_WATERMELON_LEMONADE);
-            event.accept(ModItems.BOTTLE_WATERMELON_CAP_LABEL);
-            event.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_CAP_LABEL);
-            event.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_CAP);
-            event.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_LABEL);
-
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
