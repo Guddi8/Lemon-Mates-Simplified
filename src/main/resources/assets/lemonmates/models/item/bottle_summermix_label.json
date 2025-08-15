@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "lemonmates:item/bottle_summermix_label"
+    "layer0": "lemonmates:item/bottle_empty",
+    "layer1": "lemonmates:item/label/bottle_empty",
+    "layer2": "lemonmates:item/label/company",
+    "layer3": "lemonmates:item/label/summermix"
   }
 }
