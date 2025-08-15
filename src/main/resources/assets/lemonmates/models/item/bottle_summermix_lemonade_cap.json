@@ -1,6 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "lemonmates:item/bottle_summermix_lemonade_cap"
+    "layer0": "lemonmates:item/bottle_fluid/summermix",
+    "layer1": "lemonmates:item/bottle_empty_cap"
   }
 }

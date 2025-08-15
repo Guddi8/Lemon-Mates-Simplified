@@ -1,5 +1,6 @@
 package net.doppelr.lemonmates;
 
+import net.doppelr.lemonmates.item.ModCreativeModeTabs;
 import net.doppelr.lemonmates.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -35,6 +36,8 @@ public class LemonMates {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
 
         // Register the item to a creative tab
@@ -56,51 +59,55 @@ public class LemonMates {
             event.accept(ModItems.BOTTLE_EMPTY);
 
             // Labels
-            event.accept(ModItems.CITRON_LEMONADE_LABEL);
-            event.accept(ModItems.ORANGE_LEMONADE_LABEL);
-            event.accept(ModItems.RASPBERRY_LEMONADE_LABEL);
-            event.accept(ModItems.SUMMER_MIX_LABEL);
-            event.accept(ModItems.WATERMELON_LEMONADE_LABEL);
+            event.accept(ModItems.LABEL_EMPTY);
+            event.accept(ModItems.LABEL_TEXT);
+            event.accept(ModItems.LABEL_TEXT_COMPANY);
+
+            event.accept(ModItems.LABEL_CITRON_LEMONADE);
+            event.accept(ModItems.LABEL_ORANGE_LEMONADE);
+            event.accept(ModItems.LABEL_RASPBERRY_LEMONADE);
+            event.accept(ModItems.LABEL_SUMMER_MIX);
+            event.accept(ModItems.LABEL_WATERMELON_LEMONADE);
 
             // Citron
             event.accept(ModItems.BOTTLE_CITRON_LABEL);
             event.accept(ModItems.BOTTLE_CITRON_LEMONADE);
-            event.accept(ModItems.BOTTLE_CITRON_LABEL_CAP);
-            event.accept(ModItems.BOTTLE_CITRON_LABEL_LEMONADE_CAP);
+            event.accept(ModItems.BOTTLE_CITRON_CAP_LABEL);
+            event.accept(ModItems.BOTTLE_CITRON_LEMONADE_CAP_LABEL);
             event.accept(ModItems.BOTTLE_CITRON_LEMONADE_CAP);
-            event.accept(ModItems.BOTTLE_CITRON_LABEL_LEMONADE);
+            event.accept(ModItems.BOTTLE_CITRON_LEMONADE_LABEL);
 
             // Orange
             event.accept(ModItems.BOTTLE_ORANGE_LABEL);
             event.accept(ModItems.BOTTLE_ORANGE_LEMONADE);
-            event.accept(ModItems.BOTTLE_ORANGE_LABEL_CAP);
-            event.accept(ModItems.BOTTLE_ORANGE_LABEL_LEMONADE_CAP);
+            event.accept(ModItems.BOTTLE_ORANGE_CAP_LABEL);
+            event.accept(ModItems.BOTTLE_ORANGE_LEMONADE_CAP_LABEL);
             event.accept(ModItems.BOTTLE_ORANGE_LEMONADE_CAP);
-            event.accept(ModItems.BOTTLE_ORANGE_LABEL_LEMONADE);
+            event.accept(ModItems.BOTTLE_ORANGE_LEMONADE_LABEL);
 
             // Raspberry
             event.accept(ModItems.BOTTLE_RASPBERRY_LABEL);
             event.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE);
-            event.accept(ModItems.BOTTLE_RASPBERRY_LABEL_CAP);
-            event.accept(ModItems.BOTTLE_RASPBERRY_LABEL_LEMONADE_CAP);
+            event.accept(ModItems.BOTTLE_RASPBERRY_CAP_LABEL);
+            event.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE_CAP_LABEL);
             event.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE_CAP);
-            event.accept(ModItems.BOTTLE_RASPBERRY_LABEL_LEMONADE);
+            event.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE_LABEL);
 
             // Summer Mix
             event.accept(ModItems.BOTTLE_SUMMERMIX_LABEL);
             event.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE);
-            event.accept(ModItems.BOTTLE_SUMMERMIX_LABEL_CAP);
-            event.accept(ModItems.BOTTLE_SUMMERMIX_LABEL_LEMONADE_CAP);
+            event.accept(ModItems.BOTTLE_SUMMERMIX_CAP_LABEL);
+            event.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE_CAP_LABEL);
             event.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE_CAP);
-            event.accept(ModItems.BOTTLE_SUMMERMIX_LABEL_LEMONADE);
+            event.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE_LABEL);
 
             // Watermelon
             event.accept(ModItems.BOTTLE_WATERMELON_LABEL);
             event.accept(ModItems.BOTTLE_WATERMELON_LEMONADE);
-            event.accept(ModItems.BOTTLE_WATERMELON_LABEL_CAP);
-            event.accept(ModItems.BOTTLE_WATERMELON_LABEL_LEMONADE_CAP);
+            event.accept(ModItems.BOTTLE_WATERMELON_CAP_LABEL);
+            event.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_CAP_LABEL);
             event.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_CAP);
-            event.accept(ModItems.BOTTLE_WATERMELON_LABEL_LEMONADE);
+            event.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_LABEL);
 
         }
     }

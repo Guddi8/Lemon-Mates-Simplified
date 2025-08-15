@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "lemonmates:item/bottle_empty",
-    "layer1": "lemonmates:item/label/bottle_empty",
+    "layer0": "lemonmates:item/label/empty",
+    "layer1": "lemonmates:item/label/text",
     "layer2": "lemonmates:item/label/company",
     "layer3": "lemonmates:item/label/watermelon"
   }
