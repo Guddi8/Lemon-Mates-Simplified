@@ -4,11 +4,13 @@
   "item.lemonmates.bottle_cap": "Bottle Cap",
   "item.lemonmates.bottle_empty": "Empty Bottle",
 
-  "item.lemonmates.citron_lemonade_label": "Citron Lemonade Label",
-  "item.lemonmates.orange_lemonade_label": "Orange Lemonade Label",
-  "item.lemonmates.raspberry_lemonade_label": "Raspberry Lemonade Label",
-  "item.lemonmates.summer_mix_label": "Summer-Mix Lemonade Label",
-  "item.lemonmates.watermelon_lemonade_label": "Watermelon Lemonade Label",
+  "item.lemonmates.label_empty": "Empty Label",
+  "item.lemonmates.label_text": "Label with Product Information",
+  "item.lemonmates.label_text_company": "Label with Text and Company logo",
+  "item.lemonmates.label_orange_lemonade": "Orange Lemonade Label",
+  "item.lemonmates.label_raspberry_lemonade": "Raspberry Lemonade Label",
+  "item.lemonmates.label_summer_mix": "Summer-Mix Lemonade Label",
+  "item.lemonmates.label_watermelon_lemonade": "Watermelon Lemonade Label",
 
   "item.lemonmates.bottle_citron_label": "Bottle with Citron Lemonade Label",
   "item.lemonmates.bottle_citron_lemonade": "Bottle with Citron Lemonade",
