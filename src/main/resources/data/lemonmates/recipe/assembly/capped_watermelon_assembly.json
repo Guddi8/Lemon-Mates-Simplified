@@ -1,0 +1,44 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "lemonmates:bottle_watermelon_lemonade"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "lemonmates:bottle_watermelon_lemonade_cap",
+      "chance": 100,
+      "count": 1
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "lemonmates:bottle_cap"
+        },
+        {
+          "item": ""
+        }
+      ],
+      "keep_held_item": false,
+      "results": [
+        {
+          "id": "lemonmates:bottle_watermelon_lemonade"
+        }
+      ]
+    },
+    {
+      "type": "create:compacting",
+      "results": [
+        {
+          "id": "lemonmates:bottle_watermelon_lemonade_cap"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "lemonmates:bottle_watermelon_lemonade"
+  }
+}
