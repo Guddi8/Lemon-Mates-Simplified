@@ -7,7 +7,7 @@
 
   "item.lemonmates.label_empty": "Empty Label",
   "item.lemonmates.label_text": "Label with Product Information",
-  "item.lemonmates.label_text_company": "Label with Text and Company logo",
+  "item.lemonmates.label_text_company": "Label with Text and Company Logo",
   "item.lemonmates.label_orange_lemonade": "Orange Lemonade Label",
   "item.lemonmates.label_raspberry_lemonade": "Raspberry Lemonade Label",
   "item.lemonmates.label_summer_mix": "Summer-Mix Lemonade Label",
@@ -52,8 +52,8 @@
   "item.lemonmates.citron": "Citron Fruit",
   "item.lemonmates.orange": "Orange Fruit",
   "item.lemonmates.raspberry": "Raspberry",
-  "item.lemonmates.citron_sapling": "Orange Sapling",
-  "item.lemonmates.orange_sapling": "Orange Sapling",
+  "item.lemonmates.citron_sapling": "Citron Tree Sapling",
+  "item.lemonmates.orange_sapling": "Orange Tree Sapling",
 
   "block.lemonmates.citron_log": "Citron Tree Log",
   "block.lemonmates.citron_leaf": "Citron Tree Leaf",
