@@ -6,9 +6,7 @@
   "loops": 1,
   "results": [
     {
-      "id": "lemonmates:bottle_watermelon_lemonade_cap",
-      "chance": 100,
-      "count": 1
+      "id": "lemonmates:bottle_watermelon_lemonade_cap"
     }
   ],
   "sequence": [
@@ -17,12 +15,8 @@
       "ingredients": [
         {
           "item": "lemonmates:bottle_cap"
-        },
-        {
-          "item": ""
         }
       ],
-      "keep_held_item": false,
       "results": [
         {
           "id": "lemonmates:bottle_watermelon_lemonade"
@@ -30,7 +24,12 @@
       ]
     },
     {
-      "type": "create:compacting",
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "lemonmates:bottle_cap"
+        }
+      ],
       "results": [
         {
           "id": "lemonmates:bottle_watermelon_lemonade_cap"
