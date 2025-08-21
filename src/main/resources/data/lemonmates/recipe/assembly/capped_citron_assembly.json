@@ -1,0 +1,46 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "lemonmates:bottle_citron_lemonade"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "lemonmates:bottle_citron_lemonade_cap"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "lemonmates:bottle_citron_lemonade"
+        },
+        {
+          "item": "lemonmates:bottle_cap"
+        }
+      ],
+      "results": [
+        {
+          "id": "lemonmates:bottle_citron_lemonade"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "lemonmates:bottle_cap"
+        }
+      ],
+      "results": [
+        {
+          "id": "lemonmates:bottle_citron_lemonade_cap"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "lemonmates:bottle_citron_lemonade"
+  }
+}
