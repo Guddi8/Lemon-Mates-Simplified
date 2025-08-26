@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "lemonmates:label_text_company"
+    },
+    {
+      "item": "minecraft:lime_dye"
+    }
+  ],
+  "results": [
+    {
+      "id": "lemonmates:label_summer_mix"
+    }
+  ]
+}

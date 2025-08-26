@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "farmersdelight:melon_juice"
+    },
+    {
+      "item": "lemonmates:label_summer_mix"
+    },
+    {
+      "item": "lemonmates:bottle_cap"
+    }
+  ],
+  "results": [
+    {
+      "id": "lemonmates:bottle_summermix_lemonade_cap_label"
+    }
+  ]
+}

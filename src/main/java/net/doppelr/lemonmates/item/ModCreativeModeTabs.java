@@ -85,14 +85,14 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup." + LemonMates.MOD_ID + ".lemonmates_plants"))
                     .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
-                    .icon(() -> new ItemStack(ModItems.CITRON.get()))
+                  //  .icon(() -> new ItemStack(ModItems.CITRON.get()))
                     .displayItems((params, output) -> {
                         // Plants
-                        output.accept(ModItems.CITRON);
-                        output.accept(ModItems.CITRON_SAPLING);
-                        output.accept(ModItems.ORANGE);
-                        output.accept(ModItems.ORANGE_SAPLING);
-                        output.accept(ModItems.RASPBERRY);
+                     //   output.accept(ModItems.CITRON);
+                     //   output.accept(ModItems.CITRON_SAPLING);
+                     //   output.accept(ModItems.ORANGE);
+                     //   output.accept(ModItems.ORANGE_SAPLING);
+                     //   output.accept(ModItems.RASPBERRY);
                         output.accept(ModBlocks.CITRON_LOG);
                         output.accept(ModBlocks.CITRON_LEAF);
                         output.accept(ModBlocks.ORANGE_LOG);
