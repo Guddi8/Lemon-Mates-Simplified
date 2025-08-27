@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "lemonmates:block/orange_log",
+    "side": "lemonmates:block/orange_log"
+  }
+}

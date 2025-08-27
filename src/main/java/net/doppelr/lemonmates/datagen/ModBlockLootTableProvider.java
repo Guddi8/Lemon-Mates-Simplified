@@ -40,7 +40,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                     .setRolls(ConstantValue.exactly(1.0F))
                     .when(this.doesNotHaveSilkTouch())
                     .add(
-                        ((LootPoolSingletonContainer.Builder)this.applyExplosionCondition(leavesBlock, LootItem.lootTableItem(fruitItem)))
+                        ((LootPoolSingletonContainer.Builder<?>)this.applyExplosionCondition(leavesBlock, LootItem.lootTableItem(fruitItem)))
                             .when(
                                 BonusLevelTableCondition.bonusLevelFlatChance(
                                         registrylookup.getOrThrow(Enchantments.FORTUNE), 0.02F, 0.03F, 0.45F, 0.06F, 0.08F
@@ -52,6 +52,15 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+//        dropSelf(ModBlocks.ORANGE_CRATE.get());
+        dropSelf(ModBlocks.ORANGE_LOG.get());
+        dropSelf(ModBlocks.ORANGE_WOOD.get());
+        dropSelf(ModBlocks.STRIPPED_ORANGE_LOG.get());
+        dropSelf(ModBlocks.STRIPPED_ORANGE_WOOD.get());
+        add(ModBlocks.ORANGE_LEAVES.get(),
+                block -> createFruitLeavesDrops(ModBlocks.ORANGE_LEAVES.get(), ModBlocks.ORANGE_SAPLING.get(), ModItems.ORANGE.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        dropSelf(ModBlocks.ORANGE_SAPLING.get());
+
         this.add(ModBlocks.RASPBERRY_BUSH.get(), block -> this.applyExplosionDecay(
                 block,LootTable.lootTable().withPool(LootPool.lootPool().when(
                                         LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.RASPBERRY_BUSH.get())

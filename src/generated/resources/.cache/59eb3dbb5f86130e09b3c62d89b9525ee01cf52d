@@ -1,2 +1,9 @@
-// 1.21.1	2025-08-27T14:17:56.2863478	Loot Tables
+// 1.21.1	2025-08-27T17:27:27.7864209	Loot Tables
+280dbd6bdeff16a14999ff1c769cc078ee0920fa data/lemonmates/loot_table/blocks/orange_leaves.json
+2169adfc8e142ecde75d435155e298f818f96092 data/lemonmates/loot_table/blocks/orange_log.json
+3437f0b97939d3a2075888532553f6caa5c5c60b data/lemonmates/loot_table/blocks/orange_planks.json
+66bfc1d75012ad89ab97892198ad687cf2ad3660 data/lemonmates/loot_table/blocks/orange_sapling.json
+bd82e20645f4f6f75d6862a28b3756f714d1ffed data/lemonmates/loot_table/blocks/orange_wood.json
 9d624bdc7c2a4bc05639befe886bb8cb510fa878 data/lemonmates/loot_table/blocks/raspberry_bush.json
+6119e198844f5713fd685fdd8ade49f8c00a7733 data/lemonmates/loot_table/blocks/stripped_orange_log.json
+7dfcf28cad578249cb297340014d8229e44ee1c1 data/lemonmates/loot_table/blocks/stripped_orange_wood.json

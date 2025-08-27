@@ -26,6 +26,13 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         basicItem(ModItems.RASPBERRY.get());
+        basicItem(ModItems.ORANGE.get());
+        saplingItem(ModBlocks.ORANGE_SAPLING);
+    }
+
+    private ItemModelBuilder saplingItem(DeferredBlock<SaplingBlock> item) {
+        return withExistingParent(item.getId().getPath(), ResourceLocation.parse("item/generated"))
+            .texture("layer0", ResourceLocation.fromNamespaceAndPath(LemonMates.MOD_ID, "block/" + item.getId().getPath()));
     }
 
     public void buttonItem(DeferredBlock<ButtonBlock> button, DeferredBlock<Block> baseBlock) {

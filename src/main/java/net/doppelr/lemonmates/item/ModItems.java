@@ -114,8 +114,8 @@ public class ModItems {
     // Plants
 //    public static final DeferredItem<Item> CITRON = ITEMS.register("citron",
 //            () -> new Item(new Item.Properties().food(AllFoodProperties.CITRON)));
-//    public static final DeferredItem<Item> ORANGE = ITEMS.register("orange",
-//            () -> new Item(new Item.Properties().food(AllFoodProperties.ORANGE)));
+    public static final DeferredItem<Item> ORANGE = ITEMS.register("orange",
+            () -> new Item(new Item.Properties().food(AllFoodProperties.ORANGE)));
     public static final DeferredItem<Item> RASPBERRY = ITEMS.register("raspberry",
             () -> new ItemNameBlockItem(ModBlocks.RASPBERRY_BUSH.get(), new Item.Properties().food(AllFoodProperties.RASPBERRY)));
 //    public static final DeferredItem<Item> CITRON_SAPLING = ITEMS.register("citron_sapling",

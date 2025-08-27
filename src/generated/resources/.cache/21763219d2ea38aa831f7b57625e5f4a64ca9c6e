@@ -1,1 +1,4 @@
-// 1.21.1	2025-08-27T14:17:56.2883486	Tags for minecraft:block mod id lemonmates
+// 1.21.1	2025-08-27T17:48:26.0466773	Tags for minecraft:block mod id lemonmates
+da97562e28b8cc73020ac1c52d1361c6ef1005fc data/c/tags/block/stripped_logs.json
+13d4e7735ae53dea526fe61eb36457db27667dcc data/minecraft/tags/block/logs.json
+13d4e7735ae53dea526fe61eb36457db27667dcc data/minecraft/tags/block/logs_that_burn.json

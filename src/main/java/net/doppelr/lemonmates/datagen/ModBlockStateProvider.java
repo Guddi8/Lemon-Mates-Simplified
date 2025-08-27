@@ -3,9 +3,10 @@ package net.doppelr.lemonmates.datagen;
 import net.doppelr.lemonmates.LemonMates;
 import net.doppelr.lemonmates.block.ModBlocks;
 import net.doppelr.lemonmates.block.RaspberryBushBlock;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.SweetBerryBushBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
@@ -22,7 +23,25 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        logBlock((RotatedPillarBlock) ModBlocks.ORANGE_LOG.get());
+        axisBlock((RotatedPillarBlock) ModBlocks.ORANGE_WOOD.get(), blockTexture(ModBlocks.ORANGE_LOG.get()), blockTexture(ModBlocks.ORANGE_LOG.get()));
+        logBlock((RotatedPillarBlock) ModBlocks.STRIPPED_ORANGE_LOG.get());
+        axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_ORANGE_WOOD.get(), blockTexture(ModBlocks.STRIPPED_ORANGE_LOG.get()), blockTexture(ModBlocks.STRIPPED_ORANGE_LOG.get()));
+        blockItem(ModBlocks.ORANGE_LOG);
+        blockItem(ModBlocks.ORANGE_WOOD);
+        blockItem(ModBlocks.STRIPPED_ORANGE_LOG);
+        blockItem(ModBlocks.STRIPPED_ORANGE_WOOD);
+        blockWithItem(ModBlocks.ORANGE_LEAVES);
+        saplingBlock(ModBlocks.ORANGE_SAPLING);
+//        blockWithItem(ModBlocks.ORANGE_LEAVES);
+
         makeBush((SweetBerryBushBlock) ModBlocks.RASPBERRY_BUSH.get(), "raspberry_bush_stage", "raspberry_bush_stage");
+    }
+
+    private void saplingBlock(DeferredBlock<SaplingBlock> deferredBlock) {
+        simpleBlock(deferredBlock.get(),
+            models().cross(BuiltInRegistries.BLOCK.getKey(deferredBlock.get()).getPath(),
+                blockTexture(deferredBlock.get())).renderType("cutout"));
     }
 
     public void makeBush(SweetBerryBushBlock block, String modelName, String textureName) {

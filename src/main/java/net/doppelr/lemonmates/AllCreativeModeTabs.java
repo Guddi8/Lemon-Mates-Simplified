@@ -1,5 +1,6 @@
 package net.doppelr.lemonmates;
 
+import net.doppelr.lemonmates.block.ModBlocks;
 import net.doppelr.lemonmates.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -86,15 +87,16 @@ public class AllCreativeModeTabs {
             .icon(() -> new ItemStack(ModItems.RASPBERRY.get()))
             .displayItems((params, output) -> {
                 // Plants
-             //   output.accept(ModItems.CITRON);
-             //   output.accept(ModItems.CITRON_SAPLING);
-             //   output.accept(ModItems.ORANGE);
-             //   output.accept(ModItems.ORANGE_SAPLING);
                 output.accept(ModItems.RASPBERRY);
-//                        output.accept(ModBlocks.CITRON_LOG);
-//                        output.accept(ModBlocks.CITRON_LEAF);
-//                        output.accept(ModBlocks.ORANGE_LOG);
-//                        output.accept(ModBlocks.ORANGE_LEAF);
+             //   output.accept(ModItems.CITRON);
+                output.accept(ModItems.ORANGE);
+                output.accept(ModBlocks.ORANGE_LOG);
+                output.accept(ModBlocks.ORANGE_WOOD);
+                output.accept(ModBlocks.STRIPPED_ORANGE_LOG);
+                output.accept(ModBlocks.STRIPPED_ORANGE_WOOD);
+                output.accept(ModBlocks.ORANGE_LEAVES);
+                output.accept(ModBlocks.ORANGE_SAPLING);
+                output.accept(ModBlocks.ORANGE_PLANKS);
             })
             .build()
     );
