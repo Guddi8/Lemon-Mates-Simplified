@@ -98,13 +98,13 @@ description='''${mod_description}'''
 [[dependencies.${mod_id}]]
 modId="tfmg"
 type="required"
-versionRange="[1.0.0,1.0.2)"
+versionRange="[1.0.0,1.0.3)"
 ordering="NONE"
 side="BOTH"
 
 # Adding Farmer's Delight for Food
 [[dependencies.${mod_id}]]
-modId="tfmg"
+modId="farmersdelight"
 type="required"
 versionRange="[1.2.8,1.2.10)"
 ordering="NONE"
