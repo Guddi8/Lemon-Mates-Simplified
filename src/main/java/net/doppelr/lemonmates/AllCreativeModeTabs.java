@@ -1,7 +1,6 @@
-package net.doppelr.lemonmates.item;
+package net.doppelr.lemonmates;
 
-import net.doppelr.lemonmates.LemonMates;
-import net.doppelr.lemonmates.block.ModBlocks;
+import net.doppelr.lemonmates.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -11,14 +10,12 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
-import java.util.function.Supplier;
-
-public class ModCreativeModeTabs {
+public class AllCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, LemonMates.MOD_ID);
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> LEMONMATES_TAB = CREATIVE_MODE_TAB.register("lemonmates_tab",
-            () -> CreativeModeTab.builder()
+        () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup." + LemonMates.MOD_ID + ".lemonmates"))
             .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
             .icon(() -> new ItemStack(ModItems.BOTTLE_WATERMELON_LEMONADE_CAP_LABEL.get()))
@@ -83,24 +80,23 @@ public class ModCreativeModeTabs {
     );
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> LEMONMATES_PLANTS_TAB = CREATIVE_MODE_TAB.register("lemonmates_plants_tab",
-            () -> CreativeModeTab.builder()
-                    .title(Component.translatable("itemGroup." + LemonMates.MOD_ID + ".lemonmates_plants"))
-                    .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
-                  //  .icon(() -> new ItemStack(ModItems.CITRON.get()))
-                    .displayItems((params, output) -> {
-                        // Plants
-                     //   output.accept(ModItems.CITRON);
-                     //   output.accept(ModItems.CITRON_SAPLING);
-                     //   output.accept(ModItems.ORANGE);
-                     //   output.accept(ModItems.ORANGE_SAPLING);
-                     //   output.accept(ModItems.RASPBERRY);
-                        output.accept(ModBlocks.CITRON_LOG);
-                        output.accept(ModBlocks.CITRON_LEAF);
-                        output.accept(ModBlocks.ORANGE_LOG);
-                        output.accept(ModBlocks.ORANGE_LEAF);
-                    })
-
-                    .build()
+        () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup." + LemonMates.MOD_ID + ".lemonmates_plants"))
+            .withTabsBefore(LEMONMATES_TAB.getKey())
+            .icon(() -> new ItemStack(ModItems.RASPBERRY.get()))
+            .displayItems((params, output) -> {
+                // Plants
+             //   output.accept(ModItems.CITRON);
+             //   output.accept(ModItems.CITRON_SAPLING);
+             //   output.accept(ModItems.ORANGE);
+             //   output.accept(ModItems.ORANGE_SAPLING);
+                output.accept(ModItems.RASPBERRY);
+//                        output.accept(ModBlocks.CITRON_LOG);
+//                        output.accept(ModBlocks.CITRON_LEAF);
+//                        output.accept(ModBlocks.ORANGE_LOG);
+//                        output.accept(ModBlocks.ORANGE_LEAF);
+            })
+            .build()
     );
 
     public static void register(IEventBus eventBus) {
