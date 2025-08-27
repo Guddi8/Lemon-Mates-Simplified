@@ -111,18 +111,18 @@ public class ModItems {
     public static final DeferredItem<Item> BOTTLE_WATERMELON_LEMONADE_LABEL = ITEMS.register("bottle_watermelon_lemonade_label",
             () -> new Item(new Item.Properties()));
 
-    /* Plants
-    public static final DeferredItem<Item> CITRON = ITEMS.register("citron",
-            () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> ORANGE = ITEMS.register("orange",
-            () -> new Item(new Item.Properties()));
+    // Plants
+//    public static final DeferredItem<Item> CITRON = ITEMS.register("citron",
+//            () -> new Item(new Item.Properties().food(AllFoodProperties.CITRON)));
+//    public static final DeferredItem<Item> ORANGE = ITEMS.register("orange",
+//            () -> new Item(new Item.Properties().food(AllFoodProperties.ORANGE)));
     public static final DeferredItem<Item> RASPBERRY = ITEMS.register("raspberry",
-            () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> CITRON_SAPLING = ITEMS.register("citron_sapling",
-            () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> ORANGE_SAPLING = ITEMS.register("orange_sapling",
-            () -> new Item(new Item.Properties()));
-    */
+            () -> new ItemNameBlockItem(ModBlocks.RASPBERRY_BUSH.get(), new Item.Properties().food(AllFoodProperties.RASPBERRY)));
+//    public static final DeferredItem<Item> CITRON_SAPLING = ITEMS.register("citron_sapling",
+//            () -> new Item(new Item.Properties()));
+//    public static final DeferredItem<Item> ORANGE_SAPLING = ITEMS.register("orange_sapling",
+//            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
          ITEMS.register(eventBus);
     }

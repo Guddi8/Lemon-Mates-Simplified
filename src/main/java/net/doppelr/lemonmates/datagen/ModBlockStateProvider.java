@@ -22,6 +22,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        makeBush((SweetBerryBushBlock) ModBlocks.RASPBERRY_BUSH.get(), "raspberry_bush_stage", "raspberry_bush_stage");
     }
 
     public void makeBush(SweetBerryBushBlock block, String modelName, String textureName) {
