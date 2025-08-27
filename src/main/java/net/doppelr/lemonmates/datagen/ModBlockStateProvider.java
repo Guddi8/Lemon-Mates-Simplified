@@ -33,6 +33,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.STRIPPED_ORANGE_WOOD);
         blockWithItem(ModBlocks.ORANGE_LEAVES);
         saplingBlock(ModBlocks.ORANGE_SAPLING);
+        blockWithItem(ModBlocks.ORANGE_PLANKS);
 //        blockWithItem(ModBlocks.ORANGE_LEAVES);
 
         makeBush((SweetBerryBushBlock) ModBlocks.RASPBERRY_BUSH.get(), "raspberry_bush_stage", "raspberry_bush_stage");

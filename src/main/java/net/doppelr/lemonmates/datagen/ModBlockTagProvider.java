@@ -26,6 +26,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
             .add(ModBlocks.STRIPPED_ORANGE_LOG.get())
             .add(ModBlocks.STRIPPED_ORANGE_WOOD.get());
         tag(BlockTags.LOGS_THAT_BURN)
+            .add(ModBlocks.ORANGE_LOG.get())
+            .add(ModBlocks.ORANGE_WOOD.get())
+            .add(ModBlocks.STRIPPED_ORANGE_LOG.get())
+            .add(ModBlocks.STRIPPED_ORANGE_WOOD.get());
+        tag(Tags.Blocks.STRIPPED_LOGS)
+            .add(ModBlocks.STRIPPED_ORANGE_LOG.get())
+            .add(ModBlocks.STRIPPED_ORANGE_WOOD.get());
 //            .add(ModBlocks.ORANGE_FENCE.get());
 //        tag(BlockTags.FENCE_GATES)
 //            .add(ModBlocks.ORANGE_FENCE_GATE.get());
