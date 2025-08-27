@@ -1,0 +1,14 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "tfmg:plastic_sheet"
+    }
+  ],
+  "results": [
+    {
+      "id": "lemonmates:formable_plastic"
+    }
+  ]
+}
