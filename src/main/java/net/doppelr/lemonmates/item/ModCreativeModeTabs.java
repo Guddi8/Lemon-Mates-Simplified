@@ -26,6 +26,7 @@ public class ModCreativeModeTabs {
                 // Bottle, Cap
                 output.accept(ModItems.BOTTLE_CAP);
                 output.accept(ModItems.BOTTLE_EMPTY);
+                output.accept(ModItems.BOTTLE_CAPPED);
 
                 // Labels
                 output.accept(ModItems.LABEL_EMPTY);

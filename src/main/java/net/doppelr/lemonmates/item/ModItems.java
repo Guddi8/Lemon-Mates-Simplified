@@ -14,6 +14,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_CAP = ITEMS.register("bottle_cap",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BOTTLE_CAPPED = ITEMS.register("bottle_capped",
+            () -> new Item(new Item.Properties()));
 
 
     // Lemonade related
