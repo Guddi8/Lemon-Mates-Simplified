@@ -1,11 +1,8 @@
 package net.doppelr.lemonmates.block;
 
-import com.mojang.serialization.MapCodec;
 import net.doppelr.lemonmates.LemonMates;
 import net.doppelr.lemonmates.item.ModItems;
 import net.doppelr.lemonmates.worldgen.tree.ModTreeGrowers;
-import net.minecraft.client.model.BoatModel;
-import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -56,6 +53,10 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> RASPBERRY_BUSH = registerBlock("raspberry_bush",
             () -> new RaspberryBushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
+
+    // Crates
+    public static final DeferredBlock<Block> ORANGE_CRATE = registerBlock("orange_crate",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier <T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

@@ -105,6 +105,8 @@ public class AllCreativeModeTabs {
                 output.accept(ModBlocks.ORANGE_FENCE_GATE);
                 output.accept(ModBlocks.ORANGE_DOOR);
                 output.accept(ModBlocks.ORANGE_TRAPDOOR);
+
+                output.accept(ModBlocks.ORANGE_CRATE);
             })
             .build()
     );

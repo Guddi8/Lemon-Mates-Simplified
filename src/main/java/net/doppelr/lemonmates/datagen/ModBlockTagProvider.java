@@ -42,7 +42,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.PLANKS)
             .add(ModBlocks.ORANGE_PLANKS.get());
         tag(BlockTags.MINEABLE_WITH_AXE)
-            .add(ModBlocks.ORANGE_PLANKS.get());
+            .add(ModBlocks.ORANGE_PLANKS.get())
+            .add(ModBlocks.ORANGE_CRATE.get());
         tag(BlockTags.MINEABLE_WITH_HOE)
             .add(ModBlocks.ORANGE_LEAVES.get());
         tag(BlockTags.WOODEN_STAIRS)

@@ -13,12 +13,21 @@ import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Function;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
         super(output, LemonMates.MOD_ID, exFileHelper);
+    }
+
+    private String blockName(DeferredBlock<?> deferredBlock) {
+        return BuiltInRegistries.BLOCK.getKey(deferredBlock.get()).getPath();
+    }
+
+    public ResourceLocation resourceBlock(String path) {
+        return ResourceLocation.fromNamespaceAndPath(LemonMates.MOD_ID, "block/" + path);
     }
 
     @Override
@@ -49,11 +58,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.ORANGE_TRAPDOOR, "_bottom");
 
         makeBush((SweetBerryBushBlock) ModBlocks.RASPBERRY_BUSH.get(), "raspberry_bush_stage", "raspberry_bush_stage");
+
+        crateBlock(ModBlocks.ORANGE_CRATE, "orange");
+    }
+
+    public void crateBlock(DeferredBlock<Block> deferredBlock, String fruitName) {
+        simpleBlock(deferredBlock.get(),
+            models().cubeBottomTop(blockName(deferredBlock),
+                resourceBlock(fruitName + "_crate_side"), resourceBlock("crate_bottom"), resourceBlock(fruitName + "_crate_top")));
+        blockItem(deferredBlock);
     }
 
     private void saplingBlock(DeferredBlock<SaplingBlock> deferredBlock) {
         simpleBlock(deferredBlock.get(),
-            models().cross(BuiltInRegistries.BLOCK.getKey(deferredBlock.get()).getPath(),
+            models().cross(blockName(deferredBlock),
                 blockTexture(deferredBlock.get())).renderType("cutout"));
     }
 

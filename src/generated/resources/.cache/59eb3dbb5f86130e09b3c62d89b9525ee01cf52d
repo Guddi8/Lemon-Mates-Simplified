@@ -1,5 +1,6 @@
-// 1.21.1	2025-08-28T01:42:12.1023054	Loot Tables
+// 1.21.1	2025-08-28T03:22:52.7440122	Loot Tables
 f904d74cc3fafb07d9e23051af019f5edaebaeae data/lemonmates/loot_table/blocks/orange_button.json
+8c2027370536a83e1ebc819a9b0d034c20326f33 data/lemonmates/loot_table/blocks/orange_crate.json
 48e8f83773044b736f7636152a6aba42210a525e data/lemonmates/loot_table/blocks/orange_door.json
 3aee55e5aa2ebea226967c06d696ecf39fa12960 data/lemonmates/loot_table/blocks/orange_fence.json
 24a544198ba7ab98220c47867b166d6f930399e0 data/lemonmates/loot_table/blocks/orange_fence_gate.json

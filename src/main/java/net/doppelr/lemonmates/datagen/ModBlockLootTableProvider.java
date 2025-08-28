@@ -52,7 +52,6 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-//        dropSelf(ModBlocks.ORANGE_CRATE.get());
         dropSelf(ModBlocks.ORANGE_LOG.get());
         dropSelf(ModBlocks.ORANGE_WOOD.get());
         dropSelf(ModBlocks.STRIPPED_ORANGE_LOG.get());
@@ -86,6 +85,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F)))
                                 .apply(ApplyBonusCount.addUniformBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE)))
                 )));
+
+        dropSelf(ModBlocks.ORANGE_CRATE.get());
     }
 
     @Override

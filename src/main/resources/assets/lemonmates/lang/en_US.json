@@ -67,5 +67,7 @@
   "block.lemonmates.orange_fence": "Orange Fence",
   "block.lemonmates.orange_fence_gate": "Orange Fence Gate",
   "block.lemonmates.orange_door": "Orange Door",
-  "block.lemonmates.orange_trapdoor": "Orange Trapdoor"
+  "block.lemonmates.orange_trapdoor": "Orange Trapdoor",
+
+  "block.lemonmates.orange_crate": "Orange Crate"
 }
