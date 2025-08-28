@@ -14,6 +14,8 @@ import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
 public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_RASPBERRY_BUSH = registerKey("add_raspberry_bush");
+    public static final ResourceKey<BiomeModifier> ADD_ORANGE_TREE = registerKey("add_orange_tree");
+    public static final ResourceKey<BiomeModifier> ADD_CITRON_TREE = registerKey("add_citron_tree");
 
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -23,6 +25,17 @@ public class ModBiomeModifiers {
                 HolderSet.direct(biomes.getOrThrow(Biomes.FOREST)),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.RASPBERRY_BUSH_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_ORANGE_TREE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(Biomes.SPARSE_JUNGLE)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.ORANGE_TREE_PLACED_KEY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION
+        ));
+        context.register(ADD_CITRON_TREE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(Biomes.BIRCH_FOREST)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.CITRON_TREE_PLACED_KEY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION
+        ));
     }
 
     private static ResourceKey<BiomeModifier> registerKey(String name) {
