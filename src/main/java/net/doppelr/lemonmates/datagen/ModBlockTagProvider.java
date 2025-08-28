@@ -1,5 +1,6 @@
 package net.doppelr.lemonmates.datagen;
 
+import net.doppelr.lemonmates.AllModTags;
 import net.doppelr.lemonmates.LemonMates;
 import net.doppelr.lemonmates.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
@@ -20,6 +21,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+        tag(BlockTags.OVERWORLD_NATURAL_LOGS).add(
+            ModBlocks.ORANGE_LOG.get(),
+            ModBlocks.CITRON_LOG.get()
+        );
         tag(BlockTags.LOGS).add(
             ModBlocks.ORANGE_LOG.get(),
             ModBlocks.ORANGE_WOOD.get(),
@@ -40,16 +45,6 @@ public class ModBlockTagProvider extends BlockTagsProvider {
             ModBlocks.STRIPPED_CITRON_LOG.get(),
             ModBlocks.STRIPPED_CITRON_WOOD.get()
         );
-        tag(BlockTags.COMPLETES_FIND_TREE_TUTORIAL).add(
-            ModBlocks.ORANGE_LOG.get(),
-            ModBlocks.ORANGE_WOOD.get(),
-            ModBlocks.STRIPPED_ORANGE_LOG.get(),
-            ModBlocks.STRIPPED_ORANGE_WOOD.get(),
-            ModBlocks.CITRON_LOG.get(),
-            ModBlocks.CITRON_WOOD.get(),
-            ModBlocks.STRIPPED_CITRON_LOG.get(),
-            ModBlocks.STRIPPED_CITRON_WOOD.get()
-        );
         tag(Tags.Blocks.STRIPPED_LOGS).add(
             ModBlocks.STRIPPED_ORANGE_LOG.get(),
             ModBlocks.STRIPPED_CITRON_LOG.get()
@@ -57,6 +52,14 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(Tags.Blocks.STRIPPED_WOODS).add(
             ModBlocks.STRIPPED_ORANGE_WOOD.get(),
             ModBlocks.STRIPPED_CITRON_WOOD.get()
+        );
+        tag(BlockTags.LEAVES).add(
+            ModBlocks.ORANGE_LEAVES.get(),
+            ModBlocks.CITRON_LEAVES.get()
+        );
+        tag(BlockTags.SAPLINGS).add(
+            ModBlocks.ORANGE_SAPLING.get(),
+            ModBlocks.CITRON_SAPLING.get()
         );
         tag(BlockTags.PLANKS).add(
             ModBlocks.ORANGE_PLANKS.get(),
@@ -115,6 +118,18 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.WOODEN_TRAPDOORS).add(
             ModBlocks.ORANGE_TRAPDOOR.get(),
             ModBlocks.CITRON_TRAPDOOR.get()
+        );
+        tag(AllModTags.Blocks.ORANGE_LOGS).add(
+            ModBlocks.ORANGE_LOG.get(),
+            ModBlocks.ORANGE_WOOD.get(),
+            ModBlocks.STRIPPED_ORANGE_LOG.get(),
+            ModBlocks.STRIPPED_ORANGE_WOOD.get()
+        );
+        tag(AllModTags.Blocks.CITRON_LOGS).add(
+            ModBlocks.CITRON_LOG.get(),
+            ModBlocks.CITRON_WOOD.get(),
+            ModBlocks.STRIPPED_CITRON_LOG.get(),
+            ModBlocks.STRIPPED_CITRON_WOOD.get()
         );
     }
 }
