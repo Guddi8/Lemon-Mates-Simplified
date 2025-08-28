@@ -23,6 +23,13 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         basicItem(ModItems.RASPBERRY.get());
+
+        basicItem(ModItems.CITRON.get());
+        saplingItem(ModBlocks.CITRON_SAPLING);
+        buttonItem(ModBlocks.CITRON_BUTTON, ModBlocks.CITRON_PLANKS);
+        fenceItem(ModBlocks.CITRON_FENCE, ModBlocks.CITRON_PLANKS);
+        basicItem(ModBlocks.CITRON_DOOR.asItem());
+
         basicItem(ModItems.ORANGE.get());
         saplingItem(ModBlocks.ORANGE_SAPLING);
         buttonItem(ModBlocks.ORANGE_BUTTON, ModBlocks.ORANGE_PLANKS);

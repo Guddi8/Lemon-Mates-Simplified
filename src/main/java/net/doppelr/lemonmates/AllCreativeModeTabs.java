@@ -88,7 +88,24 @@ public class AllCreativeModeTabs {
             .displayItems((params, output) -> {
                 // Plants
                 output.accept(ModItems.RASPBERRY);
-             //   output.accept(ModItems.CITRON);
+
+                output.accept(ModItems.CITRON);
+                output.accept(ModBlocks.CITRON_LOG);
+                output.accept(ModBlocks.CITRON_WOOD);
+                output.accept(ModBlocks.STRIPPED_CITRON_LOG);
+                output.accept(ModBlocks.STRIPPED_CITRON_WOOD);
+                output.accept(ModBlocks.CITRON_LEAVES);
+                output.accept(ModBlocks.CITRON_SAPLING);
+                output.accept(ModBlocks.CITRON_PLANKS);
+                output.accept(ModBlocks.CITRON_STAIRS);
+                output.accept(ModBlocks.CITRON_SLAB);
+                output.accept(ModBlocks.CITRON_PRESSURE_PLATE);
+                output.accept(ModBlocks.CITRON_BUTTON);
+                output.accept(ModBlocks.CITRON_FENCE);
+                output.accept(ModBlocks.CITRON_FENCE_GATE);
+                output.accept(ModBlocks.CITRON_DOOR);
+                output.accept(ModBlocks.CITRON_TRAPDOOR);
+
                 output.accept(ModItems.ORANGE);
                 output.accept(ModBlocks.ORANGE_LOG);
                 output.accept(ModBlocks.ORANGE_WOOD);
@@ -107,6 +124,7 @@ public class AllCreativeModeTabs {
                 output.accept(ModBlocks.ORANGE_TRAPDOOR);
 
                 output.accept(ModBlocks.ORANGE_CRATE);
+                output.accept(ModBlocks.CITRON_CRATE);
             })
             .build()
     );

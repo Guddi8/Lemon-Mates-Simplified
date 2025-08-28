@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "lemonmates:block/citron_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "lemonmates:block/citron_wood"
+    },
+    "axis=z": {
+      "model": "lemonmates:block/citron_wood_horizontal",
+      "x": 90
+    }
+  }
+}

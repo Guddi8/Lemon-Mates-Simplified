@@ -57,9 +57,35 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.ORANGE_FENCE_GATE);
         blockItem(ModBlocks.ORANGE_TRAPDOOR, "_bottom");
 
+        logBlock((RotatedPillarBlock) ModBlocks.CITRON_LOG.get());
+        axisBlock((RotatedPillarBlock) ModBlocks.CITRON_WOOD.get(), blockTexture(ModBlocks.CITRON_LOG.get()), blockTexture(ModBlocks.CITRON_LOG.get()));
+        logBlock((RotatedPillarBlock) ModBlocks.STRIPPED_CITRON_LOG.get());
+        axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_CITRON_WOOD.get(), blockTexture(ModBlocks.STRIPPED_CITRON_LOG.get()), blockTexture(ModBlocks.STRIPPED_CITRON_LOG.get()));
+        blockWithItem(ModBlocks.CITRON_LEAVES);
+        saplingBlock(ModBlocks.CITRON_SAPLING);
+        blockWithItem(ModBlocks.CITRON_PLANKS);
+        stairsBlock(ModBlocks.CITRON_STAIRS.get(), blockTexture(ModBlocks.CITRON_PLANKS.get()));
+        slabBlock(ModBlocks.CITRON_SLAB.get(), blockTexture(ModBlocks.CITRON_PLANKS.get()), blockTexture(ModBlocks.CITRON_PLANKS.get()));
+        pressurePlateBlock(ModBlocks.CITRON_PRESSURE_PLATE.get(), blockTexture(ModBlocks.CITRON_PLANKS.get()));
+        buttonBlock(ModBlocks.CITRON_BUTTON.get(), blockTexture(ModBlocks.CITRON_PLANKS.get()));
+        fenceBlock(ModBlocks.CITRON_FENCE.get(), blockTexture(ModBlocks.CITRON_PLANKS.get()));
+        fenceGateBlock(ModBlocks.CITRON_FENCE_GATE.get(), blockTexture(ModBlocks.CITRON_PLANKS.get()));
+        doorBlockWithRenderType(ModBlocks.CITRON_DOOR.get(), modLoc("block/citron_door_bottom"), modLoc("block/citron_door_top"), "cutout");
+        trapdoorBlockWithRenderType(ModBlocks.CITRON_TRAPDOOR.get(), modLoc("block/citron_trapdoor"), true, "cutout");
+        blockItem(ModBlocks.CITRON_LOG);
+        blockItem(ModBlocks.CITRON_WOOD);
+        blockItem(ModBlocks.STRIPPED_CITRON_LOG);
+        blockItem(ModBlocks.STRIPPED_CITRON_WOOD);
+        blockItem(ModBlocks.CITRON_STAIRS);
+        blockItem(ModBlocks.CITRON_SLAB);
+        blockItem(ModBlocks.CITRON_PRESSURE_PLATE);
+        blockItem(ModBlocks.CITRON_FENCE_GATE);
+        blockItem(ModBlocks.CITRON_TRAPDOOR, "_bottom");
+
         makeBush((SweetBerryBushBlock) ModBlocks.RASPBERRY_BUSH.get(), "raspberry_bush_stage", "raspberry_bush_stage");
 
         crateBlock(ModBlocks.ORANGE_CRATE, "orange");
+        crateBlock(ModBlocks.CITRON_CRATE, "citron");
     }
 
     public void crateBlock(DeferredBlock<Block> deferredBlock, String fruitName) {

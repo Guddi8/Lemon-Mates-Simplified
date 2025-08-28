@@ -17,6 +17,31 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CITRON_CRATE.get())
+            .pattern("###")
+            .pattern("###")
+            .pattern("###")
+            .define('#', ModItems.CITRON.get())
+            .unlockedBy("has_citron", has(ModItems.CITRON))
+            .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CITRON.get(), 9)
+            .requires(ModBlocks.CITRON_CRATE.get()).unlockedBy("has_citron", has(ModItems.CITRON)).save(recipeOutput);
+
+        stairBuilder(ModBlocks.CITRON_STAIRS.get(), Ingredient.of(ModBlocks.CITRON_PLANKS))
+            .unlockedBy("has_citron_planks", has(ModBlocks.CITRON_PLANKS)).save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CITRON_SLAB.get(), ModBlocks.CITRON_PLANKS);
+        pressurePlate(recipeOutput, ModBlocks.CITRON_PRESSURE_PLATE.get(), ModBlocks.CITRON_PLANKS);
+        buttonBuilder(ModBlocks.CITRON_BUTTON.get(), Ingredient.of(ModBlocks.CITRON_PLANKS))
+            .unlockedBy("has_citron_planks", has(ModBlocks.CITRON_PLANKS)).save(recipeOutput);
+        fenceBuilder(ModBlocks.CITRON_FENCE, Ingredient.of(ModBlocks.CITRON_PLANKS))
+            .unlockedBy("has_citron_planks", has(ModBlocks.CITRON_PLANKS)).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.CITRON_FENCE_GATE, Ingredient.of(ModBlocks.CITRON_PLANKS))
+            .unlockedBy("has_citron_planks", has(ModBlocks.CITRON_PLANKS)).save(recipeOutput);
+        doorBuilder(ModBlocks.CITRON_DOOR, Ingredient.of(ModBlocks.CITRON_PLANKS))
+            .unlockedBy("has_citron_planks", has(ModBlocks.CITRON_PLANKS)).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.CITRON_TRAPDOOR, Ingredient.of(ModBlocks.CITRON_PLANKS))
+            .unlockedBy("has_citron_planks", has(ModBlocks.CITRON_PLANKS)).save(recipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_CRATE.get())
             .pattern("###")
             .pattern("###")

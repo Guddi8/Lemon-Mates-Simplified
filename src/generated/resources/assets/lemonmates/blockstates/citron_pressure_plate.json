@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "lemonmates:block/citron_pressure_plate"
+    },
+    "powered=true": {
+      "model": "lemonmates:block/citron_pressure_plate_down"
+    }
+  }
+}

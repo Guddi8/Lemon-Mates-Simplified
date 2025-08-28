@@ -23,16 +23,25 @@ public class ModItemTagProvider extends ItemTagsProvider {
             ModBlocks.ORANGE_LOG.get().asItem(),
             ModBlocks.ORANGE_WOOD.get().asItem(),
             ModBlocks.STRIPPED_ORANGE_LOG.get().asItem(),
-            ModBlocks.STRIPPED_ORANGE_WOOD.get().asItem()
+            ModBlocks.STRIPPED_ORANGE_WOOD.get().asItem(),
+            ModBlocks.CITRON_LOG.get().asItem(),
+            ModBlocks.CITRON_WOOD.get().asItem(),
+            ModBlocks.STRIPPED_CITRON_LOG.get().asItem(),
+            ModBlocks.STRIPPED_CITRON_WOOD.get().asItem()
         );
         tag(ItemTags.LOGS_THAT_BURN).add(
             ModBlocks.ORANGE_LOG.get().asItem(),
             ModBlocks.ORANGE_WOOD.get().asItem(),
             ModBlocks.STRIPPED_ORANGE_LOG.get().asItem(),
-            ModBlocks.STRIPPED_ORANGE_WOOD.get().asItem()
+            ModBlocks.STRIPPED_ORANGE_WOOD.get().asItem(),
+            ModBlocks.CITRON_LOG.get().asItem(),
+            ModBlocks.CITRON_WOOD.get().asItem(),
+            ModBlocks.STRIPPED_CITRON_LOG.get().asItem(),
+            ModBlocks.STRIPPED_CITRON_WOOD.get().asItem()
         );
         tag(ItemTags.PLANKS).add(
-            ModBlocks.ORANGE_PLANKS.get().asItem()
+            ModBlocks.ORANGE_PLANKS.get().asItem(),
+            ModBlocks.CITRON_PLANKS.get().asItem()
         );
     }
 }

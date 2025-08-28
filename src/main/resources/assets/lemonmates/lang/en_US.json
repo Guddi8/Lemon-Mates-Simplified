@@ -52,6 +52,23 @@
 
   "item.lemonmates.raspberry": "Raspberry",
 
+  "item.lemonmates.citron": "Citron",
+  "block.lemonmates.citron_log": "Citron Log",
+  "block.lemonmates.citron_wood": "Citron Wood",
+  "block.lemonmates.stripped_citron_log": "Stripped Citron Log",
+  "block.lemonmates.stripped_citron_wood": "Stripped Citron Wood",
+  "block.lemonmates.citron_leaves": "Citron Leaves",
+  "block.lemonmates.citron_sapling": "Citron Sapling",
+  "block.lemonmates.citron_planks": "Citron Planks",
+  "block.lemonmates.citron_stairs": "Citron Stairs",
+  "block.lemonmates.citron_slab": "Citron Slab",
+  "block.lemonmates.citron_button": "Citron Button",
+  "block.lemonmates.citron_pressure_plate": "Citron Pressure Plate",
+  "block.lemonmates.citron_fence": "Citron Fence",
+  "block.lemonmates.citron_fence_gate": "Citron Fence Gate",
+  "block.lemonmates.citron_door": "Citron Door",
+  "block.lemonmates.citron_trapdoor": "Citron Trapdoor",
+
   "item.lemonmates.orange": "Orange",
   "block.lemonmates.orange_log": "Orange Log",
   "block.lemonmates.orange_wood": "Orange Wood",
@@ -69,5 +86,6 @@
   "block.lemonmates.orange_door": "Orange Door",
   "block.lemonmates.orange_trapdoor": "Orange Trapdoor",
 
-  "block.lemonmates.orange_crate": "Orange Crate"
+  "block.lemonmates.orange_crate": "Orange Crate",
+  "block.lemonmates.citron_crate": "Citron Crate"
 }

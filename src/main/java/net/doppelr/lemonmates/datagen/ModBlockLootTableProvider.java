@@ -71,6 +71,25 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.ORANGE_DOOR.get(),
                 block -> createDoorTable(ModBlocks.ORANGE_DOOR.get()));
 
+        dropSelf(ModBlocks.CITRON_LOG.get());
+        dropSelf(ModBlocks.CITRON_WOOD.get());
+        dropSelf(ModBlocks.STRIPPED_CITRON_LOG.get());
+        dropSelf(ModBlocks.STRIPPED_CITRON_WOOD.get());
+        add(ModBlocks.CITRON_LEAVES.get(),
+                block -> createFruitLeavesDrops(ModBlocks.CITRON_LEAVES.get(), ModBlocks.CITRON_SAPLING.get(), ModItems.CITRON.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        dropSelf(ModBlocks.CITRON_SAPLING.get());
+        dropSelf(ModBlocks.CITRON_PLANKS.get());
+        dropSelf(ModBlocks.CITRON_STAIRS.get());
+        add(ModBlocks.CITRON_SLAB.get(),
+            block -> createSlabItemTable(ModBlocks.CITRON_SLAB.get()));
+        dropSelf(ModBlocks.CITRON_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.CITRON_BUTTON.get());
+        dropSelf(ModBlocks.CITRON_FENCE.get());
+        dropSelf(ModBlocks.CITRON_FENCE_GATE.get());
+        dropSelf(ModBlocks.CITRON_TRAPDOOR.get());
+        add(ModBlocks.CITRON_DOOR.get(),
+                block -> createDoorTable(ModBlocks.CITRON_DOOR.get()));
+
         this.add(ModBlocks.RASPBERRY_BUSH.get(), block -> this.applyExplosionDecay(
                 block,LootTable.lootTable().withPool(LootPool.lootPool().when(
                                         LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.RASPBERRY_BUSH.get())
@@ -87,6 +106,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 )));
 
         dropSelf(ModBlocks.ORANGE_CRATE.get());
+        dropSelf(ModBlocks.CITRON_CRATE.get());
     }
 
     @Override

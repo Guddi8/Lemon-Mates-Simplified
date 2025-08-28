@@ -24,68 +24,97 @@ public class ModBlockTagProvider extends BlockTagsProvider {
             ModBlocks.ORANGE_LOG.get(),
             ModBlocks.ORANGE_WOOD.get(),
             ModBlocks.STRIPPED_ORANGE_LOG.get(),
-            ModBlocks.STRIPPED_ORANGE_WOOD.get()
+            ModBlocks.STRIPPED_ORANGE_WOOD.get(),
+            ModBlocks.CITRON_LOG.get(),
+            ModBlocks.CITRON_WOOD.get(),
+            ModBlocks.STRIPPED_CITRON_LOG.get(),
+            ModBlocks.STRIPPED_CITRON_WOOD.get()
         );
         tag(BlockTags.LOGS_THAT_BURN).add(
             ModBlocks.ORANGE_LOG.get(),
             ModBlocks.ORANGE_WOOD.get(),
             ModBlocks.STRIPPED_ORANGE_LOG.get(),
-            ModBlocks.STRIPPED_ORANGE_WOOD.get()
+            ModBlocks.STRIPPED_ORANGE_WOOD.get(),
+            ModBlocks.CITRON_LOG.get(),
+            ModBlocks.CITRON_WOOD.get(),
+            ModBlocks.STRIPPED_CITRON_LOG.get(),
+            ModBlocks.STRIPPED_CITRON_WOOD.get()
         );
         tag(BlockTags.COMPLETES_FIND_TREE_TUTORIAL).add(
             ModBlocks.ORANGE_LOG.get(),
             ModBlocks.ORANGE_WOOD.get(),
             ModBlocks.STRIPPED_ORANGE_LOG.get(),
-            ModBlocks.STRIPPED_ORANGE_WOOD.get()
+            ModBlocks.STRIPPED_ORANGE_WOOD.get(),
+            ModBlocks.CITRON_LOG.get(),
+            ModBlocks.CITRON_WOOD.get(),
+            ModBlocks.STRIPPED_CITRON_LOG.get(),
+            ModBlocks.STRIPPED_CITRON_WOOD.get()
         );
         tag(Tags.Blocks.STRIPPED_LOGS).add(
-            ModBlocks.STRIPPED_ORANGE_LOG.get()
+            ModBlocks.STRIPPED_ORANGE_LOG.get(),
+            ModBlocks.STRIPPED_CITRON_LOG.get()
         );
         tag(Tags.Blocks.STRIPPED_WOODS).add(
-            ModBlocks.STRIPPED_ORANGE_WOOD.get()
+            ModBlocks.STRIPPED_ORANGE_WOOD.get(),
+            ModBlocks.STRIPPED_CITRON_WOOD.get()
         );
         tag(BlockTags.PLANKS).add(
-            ModBlocks.ORANGE_PLANKS.get()
+            ModBlocks.ORANGE_PLANKS.get(),
+            ModBlocks.CITRON_PLANKS.get()
         );
         tag(BlockTags.MINEABLE_WITH_AXE).add(
             ModBlocks.ORANGE_PLANKS.get(),
-            ModBlocks.ORANGE_CRATE.get()
+            ModBlocks.ORANGE_CRATE.get(),
+            ModBlocks.CITRON_PLANKS.get(),
+            ModBlocks.CITRON_CRATE.get()
         );
         tag(BlockTags.MINEABLE_WITH_HOE).add(
-            ModBlocks.ORANGE_LEAVES.get()
+            ModBlocks.ORANGE_LEAVES.get(),
+            ModBlocks.CITRON_LEAVES.get()
         );
         tag(BlockTags.WOODEN_STAIRS).add(
-            ModBlocks.ORANGE_STAIRS.get()
+            ModBlocks.ORANGE_STAIRS.get(),
+            ModBlocks.CITRON_STAIRS.get()
         );
         tag(BlockTags.WOODEN_SLABS).add(
-            ModBlocks.ORANGE_SLAB.get()
+            ModBlocks.ORANGE_SLAB.get(),
+            ModBlocks.CITRON_SLAB.get()
         );
         tag(BlockTags.WOODEN_PRESSURE_PLATES).add(
-            ModBlocks.ORANGE_PRESSURE_PLATE.get()
+            ModBlocks.ORANGE_PRESSURE_PLATE.get(),
+            ModBlocks.CITRON_PRESSURE_PLATE.get()
         );
         tag(BlockTags.WOODEN_BUTTONS).add(
-            ModBlocks.ORANGE_BUTTON.get()
+            ModBlocks.ORANGE_BUTTON.get(),
+            ModBlocks.CITRON_BUTTON.get()
         );
         tag(BlockTags.FENCES).add(
-            ModBlocks.ORANGE_FENCE.get()
+            ModBlocks.ORANGE_FENCE.get(),
+            ModBlocks.CITRON_FENCE.get()
         );
         tag(BlockTags.WOODEN_FENCES).add(
-            ModBlocks.ORANGE_FENCE.get()
+            ModBlocks.ORANGE_FENCE.get(),
+            ModBlocks.CITRON_FENCE.get()
         );
         tag(BlockTags.FENCE_GATES).add(
-            ModBlocks.ORANGE_FENCE_GATE.get()
+            ModBlocks.ORANGE_FENCE_GATE.get(),
+            ModBlocks.CITRON_FENCE_GATE.get()
         );
         tag(BlockTags.DOORS).add(
-            ModBlocks.ORANGE_DOOR.get()
+            ModBlocks.ORANGE_DOOR.get(),
+            ModBlocks.CITRON_DOOR.get()
         );
         tag(BlockTags.WOODEN_DOORS).add(
-            ModBlocks.ORANGE_DOOR.get()
+            ModBlocks.ORANGE_DOOR.get(),
+            ModBlocks.CITRON_DOOR.get()
         );
         tag(BlockTags.TRAPDOORS).add(
-            ModBlocks.ORANGE_TRAPDOOR.get()
+            ModBlocks.ORANGE_TRAPDOOR.get(),
+            ModBlocks.CITRON_TRAPDOOR.get()
         );
         tag(BlockTags.WOODEN_TRAPDOORS).add(
-            ModBlocks.ORANGE_TRAPDOOR.get()
+            ModBlocks.ORANGE_TRAPDOOR.get(),
+            ModBlocks.CITRON_TRAPDOOR.get()
         );
     }
 }

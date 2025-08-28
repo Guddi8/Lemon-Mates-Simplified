@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "lemonmates:block/crate_bottom",
+    "side": "lemonmates:block/citron_crate_side",
+    "top": "lemonmates:block/citron_crate_top"
+  }
+}
