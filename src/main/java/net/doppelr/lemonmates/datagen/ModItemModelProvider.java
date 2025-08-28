@@ -25,6 +25,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RASPBERRY.get());
         basicItem(ModItems.ORANGE.get());
         saplingItem(ModBlocks.ORANGE_SAPLING);
+        buttonItem(ModBlocks.ORANGE_BUTTON, ModBlocks.ORANGE_PLANKS);
+        fenceItem(ModBlocks.ORANGE_FENCE, ModBlocks.ORANGE_PLANKS);
+        basicItem(ModBlocks.ORANGE_DOOR.asItem());
+    }
 
     private ItemModelBuilder lemonadeItem(DeferredItem<Item> item) {
         return withExistingParent(item.getId().getPath(), ResourceLocation.parse("item/generated"))
