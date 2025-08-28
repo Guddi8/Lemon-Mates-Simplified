@@ -5,6 +5,9 @@
   "item.lemonmates.bottle_cap": "Bottle Cap",
   "item.lemonmates.bottle_capped": "Empty Bottle with Cap",
   "item.lemonmates.bottle_empty": "Empty Bottle",
+  "item.lemonmates.bottle_form": "Bottle Form",
+  "item.lemonmates.formable_plastic": "Formable Plastic",
+  "item.lemonmates.bottle_incomplete": "Incomplete Bottle",
 
   "item.lemonmates.label_empty": "Empty Label",
   "item.lemonmates.label_text": "Label with Product Information",

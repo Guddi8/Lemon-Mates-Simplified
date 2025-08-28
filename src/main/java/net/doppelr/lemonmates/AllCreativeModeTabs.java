@@ -25,6 +25,9 @@ public class AllCreativeModeTabs {
                 output.accept(ModItems.BOTTLE_CAP);
                 output.accept(ModItems.BOTTLE_EMPTY);
                 output.accept(ModItems.BOTTLE_CAPPED);
+                output.accept(ModItems.BOTTLE_INCOMPLETE);
+                output.accept(ModItems.FORMABLE_PLASTIC);
+                output.accept(ModItems.BOTTLE_FORM);
 
                 // Labels
                 output.accept(ModItems.LABEL_EMPTY);

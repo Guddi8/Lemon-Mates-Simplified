@@ -1,0 +1,47 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "lemonmates:formable_plastic"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "lemonmates:bottle_empty"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "lemonmates:formable_plastic"
+        },
+        {
+          "item": "lemonmates:bottle_form"
+        }
+      ],
+      "keep_held_item": true,
+      "results": [
+        {
+          "id": "lemonmates:bottle_incomplete"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "lemonmates:bottle_incomplete"
+        }
+      ],
+      "results": [
+        {
+          "id": "lemonmates:bottle_empty"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "lemonmates:bottle_incomplete"
+  }
+}
