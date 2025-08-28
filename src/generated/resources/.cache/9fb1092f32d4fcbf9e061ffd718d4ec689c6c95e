@@ -1,13 +1,17 @@
-// 1.21.1	2025-08-28T02:31:57.7757721	Recipes
+// 1.21.1	2025-08-28T03:40:52.2237068	Recipes
+0c43c8c6fe51b0417159ea96dc5a0a89641c7f03 data/lemonmates/advancement/recipes/building_blocks/orange_crate.json
 d967bf8fafc67fafed7c4e9a7122e864c1508507 data/lemonmates/advancement/recipes/building_blocks/orange_slab.json
 acd964845aa6395650d3ad532b0e7f26414ac1f2 data/lemonmates/advancement/recipes/building_blocks/orange_stairs.json
 970983af8729e67ad31eb275430614a94943bd90 data/lemonmates/advancement/recipes/decorations/orange_fence.json
+dcfb36d07d7c9475abd6d44c4c9fdb91266bab6d data/lemonmates/advancement/recipes/misc/orange.json
 1f1213d51cacd7e45b8f4bb8489ae26a4c040057 data/lemonmates/advancement/recipes/redstone/orange_button.json
 63c1343ef62a475818b19d060357f4bad133a4b1 data/lemonmates/advancement/recipes/redstone/orange_door.json
 4800e941bfb038afd4cc0b3f852fca34b952f5e8 data/lemonmates/advancement/recipes/redstone/orange_fence_gate.json
 8b73c34722d56352eb77ecb7b7559b1ab72cb359 data/lemonmates/advancement/recipes/redstone/orange_pressure_plate.json
 ba1f3125c045b18047a859c831da97b8e15e1177 data/lemonmates/advancement/recipes/redstone/orange_trapdoor.json
+79c4eb21f029339824b099933208e69d02c481ed data/lemonmates/recipe/orange.json
 446643ff87c3cd0eea22285bb723163ae970c0d4 data/lemonmates/recipe/orange_button.json
+399d63a670923dd4cf91b684eb30b0a6473b40b9 data/lemonmates/recipe/orange_crate.json
 f022483aa43fd970bc216634a694f6a65cc51755 data/lemonmates/recipe/orange_door.json
 a474ee389965e67b45953f8198a823e3a68b143e data/lemonmates/recipe/orange_fence.json
 746315eff095f11fd69107532190c9861a50c9f4 data/lemonmates/recipe/orange_fence_gate.json
