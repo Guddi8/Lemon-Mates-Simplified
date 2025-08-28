@@ -1,4 +1,20 @@
-// 1.21.1	2025-08-27T17:48:26.0466773	Tags for minecraft:block mod id lemonmates
-da97562e28b8cc73020ac1c52d1361c6ef1005fc data/c/tags/block/stripped_logs.json
+// 1.21.1	2025-08-28T02:13:41.2705276	Tags for minecraft:block mod id lemonmates
+0342dc19634dea845886fd1f96c29f81c0643392 data/c/tags/block/stripped_logs.json
+f33c276e2836490f71299cc56628b496b3e66b30 data/c/tags/block/stripped_woods.json
+13d4e7735ae53dea526fe61eb36457db27667dcc data/minecraft/tags/block/completes_find_tree_tutorial.json
+c0806ddc8511bfe9776540b3685599ec2116d45e data/minecraft/tags/block/doors.json
+bd9384019cd3032d238d78e1bd7b6580ecc453f7 data/minecraft/tags/block/fences.json
+7b59f3ecdbb84fe8df3d6f801f12c91e5e7c6065 data/minecraft/tags/block/fence_gates.json
 13d4e7735ae53dea526fe61eb36457db27667dcc data/minecraft/tags/block/logs.json
 13d4e7735ae53dea526fe61eb36457db27667dcc data/minecraft/tags/block/logs_that_burn.json
+1491560a22c2452f12d52304b3fbe49a2a061c35 data/minecraft/tags/block/mineable/axe.json
+bf25c54057df68a5a75bbf020443f0bbbb2d4ae4 data/minecraft/tags/block/mineable/hoe.json
+1491560a22c2452f12d52304b3fbe49a2a061c35 data/minecraft/tags/block/planks.json
+8960dba3398fb52666d3ff0c2249ec1a4b36219f data/minecraft/tags/block/trapdoors.json
+d82b337993a467dd2583fb9093fe76c6f719b81d data/minecraft/tags/block/wooden_buttons.json
+c0806ddc8511bfe9776540b3685599ec2116d45e data/minecraft/tags/block/wooden_doors.json
+bd9384019cd3032d238d78e1bd7b6580ecc453f7 data/minecraft/tags/block/wooden_fences.json
+4b21a9906c92ca74897196af40582481fb0d1b6b data/minecraft/tags/block/wooden_pressure_plates.json
+7ba71c6a42a5af8c119561764f33542c8ef646e7 data/minecraft/tags/block/wooden_slabs.json
+539840f09256f86da22292fff9948d3783b64424 data/minecraft/tags/block/wooden_stairs.json
+8960dba3398fb52666d3ff0c2249ec1a4b36219f data/minecraft/tags/block/wooden_trapdoors.json

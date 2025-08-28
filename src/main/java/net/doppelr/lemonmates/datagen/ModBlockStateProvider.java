@@ -27,14 +27,26 @@ public class ModBlockStateProvider extends BlockStateProvider {
         axisBlock((RotatedPillarBlock) ModBlocks.ORANGE_WOOD.get(), blockTexture(ModBlocks.ORANGE_LOG.get()), blockTexture(ModBlocks.ORANGE_LOG.get()));
         logBlock((RotatedPillarBlock) ModBlocks.STRIPPED_ORANGE_LOG.get());
         axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_ORANGE_WOOD.get(), blockTexture(ModBlocks.STRIPPED_ORANGE_LOG.get()), blockTexture(ModBlocks.STRIPPED_ORANGE_LOG.get()));
+        blockWithItem(ModBlocks.ORANGE_LEAVES);
+        saplingBlock(ModBlocks.ORANGE_SAPLING);
+        blockWithItem(ModBlocks.ORANGE_PLANKS);
+        stairsBlock(ModBlocks.ORANGE_STAIRS.get(), blockTexture(ModBlocks.ORANGE_PLANKS.get()));
+        slabBlock(ModBlocks.ORANGE_SLAB.get(), blockTexture(ModBlocks.ORANGE_PLANKS.get()), blockTexture(ModBlocks.ORANGE_PLANKS.get()));
+        pressurePlateBlock(ModBlocks.ORANGE_PRESSURE_PLATE.get(), blockTexture(ModBlocks.ORANGE_PLANKS.get()));
+        buttonBlock(ModBlocks.ORANGE_BUTTON.get(), blockTexture(ModBlocks.ORANGE_PLANKS.get()));
+        fenceBlock(ModBlocks.ORANGE_FENCE.get(), blockTexture(ModBlocks.ORANGE_PLANKS.get()));
+        fenceGateBlock(ModBlocks.ORANGE_FENCE_GATE.get(), blockTexture(ModBlocks.ORANGE_PLANKS.get()));
+        doorBlockWithRenderType(ModBlocks.ORANGE_DOOR.get(), modLoc("block/orange_door_bottom"), modLoc("block/orange_door_top"), "cutout");
+        trapdoorBlockWithRenderType(ModBlocks.ORANGE_TRAPDOOR.get(), modLoc("block/orange_trapdoor"), true, "cutout");
         blockItem(ModBlocks.ORANGE_LOG);
         blockItem(ModBlocks.ORANGE_WOOD);
         blockItem(ModBlocks.STRIPPED_ORANGE_LOG);
         blockItem(ModBlocks.STRIPPED_ORANGE_WOOD);
-        blockWithItem(ModBlocks.ORANGE_LEAVES);
-        saplingBlock(ModBlocks.ORANGE_SAPLING);
-        blockWithItem(ModBlocks.ORANGE_PLANKS);
-//        blockWithItem(ModBlocks.ORANGE_LEAVES);
+        blockItem(ModBlocks.ORANGE_STAIRS);
+        blockItem(ModBlocks.ORANGE_SLAB);
+        blockItem(ModBlocks.ORANGE_PRESSURE_PLATE);
+        blockItem(ModBlocks.ORANGE_FENCE_GATE);
+        blockItem(ModBlocks.ORANGE_TRAPDOOR, "_bottom");
 
         makeBush((SweetBerryBushBlock) ModBlocks.RASPBERRY_BUSH.get(), "raspberry_bush_stage", "raspberry_bush_stage");
     }

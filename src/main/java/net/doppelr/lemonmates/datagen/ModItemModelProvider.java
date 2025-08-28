@@ -25,6 +25,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RASPBERRY.get());
         basicItem(ModItems.ORANGE.get());
         saplingItem(ModBlocks.ORANGE_SAPLING);
+
+    private ItemModelBuilder lemonadeItem(DeferredItem<Item> item) {
+        return withExistingParent(item.getId().getPath(), ResourceLocation.parse("item/generated"))
+            .texture("layer0", ResourceLocation.fromNamespaceAndPath(LemonMates.MOD_ID, "item/bottle_empty_cap"))
+            .texture("layer1", ResourceLocation.fromNamespaceAndPath(LemonMates.MOD_ID, "item/bottle_fluid/orange"))
+            .texture("layer2", ResourceLocation.fromNamespaceAndPath(LemonMates.MOD_ID, "item/label/bottle_empty"))
+            .texture("layer3", ResourceLocation.fromNamespaceAndPath(LemonMates.MOD_ID, "item/label/company"))
+            .texture("layer4", ResourceLocation.fromNamespaceAndPath(LemonMates.MOD_ID, "item/label/orange"));
     }
 
     private ItemModelBuilder saplingItem(DeferredBlock<SaplingBlock> item) {
@@ -33,12 +41,12 @@ public class ModItemModelProvider extends ItemModelProvider {
     }
 
     public void buttonItem(DeferredBlock<ButtonBlock> button, DeferredBlock<Block> baseBlock) {
-        this.withExistingParent(button.getId().getPath(), mcLoc("block/button_inventory"))
-                .texture("texture", ResourceLocation.fromNamespaceAndPath(LemonMates.MOD_ID, "block/" + baseBlock.getId().getPath()));
+        withExistingParent(button.getId().getPath(), mcLoc("block/button_inventory"))
+            .texture("texture", ResourceLocation.fromNamespaceAndPath(LemonMates.MOD_ID, "block/" + baseBlock.getId().getPath()));
     }
 
     public void fenceItem(DeferredBlock<FenceBlock> fence, DeferredBlock<Block> baseBlock) {
-        this.withExistingParent(fence.getId().getPath(), mcLoc("block/fence_inventory"))
-                .texture("texture", ResourceLocation.fromNamespaceAndPath(LemonMates.MOD_ID, "block/" + baseBlock.getId().getPath()));
+        withExistingParent(fence.getId().getPath(), mcLoc("block/fence_inventory"))
+            .texture("texture", ResourceLocation.fromNamespaceAndPath(LemonMates.MOD_ID, "block/" + baseBlock.getId().getPath()));
     }
 }

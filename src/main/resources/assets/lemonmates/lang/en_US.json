@@ -58,6 +58,14 @@
   "block.lemonmates.stripped_orange_log": "Stripped Orange Log",
   "block.lemonmates.stripped_orange_wood": "Stripped Orange Wood",
   "block.lemonmates.orange_leaves": "Orange Leaves",
-  "item.lemonmates.orange_sapling": "Orange Sapling",
-  "item.lemonmates.orange_planks": "Orange Planks"
+  "block.lemonmates.orange_sapling": "Orange Sapling",
+  "block.lemonmates.orange_planks": "Orange Planks",
+  "block.lemonmates.orange_stairs": "Orange Stairs",
+  "block.lemonmates.orange_slab": "Orange Slab",
+  "block.lemonmates.orange_button": "Orange Button",
+  "block.lemonmates.orange_pressure_plate": "Orange Pressure Plate",
+  "block.lemonmates.orange_fence": "Orange Fence",
+  "block.lemonmates.orange_fence_gate": "Orange Fence Gate",
+  "block.lemonmates.orange_door": "Orange Door",
+  "block.lemonmates.orange_trapdoor": "Orange Trapdoor"
 }

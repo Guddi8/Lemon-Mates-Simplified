@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "lemonmates:block/orange_door_bottom",
+    "top": "lemonmates:block/orange_door_top"
+  }
+}

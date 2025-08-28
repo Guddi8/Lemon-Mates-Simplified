@@ -61,6 +61,16 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createFruitLeavesDrops(ModBlocks.ORANGE_LEAVES.get(), ModBlocks.ORANGE_SAPLING.get(), ModItems.ORANGE.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         dropSelf(ModBlocks.ORANGE_SAPLING.get());
         dropSelf(ModBlocks.ORANGE_PLANKS.get());
+        dropSelf(ModBlocks.ORANGE_STAIRS.get());
+        add(ModBlocks.ORANGE_SLAB.get(),
+            block -> createSlabItemTable(ModBlocks.ORANGE_SLAB.get()));
+        dropSelf(ModBlocks.ORANGE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.ORANGE_BUTTON.get());
+        dropSelf(ModBlocks.ORANGE_FENCE.get());
+        dropSelf(ModBlocks.ORANGE_FENCE_GATE.get());
+        dropSelf(ModBlocks.ORANGE_TRAPDOOR.get());
+        add(ModBlocks.ORANGE_DOOR.get(),
+                block -> createDoorTable(ModBlocks.ORANGE_DOOR.get()));
 
         this.add(ModBlocks.RASPBERRY_BUSH.get(), block -> this.applyExplosionDecay(
                 block,LootTable.lootTable().withPool(LootPool.lootPool().when(

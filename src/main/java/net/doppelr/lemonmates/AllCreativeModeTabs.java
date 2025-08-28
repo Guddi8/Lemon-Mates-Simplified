@@ -97,6 +97,14 @@ public class AllCreativeModeTabs {
                 output.accept(ModBlocks.ORANGE_LEAVES);
                 output.accept(ModBlocks.ORANGE_SAPLING);
                 output.accept(ModBlocks.ORANGE_PLANKS);
+                output.accept(ModBlocks.ORANGE_STAIRS);
+                output.accept(ModBlocks.ORANGE_SLAB);
+                output.accept(ModBlocks.ORANGE_PRESSURE_PLATE);
+                output.accept(ModBlocks.ORANGE_BUTTON);
+                output.accept(ModBlocks.ORANGE_FENCE);
+                output.accept(ModBlocks.ORANGE_FENCE_GATE);
+                output.accept(ModBlocks.ORANGE_DOOR);
+                output.accept(ModBlocks.ORANGE_TRAPDOOR);
             })
             .build()
     );

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "lemonmates:block/orange_slab"
+    },
+    "type=double": {
+      "model": "lemonmates:block/orange_planks"
+    },
+    "type=top": {
+      "model": "lemonmates:block/orange_slab_top"
+    }
+  }
+}
