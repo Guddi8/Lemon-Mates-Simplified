@@ -86,6 +86,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         crateBlock(ModBlocks.ORANGE_CRATE, "orange");
         crateBlock(ModBlocks.CITRON_CRATE, "citron");
+        crateBlock(ModBlocks.RASPBERRY_CRATE, "raspberry");
     }
 
     public void crateBlock(DeferredBlock<Block> deferredBlock, String fruitName) {

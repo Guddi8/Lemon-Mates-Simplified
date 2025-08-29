@@ -128,6 +128,7 @@ public class AllCreativeModeTabs {
 
                 output.accept(ModBlocks.ORANGE_CRATE);
                 output.accept(ModBlocks.CITRON_CRATE);
+                output.accept(ModBlocks.RASPBERRY_CRATE);
             })
             .build()
     );

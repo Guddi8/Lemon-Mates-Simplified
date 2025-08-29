@@ -47,6 +47,10 @@ public class ModItemTagProvider extends ItemTagsProvider {
             ModBlocks.STRIPPED_ORANGE_WOOD.get().asItem(),
             ModBlocks.STRIPPED_CITRON_WOOD.get().asItem()
         );
+        tag(Tags.Items.STRIPPED_LOGS).add(
+                ModBlocks.STRIPPED_ORANGE_LOG.get().asItem(),
+                ModBlocks.STRIPPED_CITRON_LOG.get().asItem()
+        );
         tag(ItemTags.LEAVES).add(
             ModBlocks.ORANGE_LEAVES.get().asItem(),
             ModBlocks.CITRON_LEAVES.get().asItem()
@@ -58,6 +62,14 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.PLANKS).add(
             ModBlocks.ORANGE_PLANKS.get().asItem(),
             ModBlocks.CITRON_PLANKS.get().asItem()
+        );
+        tag(ItemTags.STAIRS).add(
+                ModBlocks.ORANGE_STAIRS.get().asItem(),
+                ModBlocks.CITRON_STAIRS.get().asItem()
+        );
+        tag(ItemTags.SLABS).add(
+                ModBlocks.ORANGE_SLAB.get().asItem(),
+                ModBlocks.CITRON_SLAB.get().asItem()
         );
         tag(AllModTags.Items.ORANGE_LOGS).add(
             ModBlocks.ORANGE_LOG.get().asItem(),

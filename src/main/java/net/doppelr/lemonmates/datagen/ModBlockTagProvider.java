@@ -68,6 +68,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_AXE).add(
             ModBlocks.ORANGE_PLANKS.get(),
             ModBlocks.ORANGE_CRATE.get(),
+            ModBlocks.RASPBERRY_CRATE.get(),
             ModBlocks.CITRON_PLANKS.get(),
             ModBlocks.CITRON_CRATE.get()
         );

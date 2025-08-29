@@ -20,6 +20,8 @@ public class AllModTags {
     public static class Items {
         public static final TagKey<Item> ORANGE_LOGS = createTag("orange_logs");
         public static final TagKey<Item> CITRON_LOGS = createTag("citron_logs");
+        public static final TagKey<Item> LEMONADES = createTag("lemonades");
+
 
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(LemonMates.MOD_ID, name));
