@@ -91,5 +91,9 @@
 
   "block.lemonmates.orange_crate": "Orange Crate",
   "block.lemonmates.citron_crate": "Citron Crate",
-  "block.lemonmates.raspberry_crate": "Raspberry Crate"
+  "block.lemonmates.raspberry_crate": "Raspberry Crate",
+
+  "item.lemonmates.citron_juice": "Citron Juice",
+  "item.lemonmates.orange_juice": "Orange Juice",
+  "item.lemonmates.raspberry_juice": "Raspberry Juice"
 }

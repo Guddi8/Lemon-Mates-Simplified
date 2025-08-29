@@ -38,6 +38,10 @@
     "lemonmates:bottle_watermelon_cap_label",
     "lemonmates:bottle_watermelon_lemonade_cap_label",
     "lemonmates:bottle_watermelon_lemonade_cap",
-    "lemonmates:bottle_watermelon_lemonade_label"
+    "lemonmates:bottle_watermelon_lemonade_label",
+
+    "lemonmates:citron_juice",
+    "lemonmates:orange_juice",
+    "lemonmates:raspberry_juice"
   ]
 }

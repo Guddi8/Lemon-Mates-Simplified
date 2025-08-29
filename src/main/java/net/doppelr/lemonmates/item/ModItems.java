@@ -125,6 +125,14 @@ public class ModItems {
     public static final DeferredItem<Item> RASPBERRY = ITEMS.register("raspberry",
             () -> new ItemNameBlockItem(ModBlocks.RASPBERRY_BUSH.get(), new Item.Properties().food(AllFoodProperties.RASPBERRY)));
 
+    // Juices
+    public static final DeferredItem<Item> CITRON_JUICE = ITEMS.register("citron_juice",
+            () -> new Item(new Item.Properties().food(AllFoodProperties.JUICE_DRINK)));
+    public static final DeferredItem<Item> ORANGE_JUICE = ITEMS.register("orange_juice",
+            () -> new Item(new Item.Properties().food(AllFoodProperties.JUICE_DRINK)));
+    public static final DeferredItem<Item> RASPBERRY_JUICE = ITEMS.register("raspberry_juice",
+            () -> new Item(new Item.Properties().food(AllFoodProperties.JUICE_DRINK)));
+
 
     public static void register(IEventBus eventBus) {
          ITEMS.register(eventBus);

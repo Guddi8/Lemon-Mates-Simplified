@@ -33,5 +33,8 @@ public class AllFoodProperties {
             .saturationModifier(0.3f)
             .fast()
             .build();
-
+    public static final FoodProperties JUICE_DRINK = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationModifier(0.3f)
+            .build();
 }

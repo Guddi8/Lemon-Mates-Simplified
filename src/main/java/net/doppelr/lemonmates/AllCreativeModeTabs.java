@@ -21,7 +21,14 @@ public class AllCreativeModeTabs {
             .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
             .icon(() -> new ItemStack(ModItems.BOTTLE_WATERMELON_LEMONADE_CAP_LABEL.get()))
             .displayItems((params, output) -> {
-                // Bottle, Cap
+                // Finished Lemonades
+                output.accept(ModItems.BOTTLE_CITRON_LEMONADE_CAP_LABEL);
+                output.accept(ModItems.BOTTLE_ORANGE_LEMONADE_CAP_LABEL);
+                output.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE_CAP_LABEL);
+                output.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE_CAP_LABEL);
+                output.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_CAP_LABEL);
+
+                // Bottle Basics
                 output.accept(ModItems.BOTTLE_CAP);
                 output.accept(ModItems.BOTTLE_EMPTY);
                 output.accept(ModItems.BOTTLE_CAPPED);
@@ -40,44 +47,39 @@ public class AllCreativeModeTabs {
                 output.accept(ModItems.LABEL_SUMMER_MIX);
                 output.accept(ModItems.LABEL_WATERMELON_LEMONADE);
 
-                // Citron
+                // Bottle with Label
                 output.accept(ModItems.BOTTLE_CITRON_LABEL);
-                output.accept(ModItems.BOTTLE_CITRON_LEMONADE);
-                output.accept(ModItems.BOTTLE_CITRON_CAP_LABEL);
-                output.accept(ModItems.BOTTLE_CITRON_LEMONADE_CAP_LABEL);
-                output.accept(ModItems.BOTTLE_CITRON_LEMONADE_CAP);
-                output.accept(ModItems.BOTTLE_CITRON_LEMONADE_LABEL);
-
-                // Orange
                 output.accept(ModItems.BOTTLE_ORANGE_LABEL);
-                output.accept(ModItems.BOTTLE_ORANGE_LEMONADE);
-                output.accept(ModItems.BOTTLE_ORANGE_CAP_LABEL);
-                output.accept(ModItems.BOTTLE_ORANGE_LEMONADE_CAP_LABEL);
-                output.accept(ModItems.BOTTLE_ORANGE_LEMONADE_CAP);
-                output.accept(ModItems.BOTTLE_ORANGE_LEMONADE_LABEL);
-
-                // Raspberry
                 output.accept(ModItems.BOTTLE_RASPBERRY_LABEL);
-                output.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE);
-                output.accept(ModItems.BOTTLE_RASPBERRY_CAP_LABEL);
-                output.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE_CAP_LABEL);
-                output.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE_CAP);
-                output.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE_LABEL);
-
-                // Summer Mix
                 output.accept(ModItems.BOTTLE_SUMMERMIX_LABEL);
-                output.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE);
-                output.accept(ModItems.BOTTLE_SUMMERMIX_CAP_LABEL);
-                output.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE_CAP_LABEL);
-                output.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE_CAP);
-                output.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE_LABEL);
-
-                // Watermelon
                 output.accept(ModItems.BOTTLE_WATERMELON_LABEL);
+
+                // Bottle with Lemonade
+                output.accept(ModItems.BOTTLE_CITRON_LEMONADE);
+                output.accept(ModItems.BOTTLE_ORANGE_LEMONADE);
+                output.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE);
+                output.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE);
                 output.accept(ModItems.BOTTLE_WATERMELON_LEMONADE);
+
+                // Bottle with Cap and Label
+                output.accept(ModItems.BOTTLE_CITRON_CAP_LABEL);
+                output.accept(ModItems.BOTTLE_ORANGE_CAP_LABEL);
+                output.accept(ModItems.BOTTLE_RASPBERRY_CAP_LABEL);
+                output.accept(ModItems.BOTTLE_SUMMERMIX_CAP_LABEL);
                 output.accept(ModItems.BOTTLE_WATERMELON_CAP_LABEL);
-                output.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_CAP_LABEL);
+
+                // Bottle with Lemonade and Cap
+                output.accept(ModItems.BOTTLE_CITRON_LEMONADE_CAP);
+                output.accept(ModItems.BOTTLE_ORANGE_LEMONADE_CAP);
+                output.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE_CAP);
+                output.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE_CAP);
                 output.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_CAP);
+
+                // Bottle with Lemonade and Label
+                output.accept(ModItems.BOTTLE_CITRON_LEMONADE_LABEL);
+                output.accept(ModItems.BOTTLE_ORANGE_LEMONADE_LABEL);
+                output.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE_LABEL);
+                output.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE_LABEL);
                 output.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_LABEL);
             })
             .build()
@@ -89,46 +91,54 @@ public class AllCreativeModeTabs {
             .withTabsBefore(LEMONMATES_TAB.getKey())
             .icon(() -> new ItemStack(ModItems.ORANGE.get()))
             .displayItems((params, output) -> {
-                // Plants
+                // Fruits
+                output.accept(ModItems.CITRON);
+                output.accept(ModItems.ORANGE);
                 output.accept(ModItems.RASPBERRY);
 
-                output.accept(ModItems.CITRON);
+                // Crates
+                output.accept(ModBlocks.CITRON_CRATE);
+                output.accept(ModBlocks.ORANGE_CRATE);
+                output.accept(ModBlocks.RASPBERRY_CRATE);
+
+                // Juices
+                output.accept(ModItems.CITRON_JUICE);
+                output.accept(ModItems.ORANGE_JUICE);
+                output.accept(ModItems.RASPBERRY_JUICE);
+
+                // Citron Wood Stuffs
                 output.accept(ModBlocks.CITRON_LOG);
                 output.accept(ModBlocks.CITRON_WOOD);
                 output.accept(ModBlocks.STRIPPED_CITRON_LOG);
                 output.accept(ModBlocks.STRIPPED_CITRON_WOOD);
-                output.accept(ModBlocks.CITRON_LEAVES);
-                output.accept(ModBlocks.CITRON_SAPLING);
                 output.accept(ModBlocks.CITRON_PLANKS);
                 output.accept(ModBlocks.CITRON_STAIRS);
                 output.accept(ModBlocks.CITRON_SLAB);
-                output.accept(ModBlocks.CITRON_PRESSURE_PLATE);
-                output.accept(ModBlocks.CITRON_BUTTON);
                 output.accept(ModBlocks.CITRON_FENCE);
                 output.accept(ModBlocks.CITRON_FENCE_GATE);
                 output.accept(ModBlocks.CITRON_DOOR);
                 output.accept(ModBlocks.CITRON_TRAPDOOR);
+                output.accept(ModBlocks.CITRON_PRESSURE_PLATE);
+                output.accept(ModBlocks.CITRON_BUTTON);
+                output.accept(ModBlocks.CITRON_LEAVES);
+                output.accept(ModBlocks.CITRON_SAPLING);
 
-                output.accept(ModItems.ORANGE);
+                // Orange Wood Stuffs
                 output.accept(ModBlocks.ORANGE_LOG);
                 output.accept(ModBlocks.ORANGE_WOOD);
                 output.accept(ModBlocks.STRIPPED_ORANGE_LOG);
                 output.accept(ModBlocks.STRIPPED_ORANGE_WOOD);
-                output.accept(ModBlocks.ORANGE_LEAVES);
-                output.accept(ModBlocks.ORANGE_SAPLING);
                 output.accept(ModBlocks.ORANGE_PLANKS);
                 output.accept(ModBlocks.ORANGE_STAIRS);
                 output.accept(ModBlocks.ORANGE_SLAB);
-                output.accept(ModBlocks.ORANGE_PRESSURE_PLATE);
-                output.accept(ModBlocks.ORANGE_BUTTON);
                 output.accept(ModBlocks.ORANGE_FENCE);
                 output.accept(ModBlocks.ORANGE_FENCE_GATE);
                 output.accept(ModBlocks.ORANGE_DOOR);
                 output.accept(ModBlocks.ORANGE_TRAPDOOR);
-
-                output.accept(ModBlocks.ORANGE_CRATE);
-                output.accept(ModBlocks.CITRON_CRATE);
-                output.accept(ModBlocks.RASPBERRY_CRATE);
+                output.accept(ModBlocks.ORANGE_PRESSURE_PLATE);
+                output.accept(ModBlocks.ORANGE_BUTTON);
+                output.accept(ModBlocks.ORANGE_LEAVES);
+                output.accept(ModBlocks.ORANGE_SAPLING);
             })
             .build()
     );
