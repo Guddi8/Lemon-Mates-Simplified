@@ -87,7 +87,7 @@ public class AllCreativeModeTabs {
         () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup." + LemonMates.MOD_ID + ".lemonmates_plants"))
             .withTabsBefore(LEMONMATES_TAB.getKey())
-            .icon(() -> new ItemStack(ModItems.RASPBERRY.get()))
+            .icon(() -> new ItemStack(ModItems.ORANGE.get()))
             .displayItems((params, output) -> {
                 // Plants
                 output.accept(ModItems.RASPBERRY);
