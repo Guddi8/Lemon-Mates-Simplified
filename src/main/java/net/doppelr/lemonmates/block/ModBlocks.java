@@ -1,5 +1,6 @@
 package net.doppelr.lemonmates.block;
 
+import net.doppelr.lemonmates.AllWoodTypes;
 import net.doppelr.lemonmates.LemonMates;
 import net.doppelr.lemonmates.item.ModItems;
 import net.doppelr.lemonmates.worldgen.tree.ModTreeGrowers;
@@ -49,7 +50,15 @@ public class ModBlocks {
             () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR)));
     public static final DeferredBlock<TrapDoorBlock> ORANGE_TRAPDOOR = registerBlock("orange_trapdoor",
             () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR)));
-    // TODO: Boats, Signs (could be something with Entities tho)
+    public static final DeferredBlock<Block> ORANGE_SIGN = BLOCKS.register("orange_sign",
+            () -> new ModStandingSignBlock(AllWoodTypes.ORANGE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN)));
+    public static final DeferredBlock<Block> ORANGE_WALL_SIGN = BLOCKS.register("orange_wall_sign",
+            () -> new ModWallSignBlock(AllWoodTypes.ORANGE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN)));
+    public static final DeferredBlock<Block> ORANGE_HANGING_SIGN = BLOCKS.register("orange_hanging_sign",
+            () -> new ModHangingSignBlock(AllWoodTypes.ORANGE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN)));
+    public static final DeferredBlock<Block> ORANGE_WALL_HANGING_SIGN = BLOCKS.register("orange_wall_hanging_sign",
+            () -> new ModWallHangingSignBlock(AllWoodTypes.ORANGE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN)));
+    // TODO: Boats
 
     public static final DeferredBlock<Block> CITRON_LOG = registerBlock("citron_log",
         () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
@@ -81,7 +90,15 @@ public class ModBlocks {
             () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR)));
     public static final DeferredBlock<TrapDoorBlock> CITRON_TRAPDOOR = registerBlock("citron_trapdoor",
             () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR)));
-    // TODO: Boats, Signs (could be something with Entities tho)
+    public static final DeferredBlock<Block> CITRON_SIGN = BLOCKS.register("citron_sign",
+            () -> new ModStandingSignBlock(AllWoodTypes.CITRON, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN)));
+    public static final DeferredBlock<Block> CITRON_WALL_SIGN = BLOCKS.register("citron_wall_sign",
+            () -> new ModWallSignBlock(AllWoodTypes.CITRON, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN)));
+    public static final DeferredBlock<Block> CITRON_HANGING_SIGN = BLOCKS.register("citron_hanging_sign",
+            () -> new ModHangingSignBlock(AllWoodTypes.CITRON, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN)));
+    public static final DeferredBlock<Block> CITRON_WALL_HANGING_SIGN = BLOCKS.register("citron_wall_hanging_sign",
+            () -> new ModWallHangingSignBlock(AllWoodTypes.CITRON, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN)));
+    // TODO: Boats
 
     public static final DeferredBlock<Block> RASPBERRY_BUSH = registerBlock("raspberry_bush",
             () -> new RaspberryBushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));

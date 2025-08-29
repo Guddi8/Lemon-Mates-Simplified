@@ -107,6 +107,8 @@ public class AllCreativeModeTabs {
                 output.accept(ModItems.RASPBERRY_JUICE);
 
                 // Citron Wood Stuffs
+                output.accept(ModBlocks.CITRON_SAPLING);
+                output.accept(ModBlocks.CITRON_LEAVES);
                 output.accept(ModBlocks.CITRON_LOG);
                 output.accept(ModBlocks.CITRON_WOOD);
                 output.accept(ModBlocks.STRIPPED_CITRON_LOG);
@@ -120,10 +122,13 @@ public class AllCreativeModeTabs {
                 output.accept(ModBlocks.CITRON_TRAPDOOR);
                 output.accept(ModBlocks.CITRON_PRESSURE_PLATE);
                 output.accept(ModBlocks.CITRON_BUTTON);
-                output.accept(ModBlocks.CITRON_LEAVES);
-                output.accept(ModBlocks.CITRON_SAPLING);
+                output.accept(ModBlocks.CITRON_SIGN);
+                output.accept(ModItems.CITRON_SIGN);
+                output.accept(ModItems.CITRON_HANGING_SIGN);
 
                 // Orange Wood Stuffs
+                output.accept(ModBlocks.ORANGE_SAPLING);
+                output.accept(ModBlocks.ORANGE_LEAVES);
                 output.accept(ModBlocks.ORANGE_LOG);
                 output.accept(ModBlocks.ORANGE_WOOD);
                 output.accept(ModBlocks.STRIPPED_ORANGE_LOG);
@@ -137,8 +142,8 @@ public class AllCreativeModeTabs {
                 output.accept(ModBlocks.ORANGE_TRAPDOOR);
                 output.accept(ModBlocks.ORANGE_PRESSURE_PLATE);
                 output.accept(ModBlocks.ORANGE_BUTTON);
-                output.accept(ModBlocks.ORANGE_LEAVES);
-                output.accept(ModBlocks.ORANGE_SAPLING);
+                output.accept(ModItems.ORANGE_SIGN);
+                output.accept(ModItems.ORANGE_HANGING_SIGN);
             })
             .build()
     );

@@ -87,6 +87,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         crateBlock(ModBlocks.ORANGE_CRATE, "orange");
         crateBlock(ModBlocks.CITRON_CRATE, "citron");
         crateBlock(ModBlocks.RASPBERRY_CRATE, "raspberry");
+
+        signBlock((StandingSignBlock) ModBlocks.CITRON_SIGN.get(), (WallSignBlock) ModBlocks.CITRON_WALL_SIGN.get(), modLoc("block/citron_planks"));
+        hangingSignBlock((CeilingHangingSignBlock) ModBlocks.CITRON_HANGING_SIGN.get(), (WallHangingSignBlock) ModBlocks.CITRON_WALL_HANGING_SIGN.get(), modLoc("block/citron_planks"));
+        signBlock((StandingSignBlock) ModBlocks.ORANGE_SIGN.get(), (WallSignBlock) ModBlocks.ORANGE_WALL_SIGN.get(), modLoc("block/citron_planks"));
+        hangingSignBlock((CeilingHangingSignBlock) ModBlocks.ORANGE_HANGING_SIGN.get(), (WallHangingSignBlock) ModBlocks.ORANGE_WALL_HANGING_SIGN.get(), modLoc("block/orange_planks"));
+
     }
 
     public void crateBlock(DeferredBlock<Block> deferredBlock, String fruitName) {
