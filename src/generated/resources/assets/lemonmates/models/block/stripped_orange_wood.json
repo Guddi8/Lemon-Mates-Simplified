@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "lemonmates:block/stripped_orange_log",
+    "side": "lemonmates:block/stripped_orange_log"
+  }
+}
