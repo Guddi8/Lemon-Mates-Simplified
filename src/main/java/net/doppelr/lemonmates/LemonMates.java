@@ -34,7 +34,6 @@ public class LemonMates {
     public static final String NAME = "Lemon Mates";
     public static final String MOD_ID = "lemonmates";
     public static final Logger LOGGER = LogUtils.getLogger();
-    private static final StackWalker STACK_WALKER = StackWalker.getInstance(StackWalker.Option.RETAIN_CLASS_REFERENCE);
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
@@ -62,7 +61,7 @@ public class LemonMates {
 
     }
 
-    static final CreateRegistrate REGISTRATE = CreateRegistrate.create(ID)
+    private static final CreateRegistrate REGISTRATE = CreateRegistrate.create(ID)
             .defaultCreativeTab((ResourceKey<CreativeModeTab>) null)
             .setTooltipModifierFactory(item ->
                     new ItemDescription.Modifier(item, FontHelper.Palette.STANDARD_CREATE)
@@ -83,10 +82,5 @@ public class LemonMates {
             Sheets.addWoodType(AllWoodTypes.CITRON);
             Sheets.addWoodType(AllWoodTypes.ORANGE);
         }
-    }
-    public static CreateRegistrate registrate() {
-        if (!STACK_WALKER.getCallerClass().getPackageName().startsWith("com.simibubi.create"))
-            throw new UnsupportedOperationException("Other mods are not permitted to use create's registrate instance.");
-        return REGISTRATE;
     }
 }
