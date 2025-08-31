@@ -73,6 +73,8 @@
   "block.lemonmates.citron_trapdoor": "Citron Trapdoor",
   "block.lemonmates.citron_sign": "Citron Sign",
   "block.lemonmates.citron_hanging_sign": "Citron Hanging Sign",
+  "item.lemonmates.citron_boat": "Citron Boat",
+  "item.lemonmates.citron_chest_boat": "Citron Chest Boat",
 
   "item.lemonmates.orange": "Orange",
   "block.lemonmates.orange_log": "Orange Log",
@@ -92,6 +94,8 @@
   "block.lemonmates.orange_trapdoor": "Orange Trapdoor",
   "block.lemonmates.orange_sign": "Orange Sign",
   "block.lemonmates.orange_hanging_sign": "Orange Hanging Sign",
+  "item.lemonmates.orange_boat": "Orange Boat",
+  "item.lemonmates.orange_chest_boat": "Orange Chest Boat",
 
   "block.lemonmates.orange_crate": "Orange Crate",
   "block.lemonmates.citron_crate": "Citron Crate",
