@@ -1,4 +1,5 @@
-// 1.21.1	2025-08-28T23:00:24.2326106	Tags for minecraft:item mod id lemonmates
+// 1.21.1	2025-08-29T17:33:56.7427046	Tags for minecraft:item mod id lemonmates
+c2aeba83a0cd5589021128b260951b1f5dd5c10a data/c/tags/item/stripped_logs.json
 831234b532b3190e02bdad6ca92f1c79e6e8d9e1 data/c/tags/item/stripped_woods.json
 ec001d932df2810d44f728a91637e46f25deb9e1 data/lemonmates/tags/item/citron_logs.json
 13d4e7735ae53dea526fe61eb36457db27667dcc data/lemonmates/tags/item/orange_logs.json
@@ -7,3 +8,5 @@ e3216b2b2cb6ef503aae1d6f721e6157794150fc data/minecraft/tags/item/logs.json
 e3216b2b2cb6ef503aae1d6f721e6157794150fc data/minecraft/tags/item/logs_that_burn.json
 7985a0cc812db01ca58f78d85c50a3410a97f55f data/minecraft/tags/item/planks.json
 ceb8e6e85fd625b41c939323206d0d518844c8e5 data/minecraft/tags/item/saplings.json
+28977a83d779d7fd7af8b89adc3a5209a4e816b5 data/minecraft/tags/item/slabs.json
+2f3d1854ad2f7ef6e2379125d49445ead9605568 data/minecraft/tags/item/stairs.json

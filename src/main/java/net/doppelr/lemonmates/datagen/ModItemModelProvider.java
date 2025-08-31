@@ -29,12 +29,16 @@ public class ModItemModelProvider extends ItemModelProvider {
         buttonItem(ModBlocks.CITRON_BUTTON, ModBlocks.CITRON_PLANKS);
         fenceItem(ModBlocks.CITRON_FENCE, ModBlocks.CITRON_PLANKS);
         basicItem(ModBlocks.CITRON_DOOR.asItem());
+        basicItem(ModItems.CITRON_SIGN.get());
+        basicItem(ModItems.CITRON_HANGING_SIGN.get());
 
         basicItem(ModItems.ORANGE.get());
         saplingItem(ModBlocks.ORANGE_SAPLING);
         buttonItem(ModBlocks.ORANGE_BUTTON, ModBlocks.ORANGE_PLANKS);
         fenceItem(ModBlocks.ORANGE_FENCE, ModBlocks.ORANGE_PLANKS);
         basicItem(ModBlocks.ORANGE_DOOR.asItem());
+        basicItem(ModItems.ORANGE_SIGN.get());
+        basicItem(ModItems.ORANGE_HANGING_SIGN.get());
     }
 
     private ItemModelBuilder lemonadeItem(DeferredItem<Item> item) {

@@ -6,7 +6,9 @@ import com.simibubi.create.foundation.item.KineticStats;
 import com.simibubi.create.foundation.item.TooltipModifier;
 import net.createmod.catnip.lang.FontHelper;
 import net.doppelr.lemonmates.block.ModBlocks;
+import net.doppelr.lemonmates.block.entity.ModBlockEntities;
 import net.doppelr.lemonmates.item.ModItems;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
 import org.slf4j.Logger;
@@ -49,6 +51,8 @@ public class LemonMates {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModBlockEntities.register(modEventBus);
+
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         // modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
@@ -75,6 +79,8 @@ public class LemonMates {
     static class ClientModEvents {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event) {
+            Sheets.addWoodType(AllWoodTypes.CITRON);
+            Sheets.addWoodType(AllWoodTypes.ORANGE);
         }
     }
 }

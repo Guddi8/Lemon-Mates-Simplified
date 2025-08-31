@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-28T22:50:07.6278428	Recipes
+// 1.21.1	2025-08-29T17:33:56.7513773	Recipes
 1d7c61d7aa66adee3bb6a9752e28e5b3481ff485 data/lemonmates/advancement/recipes/building_blocks/citron_crate.json
 8c180e50e9625c1985dfc40e7be05f0293d92fd2 data/lemonmates/advancement/recipes/building_blocks/citron_planks.json
 eee4f4632b7c48b3af255d7aa5fac05090e88546 data/lemonmates/advancement/recipes/building_blocks/citron_slab.json
@@ -9,12 +9,14 @@ cb0e74f87159d0de2e9ba582aaad66c5f9a35a23 data/lemonmates/advancement/recipes/bui
 d967bf8fafc67fafed7c4e9a7122e864c1508507 data/lemonmates/advancement/recipes/building_blocks/orange_slab.json
 acd964845aa6395650d3ad532b0e7f26414ac1f2 data/lemonmates/advancement/recipes/building_blocks/orange_stairs.json
 c1f895eb552cbea0adcf753ffde739cd3a862407 data/lemonmates/advancement/recipes/building_blocks/orange_wood.json
+21d724d6f612079fba942adff637c6678195a1bc data/lemonmates/advancement/recipes/building_blocks/raspberry_crate.json
 3b42fd00a983e446cd9c80f29425be9ce7136a63 data/lemonmates/advancement/recipes/building_blocks/stripped_citron_wood.json
 413c4076a09b44ca85def5d8aac8e2c37cfefd51 data/lemonmates/advancement/recipes/building_blocks/stripped_orange_wood.json
 e57b95388b59618d5c42e47b2e02cc0de69b4b86 data/lemonmates/advancement/recipes/decorations/citron_fence.json
 970983af8729e67ad31eb275430614a94943bd90 data/lemonmates/advancement/recipes/decorations/orange_fence.json
 4479303ddbadd32d46326de55321302897b148ec data/lemonmates/advancement/recipes/misc/citron.json
 c2058d9cefd54d577a5fd4729619999e05153bef data/lemonmates/advancement/recipes/misc/orange.json
+e9a2fe0611d96dcfaafadbb8ada78fd10586215a data/lemonmates/advancement/recipes/misc/raspberry.json
 8705e703b642f9226f38b7eea60d820b32112c90 data/lemonmates/advancement/recipes/redstone/citron_button.json
 88f5d881de84c5dd384ce0c3292e009440b74ab6 data/lemonmates/advancement/recipes/redstone/citron_door.json
 b9b463ee4a3fea1c84dc3e78179dd0d0e6667473 data/lemonmates/advancement/recipes/redstone/citron_fence_gate.json
@@ -49,5 +51,7 @@ a474ee389965e67b45953f8198a823e3a68b143e data/lemonmates/recipe/orange_fence.jso
 97539de8be75cd3284b9f8f82d60ef867b3d3f48 data/lemonmates/recipe/orange_stairs.json
 3ee677fe14e886b3791d1ac308db25e62c062ccb data/lemonmates/recipe/orange_trapdoor.json
 b884e4c1a9d89dbe95138d5ea95113136e361e90 data/lemonmates/recipe/orange_wood.json
+232a5e5636df063c5d4f993cf8510859234f9c1c data/lemonmates/recipe/raspberry.json
+1445516a5fab144d5ab7dfed1ad3de0efa970a3c data/lemonmates/recipe/raspberry_crate.json
 145218accb1ca38a0a5f92fa8c36fec665f9fb60 data/lemonmates/recipe/stripped_citron_wood.json
 538d2929b9a38901bd7becd5ad38af94afe42e5a data/lemonmates/recipe/stripped_orange_wood.json
