@@ -1,13 +1,14 @@
 {
-  "type": "create:item_application",
+  "type": "create:deploying",
   "ingredients": [
     {
       "item": "tfmg:plastic_block"
     },
     {
-      "tag": "c:tools/knife"
+      "tag": "create:mechanical_drill"
     }
   ],
+  "keep_held_item": true,
   "results": [
     {
       "id": "lemonmates:bottle_form"

@@ -1,6 +1,7 @@
 {
   "itemGroup.lemonmates.lemonmates": "Lemonmates Lemonades",
   "itemGroup.lemonmates.lemonmates_plants": "Lemonmates Plants",
+  "itemGroup.lemonmates.lemonmates_processing": "Lemonmates Processing",
 
   "item.lemonmates.bottle_cap": "Bottle Cap",
   "item.lemonmates.bottle_capped": "Empty Bottle with Cap",
@@ -99,5 +100,11 @@
 
   "item.lemonmates.citron_juice": "Citron Juice",
   "item.lemonmates.orange_juice": "Orange Juice",
-  "item.lemonmates.raspberry_juice": "Raspberry Juice"
+  "item.lemonmates.raspberry_juice": "Raspberry Juice",
+
+  "item.lemonmates.citron_lemonade_bucket": "Citron Lemonade Bucket",
+  "item.lemonmates.orange_lemonade_bucket": "Orange Lemonade Bucket",
+  "item.lemonmates.raspberry_lemonade_bucket": "Raspberry Lemonade Bucket",
+  "item.lemonmates.summermix_lemonade_bucket": "Summer-Mix Lemonade Bucket",
+  "item.lemonmates.watermelon_lemonade_bucket": "Watermelon Lemonade Bucket"
 }
