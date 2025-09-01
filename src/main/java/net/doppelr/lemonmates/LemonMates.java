@@ -10,6 +10,7 @@ import net.doppelr.lemonmates.block.entity.ModBlockEntities;
 import net.doppelr.lemonmates.item.ModItems;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import org.slf4j.Logger;
 
@@ -60,6 +61,10 @@ public class LemonMates {
     private void commonSetup(FMLCommonSetupEvent event) {
 
     }
+    public static ResourceLocation rl(String path){
+        return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
+    }
+
 
     private static final CreateRegistrate REGISTRATE = CreateRegistrate.create(ID)
             .defaultCreativeTab((ResourceKey<CreativeModeTab>) null)
