@@ -6,7 +6,9 @@ import com.simibubi.create.foundation.item.KineticStats;
 import com.simibubi.create.foundation.item.TooltipModifier;
 import net.createmod.catnip.lang.FontHelper;
 import net.doppelr.lemonmates.block.ModBlocks;
+import net.doppelr.lemonmates.block.entity.ModBlockEntities;
 import net.doppelr.lemonmates.item.ModItems;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
 import org.slf4j.Logger;
@@ -32,7 +34,6 @@ public class LemonMates {
     public static final String NAME = "Lemon Mates";
     public static final String MOD_ID = "lemonmates";
     public static final Logger LOGGER = LogUtils.getLogger();
-    private static final StackWalker STACK_WALKER = StackWalker.getInstance(StackWalker.Option.RETAIN_CLASS_REFERENCE);
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
@@ -50,6 +51,8 @@ public class LemonMates {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModBlockEntities.register(modEventBus);
+
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         // modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
@@ -58,7 +61,7 @@ public class LemonMates {
 
     }
 
-    static final CreateRegistrate REGISTRATE = CreateRegistrate.create(ID)
+    private static final CreateRegistrate REGISTRATE = CreateRegistrate.create(ID)
             .defaultCreativeTab((ResourceKey<CreativeModeTab>) null)
             .setTooltipModifierFactory(item ->
                     new ItemDescription.Modifier(item, FontHelper.Palette.STANDARD_CREATE)
@@ -76,11 +79,8 @@ public class LemonMates {
     static class ClientModEvents {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event) {
+            Sheets.addWoodType(AllWoodTypes.CITRON);
+            Sheets.addWoodType(AllWoodTypes.ORANGE);
         }
-    }
-    public static CreateRegistrate registrate() {
-        if (!STACK_WALKER.getCallerClass().getPackageName().startsWith("com.simibubi.create"))
-            throw new UnsupportedOperationException("Other mods are not permitted to use create's registrate instance.");
-        return REGISTRATE;
     }
 }

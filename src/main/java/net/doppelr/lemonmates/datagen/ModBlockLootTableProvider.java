@@ -70,6 +70,14 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.ORANGE_TRAPDOOR.get());
         add(ModBlocks.ORANGE_DOOR.get(),
                 block -> createDoorTable(ModBlocks.ORANGE_DOOR.get()));
+        add(ModBlocks.ORANGE_SIGN.get(),
+                block -> createSingleItemTable(ModItems.ORANGE_SIGN));
+        add(ModBlocks.ORANGE_WALL_SIGN.get(),
+                block -> createSingleItemTable(ModItems.ORANGE_SIGN));
+        add(ModBlocks.ORANGE_HANGING_SIGN.get(),
+                block -> createSingleItemTable(ModItems.ORANGE_HANGING_SIGN));
+        add(ModBlocks.ORANGE_WALL_HANGING_SIGN.get(),
+                block -> createSingleItemTable(ModItems.ORANGE_HANGING_SIGN));
 
         dropSelf(ModBlocks.CITRON_LOG.get());
         dropSelf(ModBlocks.CITRON_WOOD.get());
@@ -89,8 +97,16 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.CITRON_TRAPDOOR.get());
         add(ModBlocks.CITRON_DOOR.get(),
                 block -> createDoorTable(ModBlocks.CITRON_DOOR.get()));
+        add(ModBlocks.CITRON_SIGN.get(),
+                block -> createSingleItemTable(ModItems.CITRON_SIGN));
+        add(ModBlocks.CITRON_WALL_SIGN.get(),
+                block -> createSingleItemTable(ModItems.CITRON_SIGN));
+        add(ModBlocks.CITRON_HANGING_SIGN.get(),
+                block -> createSingleItemTable(ModItems.CITRON_HANGING_SIGN));
+        add(ModBlocks.CITRON_WALL_HANGING_SIGN.get(),
+                block -> createSingleItemTable(ModItems.CITRON_HANGING_SIGN));
 
-        this.add(ModBlocks.RASPBERRY_BUSH.get(), block -> this.applyExplosionDecay(
+        add(ModBlocks.RASPBERRY_BUSH.get(), block -> applyExplosionDecay(
                 block,LootTable.lootTable().withPool(LootPool.lootPool().when(
                                         LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.RASPBERRY_BUSH.get())
                                                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 3))

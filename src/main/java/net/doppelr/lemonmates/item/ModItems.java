@@ -3,8 +3,8 @@ package net.doppelr.lemonmates.item;
 import net.doppelr.lemonmates.LemonMates;
 import net.doppelr.lemonmates.AllFoodProperties;
 import net.doppelr.lemonmates.block.ModBlocks;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.entity.vehicle.Boat;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -124,6 +124,22 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(AllFoodProperties.ORANGE)));
     public static final DeferredItem<Item> RASPBERRY = ITEMS.register("raspberry",
             () -> new ItemNameBlockItem(ModBlocks.RASPBERRY_BUSH.get(), new Item.Properties().food(AllFoodProperties.RASPBERRY)));
+
+    // Wood Items
+    public static final DeferredItem<SignItem> CITRON_SIGN = ITEMS.register("citron_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.CITRON_SIGN.get(), ModBlocks.CITRON_WALL_SIGN.get()));
+    public static final DeferredItem<HangingSignItem> CITRON_HANGING_SIGN = ITEMS.register("citron_hanging_sign",
+            () -> new HangingSignItem(ModBlocks.CITRON_HANGING_SIGN.get(), ModBlocks.CITRON_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+    public static final DeferredItem<SignItem> ORANGE_SIGN = ITEMS.register("orange_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ORANGE_SIGN.get(), ModBlocks.ORANGE_WALL_SIGN.get()));
+    public static final DeferredItem<HangingSignItem> ORANGE_HANGING_SIGN = ITEMS.register("orange_hanging_sign",
+            () -> new HangingSignItem(ModBlocks.ORANGE_HANGING_SIGN.get(), ModBlocks.ORANGE_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final DeferredItem<BoatItem> CITRON_BOAT = ITEMS.register("citron_boat",
+            () -> new BoatItem(false, Boat.Type.OAK, new Item.Properties()));
+    public static final DeferredItem<BoatItem> ORANGE_BOAT = ITEMS.register("orange_boat",
+            () -> new BoatItem(false, Boat.Type.OAK, new Item.Properties()));
+
 
     // Juices
     public static final DeferredItem<Item> CITRON_JUICE = ITEMS.register("citron_juice",

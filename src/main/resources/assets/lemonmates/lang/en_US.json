@@ -71,6 +71,8 @@
   "block.lemonmates.citron_fence_gate": "Citron Fence Gate",
   "block.lemonmates.citron_door": "Citron Door",
   "block.lemonmates.citron_trapdoor": "Citron Trapdoor",
+  "block.lemonmates.citron_sign": "Citron Sign",
+  "block.lemonmates.citron_hanging_sign": "Citron Hanging Sign",
 
   "item.lemonmates.orange": "Orange",
   "block.lemonmates.orange_log": "Orange Log",
@@ -88,6 +90,8 @@
   "block.lemonmates.orange_fence_gate": "Orange Fence Gate",
   "block.lemonmates.orange_door": "Orange Door",
   "block.lemonmates.orange_trapdoor": "Orange Trapdoor",
+  "block.lemonmates.orange_sign": "Orange Sign",
+  "block.lemonmates.orange_hanging_sign": "Orange Hanging Sign",
 
   "block.lemonmates.orange_crate": "Orange Crate",
   "block.lemonmates.citron_crate": "Citron Crate",
