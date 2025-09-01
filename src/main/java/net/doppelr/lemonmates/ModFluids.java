@@ -27,7 +27,7 @@ public class ModFluids {
     public static final DeferredRegister<Item> BUCKETS = DeferredRegister.createItems(LemonMates.MOD_ID);
     public static final DeferredRegister<Block> SOURCEBLOCKS = DeferredRegister.createBlocks(LemonMates.MOD_ID);
 
-    // Watermelon
+    // Watermelon - Change to Orange
     public static final DeferredHolder<FluidType, FluidType> LIQUID_TYPE = FLUID_TYPES.register("watermelon_lemonade_fluid", () -> new FluidType(FluidType.Properties.create().descriptionId("Watermelon Lemonade")));
     public static final DeferredHolder<Fluid, FlowingFluid> LIQUID_SOURCE = FLUIDS.register("watermelon_lemonade_liquid_source", () -> new BaseFlowingFluid.Source(liquidProperties()));
     public static final DeferredHolder<Fluid, FlowingFluid> LIQUID_FLOWING = FLUIDS.register("watermelon_lemonade_liquid_flowing", () -> new BaseFlowingFluid.Flowing(liquidProperties()));
