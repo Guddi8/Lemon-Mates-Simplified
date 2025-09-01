@@ -157,7 +157,7 @@ public class AllCreativeModeTabs {
                         // Liquids
                         output.accept(ModFluids.LIQUID_BUCKET.get());
                     })
-                    .build()
+            .build()
     );
 
     public static void register(IEventBus eventBus) {
