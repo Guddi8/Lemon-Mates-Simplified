@@ -147,7 +147,7 @@ public class AllCreativeModeTabs {
             })
             .build()
     );
-    /*
+
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> LEMONMATES_PROCESSING_TAB = CREATIVE_MODE_TAB.register("lemonmates_processing_tab",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup." + LemonMates.MOD_ID + ".lemonmates_processing"))
@@ -159,7 +159,7 @@ public class AllCreativeModeTabs {
                     })
                     .build()
     );
-    */
+
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TAB.register(eventBus);
     }

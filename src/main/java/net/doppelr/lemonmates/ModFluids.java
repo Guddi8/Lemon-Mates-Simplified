@@ -22,7 +22,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
 public class ModFluids {
-    /*
+
     public static final DeferredRegister<FluidType> FLUID_TYPES = DeferredRegister.create(NeoForgeRegistries.FLUID_TYPES, LemonMates.MOD_ID);
     public static final DeferredRegister<Fluid> FLUIDS = DeferredRegister.create(BuiltInRegistries.FLUID, LemonMates.MOD_ID);
     public static final DeferredRegister<Item> BUCKETS = DeferredRegister.createItems(LemonMates.MOD_ID);
@@ -35,13 +35,13 @@ public class ModFluids {
     public static final DeferredHolder<Item, BucketItem> LIQUID_BUCKET = BUCKETS.register("watermelon_lemonade_bucket", () -> new BucketItem(LIQUID_SOURCE.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
     public static final DeferredHolder<Block, LiquidBlock> LIQUID_BLOCK = SOURCEBLOCKS.register("watermelon_lemonade_block", () -> new LiquidBlock(LIQUID_SOURCE.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER)));
 
-    Watermelon
+    /* Watermelon
     public static final DeferredHolder<FluidType, FluidType> LIQUID_TYPE = FLUID_TYPES.register("watermelon_lemonade_fluid", () -> new FluidType(FluidType.Properties.create().descriptionId("Watermelon Lemonade")));
     public static final DeferredHolder<Fluid, FlowingFluid> LIQUID_SOURCE = FLUIDS.register("watermelon_lemonade_liquid_source", () -> new BaseFlowingFluid.Source(liquidProperties()));
     public static final DeferredHolder<Fluid, FlowingFluid> LIQUID_FLOWING = FLUIDS.register("watermelon_lemonade_liquid_flowing", () -> new BaseFlowingFluid.Flowing(liquidProperties()));
     public static final DeferredHolder<Item, BucketItem> LIQUID_BUCKET = BUCKETS.register("watermelon_lemonade_bucket", () -> new BucketItem(LIQUID_SOURCE.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
     public static final DeferredHolder<Block, LiquidBlock> LIQUID_BLOCK = SOURCEBLOCKS.register("watermelon_lemonade_block", () -> new LiquidBlock(LIQUID_SOURCE.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER)));
-
+    */
 
     public static void register(IEventBus modbus) {
         FLUID_TYPES.register(modbus);
@@ -70,5 +70,4 @@ public class ModFluids {
     private static Properties liquidProperties() {
         return new Properties(LIQUID_TYPE, LIQUID_SOURCE, LIQUID_FLOWING).bucket(LIQUID_BUCKET).block(LIQUID_BLOCK);
     }
-    */
 }
