@@ -152,10 +152,14 @@ public class AllCreativeModeTabs {
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup." + LemonMates.MOD_ID + ".lemonmates_processing"))
                     .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
-                    .icon(() -> new ItemStack(ModFluids.LIQUID_BUCKET.get()))
+                    .icon(() -> new ItemStack(ModFluids.WATERMELON_LEMONADE_FLUID_BUCKET.get()))
                     .displayItems((params, output) -> {
                         // Liquids
-                        output.accept(ModFluids.LIQUID_BUCKET.get());
+                        output.accept(ModFluids.CITRON_LEMONADE_FLUID_BUCKET.get());
+                        output.accept(ModFluids.ORANGE_LEMONADE_FLUID_BUCKET.get());
+                        output.accept(ModFluids.RASPBERRY_LEMONADE_FLUID_BUCKET.get());
+                        output.accept(ModFluids.SUMMERMIX_LEMONADE_FLUID_BUCKET.get());
+                        output.accept(ModFluids.WATERMELON_LEMONADE_FLUID_BUCKET.get());
                     })
             .build()
     );
