@@ -51,6 +51,7 @@ public class LemonMates {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModFluids.register(modEventBus);
 
         ModBlockEntities.register(modEventBus);
 
