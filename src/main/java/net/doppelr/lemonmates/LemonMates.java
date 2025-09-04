@@ -7,6 +7,7 @@ import com.simibubi.create.foundation.item.TooltipModifier;
 import net.createmod.catnip.lang.FontHelper;
 import net.doppelr.lemonmates.block.ModBlocks;
 import net.doppelr.lemonmates.block.entity.ModBlockEntities;
+import net.doppelr.lemonmates.fluid.ModFluids;
 import net.doppelr.lemonmates.item.ModItems;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.resources.ResourceKey;

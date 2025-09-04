@@ -1,6 +1,7 @@
 package net.doppelr.lemonmates;
 
 import net.doppelr.lemonmates.block.ModBlocks;
+import net.doppelr.lemonmates.fluid.ModFluids;
 import net.doppelr.lemonmates.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
