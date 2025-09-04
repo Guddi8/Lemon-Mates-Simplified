@@ -87,7 +87,7 @@ public class ModFluids {
             .slopeFindDistance(2).levelDecreasePerBlock(1)
             .block(WATERMELON_LEMONADE_FLUID_BLOCK)
             .bucket(WATERMELON_LEMONADE_FLUID_BUCKET);
-
+/*
     // Mixed Fluids
     // Citron mixed
     public static final DeferredHolder<FluidType, FluidType> MIXED_CITRON_LEMONADE_FLUID = FLUID_TYPES.register("citron_lemonade_fluid", () -> new BaseFluidType("mixed_citron_lemonade_liquid_still","mixed_citron_lemonade_liquid_flowing", FluidType.Properties.create().descriptionId("Citron Lemonade")));
@@ -145,6 +145,8 @@ public class ModFluids {
             .block(MIXED_WATERMELON_LEMONADE_FLUID_BLOCK)
             .bucket(MIXED_WATERMELON_LEMONADE_FLUID_BUCKET);
 
+
+ */
     public static void register(IEventBus modbus) {
         FLUID_TYPES.register(modbus);
         FLUIDS.register(modbus);
