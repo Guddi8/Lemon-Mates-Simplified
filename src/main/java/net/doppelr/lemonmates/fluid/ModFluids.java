@@ -86,7 +86,7 @@ public class ModFluids {
 
     // Mixed Fluids
     // Citron mixed
-    public static final DeferredHolder<FluidType, FluidType> MIXED_CITRON_LEMONADE_FLUID = FLUID_TYPES.register("mixed_citron_lemonade_fluid", () -> new BaseFluidType("mixed_citron_lemonade_liquid_still","mixed_citron_lemonade_liquid_flowing", FluidType.Properties.create().descriptionId("Citron Lemonade")));
+    public static final DeferredHolder<FluidType, FluidType> MIXED_CITRON_LEMONADE_FLUID = FLUID_TYPES.register("mixed_citron_lemonade_fluid", () -> new BaseFluidType("mixed_citron_lemonade_liquid_still","mixed_citron_lemonade_liquid_flowing", FluidType.Properties.create().descriptionId("Undistilled Citron Lemonade")));
     public static final DeferredHolder<Fluid, FlowingFluid> MIXED_CITRON_LEMONADE_FLUID_SOURCE = FLUIDS.register("mixed_citron_lemonade_liquid_source", () -> new BaseFlowingFluid.Source(ModFluids.MIXED_CITRON_LEMONADE_FLUID_PROPERTIES));
     public static final DeferredHolder<Fluid, FlowingFluid> MIXED_CITRON_LEMONADE_FLUID_FLOWING = FLUIDS.register("mixed_citron_lemonade_liquid_flowing", () -> new BaseFlowingFluid.Flowing(ModFluids.MIXED_CITRON_LEMONADE_FLUID_PROPERTIES));
     public static final DeferredHolder<Item, BucketItem> MIXED_CITRON_LEMONADE_FLUID_BUCKET = BUCKETS.register("mixed_citron_lemonade_bucket", () -> new BucketItem(MIXED_CITRON_LEMONADE_FLUID_SOURCE.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
@@ -97,7 +97,7 @@ public class ModFluids {
             .block(MIXED_CITRON_LEMONADE_FLUID_BLOCK)
             .bucket(MIXED_CITRON_LEMONADE_FLUID_BUCKET);
     // Orange mixed
-    public static final DeferredHolder<FluidType, FluidType> MIXED_ORANGE_LEMONADE_FLUID = FLUID_TYPES.register("mixed_orange_lemonade_fluid", () -> new BaseFluidType("mixed_orange_lemonade_liquid_still","mixed_orange_lemonade_liquid_flowing", FluidType.Properties.create().descriptionId("Orange Lemonade")));
+    public static final DeferredHolder<FluidType, FluidType> MIXED_ORANGE_LEMONADE_FLUID = FLUID_TYPES.register("mixed_orange_lemonade_fluid", () -> new BaseFluidType("mixed_orange_lemonade_liquid_still","mixed_orange_lemonade_liquid_flowing", FluidType.Properties.create().descriptionId("Undistilled Orange Lemonade")));
     public static final DeferredHolder<Fluid, FlowingFluid> MIXED_ORANGE_LEMONADE_FLUID_SOURCE = FLUIDS.register("mixed_orange_lemonade_liquid_source", () -> new BaseFlowingFluid.Source(ModFluids.MIXED_ORANGE_LEMONADE_FLUID_PROPERTIES));
     public static final DeferredHolder<Fluid, FlowingFluid> MIXED_ORANGE_LEMONADE_FLUID_FLOWING = FLUIDS.register("mixed_orange_lemonade_liquid_flowing", () -> new BaseFlowingFluid.Flowing(ModFluids.MIXED_ORANGE_LEMONADE_FLUID_PROPERTIES));
     public static final DeferredHolder<Item, BucketItem> MIXED_ORANGE_LEMONADE_FLUID_BUCKET = BUCKETS.register("mixed_orange_lemonade_bucket", () -> new BucketItem(MIXED_ORANGE_LEMONADE_FLUID_SOURCE.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
@@ -108,7 +108,7 @@ public class ModFluids {
             .block(MIXED_ORANGE_LEMONADE_FLUID_BLOCK)
             .bucket(MIXED_ORANGE_LEMONADE_FLUID_BUCKET);
     // Raspberry mixed
-    public static final DeferredHolder<FluidType, FluidType> MIXED_RASPBERRY_LEMONADE_FLUID = FLUID_TYPES.register("mixed_raspberry_lemonade_fluid", () -> new BaseFluidType("mixed_raspberry_lemonade_liquid_still","mixed_raspberry_lemonade_liquid_flowing", FluidType.Properties.create().descriptionId("Raspberry Lemonade")));
+    public static final DeferredHolder<FluidType, FluidType> MIXED_RASPBERRY_LEMONADE_FLUID = FLUID_TYPES.register("mixed_raspberry_lemonade_fluid", () -> new BaseFluidType("mixed_raspberry_lemonade_liquid_still","mixed_raspberry_lemonade_liquid_flowing", FluidType.Properties.create().descriptionId("Undistilled Raspberry Lemonade")));
     public static final DeferredHolder<Fluid, FlowingFluid> MIXED_RASPBERRY_LEMONADE_FLUID_SOURCE = FLUIDS.register("mixed_raspberry_lemonade_liquid_source", () -> new BaseFlowingFluid.Source(ModFluids.MIXED_RASPBERRY_LEMONADE_FLUID_PROPERTIES));
     public static final DeferredHolder<Fluid, FlowingFluid> MIXED_RASPBERRY_LEMONADE_FLUID_FLOWING = FLUIDS.register("mixed_raspberry_lemonade_liquid_flowing", () -> new BaseFlowingFluid.Flowing(ModFluids.MIXED_RASPBERRY_LEMONADE_FLUID_PROPERTIES));
     public static final DeferredHolder<Item, BucketItem> MIXED_RASPBERRY_LEMONADE_FLUID_BUCKET = BUCKETS.register("mixed_raspberry_lemonade_bucket", () -> new BucketItem(MIXED_RASPBERRY_LEMONADE_FLUID_SOURCE.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
@@ -119,7 +119,7 @@ public class ModFluids {
             .block(MIXED_RASPBERRY_LEMONADE_FLUID_BLOCK)
             .bucket(MIXED_RASPBERRY_LEMONADE_FLUID_BUCKET);
     // Summermix mixed
-    public static final DeferredHolder<FluidType, FluidType> MIXED_SUMMERMIX_LEMONADE_FLUID = FLUID_TYPES.register("mixed_summermix_lemonade_fluid", () -> new BaseFluidType("mixed_summermix_lemonade_liquid_still","mixed_summermix_lemonade_liquid_flowing", FluidType.Properties.create().descriptionId("Summer-Mix Lemonade")));
+    public static final DeferredHolder<FluidType, FluidType> MIXED_SUMMERMIX_LEMONADE_FLUID = FLUID_TYPES.register("mixed_summermix_lemonade_fluid", () -> new BaseFluidType("mixed_summermix_lemonade_liquid_still","mixed_summermix_lemonade_liquid_flowing", FluidType.Properties.create().descriptionId("Undistilled Summer-Mix Lemonade")));
     public static final DeferredHolder<Fluid, FlowingFluid> MIXED_SUMMERMIX_LEMONADE_FLUID_SOURCE = FLUIDS.register("mixed_summermix_lemonade_liquid_source", () -> new BaseFlowingFluid.Source(ModFluids.MIXED_SUMMERMIX_LEMONADE_FLUID_PROPERTIES));
     public static final DeferredHolder<Fluid, FlowingFluid> MIXED_SUMMERMIX_LEMONADE_FLUID_FLOWING = FLUIDS.register("mixed_summermix_lemonade_liquid_flowing", () -> new BaseFlowingFluid.Flowing(ModFluids.MIXED_SUMMERMIX_LEMONADE_FLUID_PROPERTIES));
     public static final DeferredHolder<Item, BucketItem> MIXED_SUMMERMIX_LEMONADE_FLUID_BUCKET = BUCKETS.register("mixed_summermix_lemonade_bucket", () -> new BucketItem(MIXED_SUMMERMIX_LEMONADE_FLUID_SOURCE.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
@@ -130,7 +130,7 @@ public class ModFluids {
             .block(MIXED_SUMMERMIX_LEMONADE_FLUID_BLOCK)
             .bucket(MIXED_SUMMERMIX_LEMONADE_FLUID_BUCKET);
     // Watermelon mixed
-    public static final DeferredHolder<FluidType, FluidType> MIXED_WATERMELON_LEMONADE_FLUID = FLUID_TYPES.register("mixed_watermelon_lemonade_fluid", () -> new BaseFluidType("mixed_watermelon_lemonade_liquid_still","mixed_watermelon_lemonade_liquid_flowing", FluidType.Properties.create().descriptionId("Watermelon Lemonade")));
+    public static final DeferredHolder<FluidType, FluidType> MIXED_WATERMELON_LEMONADE_FLUID = FLUID_TYPES.register("mixed_watermelon_lemonade_fluid", () -> new BaseFluidType("mixed_watermelon_lemonade_liquid_still","mixed_watermelon_lemonade_liquid_flowing", FluidType.Properties.create().descriptionId("Undistilled Watermelon Lemonade")));
     public static final DeferredHolder<Fluid, FlowingFluid> MIXED_WATERMELON_LEMONADE_FLUID_SOURCE = FLUIDS.register("mixed_watermelon_lemonade_liquid_source", () -> new BaseFlowingFluid.Source(ModFluids.MIXED_WATERMELON_LEMONADE_FLUID_PROPERTIES));
     public static final DeferredHolder<Fluid, FlowingFluid> MIXED_WATERMELON_LEMONADE_FLUID_FLOWING = FLUIDS.register("mixed_watermelon_lemonade_liquid_flowing", () -> new BaseFlowingFluid.Flowing(ModFluids.MIXED_WATERMELON_LEMONADE_FLUID_PROPERTIES));
     public static final DeferredHolder<Item, BucketItem> MIXED_WATERMELON_LEMONADE_FLUID_BUCKET = BUCKETS.register("mixed_watermelon_lemonade_bucket", () -> new BucketItem(MIXED_WATERMELON_LEMONADE_FLUID_SOURCE.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
