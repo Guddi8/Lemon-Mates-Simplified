@@ -87,14 +87,14 @@ public class ModFluids {
             .slopeFindDistance(2).levelDecreasePerBlock(1)
             .block(WATERMELON_LEMONADE_FLUID_BLOCK)
             .bucket(WATERMELON_LEMONADE_FLUID_BUCKET);
-/*
+
     // Mixed Fluids
     // Citron mixed
-    public static final DeferredHolder<FluidType, FluidType> MIXED_CITRON_LEMONADE_FLUID = FLUID_TYPES.register("citron_lemonade_fluid", () -> new BaseFluidType("mixed_citron_lemonade_liquid_still","mixed_citron_lemonade_liquid_flowing", FluidType.Properties.create().descriptionId("Citron Lemonade")));
-    public static final DeferredHolder<Fluid, FlowingFluid> MIXED_CITRON_LEMONADE_FLUID_SOURCE = FLUIDS.register("citron_lemonade_liquid_source", () -> new BaseFlowingFluid.Source(ModFluids.MIXED_CITRON_LEMONADE_FLUID_PROPERTIES));
-    public static final DeferredHolder<Fluid, FlowingFluid> MIXED_CITRON_LEMONADE_FLUID_FLOWING = FLUIDS.register("citron_lemonade_liquid_flowing", () -> new BaseFlowingFluid.Flowing(ModFluids.MIXED_CITRON_LEMONADE_FLUID_PROPERTIES));
-    public static final DeferredHolder<Item, BucketItem> MIXED_CITRON_LEMONADE_FLUID_BUCKET = BUCKETS.register("citron_lemonade_bucket", () -> new BucketItem(MIXED_CITRON_LEMONADE_FLUID_SOURCE.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final DeferredHolder<Block, LiquidBlock> MIXED_CITRON_LEMONADE_FLUID_BLOCK = SOURCEBLOCKS.register("citron_lemonade_block", () -> new LiquidBlock(MIXED_CITRON_LEMONADE_FLUID_SOURCE.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER)));
+    public static final DeferredHolder<FluidType, FluidType> MIXED_CITRON_LEMONADE_FLUID = FLUID_TYPES.register("mixed_citron_lemonade_fluid", () -> new BaseFluidType("mixed_citron_lemonade_liquid_still","mixed_citron_lemonade_liquid_flowing", FluidType.Properties.create().descriptionId("Citron Lemonade")));
+    public static final DeferredHolder<Fluid, FlowingFluid> MIXED_CITRON_LEMONADE_FLUID_SOURCE = FLUIDS.register("mixed_citron_lemonade_liquid_source", () -> new BaseFlowingFluid.Source(ModFluids.MIXED_CITRON_LEMONADE_FLUID_PROPERTIES));
+    public static final DeferredHolder<Fluid, FlowingFluid> MIXED_CITRON_LEMONADE_FLUID_FLOWING = FLUIDS.register("mixed_citron_lemonade_liquid_flowing", () -> new BaseFlowingFluid.Flowing(ModFluids.MIXED_CITRON_LEMONADE_FLUID_PROPERTIES));
+    public static final DeferredHolder<Item, BucketItem> MIXED_CITRON_LEMONADE_FLUID_BUCKET = BUCKETS.register("mixed_citron_lemonade_bucket", () -> new BucketItem(MIXED_CITRON_LEMONADE_FLUID_SOURCE.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final DeferredHolder<Block, LiquidBlock> MIXED_CITRON_LEMONADE_FLUID_BLOCK = SOURCEBLOCKS.register("mixed_citron_lemonade_block", () -> new LiquidBlock(MIXED_CITRON_LEMONADE_FLUID_SOURCE.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER)));
     public static final BaseFlowingFluid.Properties MIXED_CITRON_LEMONADE_FLUID_PROPERTIES = new BaseFlowingFluid.Properties(
             MIXED_CITRON_LEMONADE_FLUID, MIXED_CITRON_LEMONADE_FLUID_SOURCE, MIXED_CITRON_LEMONADE_FLUID_FLOWING)
             .slopeFindDistance(2).levelDecreasePerBlock(1)
@@ -145,8 +145,6 @@ public class ModFluids {
             .block(MIXED_WATERMELON_LEMONADE_FLUID_BLOCK)
             .bucket(MIXED_WATERMELON_LEMONADE_FLUID_BUCKET);
 
-
- */
     public static void register(IEventBus modbus) {
         FLUID_TYPES.register(modbus);
         FLUIDS.register(modbus);
@@ -166,5 +164,15 @@ public class ModFluids {
                 SUMMERMIX_LEMONADE_FLUID.get());
         event.registerFluidType(((BaseFluidType) WATERMELON_LEMONADE_FLUID.get()).getClientFluidTypeExtensions(),
                 WATERMELON_LEMONADE_FLUID.get());
+        event.registerFluidType(((BaseFluidType) MIXED_CITRON_LEMONADE_FLUID.get()).getClientFluidTypeExtensions(),
+                MIXED_CITRON_LEMONADE_FLUID.get());
+        event.registerFluidType(((BaseFluidType) MIXED_ORANGE_LEMONADE_FLUID.get()).getClientFluidTypeExtensions(),
+                MIXED_ORANGE_LEMONADE_FLUID.get());
+        event.registerFluidType(((BaseFluidType) MIXED_RASPBERRY_LEMONADE_FLUID.get()).getClientFluidTypeExtensions(),
+                MIXED_RASPBERRY_LEMONADE_FLUID.get());
+        event.registerFluidType(((BaseFluidType) MIXED_SUMMERMIX_LEMONADE_FLUID.get()).getClientFluidTypeExtensions(),
+                MIXED_SUMMERMIX_LEMONADE_FLUID.get());
+        event.registerFluidType(((BaseFluidType) MIXED_WATERMELON_LEMONADE_FLUID.get()).getClientFluidTypeExtensions(),
+                MIXED_WATERMELON_LEMONADE_FLUID.get());
     }
 }
