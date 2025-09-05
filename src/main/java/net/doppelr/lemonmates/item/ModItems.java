@@ -133,18 +133,18 @@ public class ModItems {
     public static final DeferredItem<HangingSignItem> CITRON_HANGING_SIGN = ITEMS.register("citron_hanging_sign",
             () -> new HangingSignItem(ModBlocks.CITRON_HANGING_SIGN.get(), ModBlocks.CITRON_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
     public static final DeferredItem<Item> CITRON_BOAT = ITEMS.register("citron_boat",
-            () -> new ModBoatItem(false, ModBoatEntity.Type.CITRON, new Item.Properties()));
+            () -> new ModBoatItem(false, ModBoatEntity.Type.CITRON, new Item.Properties().stacksTo(1)));
     public static final DeferredItem<Item> CITRON_CHEST_BOAT = ITEMS.register("citron_chest_boat",
-            () -> new ModBoatItem(true, ModBoatEntity.Type.CITRON, new Item.Properties()));
+            () -> new ModBoatItem(true, ModBoatEntity.Type.CITRON, new Item.Properties().stacksTo(1)));
 
     public static final DeferredItem<SignItem> ORANGE_SIGN = ITEMS.register("orange_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ORANGE_SIGN.get(), ModBlocks.ORANGE_WALL_SIGN.get()));
     public static final DeferredItem<HangingSignItem> ORANGE_HANGING_SIGN = ITEMS.register("orange_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ORANGE_HANGING_SIGN.get(), ModBlocks.ORANGE_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
     public static final DeferredItem<Item> ORANGE_BOAT = ITEMS.register("orange_boat",
-            () -> new ModBoatItem(false, ModBoatEntity.Type.ORANGE, new Item.Properties()));
+            () -> new ModBoatItem(false, ModBoatEntity.Type.ORANGE, new Item.Properties().stacksTo(1)));
     public static final DeferredItem<Item> ORANGE_CHEST_BOAT = ITEMS.register("orange_chest_boat",
-            () -> new ModBoatItem(true, ModBoatEntity.Type.ORANGE, new Item.Properties()));
+            () -> new ModBoatItem(true, ModBoatEntity.Type.ORANGE, new Item.Properties().stacksTo(1)));
 
 
     // Juices
