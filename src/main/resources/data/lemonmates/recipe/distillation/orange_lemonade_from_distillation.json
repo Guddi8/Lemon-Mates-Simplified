@@ -1,0 +1,24 @@
+{
+  "type": "tfmg:distillation",
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "amount": 340,
+      "fluid": "lemonmates:mixed_orange_lemonade_fluid"
+    }
+  ],
+  "results": [
+    {
+      "amount": 120,
+      "id": "lemonmates:orange_lemonade_fluid"
+    },
+    {
+      "amount": 60,
+      "id": "minecraft:water"
+    },
+    {
+      "amount": 120,
+      "id": "lemonmates:orange_lemonade_fluid"
+    }
+  ]
+}
