@@ -12,7 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.Level;
 
 public class ModChestBoatEntity extends ChestBoat {
-    private static final EntityDataAccessor<Integer> DATA_ID_TYPE = SynchedEntityData.defineId(ChestBoat.class, EntityDataSerializers.INT);
+    private static final EntityDataAccessor<Integer> DATA_ID_TYPE = SynchedEntityData.defineId(ModChestBoatEntity.class, EntityDataSerializers.INT);
 
     public ModChestBoatEntity(EntityType<? extends Boat> entityType, Level level) {
         super(entityType, level);
