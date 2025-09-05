@@ -56,5 +56,4 @@ public class ModChestBoatEntity extends ChestBoat {
             setVariant(Boat.Type.byName(compound.getString("Type")));
         }
     }
-
 }

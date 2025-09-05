@@ -28,12 +28,12 @@ public class ModBoatRenderer extends BoatRenderer {
     }
 
     private static String getTextureLocation(ModBoatEntity.Type type, boolean chestBoat) {
-        return chestBoat ? "textures/entity/chest_boat/" + type.getName() + ".png" : "textures/entity/boat/"+ type.getName() + ".png";
+        return chestBoat ? "textures/entity/chest_boat/" + type.getName() + ".png" : "textures/entity/boat/" + type.getName() + ".png";
     }
 
     private ListModel<Boat> createBoatModel(EntityRendererProvider.Context context, ModBoatEntity.Type type, boolean chestBoat) {
-        ModelLayerLocation modellayerlocation = chestBoat ? ModBoatRenderer.createChestBoatModelName(type) : ModBoatRenderer.createBoatModelName(type);
-        ModelPart modelpart = context.bakeLayer(modellayerlocation);
+        ModelLayerLocation modelLayerLocation = chestBoat ? ModBoatRenderer.createChestBoatModelName(type) : ModBoatRenderer.createBoatModelName(type);
+        ModelPart modelpart = context.bakeLayer(modelLayerLocation);
         return chestBoat ? new ChestBoatModel(modelpart) : new BoatModel(modelpart);
     }
 

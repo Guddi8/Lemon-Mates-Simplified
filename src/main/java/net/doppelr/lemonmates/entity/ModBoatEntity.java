@@ -11,10 +11,8 @@ import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.vehicle.Boat;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 
 import java.util.function.IntFunction;
 
@@ -69,10 +67,7 @@ public class ModBoatEntity extends Boat {
         ORANGE(ModBlocks.ORANGE_PLANKS.get(), "orange");
 
         private final String name;
-        private final java.util.function.Supplier<Block> planksSupplier;
-        final java.util.function.Supplier<Item> boatItem;
-        final java.util.function.Supplier<Item> chestBoatItem;
-        private final java.util.function.Supplier<Item> stickItem;
+        private final java.util.function.Supplier<Block> planks;
         private final boolean raft;
         public static final StringRepresentable.EnumCodec<ModBoatEntity.Type> CODEC = StringRepresentable.fromEnum(ModBoatEntity.Type::values);
         private static final IntFunction<ModBoatEntity.Type> BY_ID = ByIdMap.continuous(Enum::ordinal, values(), ByIdMap.OutOfBoundsStrategy.ZERO);
@@ -85,36 +80,10 @@ public class ModBoatEntity extends Boat {
         @net.neoforged.fml.common.asm.enumextension.ReservedConstructor
         private Type(Block planks, String name, boolean raft) {
             this.name = name;
-            this.planksSupplier = () -> planks;
-            this.boatItem = () -> Items.AIR;
-            this.chestBoatItem = () -> Items.AIR;
-            this.stickItem = () -> Items.STICK;
+            this.planks = () -> planks;
             this.raft = raft;
         }
 
-        /**
-         * @param planks A supplier of the block to be dropped when the boat is destroyed by fall damage
-         * @param name The name of this boat type
-         * @param boatItem A supplier of the item to be dropped when a normal boat or raft of this type is picked up
-         * @param chestBoatItem A supplier of the item to be dropped when a chest boat or raft of this type is picked up
-         * @param stickItem A supplier of the stick item to be dropped when the boat is destroyed by fall damage
-         * @param raft Whether this boat type is a "standard" boat or a raft
-         */
-        private Type(
-                java.util.function.Supplier<Block> planks,
-                String name,
-                java.util.function.Supplier<Item> boatItem,
-                java.util.function.Supplier<Item> chestBoatItem,
-                java.util.function.Supplier<Item> stickItem,
-                boolean raft
-        ) {
-            this.name = name;
-            this.planksSupplier = planks;
-            this.boatItem = boatItem;
-            this.chestBoatItem = chestBoatItem;
-            this.stickItem = stickItem;
-            this.raft = raft;
-        }
 
         @Override
         public String getSerializedName() {
@@ -126,11 +95,7 @@ public class ModBoatEntity extends Boat {
         }
 
         public Block getPlanks() {
-            return this.planksSupplier.get();
-        }
-
-        public Item getSticks() {
-            return this.stickItem.get();
+            return this.planks.get();
         }
 
         public boolean isRaft() {
@@ -157,7 +122,4 @@ public class ModBoatEntity extends Boat {
             return net.neoforged.fml.common.asm.enumextension.ExtensionInfo.nonExtended(Boat.Type.class);
         }
     }
-
 }
-
-// calabrese zwiebeln, calabrese 2x
