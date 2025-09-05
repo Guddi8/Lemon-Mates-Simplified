@@ -29,8 +29,8 @@ public class ModChestBoatEntity extends ChestBoat {
     @Override
     public Item getDropItem() {
         return switch (getModVariant()) {
-            case CITRON -> ModItems.CITRON_BOAT.get();
-            case ORANGE -> ModItems.ORANGE_BOAT.get();
+            case CITRON -> ModItems.CITRON_CHEST_BOAT.get();
+            case ORANGE -> ModItems.ORANGE_CHEST_BOAT.get();
         };
     }
 
