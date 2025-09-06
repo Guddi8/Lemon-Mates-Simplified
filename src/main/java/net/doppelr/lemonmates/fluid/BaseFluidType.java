@@ -12,8 +12,6 @@ import net.neoforged.neoforge.fluids.FluidType;
 import org.jetbrains.annotations.NotNull;
 import org.joml.Vector3f;
 
-import javax.annotation.Nullable;
-
 /**
  * Basic implementation of {@link FluidType} that supports specifying still and flowing textures in the constructor.
  *
