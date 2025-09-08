@@ -33,9 +33,6 @@ public class AllCreativeModeTabs {
                 output.accept(ModItems.BOTTLE_CAP);
                 output.accept(ModItems.BOTTLE_EMPTY);
                 output.accept(ModItems.BOTTLE_CAPPED);
-                output.accept(ModItems.BOTTLE_INCOMPLETE);
-                output.accept(ModItems.FORMABLE_PLASTIC);
-                output.accept(ModItems.BOTTLE_FORM);
 
                 // Labels
                 output.accept(ModItems.LABEL_EMPTY);
@@ -161,6 +158,16 @@ public class AllCreativeModeTabs {
                         output.accept(ModFluids.RASPBERRY_LEMONADE_FLUID_BUCKET.get());
                         output.accept(ModFluids.SUMMERMIX_LEMONADE_FLUID_BUCKET.get());
                         output.accept(ModFluids.WATERMELON_LEMONADE_FLUID_BUCKET.get());
+                        output.accept(ModFluids.MIXED_CITRON_LEMONADE_FLUID_BUCKET.get());
+                        output.accept(ModFluids.MIXED_ORANGE_LEMONADE_FLUID_BUCKET.get());
+                        output.accept(ModFluids.MIXED_RASPBERRY_LEMONADE_FLUID_BUCKET.get());
+                        output.accept(ModFluids.MIXED_SUMMERMIX_LEMONADE_FLUID_BUCKET.get());
+                        output.accept(ModFluids.MIXED_WATERMELON_LEMONADE_FLUID_BUCKET.get());
+
+                        // Bottle form related
+                        output.accept(ModItems.BOTTLE_INCOMPLETE);
+                        output.accept(ModItems.FORMABLE_PLASTIC);
+                        output.accept(ModItems.BOTTLE_FORM);
                     })
             .build()
     );

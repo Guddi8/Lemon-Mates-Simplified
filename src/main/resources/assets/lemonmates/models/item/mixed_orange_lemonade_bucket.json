@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "lemonmates:item/mixed_orange_lemonade_bucket"
+  }
+}

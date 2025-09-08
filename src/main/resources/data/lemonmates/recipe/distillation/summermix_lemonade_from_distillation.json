@@ -9,7 +9,7 @@
   ],
   "results": [
     {
-      "amount": 120,
+      "amount": 65,
       "id": "lemonmates:summermix_lemonade_fluid"
     },
     {
@@ -17,8 +17,20 @@
       "id": "minecraft:water"
     },
     {
-      "amount": 120,
+      "amount": 35,
       "id": "lemonmates:summermix_lemonade_fluid"
+    },
+    {
+      "amount": 60,
+      "id": "minecraft:water"
+    },
+    {
+      "amount": 60,
+      "id": "minecraft:water"
+    },
+    {
+      "amount": 60,
+      "id": "minecraft:water"
     }
   ]
 }

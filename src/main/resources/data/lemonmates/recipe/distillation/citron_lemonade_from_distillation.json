@@ -3,13 +3,21 @@
   "ingredients": [
     {
       "type": "fluid_stack",
-      "amount": 340,
+      "amount": 130,
       "fluid": "lemonmates:mixed_citron_lemonade_fluid"
     }
   ],
   "results": [
     {
-      "amount": 120,
+      "amount": 65,
+      "id": "lemonmates:citron_lemonade_fluid"
+    },
+    {
+      "amount": 65,
+      "id": "minecraft:water"
+    },
+    {
+      "amount": 35,
       "id": "lemonmates:citron_lemonade_fluid"
     },
     {
@@ -17,8 +25,12 @@
       "id": "minecraft:water"
     },
     {
-      "amount": 120,
-      "id": "lemonmates:citron_lemonade_fluid"
+      "amount": 60,
+      "id": "minecraft:water"
+    },
+    {
+      "amount": 60,
+      "id": "minecraft:water"
     }
   ]
 }

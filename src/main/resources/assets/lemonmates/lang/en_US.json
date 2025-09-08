@@ -106,5 +106,11 @@
   "item.lemonmates.orange_lemonade_bucket": "Orange Lemonade Bucket",
   "item.lemonmates.raspberry_lemonade_bucket": "Raspberry Lemonade Bucket",
   "item.lemonmates.summermix_lemonade_bucket": "Summer-Mix Lemonade Bucket",
-  "item.lemonmates.watermelon_lemonade_bucket": "Watermelon Lemonade Bucket"
+  "item.lemonmates.watermelon_lemonade_bucket": "Watermelon Lemonade Bucket",
+
+  "item.lemonmates.mixed_citron_lemonade_bucket": "Undistilled Citron Lemonade Bucket",
+  "item.lemonmates.mixed_orange_lemonade_bucket": "Undistilled Orange Lemonade Bucket",
+  "item.lemonmates.mixed_raspberry_lemonade_bucket": "Undistilled Raspberry Lemonade Bucket",
+  "item.lemonmates.mixed_summermix_lemonade_bucket": "Undistilled Summer-Mix Lemonade Bucket",
+  "item.lemonmates.mixed_watermelon_lemonade_bucket": "Undistilled Watermelon Lemonade Bucket"
 }
