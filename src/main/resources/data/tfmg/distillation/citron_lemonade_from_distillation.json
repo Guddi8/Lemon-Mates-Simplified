@@ -15,22 +15,6 @@
     {
       "amount": 65,
       "id": "minecraft:water"
-    },
-    {
-      "amount": 35,
-      "id": "lemonmates:citron_lemonade_fluid"
-    },
-    {
-      "amount": 60,
-      "id": "minecraft:water"
-    },
-    {
-      "amount": 60,
-      "id": "minecraft:water"
-    },
-    {
-      "amount": 60,
-      "id": "minecraft:water"
     }
   ]
 }

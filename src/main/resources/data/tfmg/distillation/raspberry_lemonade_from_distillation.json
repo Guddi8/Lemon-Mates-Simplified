@@ -1,0 +1,20 @@
+{
+  "type": "tfmg:distillation",
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "amount": 130,
+      "fluid": "lemonmates:mixed_raspberry_lemonade_fluid"
+    }
+  ],
+  "results": [
+    {
+      "amount": 65,
+      "id": "lemonmates:raspberry_lemonade_fluid"
+    },
+    {
+      "amount": 65,
+      "id": "minecraft:water"
+    }
+  ]
+}
