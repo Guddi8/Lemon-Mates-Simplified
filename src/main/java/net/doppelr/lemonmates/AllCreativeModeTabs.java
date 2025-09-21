@@ -152,6 +152,23 @@ public class AllCreativeModeTabs {
             .withTabsBefore(AllCreativeModeTabs.BASE_CREATIVE_TAB.getKey())
             .icon(() -> new ItemStack(ModFluids.WATERMELON_LEMONADE_FLUID_BUCKET.get()))
             .displayItems((params, output) -> {
+                // Plastic
+                output.accept(ModItems.SEED_FLOUR);
+                output.accept(ModItems.STARCH);
+                output.accept(ModItems.BIOPLASTIC_MASS);
+                output.accept(ModFluids.PLASTIC_FLUID_BUCKET.get());
+
+                // Bottle form related
+//                output.accept(ModItems.BOTTLE_INCOMPLETE);
+//                output.accept(ModItems.FORMABLE_PLASTIC);
+//                output.accept(ModItems.BOTTLE_FORM);
+                output.accept(ModItems.PREFORM_MOLD);
+                output.accept(ModItems.PREFORM_MOLD_WITH_PREFORM);
+                output.accept(ModItems.PREFORM);
+                output.accept(ModItems.MOLD);
+                output.accept(ModItems.MOLD_WITH_PREFORM);
+                output.accept(ModItems.MOLD_WITH_BOTTLE);
+
                 // Liquids
                 output.accept(ModFluids.CITRON_LEMONADE_FLUID_BUCKET.get());
                 output.accept(ModFluids.ORANGE_LEMONADE_FLUID_BUCKET.get());
@@ -163,23 +180,6 @@ public class AllCreativeModeTabs {
                 output.accept(ModFluids.MIXED_RASPBERRY_LEMONADE_FLUID_BUCKET.get());
                 output.accept(ModFluids.MIXED_SUMMERMIX_LEMONADE_FLUID_BUCKET.get());
                 output.accept(ModFluids.MIXED_WATERMELON_LEMONADE_FLUID_BUCKET.get());
-
-                // Plastic
-                output.accept(ModItems.SEED_FLOUR);
-                output.accept(ModItems.STARCH);
-                output.accept(ModItems.BIOPLASTIC_MASS);
-
-                // Bottle form related
-                output.accept(ModItems.BOTTLE_INCOMPLETE);
-                output.accept(ModItems.FORMABLE_PLASTIC);
-                output.accept(ModItems.BOTTLE_FORM);
-
-                output.accept(ModItems.PREFORM_MOLD);
-                output.accept(ModItems.PREFORM_MOLD_WITH_PREFORM);
-                output.accept(ModItems.PREFORM);
-                output.accept(ModItems.MOLD);
-                output.accept(ModItems.MOLD_WITH_PREFORM);
-                output.accept(ModItems.MOLD_WITH_BOTTLE);
             })
             .build()
     );

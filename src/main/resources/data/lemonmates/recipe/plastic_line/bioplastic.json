@@ -9,7 +9,7 @@
   "results": [
     {
       "type": "fluid_stack",
-      "id": "minecraft:water",
+      "id": "lemonmates:plastic",
       "amount": 50
     }
   ]

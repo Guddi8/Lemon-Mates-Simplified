@@ -86,9 +86,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RASPBERRY.get(), 9)
                 .requires(ModBlocks.RASPBERRY_CRATE.get()).unlockedBy("has_raspberry", has(ModItems.RASPBERRY)).save(recipeOutput);
 
+        // get Molds back
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PREFORM.get(), 1)
             .requires(ModItems.PREFORM_MOLD_WITH_PREFORM.get()).unlockedBy("has_preform", has(ModItems.PREFORM)).save(recipeOutput);
-
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BOTTLE_EMPTY.get(), 1)
             .requires(ModItems.MOLD_WITH_BOTTLE.get()).unlockedBy("has_preform", has(ModItems.PREFORM)).save(recipeOutput);
 

@@ -45,12 +45,13 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_CAPPED = ITEMS.register("bottle_capped",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> FORMABLE_PLASTIC = ITEMS.register("formable_plastic",
-            () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> BOTTLE_FORM = ITEMS.register("bottle_form",
-            () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> BOTTLE_INCOMPLETE = ITEMS.register("bottle_incomplete",
-            () -> new Item(new Item.Properties()));
+
+//    public static final DeferredItem<Item> FORMABLE_PLASTIC = ITEMS.register("formable_plastic",
+//            () -> new Item(new Item.Properties()));
+//    public static final DeferredItem<Item> BOTTLE_FORM = ITEMS.register("bottle_form",
+//            () -> new Item(new Item.Properties()));
+//    public static final DeferredItem<Item> BOTTLE_INCOMPLETE = ITEMS.register("bottle_incomplete",
+//            () -> new Item(new Item.Properties()));
 
     // Lemonade related
     // Labels Basic

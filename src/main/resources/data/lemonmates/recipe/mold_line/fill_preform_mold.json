@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "lemonmates:preform_mold"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 250,
+      "fluid": "lemonmates:plastic_liquid_source"
+    }
+  ],
+  "results": [
+    {
+      "id": "lemonmates:preform_mold_with_preform"
+    }
+  ]
+}
