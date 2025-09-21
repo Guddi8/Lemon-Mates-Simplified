@@ -164,13 +164,20 @@ public class AllCreativeModeTabs {
                 output.accept(ModFluids.MIXED_SUMMERMIX_LEMONADE_FLUID_BUCKET.get());
                 output.accept(ModFluids.MIXED_WATERMELON_LEMONADE_FLUID_BUCKET.get());
 
+                // Plastic
+                output.accept(ModItems.SEED_FLOUR);
+                output.accept(ModItems.STARCH);
+                output.accept(ModItems.BIOPLASTIC_MASS);
+
                 // Bottle form related
                 output.accept(ModItems.BOTTLE_INCOMPLETE);
                 output.accept(ModItems.FORMABLE_PLASTIC);
                 output.accept(ModItems.BOTTLE_FORM);
 
-                output.accept(ModItems.MOLD);
+                output.accept(ModItems.PREFORM_MOLD);
+                output.accept(ModItems.PREFORM_MOLD_WITH_PREFORM);
                 output.accept(ModItems.PREFORM);
+                output.accept(ModItems.MOLD);
                 output.accept(ModItems.MOLD_WITH_PREFORM);
                 output.accept(ModItems.MOLD_WITH_BOTTLE);
             })

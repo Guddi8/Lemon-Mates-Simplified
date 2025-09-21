@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_preform": {
+      "conditions": {
+        "items": [
+          {
+            "items": "lemonmates:preform"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "lemonmates:preform"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_preform"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "lemonmates:preform"
+    ]
+  }
+}

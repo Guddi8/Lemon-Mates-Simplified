@@ -1,4 +1,5 @@
-// 1.21.1	2025-09-21T17:59:10.8855786	Item Models: lemonmates
+// 1.21.1	2025-09-21T21:56:42.8103133	Item Models: lemonmates
+138a42244c73c0017b7a51a1e09d007f8eb51adf assets/lemonmates/models/item/bioplastic_mass.json
 1d65eec8c3227815848450e8c5d87f5bd0cd3c32 assets/lemonmates/models/item/citron.json
 3589c8bf67233cfea9a9a5e0407c4168a9f99d7e assets/lemonmates/models/item/citron_button.json
 258c99a08a8e797e91253ccc4b30e1754df23c2a assets/lemonmates/models/item/citron_door.json
@@ -17,4 +18,8 @@ c9d64f2902642ba2c8425b24fa57beee3abc7204 assets/lemonmates/models/item/orange_ha
 fb91a796f34d6d6b6e16a52d71c1678b091007c5 assets/lemonmates/models/item/orange_sapling.json
 dbddedbfbcc9a4033ba0fcb909b3acc80be4ee98 assets/lemonmates/models/item/orange_sign.json
 9b6ec73a3f099b30dd5575a0f7d7fb99b516fc43 assets/lemonmates/models/item/preform.json
+9b3d5050af42c4bfc2e91e52c0b76147259ebfed assets/lemonmates/models/item/preform_mold.json
+048e1d3296c3038203a3bad6cff7a5a51ea89616 assets/lemonmates/models/item/preform_mold_with_preform.json
 f1418197725e7fa91216d57cfb49b5a7c6b76c06 assets/lemonmates/models/item/raspberry.json
+6ade2212c423ac19b8e5655d235d82e6cc97b23a assets/lemonmates/models/item/seed_flour.json
+b7097f639ceaf9f6bdc5d5b8d68dea101766b908 assets/lemonmates/models/item/starch.json

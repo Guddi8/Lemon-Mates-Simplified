@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "fluid": "minecraft:water",
+      "type": "fluid_stack",
+      "amount": 250
+    },
+    {
+      "item": "lemonmates:seed_flour",
+      "count": 2
+    }
+  ],
+  "results": [
+    {
+      "id": "lemonmates:starch"
+    }
+  ]
+}

@@ -40,8 +40,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.ORANGE_SIGN.get());
         basicItem(ModItems.ORANGE_HANGING_SIGN.get());
 
-        basicItem(ModItems.MOLD.get());
+        basicItem(ModItems.SEED_FLOUR.get());
+        basicItem(ModItems.STARCH.get());
+        basicItem(ModItems.BIOPLASTIC_MASS.get());
+
+        basicItem(ModItems.PREFORM_MOLD.get());
+        basicItem(ModItems.PREFORM_MOLD_WITH_PREFORM.get());
         basicItem(ModItems.PREFORM.get());
+        basicItem(ModItems.MOLD.get());
         basicItem(ModItems.MOLD_WITH_PREFORM.get());
         basicItem(ModItems.MOLD_WITH_BOTTLE.get());
     }

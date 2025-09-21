@@ -1,5 +1,6 @@
 package net.doppelr.lemonmates.datagen;
 
+import com.simibubi.create.content.kinetics.mixer.MixingRecipe;
 import net.doppelr.lemonmates.AllModTags;
 import net.doppelr.lemonmates.block.ModBlocks;
 import net.doppelr.lemonmates.item.ModItems;
@@ -7,6 +8,9 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.ShapedRecipe;
+import net.minecraft.world.item.crafting.ShapelessRecipe;
+import net.minecraft.world.item.crafting.SmeltingRecipe;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.concurrent.CompletableFuture;
@@ -81,5 +85,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(recipeOutput);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RASPBERRY.get(), 9)
                 .requires(ModBlocks.RASPBERRY_CRATE.get()).unlockedBy("has_raspberry", has(ModItems.RASPBERRY)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PREFORM.get(), 1)
+            .requires(ModItems.PREFORM_MOLD_WITH_PREFORM.get()).unlockedBy("has_preform", has(ModItems.PREFORM)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BOTTLE_EMPTY.get(), 1)
+            .requires(ModItems.MOLD_WITH_BOTTLE.get()).unlockedBy("has_preform", has(ModItems.PREFORM)).save(recipeOutput);
+
     }
 }

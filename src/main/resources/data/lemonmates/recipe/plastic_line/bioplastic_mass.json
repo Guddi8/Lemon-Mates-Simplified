@@ -1,0 +1,16 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "create:pulp"
+    },
+    {
+      "item": "lemonmates:starch"
+    }
+  ],
+  "results": [
+    {
+      "id": "lemonmates:bioplastic_mass"
+    }
+  ]
+}
