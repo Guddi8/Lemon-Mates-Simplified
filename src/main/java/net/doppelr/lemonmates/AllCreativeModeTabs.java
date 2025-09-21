@@ -13,13 +13,13 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
 public class AllCreativeModeTabs {
-    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
-            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, LemonMates.MOD_ID);
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
+        DeferredRegister.create(Registries.CREATIVE_MODE_TAB, LemonMates.MOD_ID);
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> LEMONMATES_TAB = CREATIVE_MODE_TAB.register("lemonmates_tab",
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> BASE_CREATIVE_TAB = CREATIVE_MODE_TABS.register("base",
         () -> CreativeModeTab.builder()
-            .title(Component.translatable("itemGroup." + LemonMates.MOD_ID + ".lemonmates"))
-            .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
+            .title(Component.translatable("itemGroup." + LemonMates.MOD_ID + ".base"))
+            .withTabsBefore(AllCreativeModeTabs.PLANTS_CREATIVE_TAB.getKey())
             .icon(() -> new ItemStack(ModItems.BOTTLE_WATERMELON_LEMONADE_CAP_LABEL.get()))
             .displayItems((params, output) -> {
                 // Finished Lemonades
@@ -83,10 +83,10 @@ public class AllCreativeModeTabs {
             .build()
     );
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> LEMONMATES_PLANTS_TAB = CREATIVE_MODE_TAB.register("lemonmates_plants_tab",
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> PLANTS_CREATIVE_TAB = CREATIVE_MODE_TABS.register("plants",
         () -> CreativeModeTab.builder()
-            .title(Component.translatable("itemGroup." + LemonMates.MOD_ID + ".lemonmates_plants"))
-            .withTabsBefore(LEMONMATES_TAB.getKey())
+            .title(Component.translatable("itemGroup." + LemonMates.MOD_ID + ".plants"))
+            .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
             .icon(() -> new ItemStack(ModItems.ORANGE.get()))
             .displayItems((params, output) -> {
                 // Fruits
@@ -146,33 +146,33 @@ public class AllCreativeModeTabs {
             .build()
     );
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> LEMONMATES_PROCESSING_TAB = CREATIVE_MODE_TAB.register("lemonmates_processing_tab",
-            () -> CreativeModeTab.builder()
-                    .title(Component.translatable("itemGroup." + LemonMates.MOD_ID + ".lemonmates_processing"))
-                    .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
-                    .icon(() -> new ItemStack(ModFluids.WATERMELON_LEMONADE_FLUID_BUCKET.get()))
-                    .displayItems((params, output) -> {
-                        // Liquids
-                        output.accept(ModFluids.CITRON_LEMONADE_FLUID_BUCKET.get());
-                        output.accept(ModFluids.ORANGE_LEMONADE_FLUID_BUCKET.get());
-                        output.accept(ModFluids.RASPBERRY_LEMONADE_FLUID_BUCKET.get());
-                        output.accept(ModFluids.SUMMERMIX_LEMONADE_FLUID_BUCKET.get());
-                        output.accept(ModFluids.WATERMELON_LEMONADE_FLUID_BUCKET.get());
-                        output.accept(ModFluids.MIXED_CITRON_LEMONADE_FLUID_BUCKET.get());
-                        output.accept(ModFluids.MIXED_ORANGE_LEMONADE_FLUID_BUCKET.get());
-                        output.accept(ModFluids.MIXED_RASPBERRY_LEMONADE_FLUID_BUCKET.get());
-                        output.accept(ModFluids.MIXED_SUMMERMIX_LEMONADE_FLUID_BUCKET.get());
-                        output.accept(ModFluids.MIXED_WATERMELON_LEMONADE_FLUID_BUCKET.get());
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> PROCESSING_CREATIVE_TAB = CREATIVE_MODE_TABS.register("processing",
+        () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup." + LemonMates.MOD_ID + ".processing"))
+            .withTabsBefore(AllCreativeModeTabs.BASE_CREATIVE_TAB.getKey())
+            .icon(() -> new ItemStack(ModFluids.WATERMELON_LEMONADE_FLUID_BUCKET.get()))
+            .displayItems((params, output) -> {
+                // Liquids
+                output.accept(ModFluids.CITRON_LEMONADE_FLUID_BUCKET.get());
+                output.accept(ModFluids.ORANGE_LEMONADE_FLUID_BUCKET.get());
+                output.accept(ModFluids.RASPBERRY_LEMONADE_FLUID_BUCKET.get());
+                output.accept(ModFluids.SUMMERMIX_LEMONADE_FLUID_BUCKET.get());
+                output.accept(ModFluids.WATERMELON_LEMONADE_FLUID_BUCKET.get());
+                output.accept(ModFluids.MIXED_CITRON_LEMONADE_FLUID_BUCKET.get());
+                output.accept(ModFluids.MIXED_ORANGE_LEMONADE_FLUID_BUCKET.get());
+                output.accept(ModFluids.MIXED_RASPBERRY_LEMONADE_FLUID_BUCKET.get());
+                output.accept(ModFluids.MIXED_SUMMERMIX_LEMONADE_FLUID_BUCKET.get());
+                output.accept(ModFluids.MIXED_WATERMELON_LEMONADE_FLUID_BUCKET.get());
 
-                        // Bottle form related
-                        output.accept(ModItems.BOTTLE_INCOMPLETE);
-                        output.accept(ModItems.FORMABLE_PLASTIC);
-                        output.accept(ModItems.BOTTLE_FORM);
-                    })
+                // Bottle form related
+                output.accept(ModItems.BOTTLE_INCOMPLETE);
+                output.accept(ModItems.FORMABLE_PLASTIC);
+                output.accept(ModItems.BOTTLE_FORM);
+            })
             .build()
     );
 
     public static void register(IEventBus eventBus) {
-        CREATIVE_MODE_TAB.register(eventBus);
+        CREATIVE_MODE_TABS.register(eventBus);
     }
 }

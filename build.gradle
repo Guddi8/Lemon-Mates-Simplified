@@ -17,12 +17,6 @@ tasks.named('wrapper', Wrapper).configure {
 version = mod_version
 group = mod_group_id
 
-repositories {
-    // Add here additional repositories if required by some of the dependencies below.
-    maven { url = "https://maven.createmod.net" } // Create, Ponder, Flywheel
-    maven { url = "https://maven.ithundxr.dev/snapshots" } // Registrate
-}
-
 base {
     archivesName = mod_id
 }
@@ -34,9 +28,11 @@ neoForge {
     // Specify the version of NeoForge to use.
     version = project.neo_version
 
-    parchment {
-        mappingsVersion = project.parchment_mappings_version
-        minecraftVersion = project.parchment_minecraft_version
+    if (parchment_version != "none") {
+        parchment {
+            minecraftVersion = parchment_minecraft_version == "same" ? minecraft_version : parchment_minecraft_version
+            mappingsVersion = parchment_version
+        }
     }
 
     // This line is optional. Access Transformers are automatically detected
@@ -50,6 +46,8 @@ neoForge {
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+
+            programArguments.addAll(['--width', '1600', '--height', '900'])
         }
 
         server {
@@ -113,16 +111,36 @@ configurations {
     runtimeClasspath.extendsFrom localRuntime
 }
 
-dependencies {
+repositories {
+    // Add here additional repositories if required by some of the dependencies below.
+    maven { url = "https://maven.createmod.net" } // Create, Ponder, Flywheel
+    maven { url = "https://maven.ithundxr.dev/snapshots" } // Registrate
+    maven { url = "https://cursemaven.com" } // Farmer's Delight
+    maven { url = "https://maven.blamejared.com" } // JEI
+    maven { url = "https://maven.ryanliptak.com/" } // AppleSkin
+}
 
-    // For more info:
-    // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
-    // http://www.gradle.org/docs/current/userguide/dependency_management.html
+dependencies {
     implementation("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
     implementation("net.createmod.ponder:Ponder-NeoForge-${minecraft_version}:${ponder_version}")
     compileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}")
     runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}")
     implementation("com.tterrag.registrate:Registrate:${registrate_version}")
+
+    localRuntime("curse.maven:farmers-delight-398521:${farmers_delight_version}")
+    // implementation("curse.maven:slice-and-dice-659674:7011985")
+
+    if (tfmg_enabled.toBoolean()) {
+        localRuntime("curse.maven:create-industry-693815:${tfmg_version}")
+    }
+
+    // Example optional mod dependency with JEI
+    // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
+    compileOnly("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
+    compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}")
+    // We add the full version to localRuntime, not runtimeOnly, so that we do not publish a dependency on it
+    localRuntime("mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}")
+    localRuntime("squeek.appleskin:appleskin-neoforge:${appleskin_version}")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

@@ -1,7 +1,7 @@
 {
-  "itemGroup.lemonmates.lemonmates": "Lemonmates Lemonades",
-  "itemGroup.lemonmates.lemonmates_plants": "Lemonmates Plants",
-  "itemGroup.lemonmates.lemonmates_processing": "Lemonmates Processing",
+  "itemGroup.lemonmates.base": "Lemonmates Lemonades",
+  "itemGroup.lemonmates.plants": "Lemonmates Plants",
+  "itemGroup.lemonmates.processing": "Lemonmates Processing",
 
   "item.lemonmates.bottle_cap": "Bottle Cap",
   "item.lemonmates.bottle_capped": "Empty Bottle with Cap",
