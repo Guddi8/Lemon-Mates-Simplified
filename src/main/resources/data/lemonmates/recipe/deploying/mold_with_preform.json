@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "lemonmates:mold"
+    },
+    {
+      "item": "lemonmates:preform"
+    }
+  ],
+  "results": [
+    {
+      "id": "lemonmates:mold_with_preform"
+    }
+  ]
+}

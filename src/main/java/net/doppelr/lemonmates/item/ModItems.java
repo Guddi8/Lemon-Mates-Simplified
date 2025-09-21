@@ -12,6 +12,16 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(LemonMates.MOD_ID);
 
+    // Mold
+    public static final DeferredItem<Item> MOLD = ITEMS.register("mold",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PREFORM = ITEMS.register("preform",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> MOLD_WITH_PREFORM = ITEMS.register("mold_with_preform",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> MOLD_WITH_BOTTLE = ITEMS.register("mold_with_bottle",
+            () -> new Item(new Item.Properties()));
+
     // Bottle Basics
     public static final DeferredItem<Item> BOTTLE_EMPTY = ITEMS.register("bottle_empty",
             () -> new Item(new Item.Properties()));

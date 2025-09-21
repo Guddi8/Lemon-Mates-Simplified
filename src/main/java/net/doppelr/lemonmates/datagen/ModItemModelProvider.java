@@ -39,6 +39,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModBlocks.ORANGE_DOOR.asItem());
         basicItem(ModItems.ORANGE_SIGN.get());
         basicItem(ModItems.ORANGE_HANGING_SIGN.get());
+
+        basicItem(ModItems.MOLD.get());
+        basicItem(ModItems.PREFORM.get());
+        basicItem(ModItems.MOLD_WITH_PREFORM.get());
+        basicItem(ModItems.MOLD_WITH_BOTTLE.get());
     }
 
     private ItemModelBuilder lemonadeItem(DeferredItem<Item> item) {

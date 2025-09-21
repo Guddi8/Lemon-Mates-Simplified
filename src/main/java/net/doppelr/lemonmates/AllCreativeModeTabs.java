@@ -168,6 +168,11 @@ public class AllCreativeModeTabs {
                 output.accept(ModItems.BOTTLE_INCOMPLETE);
                 output.accept(ModItems.FORMABLE_PLASTIC);
                 output.accept(ModItems.BOTTLE_FORM);
+
+                output.accept(ModItems.MOLD);
+                output.accept(ModItems.PREFORM);
+                output.accept(ModItems.MOLD_WITH_PREFORM);
+                output.accept(ModItems.MOLD_WITH_BOTTLE);
             })
             .build()
     );
