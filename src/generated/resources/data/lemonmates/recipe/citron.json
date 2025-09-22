@@ -1,13 +1,17 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
-  "ingredients": [
-    {
-      "item": "lemonmates:citron_crate"
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "lemonmates:citron_slice"
     }
+  },
+  "pattern": [
+    "##",
+    "##"
   ],
   "result": {
-    "count": 9,
+    "count": 1,
     "id": "lemonmates:citron"
   }
 }
