@@ -2,7 +2,7 @@
   "type": "create:deploying",
   "ingredients": [
     {
-      "item": "lemonmates:mold"
+      "item": "lemonmates:bottle_mold"
     },
     {
       "item": "lemonmates:preform"
@@ -10,7 +10,7 @@
   ],
   "results": [
     {
-      "id": "lemonmates:mold_with_preform"
+      "id": "lemonmates:bottle_mold_with_preform"
     }
   ]
 }

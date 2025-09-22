@@ -1,5 +1,6 @@
 package net.doppelr.lemonmates.datagen;
 
+import com.simibubi.create.AllTags;
 import net.doppelr.lemonmates.AllModTags;
 import net.doppelr.lemonmates.LemonMates;
 import net.doppelr.lemonmates.block.ModBlocks;
@@ -8,6 +9,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.concurrent.CompletableFuture;
@@ -99,11 +101,36 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RASPBERRY.get(), 9)
                 .requires(ModBlocks.RASPBERRY_CRATE.get()).unlockedBy("has_raspberry", has(ModItems.RASPBERRY)).save(recipeOutput);
 
+        // Molds
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BOTTLE_MOLD.get())
+                .pattern("#S#")
+                .pattern("#S#")
+                .pattern("#S#")
+                .define('#', Tags.Items.INGOTS_IRON)
+                .define('S', AllTags.commonItemTag("plates/iron"))
+                .unlockedBy("has_iron", has(Tags.Items.INGOTS_IRON))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PREFORM_MOLD.get())
+                .pattern("#S#")
+                .pattern("#S#")
+                .define('#', Tags.Items.INGOTS_IRON)
+                .define('S', AllTags.commonItemTag("plates/iron"))
+                .unlockedBy("has_iron", has(Tags.Items.INGOTS_IRON))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CAP_MOLD.get())
+                .pattern("SS")
+                .pattern("##")
+                .define('#', Tags.Items.INGOTS_IRON)
+                .define('S', AllTags.commonItemTag("plates/iron"))
+                .unlockedBy("has_iron", has(Tags.Items.INGOTS_IRON))
+                .save(recipeOutput);
+
+
         // get Molds back
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PREFORM.get(), 1)
             .requires(ModItems.PREFORM_MOLD_WITH_PREFORM.get()).unlockedBy("has_preform_mold", has(ModItems.PREFORM_MOLD)).save(recipeOutput);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BOTTLE_EMPTY.get(), 1)
-            .requires(ModItems.MOLD_WITH_BOTTLE.get()).unlockedBy("has_mold", has(ModItems.MOLD)).save(recipeOutput);
+            .requires(ModItems.BOTTLE_MOLD_WITH_BOTTLE.get()).unlockedBy("has_mold", has(ModItems.BOTTLE_MOLD)).save(recipeOutput);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BOTTLE_CAP.get(), 1)
             .requires(ModItems.CAP_MOLD_WITH_CAP.get()).unlockedBy("has_cap_mold", has(ModItems.CAP_MOLD)).save(recipeOutput);
     }

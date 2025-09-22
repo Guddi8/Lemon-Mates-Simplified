@@ -2,13 +2,13 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "lemonmates:mold_with_bottle",
+      "item": "lemonmates:bottle_mold_with_bottle",
       "count": 1
     }
   ],
   "results": [
     {
-      "id": "lemonmates:mold"
+      "id": "lemonmates:bottle_mold"
     }, {
       "id": "lemonmates:bottle_empty"
     }

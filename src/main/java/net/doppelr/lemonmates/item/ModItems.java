@@ -12,7 +12,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(LemonMates.MOD_ID);
 
-    // Plasic
+    // Plastic
     public static final DeferredItem<Item> SEED_FLOUR = ITEMS.register("seed_flour",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> STARCH = ITEMS.register("starch",
@@ -20,26 +20,25 @@ public class ModItems {
     public static final DeferredItem<Item> BIOPLASTIC_MASS = ITEMS.register("bioplastic_mass",
             () -> new Item(new Item.Properties()));
 
-
-    // Mold
+    // Molds
     public static final DeferredItem<Item> PREFORM_MOLD = ITEMS.register("preform_mold",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PREFORM_MOLD_WITH_PREFORM = ITEMS.register("preform_mold_with_preform",
             () -> new Item(new Item.Properties().craftRemainder(ModItems.PREFORM_MOLD.get())));
-    public static final DeferredItem<Item> PREFORM = ITEMS.register("preform",
+    public static final DeferredItem<Item> BOTTLE_MOLD = ITEMS.register("bottle_mold",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> MOLD = ITEMS.register("mold",
+    public static final DeferredItem<Item> BOTTLE_MOLD_WITH_PREFORM = ITEMS.register("bottle_mold_with_preform",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> MOLD_WITH_PREFORM = ITEMS.register("mold_with_preform",
-            () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> MOLD_WITH_BOTTLE = ITEMS.register("mold_with_bottle",
-            () -> new Item(new Item.Properties().craftRemainder(ModItems.MOLD.get())));
+    public static final DeferredItem<Item> BOTTLE_MOLD_WITH_BOTTLE = ITEMS.register("bottle_mold_with_bottle",
+            () -> new Item(new Item.Properties().craftRemainder(ModItems.BOTTLE_MOLD.get())));
     public static final DeferredItem<Item> CAP_MOLD = ITEMS.register("cap_mold",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> CAP_MOLD_WITH_CAP = ITEMS.register("cap_mold_with_cap",
             () -> new Item(new Item.Properties().craftRemainder(ModItems.CAP_MOLD.get())));
 
     // Bottle Basics
+    public static final DeferredItem<Item> PREFORM = ITEMS.register("preform",
+            () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_EMPTY = ITEMS.register("bottle_empty",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_CAP = ITEMS.register("bottle_cap",

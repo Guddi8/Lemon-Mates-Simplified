@@ -4,9 +4,9 @@
   "cookingtime": 200,
   "experience": 0.0,
   "ingredient": {
-    "item": "lemonmates:mold_with_preform"
+    "item": "lemonmates:bottle_mold_with_preform"
   },
   "result": {
-    "id": "lemonmates:mold_with_bottle"
+    "id": "lemonmates:bottle_mold_with_bottle"
   }
 }

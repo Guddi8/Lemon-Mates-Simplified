@@ -48,9 +48,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.PREFORM_MOLD.get());
         basicItem(ModItems.PREFORM_MOLD_WITH_PREFORM.get());
         basicItem(ModItems.PREFORM.get());
-        basicItem(ModItems.MOLD.get());
-        basicItem(ModItems.MOLD_WITH_PREFORM.get());
-        basicItem(ModItems.MOLD_WITH_BOTTLE.get());
+        basicItem(ModItems.BOTTLE_MOLD.get());
+        basicItem(ModItems.BOTTLE_MOLD_WITH_PREFORM.get());
+        basicItem(ModItems.BOTTLE_MOLD_WITH_BOTTLE.get());
         basicItem(ModItems.CAP_MOLD.get());
         basicItem(ModItems.CAP_MOLD_WITH_CAP.get());
     }

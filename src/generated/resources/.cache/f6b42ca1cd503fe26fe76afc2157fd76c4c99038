@@ -1,5 +1,8 @@
-// 1.21.1	2025-09-22T19:24:59.251299	Item Models: lemonmates
+// 1.21.1	2025-09-22T19:49:28.7060351	Item Models: lemonmates
 138a42244c73c0017b7a51a1e09d007f8eb51adf assets/lemonmates/models/item/bioplastic_mass.json
+7ac6510ada9a79c2f954a2c2f28be9d53a1d71ba assets/lemonmates/models/item/bottle_mold.json
+5d7ab18da94bc0fba2e4aa894b007b4eaf91b376 assets/lemonmates/models/item/bottle_mold_with_bottle.json
+1766336f4625b5d961bf2680428f1830f613953a assets/lemonmates/models/item/bottle_mold_with_preform.json
 8b640a2508f53b55ee29783fb10f3ac4826da81b assets/lemonmates/models/item/cap_mold.json
 4725c782b14d1987b4876cba0c05920a08e6188c assets/lemonmates/models/item/cap_mold_with_cap.json
 1d65eec8c3227815848450e8c5d87f5bd0cd3c32 assets/lemonmates/models/item/citron.json
@@ -10,9 +13,6 @@
 a79067c13f8f61f2773c10c67451c64307bac6b0 assets/lemonmates/models/item/citron_sapling.json
 9f1c52c417b907ad9d92f751f22ee86dc3c4e1eb assets/lemonmates/models/item/citron_sign.json
 edaaebf1da2608b21575e73f6691872cdc2f458d assets/lemonmates/models/item/citron_slice.json
-9fdb4a5d188a4e6c945b487942cbec54507020ee assets/lemonmates/models/item/mold.json
-5a859bdce75564ca23dafa81ebed59a07b53492e assets/lemonmates/models/item/mold_with_bottle.json
-78fedfb380d260c377d97dcf6b642250e60658ba assets/lemonmates/models/item/mold_with_preform.json
 e9c347f3336218870283425b87f389d6e2ee836c assets/lemonmates/models/item/orange.json
 a5e34ba1fef7e8c745423a65d4f527bf6405364a assets/lemonmates/models/item/orange_button.json
 af17e2972f3855dc7ae6987fd45ad9d85fa2a9c5 assets/lemonmates/models/item/orange_door.json
