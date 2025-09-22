@@ -38,7 +38,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             .save(recipeOutput);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CITRON.get(), 9)
             .requires(ModBlocks.CITRON_CRATE.get()).unlockedBy("has_citron", has(ModItems.CITRON)).save(recipeOutput, LemonMates.rl("citron_from_crate"));
-        planksFromLog(recipeOutput, ModBlocks.CITRON_PLANKS, AllModTags.Items.CITRON_LOGS, 4);
+        planksFromLog(recipeOutput, ModBlocks.CITRON_PLANKS, AllModTags.ItemTags.CITRON_LOGS, 4);
         woodFromLogs(recipeOutput, ModBlocks.CITRON_WOOD, ModBlocks.CITRON_LOG);
         woodFromLogs(recipeOutput, ModBlocks.STRIPPED_CITRON_WOOD, ModBlocks.STRIPPED_CITRON_LOG);
         stairBuilder(ModBlocks.CITRON_STAIRS.get(), Ingredient.of(ModBlocks.CITRON_PLANKS))
@@ -73,7 +73,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             .save(recipeOutput);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ORANGE.get(), 9)
             .requires(ModBlocks.ORANGE_CRATE.get()).unlockedBy("has_orange", has(ModItems.ORANGE)).save(recipeOutput, LemonMates.rl("orange_from_crate"));
-        planksFromLog(recipeOutput, ModBlocks.ORANGE_PLANKS, AllModTags.Items.ORANGE_LOGS, 4);
+        planksFromLog(recipeOutput, ModBlocks.ORANGE_PLANKS, AllModTags.ItemTags.ORANGE_LOGS, 4);
         woodFromLogs(recipeOutput, ModBlocks.ORANGE_WOOD, ModBlocks.ORANGE_LOG);
         woodFromLogs(recipeOutput, ModBlocks.STRIPPED_ORANGE_WOOD, ModBlocks.STRIPPED_ORANGE_LOG);
         stairBuilder(ModBlocks.ORANGE_STAIRS.get(), Ingredient.of(ModBlocks.ORANGE_PLANKS))

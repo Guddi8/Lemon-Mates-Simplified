@@ -1,7 +1,12 @@
-// 1.21.1	2025-08-29T17:33:56.7427046	Tags for minecraft:item mod id lemonmates
+// 1.21.1	2025-09-22T21:17:05.5836009	Tags for minecraft:item mod id lemonmates
+f3ef09ffa6e1c85ce798f7e46fa018d188cb715a data/create/tags/item/upright_on_belt.json
 c2aeba83a0cd5589021128b260951b1f5dd5c10a data/c/tags/item/stripped_logs.json
 831234b532b3190e02bdad6ca92f1c79e6e8d9e1 data/c/tags/item/stripped_woods.json
+942b7a7e9c262e61877273138c427ac364310058 data/lemonmates/tags/item/bottles.json
 ec001d932df2810d44f728a91637e46f25deb9e1 data/lemonmates/tags/item/citron_logs.json
+7e2159c537d74ec20c37f672808b63f246d20986 data/lemonmates/tags/item/labels.json
+80bc2261507103bb20179c038f4d5560e3fb15a1 data/lemonmates/tags/item/lemonades.json
+fd5305c3bcf6d2b679026c1150927257ab94efd4 data/lemonmates/tags/item/molds.json
 13d4e7735ae53dea526fe61eb36457db27667dcc data/lemonmates/tags/item/orange_logs.json
 4b2c7e1c50af5d63714df2c3a463f8d6298a4fb6 data/minecraft/tags/item/leaves.json
 e3216b2b2cb6ef503aae1d6f721e6157794150fc data/minecraft/tags/item/logs.json

@@ -5,7 +5,6 @@ import net.doppelr.lemonmates.LemonMates;
 import net.doppelr.lemonmates.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.tags.BlockTags;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -21,11 +20,11 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        tag(BlockTags.OVERWORLD_NATURAL_LOGS).add(
+        tag(net.minecraft.tags.BlockTags.OVERWORLD_NATURAL_LOGS).add(
             ModBlocks.ORANGE_LOG.get(),
             ModBlocks.CITRON_LOG.get()
         );
-        tag(BlockTags.LOGS).add(
+        tag(net.minecraft.tags.BlockTags.LOGS).add(
             ModBlocks.ORANGE_LOG.get(),
             ModBlocks.ORANGE_WOOD.get(),
             ModBlocks.STRIPPED_ORANGE_LOG.get(),
@@ -35,7 +34,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
             ModBlocks.STRIPPED_CITRON_LOG.get(),
             ModBlocks.STRIPPED_CITRON_WOOD.get()
         );
-        tag(BlockTags.LOGS_THAT_BURN).add(
+        tag(net.minecraft.tags.BlockTags.LOGS_THAT_BURN).add(
             ModBlocks.ORANGE_LOG.get(),
             ModBlocks.ORANGE_WOOD.get(),
             ModBlocks.STRIPPED_ORANGE_LOG.get(),
@@ -53,80 +52,80 @@ public class ModBlockTagProvider extends BlockTagsProvider {
             ModBlocks.STRIPPED_ORANGE_WOOD.get(),
             ModBlocks.STRIPPED_CITRON_WOOD.get()
         );
-        tag(BlockTags.LEAVES).add(
+        tag(net.minecraft.tags.BlockTags.LEAVES).add(
             ModBlocks.ORANGE_LEAVES.get(),
             ModBlocks.CITRON_LEAVES.get()
         );
-        tag(BlockTags.SAPLINGS).add(
+        tag(net.minecraft.tags.BlockTags.SAPLINGS).add(
             ModBlocks.ORANGE_SAPLING.get(),
             ModBlocks.CITRON_SAPLING.get()
         );
-        tag(BlockTags.PLANKS).add(
+        tag(net.minecraft.tags.BlockTags.PLANKS).add(
             ModBlocks.ORANGE_PLANKS.get(),
             ModBlocks.CITRON_PLANKS.get()
         );
-        tag(BlockTags.MINEABLE_WITH_AXE).add(
+        tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_AXE).add(
             ModBlocks.ORANGE_PLANKS.get(),
             ModBlocks.ORANGE_CRATE.get(),
             ModBlocks.RASPBERRY_CRATE.get(),
             ModBlocks.CITRON_PLANKS.get(),
             ModBlocks.CITRON_CRATE.get()
         );
-        tag(BlockTags.MINEABLE_WITH_HOE).add(
+        tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_HOE).add(
             ModBlocks.ORANGE_LEAVES.get(),
             ModBlocks.CITRON_LEAVES.get()
         );
-        tag(BlockTags.WOODEN_STAIRS).add(
+        tag(net.minecraft.tags.BlockTags.WOODEN_STAIRS).add(
             ModBlocks.ORANGE_STAIRS.get(),
             ModBlocks.CITRON_STAIRS.get()
         );
-        tag(BlockTags.WOODEN_SLABS).add(
+        tag(net.minecraft.tags.BlockTags.WOODEN_SLABS).add(
             ModBlocks.ORANGE_SLAB.get(),
             ModBlocks.CITRON_SLAB.get()
         );
-        tag(BlockTags.WOODEN_PRESSURE_PLATES).add(
+        tag(net.minecraft.tags.BlockTags.WOODEN_PRESSURE_PLATES).add(
             ModBlocks.ORANGE_PRESSURE_PLATE.get(),
             ModBlocks.CITRON_PRESSURE_PLATE.get()
         );
-        tag(BlockTags.WOODEN_BUTTONS).add(
+        tag(net.minecraft.tags.BlockTags.WOODEN_BUTTONS).add(
             ModBlocks.ORANGE_BUTTON.get(),
             ModBlocks.CITRON_BUTTON.get()
         );
-        tag(BlockTags.FENCES).add(
+        tag(net.minecraft.tags.BlockTags.FENCES).add(
             ModBlocks.ORANGE_FENCE.get(),
             ModBlocks.CITRON_FENCE.get()
         );
-        tag(BlockTags.WOODEN_FENCES).add(
+        tag(net.minecraft.tags.BlockTags.WOODEN_FENCES).add(
             ModBlocks.ORANGE_FENCE.get(),
             ModBlocks.CITRON_FENCE.get()
         );
-        tag(BlockTags.FENCE_GATES).add(
+        tag(net.minecraft.tags.BlockTags.FENCE_GATES).add(
             ModBlocks.ORANGE_FENCE_GATE.get(),
             ModBlocks.CITRON_FENCE_GATE.get()
         );
-        tag(BlockTags.DOORS).add(
+        tag(net.minecraft.tags.BlockTags.DOORS).add(
             ModBlocks.ORANGE_DOOR.get(),
             ModBlocks.CITRON_DOOR.get()
         );
-        tag(BlockTags.WOODEN_DOORS).add(
+        tag(net.minecraft.tags.BlockTags.WOODEN_DOORS).add(
             ModBlocks.ORANGE_DOOR.get(),
             ModBlocks.CITRON_DOOR.get()
         );
-        tag(BlockTags.TRAPDOORS).add(
+        tag(net.minecraft.tags.BlockTags.TRAPDOORS).add(
             ModBlocks.ORANGE_TRAPDOOR.get(),
             ModBlocks.CITRON_TRAPDOOR.get()
         );
-        tag(BlockTags.WOODEN_TRAPDOORS).add(
+        tag(net.minecraft.tags.BlockTags.WOODEN_TRAPDOORS).add(
             ModBlocks.ORANGE_TRAPDOOR.get(),
             ModBlocks.CITRON_TRAPDOOR.get()
         );
-        tag(AllModTags.Blocks.ORANGE_LOGS).add(
+        tag(AllModTags.BlockTags.ORANGE_LOGS).add(
             ModBlocks.ORANGE_LOG.get(),
             ModBlocks.ORANGE_WOOD.get(),
             ModBlocks.STRIPPED_ORANGE_LOG.get(),
             ModBlocks.STRIPPED_ORANGE_WOOD.get()
         );
-        tag(AllModTags.Blocks.CITRON_LOGS).add(
+        tag(AllModTags.BlockTags.CITRON_LOGS).add(
             ModBlocks.CITRON_LOG.get(),
             ModBlocks.CITRON_WOOD.get(),
             ModBlocks.STRIPPED_CITRON_LOG.get(),

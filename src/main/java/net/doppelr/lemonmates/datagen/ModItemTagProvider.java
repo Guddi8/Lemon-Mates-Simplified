@@ -1,17 +1,19 @@
 package net.doppelr.lemonmates.datagen;
 
+import com.simibubi.create.AllTags;
+import net.doppelr.lemonmates.AllFoodProperties;
 import net.doppelr.lemonmates.AllModTags;
 import net.doppelr.lemonmates.LemonMates;
 import net.doppelr.lemonmates.block.ModBlocks;
+import net.doppelr.lemonmates.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
-import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.registries.DeferredItem;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -23,7 +25,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        tag(ItemTags.LOGS).add(
+        tag(net.minecraft.tags.ItemTags.LOGS).add(
             ModBlocks.ORANGE_LOG.get().asItem(),
             ModBlocks.ORANGE_WOOD.get().asItem(),
             ModBlocks.STRIPPED_ORANGE_LOG.get().asItem(),
@@ -33,7 +35,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
             ModBlocks.STRIPPED_CITRON_LOG.get().asItem(),
             ModBlocks.STRIPPED_CITRON_WOOD.get().asItem()
         );
-        tag(ItemTags.LOGS_THAT_BURN).add(
+        tag(net.minecraft.tags.ItemTags.LOGS_THAT_BURN).add(
             ModBlocks.ORANGE_LOG.get().asItem(),
             ModBlocks.ORANGE_WOOD.get().asItem(),
             ModBlocks.STRIPPED_ORANGE_LOG.get().asItem(),
@@ -48,40 +50,106 @@ public class ModItemTagProvider extends ItemTagsProvider {
             ModBlocks.STRIPPED_CITRON_WOOD.get().asItem()
         );
         tag(Tags.Items.STRIPPED_LOGS).add(
-                ModBlocks.STRIPPED_ORANGE_LOG.get().asItem(),
-                ModBlocks.STRIPPED_CITRON_LOG.get().asItem()
+            ModBlocks.STRIPPED_ORANGE_LOG.get().asItem(),
+            ModBlocks.STRIPPED_CITRON_LOG.get().asItem()
         );
-        tag(ItemTags.LEAVES).add(
+        tag(net.minecraft.tags.ItemTags.LEAVES).add(
             ModBlocks.ORANGE_LEAVES.get().asItem(),
             ModBlocks.CITRON_LEAVES.get().asItem()
         );
-        tag(ItemTags.SAPLINGS).add(
+        tag(net.minecraft.tags.ItemTags.SAPLINGS).add(
             ModBlocks.ORANGE_SAPLING.get().asItem(),
             ModBlocks.CITRON_SAPLING.get().asItem()
         );
-        tag(ItemTags.PLANKS).add(
+        tag(net.minecraft.tags.ItemTags.PLANKS).add(
             ModBlocks.ORANGE_PLANKS.get().asItem(),
             ModBlocks.CITRON_PLANKS.get().asItem()
         );
-        tag(ItemTags.STAIRS).add(
-                ModBlocks.ORANGE_STAIRS.get().asItem(),
-                ModBlocks.CITRON_STAIRS.get().asItem()
+        tag(net.minecraft.tags.ItemTags.STAIRS).add(
+            ModBlocks.ORANGE_STAIRS.get().asItem(),
+            ModBlocks.CITRON_STAIRS.get().asItem()
         );
-        tag(ItemTags.SLABS).add(
-                ModBlocks.ORANGE_SLAB.get().asItem(),
-                ModBlocks.CITRON_SLAB.get().asItem()
+        tag(net.minecraft.tags.ItemTags.SLABS).add(
+            ModBlocks.ORANGE_SLAB.get().asItem(),
+            ModBlocks.CITRON_SLAB.get().asItem()
         );
-        tag(AllModTags.Items.ORANGE_LOGS).add(
+        tag(AllModTags.ItemTags.ORANGE_LOGS).add(
             ModBlocks.ORANGE_LOG.get().asItem(),
             ModBlocks.ORANGE_WOOD.get().asItem(),
             ModBlocks.STRIPPED_ORANGE_LOG.get().asItem(),
             ModBlocks.STRIPPED_ORANGE_WOOD.get().asItem()
         );
-        tag(AllModTags.Items.CITRON_LOGS).add(
+        tag(AllModTags.ItemTags.CITRON_LOGS).add(
             ModBlocks.CITRON_LOG.get().asItem(),
             ModBlocks.CITRON_WOOD.get().asItem(),
             ModBlocks.STRIPPED_CITRON_LOG.get().asItem(),
             ModBlocks.STRIPPED_CITRON_WOOD.get().asItem()
+        );
+        tag(AllTags.AllItemTags.UPRIGHT_ON_BELT.tag).addTag(
+            AllModTags.ItemTags.BOTTLES
+        );
+        tag(AllTags.AllItemTags.UPRIGHT_ON_BELT.tag).add(
+            ModItems.PREFORM_MOLD.get().asItem(),
+            ModItems.PREFORM_MOLD_WITH_PREFORM.get().asItem(),
+            ModItems.BOTTLE_MOLD.get().asItem(),
+            ModItems.BOTTLE_MOLD_WITH_PREFORM.get().asItem(),
+            ModItems.BOTTLE_MOLD_WITH_BOTTLE.get().asItem()
+        );
+        tag(AllModTags.ItemTags.MOLDS).add(
+            ModItems.PREFORM_MOLD.get().asItem(),
+            ModItems.BOTTLE_MOLD.get().asItem(),
+            ModItems.CAP_MOLD.get().asItem()
+        );
+        tag(AllModTags.ItemTags.BOTTLES).add(
+            ModItems.BOTTLE_EMPTY.get().asItem(),
+            ModItems.BOTTLE_CAPPED.get().asItem(),
+            ModItems.BOTTLE_CITRON_LEMONADE.get(),
+            ModItems.BOTTLE_CITRON_LEMONADE_CAP.get(),
+            ModItems.BOTTLE_CITRON_LEMONADE_CAP_LABEL.get(),
+            ModItems.BOTTLE_CITRON_CAP_LABEL.get(),
+            ModItems.BOTTLE_CITRON_LABEL.get(),
+            ModItems.BOTTLE_CITRON_LEMONADE_LABEL.get(),
+            ModItems.BOTTLE_ORANGE_LEMONADE.get(),
+            ModItems.BOTTLE_ORANGE_LEMONADE_CAP.get(),
+            ModItems.BOTTLE_ORANGE_LEMONADE_CAP_LABEL.get(),
+            ModItems.BOTTLE_ORANGE_CAP_LABEL.get(),
+            ModItems.BOTTLE_ORANGE_LABEL.get(),
+            ModItems.BOTTLE_ORANGE_LEMONADE_LABEL.get(),
+            ModItems.BOTTLE_RASPBERRY_LEMONADE.get(),
+            ModItems.BOTTLE_RASPBERRY_LEMONADE_CAP.get(),
+            ModItems.BOTTLE_RASPBERRY_CAP_LABEL.get(),
+            ModItems.BOTTLE_RASPBERRY_LEMONADE_CAP_LABEL.get(),
+            ModItems.BOTTLE_RASPBERRY_LABEL.get(),
+            ModItems.BOTTLE_RASPBERRY_LEMONADE_LABEL.get(),
+            ModItems.BOTTLE_SUMMERMIX_LEMONADE.get(),
+            ModItems.BOTTLE_SUMMERMIX_LEMONADE_CAP.get(),
+            ModItems.BOTTLE_SUMMERMIX_LEMONADE_CAP_LABEL.get(),
+            ModItems.BOTTLE_SUMMERMIX_CAP_LABEL.get(),
+            ModItems.BOTTLE_SUMMERMIX_LABEL.get(),
+            ModItems.BOTTLE_SUMMERMIX_LEMONADE_LABEL.get(),
+            ModItems.BOTTLE_WATERMELON_LEMONADE.get(),
+            ModItems.BOTTLE_WATERMELON_LEMONADE_CAP.get(),
+            ModItems.BOTTLE_WATERMELON_CAP_LABEL.get(),
+            ModItems.BOTTLE_WATERMELON_LEMONADE_CAP_LABEL.get(),
+            ModItems.BOTTLE_WATERMELON_LABEL.get(),
+            ModItems.BOTTLE_WATERMELON_LEMONADE_LABEL.get()
+        );
+        tag(AllModTags.ItemTags.LEMONADES).add(
+            ModItems.BOTTLE_CITRON_LEMONADE_CAP_LABEL.get(),
+            ModItems.BOTTLE_ORANGE_LEMONADE_CAP_LABEL.get(),
+            ModItems.BOTTLE_RASPBERRY_LEMONADE_CAP_LABEL.get(),
+            ModItems.BOTTLE_SUMMERMIX_LEMONADE_CAP_LABEL.get(),
+            ModItems.BOTTLE_WATERMELON_LEMONADE_CAP_LABEL.get()
+        );
+        tag(AllModTags.ItemTags.LABELS).add(
+            ModItems.LABEL_EMPTY.get(),
+            ModItems.LABEL_TEXT.get(),
+            ModItems.LABEL_TEXT_COMPANY.get(),
+            ModItems.LABEL_CITRON_LEMONADE.get(),
+            ModItems.LABEL_ORANGE_LEMONADE.get(),
+            ModItems.LABEL_RASPBERRY_LEMONADE.get(),
+            ModItems.LABEL_SUMMER_MIX.get(),
+            ModItems.LABEL_WATERMELON_LEMONADE.get()
         );
     }
 }
