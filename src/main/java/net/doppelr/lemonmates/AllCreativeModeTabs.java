@@ -177,11 +177,11 @@ public class AllCreativeModeTabs {
                 output.accept(ModFluids.RASPBERRY_LEMONADE_FLUID_BUCKET.get());
                 output.accept(ModFluids.SUMMERMIX_LEMONADE_FLUID_BUCKET.get());
                 output.accept(ModFluids.WATERMELON_LEMONADE_FLUID_BUCKET.get());
-                output.accept(ModFluids.MIXED_CITRON_LEMONADE_FLUID_BUCKET.get());
-                output.accept(ModFluids.MIXED_ORANGE_LEMONADE_FLUID_BUCKET.get());
-                output.accept(ModFluids.MIXED_RASPBERRY_LEMONADE_FLUID_BUCKET.get());
-                output.accept(ModFluids.MIXED_SUMMERMIX_LEMONADE_FLUID_BUCKET.get());
-                output.accept(ModFluids.MIXED_WATERMELON_LEMONADE_FLUID_BUCKET.get());
+//                output.accept(ModFluids.MIXED_CITRON_LEMONADE_FLUID_BUCKET.get());
+//                output.accept(ModFluids.MIXED_ORANGE_LEMONADE_FLUID_BUCKET.get());
+//                output.accept(ModFluids.MIXED_RASPBERRY_LEMONADE_FLUID_BUCKET.get());
+//                output.accept(ModFluids.MIXED_SUMMERMIX_LEMONADE_FLUID_BUCKET.get());
+//                output.accept(ModFluids.MIXED_WATERMELON_LEMONADE_FLUID_BUCKET.get());
             })
             .build()
     );
