@@ -5,12 +5,9 @@ import net.doppelr.lemonmates.AllFoodProperties;
 import net.doppelr.lemonmates.block.ModBlocks;
 import net.minecraft.world.entity.vehicle.Boat;
 import net.minecraft.world.item.*;
-import net.minecraft.world.level.block.CakeBlock;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
-import javax.swing.plaf.multi.MultiDesktopIconUI;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(LemonMates.MOD_ID);
@@ -37,6 +34,10 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> MOLD_WITH_BOTTLE = ITEMS.register("mold_with_bottle",
             () -> new Item(new Item.Properties().craftRemainder(ModItems.MOLD.get())));
+    public static final DeferredItem<Item> CAP_MOLD = ITEMS.register("cap_mold",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CAP_MOLD_WITH_CAP = ITEMS.register("cap_mold_with_cap",
+            () -> new Item(new Item.Properties().craftRemainder(ModItems.CAP_MOLD.get())));
 
     // Bottle Basics
     public static final DeferredItem<Item> BOTTLE_EMPTY = ITEMS.register("bottle_empty",

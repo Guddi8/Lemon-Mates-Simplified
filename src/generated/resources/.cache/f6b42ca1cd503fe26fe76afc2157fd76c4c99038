@@ -1,5 +1,7 @@
-// 1.21.1	2025-09-22T17:40:50.3001886	Item Models: lemonmates
+// 1.21.1	2025-09-22T19:24:59.251299	Item Models: lemonmates
 138a42244c73c0017b7a51a1e09d007f8eb51adf assets/lemonmates/models/item/bioplastic_mass.json
+8b640a2508f53b55ee29783fb10f3ac4826da81b assets/lemonmates/models/item/cap_mold.json
+4725c782b14d1987b4876cba0c05920a08e6188c assets/lemonmates/models/item/cap_mold_with_cap.json
 1d65eec8c3227815848450e8c5d87f5bd0cd3c32 assets/lemonmates/models/item/citron.json
 3589c8bf67233cfea9a9a5e0407c4168a9f99d7e assets/lemonmates/models/item/citron_button.json
 258c99a08a8e797e91253ccc4b30e1754df23c2a assets/lemonmates/models/item/citron_door.json

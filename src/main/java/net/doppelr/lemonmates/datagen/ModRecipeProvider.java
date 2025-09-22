@@ -101,9 +101,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         // get Molds back
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PREFORM.get(), 1)
-            .requires(ModItems.PREFORM_MOLD_WITH_PREFORM.get()).unlockedBy("has_preform", has(ModItems.PREFORM)).save(recipeOutput);
+            .requires(ModItems.PREFORM_MOLD_WITH_PREFORM.get()).unlockedBy("has_preform_mold", has(ModItems.PREFORM_MOLD)).save(recipeOutput);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BOTTLE_EMPTY.get(), 1)
-            .requires(ModItems.MOLD_WITH_BOTTLE.get()).unlockedBy("has_preform", has(ModItems.PREFORM)).save(recipeOutput);
-
+            .requires(ModItems.MOLD_WITH_BOTTLE.get()).unlockedBy("has_mold", has(ModItems.MOLD)).save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BOTTLE_CAP.get(), 1)
+            .requires(ModItems.CAP_MOLD_WITH_CAP.get()).unlockedBy("has_cap_mold", has(ModItems.CAP_MOLD)).save(recipeOutput);
     }
 }

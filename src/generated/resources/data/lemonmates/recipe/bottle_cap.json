@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "lemonmates:cap_mold_with_cap"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "lemonmates:bottle_cap"
+  }
+}

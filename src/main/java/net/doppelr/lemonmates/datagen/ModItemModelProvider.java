@@ -10,7 +10,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
-import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -52,6 +51,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.MOLD.get());
         basicItem(ModItems.MOLD_WITH_PREFORM.get());
         basicItem(ModItems.MOLD_WITH_BOTTLE.get());
+        basicItem(ModItems.CAP_MOLD.get());
+        basicItem(ModItems.CAP_MOLD_WITH_CAP.get());
     }
 
     private ItemModelBuilder lemonadeItem(DeferredItem<Item> item) {

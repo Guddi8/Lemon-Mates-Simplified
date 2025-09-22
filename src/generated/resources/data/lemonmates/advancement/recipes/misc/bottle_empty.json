@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_preform": {
+    "has_mold": {
       "conditions": {
         "items": [
           {
-            "items": "lemonmates:preform"
+            "items": "lemonmates:mold"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_preform"
+      "has_mold"
     ]
   ],
   "rewards": {

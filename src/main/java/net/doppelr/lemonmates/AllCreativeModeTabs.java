@@ -170,6 +170,8 @@ public class AllCreativeModeTabs {
                 output.accept(ModItems.MOLD);
                 output.accept(ModItems.MOLD_WITH_PREFORM);
                 output.accept(ModItems.MOLD_WITH_BOTTLE);
+                output.accept(ModItems.CAP_MOLD);
+                output.accept(ModItems.CAP_MOLD_WITH_CAP);
 
                 // Liquids
                 output.accept(ModFluids.CITRON_LEMONADE_FLUID_BUCKET.get());
