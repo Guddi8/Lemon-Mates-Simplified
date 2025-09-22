@@ -25,6 +25,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RASPBERRY.get());
 
         basicItem(ModItems.CITRON.get());
+        basicItem(ModItems.CITRON_SLICE.get());
         saplingItem(ModBlocks.CITRON_SAPLING);
         buttonItem(ModBlocks.CITRON_BUTTON, ModBlocks.CITRON_PLANKS);
         fenceItem(ModBlocks.CITRON_FENCE, ModBlocks.CITRON_PLANKS);
@@ -33,6 +34,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.CITRON_HANGING_SIGN.get());
 
         basicItem(ModItems.ORANGE.get());
+        basicItem(ModItems.ORANGE_SLICE.get());
         saplingItem(ModBlocks.ORANGE_SAPLING);
         buttonItem(ModBlocks.ORANGE_BUTTON, ModBlocks.ORANGE_PLANKS);
         fenceItem(ModBlocks.ORANGE_FENCE, ModBlocks.ORANGE_PLANKS);

@@ -91,7 +91,9 @@ public class AllCreativeModeTabs {
             .displayItems((params, output) -> {
                 // Fruits
                 output.accept(ModItems.CITRON);
+                output.accept(ModItems.CITRON_SLICE);
                 output.accept(ModItems.ORANGE);
+                output.accept(ModItems.ORANGE_SLICE);
                 output.accept(ModItems.RASPBERRY);
 
                 // Crates
