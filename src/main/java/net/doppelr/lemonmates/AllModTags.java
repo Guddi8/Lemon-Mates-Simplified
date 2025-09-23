@@ -4,6 +4,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.material.Fluid;
 
 public class AllModTags {
     public static class BlockTags {
@@ -26,6 +27,19 @@ public class AllModTags {
 
         private static TagKey<Item> createTag(String name) {
             return net.minecraft.tags.ItemTags.create(ResourceLocation.fromNamespaceAndPath(LemonMates.MOD_ID, name));
+        }
+    }
+
+    public static class FluidTags {
+        public static final TagKey<Fluid> COMMON_PLASTIC = createTag("c", "plastic");
+
+
+        private static TagKey<Fluid> createTag(String name) {
+            return net.minecraft.tags.FluidTags.create(ResourceLocation.fromNamespaceAndPath(LemonMates.MOD_ID, name));
+        }
+
+        private static TagKey<Fluid> createTag(String namespace, String name) {
+            return net.minecraft.tags.FluidTags.create(ResourceLocation.fromNamespaceAndPath(namespace, name));
         }
     }
 }

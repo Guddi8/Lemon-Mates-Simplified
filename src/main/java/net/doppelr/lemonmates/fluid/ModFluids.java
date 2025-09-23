@@ -32,18 +32,18 @@ public class ModFluids {
     public static final ResourceLocation WATER_OVERLAY_RL = ResourceLocation.parse("block/water_overlay");
 
     // Plastic
-    public static final DeferredHolder<FluidType, FluidType> PLASTIC_FLUID = FLUID_TYPES.register("plastic",
+    public static final DeferredHolder<FluidType, FluidType> PLASTIC_TYPE = FLUID_TYPES.register("plastic_type",
         () -> new BaseFluidType(WATER_STILL_RL, WATER_FLOWING_RL, WATER_OVERLAY_RL, 0xFFC9D2D8, new Vector3f(108f / 255f, 168f / 255f, 212f / 255f), FluidType.Properties.create().descriptionId("Plastic")));
-    public static final DeferredHolder<Fluid, FlowingFluid> PLASTIC_FLUID_SOURCE = FLUIDS.register("plastic_liquid_source",
+    public static final DeferredHolder<Fluid, FlowingFluid> PLASTIC_FLUID = FLUIDS.register("plastic",
         () -> new BaseFlowingFluid.Source(ModFluids.PLASTIC_FLUID_PROPERTIES));
-    public static final DeferredHolder<Fluid, FlowingFluid> PLASTIC_FLUID_FLOWING = FLUIDS.register("plastic_liquid_flowing",
+    public static final DeferredHolder<Fluid, FlowingFluid> PLASTIC_FLUID_FLOWING = FLUIDS.register("flowing_plastic",
         () -> new BaseFlowingFluid.Flowing(ModFluids.PLASTIC_FLUID_PROPERTIES));
     public static final DeferredHolder<Item, BucketItem> PLASTIC_FLUID_BUCKET = BUCKETS.register("plastic_bucket",
-        () -> new BucketItem(PLASTIC_FLUID_SOURCE.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+        () -> new BucketItem(PLASTIC_FLUID.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
     public static final DeferredHolder<Block, LiquidBlock> PLASTIC_FLUID_BLOCK = SOURCEBLOCKS.register("plastic_block",
-        () -> new LiquidBlock(PLASTIC_FLUID_SOURCE.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER)));
+        () -> new LiquidBlock(PLASTIC_FLUID.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER)));
     public static final BaseFlowingFluid.Properties PLASTIC_FLUID_PROPERTIES = new BaseFlowingFluid.Properties(
-        PLASTIC_FLUID, PLASTIC_FLUID_SOURCE, PLASTIC_FLUID_FLOWING)
+        PLASTIC_TYPE, PLASTIC_FLUID, PLASTIC_FLUID_FLOWING)
             .slopeFindDistance(2).levelDecreasePerBlock(1)
             .block(PLASTIC_FLUID_BLOCK).bucket(PLASTIC_FLUID_BUCKET);
 
@@ -112,7 +112,7 @@ public class ModFluids {
     }
 
     private static void clientExt(RegisterClientExtensionsEvent event) {
-        event.registerFluidType(((BaseFluidType) PLASTIC_FLUID.get()).getClientFluidTypeExtensions(), PLASTIC_FLUID.get());
+        event.registerFluidType(((BaseFluidType) PLASTIC_TYPE.get()).getClientFluidTypeExtensions(), PLASTIC_TYPE.get());
         event.registerFluidType(((BaseFluidType) CITRON_LEMONADE_FLUID.get()).getClientFluidTypeExtensions(), CITRON_LEMONADE_FLUID.get());
         event.registerFluidType(((BaseFluidType) ORANGE_LEMONADE_FLUID.get()).getClientFluidTypeExtensions(), ORANGE_LEMONADE_FLUID.get());
         event.registerFluidType(((BaseFluidType) RASPBERRY_LEMONADE_FLUID.get()).getClientFluidTypeExtensions(), RASPBERRY_LEMONADE_FLUID.get());
