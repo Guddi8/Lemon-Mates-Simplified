@@ -79,10 +79,10 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_CITRON_LEMONADE_CAP = ITEMS.register("bottle_citron_lemonade_cap",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> BOTTLE_CITRON_LEMONADE_CAP_LABEL = ITEMS.register("bottle_citron_lemonade_cap_label",
-            () -> new LemonadeDrinkItem(new Item.Properties().food(AllFoodProperties.LEMONADE_DRINK)));
     public static final DeferredItem<Item> BOTTLE_CITRON_CAP_LABEL = ITEMS.register("bottle_citron_cap_label",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BOTTLE_CITRON_LEMONADE_CAP_LABEL = ITEMS.register("bottle_citron_lemonade_cap_label",
+            () -> new LemonadeDrinkItem(AllFoodProperties.lemonadeDrinks(ModItems.BOTTLE_CITRON_CAP_LABEL)));
     public static final DeferredItem<Item> BOTTLE_CITRON_LABEL = ITEMS.register("bottle_citron_label",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_CITRON_LEMONADE_LABEL = ITEMS.register("bottle_citron_lemonade_label",
@@ -93,10 +93,10 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_ORANGE_LEMONADE_CAP = ITEMS.register("bottle_orange_lemonade_cap",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> BOTTLE_ORANGE_LEMONADE_CAP_LABEL = ITEMS.register("bottle_orange_lemonade_cap_label",
-            () -> new LemonadeDrinkItem(new Item.Properties().food(AllFoodProperties.LEMONADE_DRINK)));
     public static final DeferredItem<Item> BOTTLE_ORANGE_CAP_LABEL = ITEMS.register("bottle_orange_cap_label",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BOTTLE_ORANGE_LEMONADE_CAP_LABEL = ITEMS.register("bottle_orange_lemonade_cap_label",
+            () -> new LemonadeDrinkItem(AllFoodProperties.lemonadeDrinks(ModItems.BOTTLE_ORANGE_CAP_LABEL)));
     public static final DeferredItem<Item> BOTTLE_ORANGE_LABEL = ITEMS.register("bottle_orange_label",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_ORANGE_LEMONADE_LABEL = ITEMS.register("bottle_orange_lemonade_label",
@@ -107,10 +107,10 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_RASPBERRY_LEMONADE_CAP = ITEMS.register("bottle_raspberry_lemonade_cap",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> BOTTLE_RASPBERRY_LEMONADE_CAP_LABEL = ITEMS.register("bottle_raspberry_lemonade_cap_label",
-            () -> new LemonadeDrinkItem(new Item.Properties().food(AllFoodProperties.LEMONADE_DRINK)));
     public static final DeferredItem<Item> BOTTLE_RASPBERRY_CAP_LABEL = ITEMS.register("bottle_raspberry_cap_label",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BOTTLE_RASPBERRY_LEMONADE_CAP_LABEL = ITEMS.register("bottle_raspberry_lemonade_cap_label",
+            () -> new LemonadeDrinkItem(AllFoodProperties.lemonadeDrinks(ModItems.BOTTLE_RASPBERRY_CAP_LABEL)));
     public static final DeferredItem<Item> BOTTLE_RASPBERRY_LABEL = ITEMS.register("bottle_raspberry_label",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_RASPBERRY_LEMONADE_LABEL = ITEMS.register("bottle_raspberry_lemonade_label",
@@ -121,10 +121,10 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_SUMMERMIX_LEMONADE_CAP = ITEMS.register("bottle_summermix_lemonade_cap",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> BOTTLE_SUMMERMIX_LEMONADE_CAP_LABEL = ITEMS.register("bottle_summermix_lemonade_cap_label",
-            () -> new LemonadeDrinkItem(new Item.Properties().food(AllFoodProperties.LEMONADE_DRINK)));
     public static final DeferredItem<Item> BOTTLE_SUMMERMIX_CAP_LABEL = ITEMS.register("bottle_summermix_cap_label",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BOTTLE_SUMMERMIX_LEMONADE_CAP_LABEL = ITEMS.register("bottle_summermix_lemonade_cap_label",
+            () -> new LemonadeDrinkItem(AllFoodProperties.lemonadeDrinks(ModItems.BOTTLE_SUMMERMIX_CAP_LABEL)));
     public static final DeferredItem<Item> BOTTLE_SUMMERMIX_LABEL = ITEMS.register("bottle_summermix_label",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_SUMMERMIX_LEMONADE_LABEL = ITEMS.register("bottle_summermix_lemonade_label",
@@ -135,10 +135,10 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_WATERMELON_LEMONADE_CAP = ITEMS.register("bottle_watermelon_lemonade_cap",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> BOTTLE_WATERMELON_LEMONADE_CAP_LABEL = ITEMS.register("bottle_watermelon_lemonade_cap_label",
-            () -> new LemonadeDrinkItem(new Item.Properties().food(AllFoodProperties.LEMONADE_DRINK)));
     public static final DeferredItem<Item> BOTTLE_WATERMELON_CAP_LABEL = ITEMS.register("bottle_watermelon_cap_label",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BOTTLE_WATERMELON_LEMONADE_CAP_LABEL = ITEMS.register("bottle_watermelon_lemonade_cap_label",
+            () -> new LemonadeDrinkItem(AllFoodProperties.lemonadeDrinks(ModItems.BOTTLE_WATERMELON_CAP_LABEL)));
     public static final DeferredItem<Item> BOTTLE_WATERMELON_LABEL = ITEMS.register("bottle_watermelon_label",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_WATERMELON_LEMONADE_LABEL = ITEMS.register("bottle_watermelon_lemonade_label",

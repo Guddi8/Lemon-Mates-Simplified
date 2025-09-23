@@ -1,20 +1,23 @@
 package net.doppelr.lemonmates;
 
-import net.doppelr.lemonmates.item.ModItems;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.neoforged.neoforge.registries.DeferredItem;
 
 public class AllFoodProperties {
-    public static final FoodProperties LEMONADE_DRINK = new FoodProperties.Builder()
+    public static Item.Properties lemonadeDrinks(DeferredItem<Item> usingConvertsTo) {
+        return new Item.Properties().food(new FoodProperties.Builder()
             .nutrition(1)
             .saturationModifier(0.1f)
             .alwaysEdible()
-            .effect( () -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400), 0.35f)
-            .usingConvertsTo(() -> new ItemStack(ModItems.BOTTLE_CAPPED.get()).getItem())
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400), 0.35f)
+            .usingConvertsTo(() -> new ItemStack(usingConvertsTo.get()).getItem())
             .alwaysEdible()
-            .build();
+            .build());
+    }
 
     public static final FoodProperties RASPBERRY = new FoodProperties.Builder()
             .nutrition(1)
