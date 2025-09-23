@@ -8,8 +8,10 @@
       "amount": 250
     },
     {
-      "item": "lemonmates:seed_flour",
-      "count": 2
+      "item": "lemonmates:seed_flour"
+    },
+    {
+      "item": "lemonmates:seed_flour"
     }
   ],
   "results": [
