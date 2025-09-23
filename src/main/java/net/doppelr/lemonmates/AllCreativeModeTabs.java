@@ -93,7 +93,7 @@ public class AllCreativeModeTabs {
                 output.accept(ModItems.SEED_FLOUR);
                 output.accept(ModItems.STARCH);
                 output.accept(ModItems.BIOPLASTIC_MASS);
-                output.accept(ModFluids.PLASTIC_FLUID_BUCKET.get());
+                output.accept(ModFluids.PLASTIC_BUCKET.get());
 
                 // Bottle form related
                 output.accept(ModItems.PREFORM_MOLD);
@@ -111,11 +111,11 @@ public class AllCreativeModeTabs {
                 output.accept(ModItems.BOTTLE_CAPPED);
 
                 // Liquids
-                output.accept(ModFluids.CITRON_LEMONADE_FLUID_BUCKET.get());
-                output.accept(ModFluids.ORANGE_LEMONADE_FLUID_BUCKET.get());
-                output.accept(ModFluids.RASPBERRY_LEMONADE_FLUID_BUCKET.get());
-                output.accept(ModFluids.SUMMERMIX_LEMONADE_FLUID_BUCKET.get());
-                output.accept(ModFluids.WATERMELON_LEMONADE_FLUID_BUCKET.get());
+                output.accept(ModFluids.CITRON_LEMONADE_BUCKET.get());
+                output.accept(ModFluids.ORANGE_LEMONADE_BUCKET.get());
+                output.accept(ModFluids.RASPBERRY_LEMONADE_BUCKET.get());
+                output.accept(ModFluids.SUMMERMIX_LEMONADE_BUCKET.get());
+                output.accept(ModFluids.WATERMELON_LEMONADE_BUCKET.get());
 
                 // Labels
                 output.accept(ModItems.LABEL_EMPTY);

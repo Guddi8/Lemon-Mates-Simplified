@@ -31,8 +31,14 @@ public class AllModTags {
     }
 
     public static class FluidTags {
-        public static final TagKey<Fluid> COMMON_PLASTIC = createTag("c", "plastic");
-
+        public static final TagKey<Fluid> LEMONADES = createTag("lemonades");
+        public static final TagKey<Fluid> LEMONADES_CITRON = createTag("lemonades/citron");
+        public static final TagKey<Fluid> LEMONADES_ORANGE = createTag("lemonades/orange");
+        public static final TagKey<Fluid> LEMONADES_RASPBERRY = createTag("lemonades/raspberry");
+        public static final TagKey<Fluid> LEMONADES_SUMMERMIX = createTag("lemonades/summermix");
+        public static final TagKey<Fluid> LEMONADES_WATERMELON = createTag("lemonades/watermelon");
+        public static final TagKey<Fluid> C_LEMONADES = createTag("c", "lemonades");
+        public static final TagKey<Fluid> C_PLASTIC = createTag("c", "plastic");
 
         private static TagKey<Fluid> createTag(String name) {
             return net.minecraft.tags.FluidTags.create(ResourceLocation.fromNamespaceAndPath(LemonMates.MOD_ID, name));
