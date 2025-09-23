@@ -25,7 +25,6 @@ public class AllFoodProperties {
     public static final FoodProperties ORANGE = new FoodProperties.Builder()
             .nutrition(2)
             .saturationModifier(0.3f)
-            .fast()
             .build();
 
     public static final FoodProperties ORANGE_SLICE = new FoodProperties.Builder()
@@ -37,7 +36,6 @@ public class AllFoodProperties {
     public static final FoodProperties CITRON = new FoodProperties.Builder()
             .nutrition(2)
             .saturationModifier(0.3f)
-            .fast()
             .build();
 
     public static final FoodProperties CITRON_SLICE = new FoodProperties.Builder()
