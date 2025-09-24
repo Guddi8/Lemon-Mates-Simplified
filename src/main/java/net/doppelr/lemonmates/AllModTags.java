@@ -21,6 +21,11 @@ public class AllModTags {
         public static final TagKey<Item> CITRON_LOGS = createTag("citron_logs");
         public static final TagKey<Item> BOTTLES = createTag("bottles");
         public static final TagKey<Item> LEMONADES = createTag("lemonades");
+        public static final TagKey<Item> LEMONADES_CITRON = createTag("lemonades/citron");
+        public static final TagKey<Item> LEMONADES_ORANGE = createTag("lemonades/orange");
+        public static final TagKey<Item> LEMONADES_RASPBERRY = createTag("lemonades/raspberry");
+        public static final TagKey<Item> LEMONADES_SUMMERMIX = createTag("lemonades/summermix");
+        public static final TagKey<Item> LEMONADES_WATERMELON = createTag("lemonades/watermelon");
         public static final TagKey<Item> LABELS = createTag("labels");
         public static final TagKey<Item> MOLDS = createTag("molds");
 
