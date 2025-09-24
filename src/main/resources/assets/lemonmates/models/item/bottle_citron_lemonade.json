@@ -3,5 +3,15 @@
   "textures": {
     "layer0": "lemonmates:item/bottle_fluid/citron",
     "layer1": "lemonmates:item/bottle_empty"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": { "lemonmates:assembly_step": 2 },
+      "model": "lemonmates:item/bottle_citron_lemonade_cap"
+    },
+    {
+      "predicate": { "lemonmates:assembly_step": 3 },
+      "model": "lemonmates:item/bottle_citron_lemonade_cap_glue"
+    }
+  ]
 }

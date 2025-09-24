@@ -76,7 +76,7 @@ public class ModItems {
 
     // Citron
     public static final DeferredItem<Item> BOTTLE_CITRON_LEMONADE = ITEMS.register("bottle_citron_lemonade",
-            () -> new Item(new Item.Properties()));
+            () -> new LemonadeAssemblyItem(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_CITRON_LEMONADE_CAP = ITEMS.register("bottle_citron_lemonade_cap",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_CITRON_CAP_LABEL = ITEMS.register("bottle_citron_cap_label",
@@ -90,7 +90,7 @@ public class ModItems {
 
     // Orange
     public static final DeferredItem<Item> BOTTLE_ORANGE_LEMONADE = ITEMS.register("bottle_orange_lemonade",
-            () -> new Item(new Item.Properties()));
+            () -> new LemonadeAssemblyItem(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_ORANGE_LEMONADE_CAP = ITEMS.register("bottle_orange_lemonade_cap",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_ORANGE_CAP_LABEL = ITEMS.register("bottle_orange_cap_label",
@@ -104,7 +104,7 @@ public class ModItems {
 
     // Raspberry
     public static final DeferredItem<Item> BOTTLE_RASPBERRY_LEMONADE = ITEMS.register("bottle_raspberry_lemonade",
-            () -> new Item(new Item.Properties()));
+            () -> new LemonadeAssemblyItem(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_RASPBERRY_LEMONADE_CAP = ITEMS.register("bottle_raspberry_lemonade_cap",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_RASPBERRY_CAP_LABEL = ITEMS.register("bottle_raspberry_cap_label",
@@ -118,7 +118,7 @@ public class ModItems {
 
     // Summer Mix
     public static final DeferredItem<Item> BOTTLE_SUMMERMIX_LEMONADE = ITEMS.register("bottle_summermix_lemonade",
-            () -> new Item(new Item.Properties()));
+            () -> new LemonadeAssemblyItem(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_SUMMERMIX_LEMONADE_CAP = ITEMS.register("bottle_summermix_lemonade_cap",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_SUMMERMIX_CAP_LABEL = ITEMS.register("bottle_summermix_cap_label",
@@ -132,7 +132,7 @@ public class ModItems {
 
     // Watermelon
     public static final DeferredItem<Item> BOTTLE_WATERMELON_LEMONADE = ITEMS.register("bottle_watermelon_lemonade",
-            () -> new Item(new Item.Properties()));
+            () -> new LemonadeAssemblyItem(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_WATERMELON_LEMONADE_CAP = ITEMS.register("bottle_watermelon_lemonade_cap",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_WATERMELON_CAP_LABEL = ITEMS.register("bottle_watermelon_cap_label",

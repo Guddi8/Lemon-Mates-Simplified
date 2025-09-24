@@ -13,21 +13,6 @@ import org.jetbrains.annotations.NotNull;
 public class LemonadeDrinkItem extends Item {
     public LemonadeDrinkItem(Properties properties) {
         super(properties);
-
-        if (FMLEnvironment.dist.isClient()) {
-            ItemProperties.register(
-                this,
-                LemonMates.rl("drinking_stage"),
-                (stack, level, entity, seed) -> {
-                    if (entity != null && entity.isUsingItem() && entity.getUseItem() == stack) {
-                        int duration = stack.getUseDuration(entity) - entity.getUseItemRemainingTicks();
-                        return duration > 2 ? 1.0f : 0.0f;
-                        // open the bottle after 2 ticks
-                    }
-                    return 0.0f;
-                }
-            );
-        }
     }
 
     @Override
