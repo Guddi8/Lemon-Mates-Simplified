@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "lemonmates:item/juice_glass",
-    "layer1": "lemonmates:item/juice_fluid/raspberry"
-  }
-}

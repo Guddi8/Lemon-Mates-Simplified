@@ -46,13 +46,6 @@ public class ModItems {
     public static final DeferredItem<Item> BOTTLE_CAPPED = ITEMS.register("bottle_capped",
             () -> new Item(new Item.Properties()));
 
-//    public static final DeferredItem<Item> FORMABLE_PLASTIC = ITEMS.register("formable_plastic",
-//            () -> new Item(new Item.Properties()));
-//    public static final DeferredItem<Item> BOTTLE_FORM = ITEMS.register("bottle_form",
-//            () -> new Item(new Item.Properties()));
-//    public static final DeferredItem<Item> BOTTLE_INCOMPLETE = ITEMS.register("bottle_incomplete",
-//            () -> new Item(new Item.Properties()));
-
     // Lemonade related
     // Labels Basic
     public static final DeferredItem<Item> LABEL_EMPTY = ITEMS.register("label_empty",
@@ -170,15 +163,6 @@ public class ModItems {
             () -> new BoatItem(false, Boat.Type.OAK, new Item.Properties()));
     public static final DeferredItem<BoatItem> ORANGE_BOAT = ITEMS.register("orange_boat",
             () -> new BoatItem(false, Boat.Type.OAK, new Item.Properties()));
-
-
-    // Juices
-    public static final DeferredItem<Item> CITRON_JUICE = ITEMS.register("citron_juice",
-            () -> new Item(new Item.Properties().food(AllFoodProperties.JUICE_DRINK)));
-    public static final DeferredItem<Item> ORANGE_JUICE = ITEMS.register("orange_juice",
-            () -> new Item(new Item.Properties().food(AllFoodProperties.JUICE_DRINK)));
-    public static final DeferredItem<Item> RASPBERRY_JUICE = ITEMS.register("raspberry_juice",
-            () -> new Item(new Item.Properties().food(AllFoodProperties.JUICE_DRINK)));
 
 
     public static void register(IEventBus eventBus) {
