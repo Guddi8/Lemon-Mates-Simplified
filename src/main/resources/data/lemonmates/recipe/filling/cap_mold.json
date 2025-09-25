@@ -5,9 +5,9 @@
       "item": "lemonmates:cap_mold"
     },
     {
-      "type": "fluid_stack",
+      "type": "fluid_tag",
       "amount": 20,
-      "fluid": "lemonmates:plastic_liquid_source"
+      "fluid_tag": "c:plastic"
     }
   ],
   "results": [
