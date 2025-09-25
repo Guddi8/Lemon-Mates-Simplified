@@ -103,32 +103,33 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(AllModTags.ItemTags.BOTTLES).add(
             ModItems.BOTTLE_EMPTY.get().asItem(),
             ModItems.BOTTLE_CAPPED.get().asItem(),
-            ModItems.BOTTLE_CITRON_LEMONADE.get(),
-            ModItems.BOTTLE_CITRON_LEMONADE_CAP.get(),
+
+            ModItems.INCOMPLETE_CITRON_LEMONADE.get(),
+            ModItems.INCOMPLETE_ORANGE_LEMONADE.get(),
+            ModItems.INCOMPLETE_RASPBERRY_LEMONADE.get(),
+            ModItems.INCOMPLETE_SUMMERMIX_LEMONADE.get(),
+            ModItems.INCOMPLETE_WATERMELON_LEMONADE.get(),
+
             ModItems.BOTTLE_CITRON_LEMONADE_CAP_LABEL.get(),
             ModItems.BOTTLE_CITRON_CAP_LABEL.get(),
             ModItems.BOTTLE_CITRON_LABEL.get(),
             ModItems.BOTTLE_CITRON_LEMONADE_LABEL.get(),
-            ModItems.BOTTLE_ORANGE_LEMONADE.get(),
-            ModItems.BOTTLE_ORANGE_LEMONADE_CAP.get(),
+
             ModItems.BOTTLE_ORANGE_LEMONADE_CAP_LABEL.get(),
             ModItems.BOTTLE_ORANGE_CAP_LABEL.get(),
             ModItems.BOTTLE_ORANGE_LABEL.get(),
             ModItems.BOTTLE_ORANGE_LEMONADE_LABEL.get(),
-            ModItems.BOTTLE_RASPBERRY_LEMONADE.get(),
-            ModItems.BOTTLE_RASPBERRY_LEMONADE_CAP.get(),
+
             ModItems.BOTTLE_RASPBERRY_CAP_LABEL.get(),
             ModItems.BOTTLE_RASPBERRY_LEMONADE_CAP_LABEL.get(),
             ModItems.BOTTLE_RASPBERRY_LABEL.get(),
             ModItems.BOTTLE_RASPBERRY_LEMONADE_LABEL.get(),
-            ModItems.BOTTLE_SUMMERMIX_LEMONADE.get(),
-            ModItems.BOTTLE_SUMMERMIX_LEMONADE_CAP.get(),
+
             ModItems.BOTTLE_SUMMERMIX_LEMONADE_CAP_LABEL.get(),
             ModItems.BOTTLE_SUMMERMIX_CAP_LABEL.get(),
             ModItems.BOTTLE_SUMMERMIX_LABEL.get(),
             ModItems.BOTTLE_SUMMERMIX_LEMONADE_LABEL.get(),
-            ModItems.BOTTLE_WATERMELON_LEMONADE.get(),
-            ModItems.BOTTLE_WATERMELON_LEMONADE_CAP.get(),
+
             ModItems.BOTTLE_WATERMELON_CAP_LABEL.get(),
             ModItems.BOTTLE_WATERMELON_LEMONADE_CAP_LABEL.get(),
             ModItems.BOTTLE_WATERMELON_LABEL.get(),

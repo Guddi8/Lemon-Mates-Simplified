@@ -1,5 +1,6 @@
 package net.doppelr.lemonmates.item;
 
+import com.simibubi.create.content.processing.sequenced.SequencedAssemblyItem;
 import net.doppelr.lemonmates.LemonMates;
 import net.doppelr.lemonmates.AllFoodProperties;
 import net.doppelr.lemonmates.block.ModBlocks;
@@ -11,6 +12,18 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(LemonMates.MOD_ID);
+
+    // Sequenced Ingredient
+    public static final DeferredItem<Item> INCOMPLETE_CITRON_LEMONADE = ITEMS.register("incomplete_citron_lemonade",
+            () -> new SequencedAssemblyItem(new Item.Properties()));
+    public static final DeferredItem<Item> INCOMPLETE_ORANGE_LEMONADE = ITEMS.register("incomplete_orange_lemonade",
+            () -> new SequencedAssemblyItem(new Item.Properties()));
+    public static final DeferredItem<Item> INCOMPLETE_RASPBERRY_LEMONADE = ITEMS.register("incomplete_raspberry_lemonade",
+            () -> new SequencedAssemblyItem(new Item.Properties()));
+    public static final DeferredItem<Item> INCOMPLETE_SUMMERMIX_LEMONADE = ITEMS.register("incomplete_summermix_lemonade",
+            () -> new SequencedAssemblyItem(new Item.Properties()));
+    public static final DeferredItem<Item> INCOMPLETE_WATERMELON_LEMONADE = ITEMS.register("incomplete_watermelon_lemonade",
+            () -> new SequencedAssemblyItem(new Item.Properties()));
 
     // Plastic
     public static final DeferredItem<Item> SEED_FLOUR = ITEMS.register("seed_flour",
@@ -68,10 +81,6 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     // Citron
-    public static final DeferredItem<Item> BOTTLE_CITRON_LEMONADE = ITEMS.register("bottle_citron_lemonade",
-            () -> new LemonadeAssemblyItem(new Item.Properties()));
-    public static final DeferredItem<Item> BOTTLE_CITRON_LEMONADE_CAP = ITEMS.register("bottle_citron_lemonade_cap",
-            () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_CITRON_CAP_LABEL = ITEMS.register("bottle_citron_cap_label",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_CITRON_LEMONADE_CAP_LABEL = ITEMS.register("bottle_citron_lemonade_cap_label",
@@ -82,10 +91,6 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     // Orange
-    public static final DeferredItem<Item> BOTTLE_ORANGE_LEMONADE = ITEMS.register("bottle_orange_lemonade",
-            () -> new LemonadeAssemblyItem(new Item.Properties()));
-    public static final DeferredItem<Item> BOTTLE_ORANGE_LEMONADE_CAP = ITEMS.register("bottle_orange_lemonade_cap",
-            () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_ORANGE_CAP_LABEL = ITEMS.register("bottle_orange_cap_label",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_ORANGE_LEMONADE_CAP_LABEL = ITEMS.register("bottle_orange_lemonade_cap_label",
@@ -96,10 +101,6 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     // Raspberry
-    public static final DeferredItem<Item> BOTTLE_RASPBERRY_LEMONADE = ITEMS.register("bottle_raspberry_lemonade",
-            () -> new LemonadeAssemblyItem(new Item.Properties()));
-    public static final DeferredItem<Item> BOTTLE_RASPBERRY_LEMONADE_CAP = ITEMS.register("bottle_raspberry_lemonade_cap",
-            () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_RASPBERRY_CAP_LABEL = ITEMS.register("bottle_raspberry_cap_label",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_RASPBERRY_LEMONADE_CAP_LABEL = ITEMS.register("bottle_raspberry_lemonade_cap_label",
@@ -110,10 +111,6 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     // Summer Mix
-    public static final DeferredItem<Item> BOTTLE_SUMMERMIX_LEMONADE = ITEMS.register("bottle_summermix_lemonade",
-            () -> new LemonadeAssemblyItem(new Item.Properties()));
-    public static final DeferredItem<Item> BOTTLE_SUMMERMIX_LEMONADE_CAP = ITEMS.register("bottle_summermix_lemonade_cap",
-            () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_SUMMERMIX_CAP_LABEL = ITEMS.register("bottle_summermix_cap_label",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_SUMMERMIX_LEMONADE_CAP_LABEL = ITEMS.register("bottle_summermix_lemonade_cap_label",
@@ -124,10 +121,6 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     // Watermelon
-    public static final DeferredItem<Item> BOTTLE_WATERMELON_LEMONADE = ITEMS.register("bottle_watermelon_lemonade",
-            () -> new LemonadeAssemblyItem(new Item.Properties()));
-    public static final DeferredItem<Item> BOTTLE_WATERMELON_LEMONADE_CAP = ITEMS.register("bottle_watermelon_lemonade_cap",
-            () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_WATERMELON_CAP_LABEL = ITEMS.register("bottle_watermelon_cap_label",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BOTTLE_WATERMELON_LEMONADE_CAP_LABEL = ITEMS.register("bottle_watermelon_lemonade_cap_label",

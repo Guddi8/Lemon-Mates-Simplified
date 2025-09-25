@@ -128,42 +128,27 @@ public class AllCreativeModeTabs {
                 output.accept(ModItems.LABEL_WATERMELON_LEMONADE);
 
                 // Citron
-                output.accept(ModItems.BOTTLE_CITRON_LEMONADE);
-                output.accept(ModItems.BOTTLE_CITRON_LEMONADE_CAP);
                 output.accept(ModItems.BOTTLE_CITRON_LEMONADE_CAP_LABEL);
-//                output.accept(ModItems.BOTTLE_CITRON_LEMONADE_LABEL); // only used for drinking animation
                 output.accept(ModItems.BOTTLE_CITRON_CAP_LABEL);
                 output.accept(ModItems.BOTTLE_CITRON_LABEL);
 
                 // Orange
-                output.accept(ModItems.BOTTLE_ORANGE_LEMONADE);
-                output.accept(ModItems.BOTTLE_ORANGE_LEMONADE_CAP);
                 output.accept(ModItems.BOTTLE_ORANGE_LEMONADE_CAP_LABEL);
-//                output.accept(ModItems.BOTTLE_ORANGE_LEMONADE_LABEL); // only used for drinking animation
                 output.accept(ModItems.BOTTLE_ORANGE_CAP_LABEL);
                 output.accept(ModItems.BOTTLE_ORANGE_LABEL);
 
                 // Raspberry
-                output.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE);
-                output.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE_CAP);
                 output.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE_CAP_LABEL);
-//                output.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE_LABEL); // only used for drinking animation
                 output.accept(ModItems.BOTTLE_RASPBERRY_CAP_LABEL);
                 output.accept(ModItems.BOTTLE_RASPBERRY_LABEL);
 
                 // Summer-Mix
-                output.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE);
-                output.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE_CAP);
                 output.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE_CAP_LABEL); //
-//                output.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE_LABEL); // only used for drinking animation
                 output.accept(ModItems.BOTTLE_SUMMERMIX_CAP_LABEL);
                 output.accept(ModItems.BOTTLE_SUMMERMIX_LABEL);
 
                 // Watermelon
-                output.accept(ModItems.BOTTLE_WATERMELON_LEMONADE);
-                output.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_CAP);
                 output.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_CAP_LABEL);
-//                output.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_LABEL); // only used for drinking animation
                 output.accept(ModItems.BOTTLE_WATERMELON_CAP_LABEL);
                 output.accept(ModItems.BOTTLE_WATERMELON_LABEL);
             })
