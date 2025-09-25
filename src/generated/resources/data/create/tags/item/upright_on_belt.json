@@ -5,6 +5,11 @@
     "lemonmates:preform_mold_with_preform",
     "lemonmates:bottle_mold",
     "lemonmates:bottle_mold_with_preform",
-    "lemonmates:bottle_mold_with_bottle"
+    "lemonmates:bottle_mold_with_bottle",
+    "lemonmates:incomplete_citron_lemonade",
+    "lemonmates:incomplete_orange_lemonade",
+    "lemonmates:incomplete_raspberry_lemonade",
+    "lemonmates:incomplete_summermix_lemonade",
+    "lemonmates:incomplete_watermelon_lemonade"
   ]
 }

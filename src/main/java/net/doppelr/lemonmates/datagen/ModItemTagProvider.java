@@ -93,7 +93,13 @@ public class ModItemTagProvider extends ItemTagsProvider {
             ModItems.PREFORM_MOLD_WITH_PREFORM.get().asItem(),
             ModItems.BOTTLE_MOLD.get().asItem(),
             ModItems.BOTTLE_MOLD_WITH_PREFORM.get().asItem(),
-            ModItems.BOTTLE_MOLD_WITH_BOTTLE.get().asItem()
+            ModItems.BOTTLE_MOLD_WITH_BOTTLE.get().asItem(),
+
+            ModItems.INCOMPLETE_CITRON_LEMONADE.get(),
+            ModItems.INCOMPLETE_ORANGE_LEMONADE.get(),
+            ModItems.INCOMPLETE_RASPBERRY_LEMONADE.get(),
+            ModItems.INCOMPLETE_SUMMERMIX_LEMONADE.get(),
+            ModItems.INCOMPLETE_WATERMELON_LEMONADE.get()
         );
         tag(AllModTags.ItemTags.MOLDS).add(
             ModItems.PREFORM_MOLD.get().asItem(),
@@ -103,12 +109,6 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(AllModTags.ItemTags.BOTTLES).add(
             ModItems.BOTTLE_EMPTY.get().asItem(),
             ModItems.BOTTLE_CAPPED.get().asItem(),
-
-            ModItems.INCOMPLETE_CITRON_LEMONADE.get(),
-            ModItems.INCOMPLETE_ORANGE_LEMONADE.get(),
-            ModItems.INCOMPLETE_RASPBERRY_LEMONADE.get(),
-            ModItems.INCOMPLETE_SUMMERMIX_LEMONADE.get(),
-            ModItems.INCOMPLETE_WATERMELON_LEMONADE.get(),
 
             ModItems.BOTTLE_CITRON_LEMONADE_CAP_LABEL.get(),
             ModItems.BOTTLE_CITRON_CAP_LABEL.get(),
