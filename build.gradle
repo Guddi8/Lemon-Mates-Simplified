@@ -118,6 +118,8 @@ repositories {
     maven { url = "https://cursemaven.com" } // Farmer's Delight
     maven { url = "https://maven.blamejared.com" } // JEI
     maven { url = "https://maven.ryanliptak.com/" } // AppleSkin
+    maven { url "https://maven.dragons.plus/releases" } // DragonsPlus, CEI
+    maven { url "https://maven.fallenbreath.me/releases" } // Conditional Mixin
 }
 
 dependencies {
@@ -127,6 +129,10 @@ dependencies {
     runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}")
     implementation("com.tterrag.registrate:Registrate:${registrate_version}")
 
+    if (cei_enabled.toBoolean()){
+        localRuntime("plus.dragons.createdragonsplus:create-dragons-plus-${minecraft_version}:${create_dragons_plus_version}")
+        localRuntime("plus.dragons.createenchantmentindustry:create-enchantment-industry-${minecraft_version}:${create_enchantment_industry_version}")
+    }
     localRuntime("curse.maven:farmers-delight-398521:${farmers_delight_version}")
     // implementation("curse.maven:slice-and-dice-659674:7011985")
 
