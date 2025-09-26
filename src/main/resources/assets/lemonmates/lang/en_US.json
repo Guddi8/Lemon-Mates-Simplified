@@ -1,6 +1,7 @@
 {
   "itemGroup.lemonmates.base": "Lemonmates",
   "itemGroup.lemonmates.processing": "Lemonmates Processing",
+  "itemGroup.lemonmates.decoration": "Lemonmates Decoration",
 
   "item.lemonmates.bottle_cap": "Bottle Cap",
   "item.lemonmates.bottle_capped": "Empty Bottle with Cap",
@@ -8,6 +9,28 @@
   "item.lemonmates.bottle_form": "Bottle Form",
   "item.lemonmates.formable_plastic": "Formable Plastic",
   "item.lemonmates.bottle_incomplete": "Incomplete Bottle",
+
+  "item.lemonmates.incomplete_citron_lemonade": "Incomplete Citron Lemonade",
+  "item.lemonmates.incomplete_orange_lemonade": "Incomplete Orange Lemonade",
+  "item.lemonmates.incomplete_raspberry_lemonade": "Incomplete Raspberry Lemonade",
+  "item.lemonmates.incomplete_summermix_lemonade": "Incomplete Summermix Lemonade",
+  "item.lemonmates.incomplete_watermelon_lemonade": "Incomplete Watermelon Lemonade",
+  "item.lemonmates.seed_flour": "Seed Flour",
+  "item.lemonmates.starch": "Starch",
+  "item.lemonmates.bioplastic_mass": "Bioplastic Mass",
+  "item.lemonmates.preform_mold": "Preform Mold",
+  "item.lemonmates.preform_mold_with_preform": "Preform Mold with Preform",
+  "item.lemonmates.bottle_mold": "Bottle Mold",
+  "item.lemonmates.bottle_mold_with_bottle": "Bottle Mold with Bottle",
+  "item.lemonmates.bottle_mold_with_preform": "Bottle Mold with Preform",
+  "item.lemonmates.preform": "Preform",
+  "item.lemonmates.cap_mold_with_cap": "Cap Mold with Cap",
+  "item.lemonmates.cap_mold": "Cap Mold",
+  "item.lemonmates.citron_slice": "Citron Slice",
+  "item.lemonmates.orange_slice": "Orange Slice",
+  "item.lemonmates.citron_boat": "Citron Boat",
+  "item.lemonmates.orange_boat": "Orange Boat",
+  "item.lemonmates.plastic_bucket": "Plastic Bucket",
 
   "item.lemonmates.label_empty": "Empty Label",
   "item.lemonmates.label_text": "Label with Product Information",
@@ -111,5 +134,7 @@
   "item.lemonmates.mixed_orange_lemonade_bucket": "Undistilled Orange Lemonade Bucket",
   "item.lemonmates.mixed_raspberry_lemonade_bucket": "Undistilled Raspberry Lemonade Bucket",
   "item.lemonmates.mixed_summermix_lemonade_bucket": "Undistilled Summer-Mix Lemonade Bucket",
-  "item.lemonmates.mixed_watermelon_lemonade_bucket": "Undistilled Watermelon Lemonade Bucket"
+  "item.lemonmates.mixed_watermelon_lemonade_bucket": "Undistilled Watermelon Lemonade Bucket",
+
+  "block.lemonmates.plastic_block": "Block of Plastic"
 }

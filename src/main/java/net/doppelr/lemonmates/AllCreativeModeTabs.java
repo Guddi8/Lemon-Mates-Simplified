@@ -60,6 +60,7 @@ public class AllCreativeModeTabs {
                 output.accept(ModBlocks.CITRON_SIGN);
                 output.accept(ModItems.CITRON_SIGN);
                 output.accept(ModItems.CITRON_HANGING_SIGN);
+                output.accept(ModItems.CITRON_BOAT);
 
                 // Orange Wood Stuffs
                 output.accept(ModBlocks.ORANGE_SAPLING);
@@ -79,6 +80,7 @@ public class AllCreativeModeTabs {
                 output.accept(ModBlocks.ORANGE_BUTTON);
                 output.accept(ModItems.ORANGE_SIGN);
                 output.accept(ModItems.ORANGE_HANGING_SIGN);
+                output.accept(ModItems.ORANGE_BOAT);
             })
         .build()
     );
@@ -153,8 +155,21 @@ public class AllCreativeModeTabs {
                 output.accept(ModItems.BOTTLE_WATERMELON_LABEL);
             })
         .build()
+
     );
 
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> DECORATION_CREATIVE_TAB = CREATIVE_MODE_TABS.register("decoration",
+        () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup." + LemonMates.MOD_ID + ".processing"))
+            .withTabsBefore(AllCreativeModeTabs.BASE_CREATIVE_TAB.getKey())
+            .icon(() -> new ItemStack(ModItems.BOTTLE_MOLD_WITH_BOTTLE.get()))
+            .displayItems((params, output) -> {
+                // Plastic
+                output.accept(ModBlocks.PLASTIC_BLOCK);
+
+            })
+        .build()
+    );
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }

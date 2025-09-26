@@ -111,6 +111,10 @@ public class ModBlocks {
     public static final DeferredBlock<Block> RASPBERRY_CRATE = registerBlock("raspberry_crate",
         () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)));
 
+    // Plastics
+    public static final DeferredBlock<Block> PLASTIC_BLOCK = registerBlock("plastic_block",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier <T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
