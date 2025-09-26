@@ -124,7 +124,7 @@ public class AllCreativeModeTabs {
                 output.accept(ModItems.LABEL_CITRON_LEMONADE);
                 output.accept(ModItems.LABEL_ORANGE_LEMONADE);
                 output.accept(ModItems.LABEL_RASPBERRY_LEMONADE);
-                output.accept(ModItems.LABEL_SUMMER_MIX);
+                output.accept(ModItems.LABEL_SUMMERMIX_LEMONADE);
                 output.accept(ModItems.LABEL_WATERMELON_LEMONADE);
 
                 // Citron

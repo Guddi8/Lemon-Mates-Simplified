@@ -1,7 +1,6 @@
 package net.doppelr.lemonmates.datagen;
 
 import com.simibubi.create.AllTags;
-import net.doppelr.lemonmates.AllFoodProperties;
 import net.doppelr.lemonmates.AllModTags;
 import net.doppelr.lemonmates.LemonMates;
 import net.doppelr.lemonmates.block.ModBlocks;
@@ -9,11 +8,9 @@ import net.doppelr.lemonmates.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import net.neoforged.neoforge.registries.DeferredItem;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -164,7 +161,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
             ModItems.LABEL_CITRON_LEMONADE.get(),
             ModItems.LABEL_ORANGE_LEMONADE.get(),
             ModItems.LABEL_RASPBERRY_LEMONADE.get(),
-            ModItems.LABEL_SUMMER_MIX.get(),
+            ModItems.LABEL_SUMMERMIX_LEMONADE.get(),
             ModItems.LABEL_WATERMELON_LEMONADE.get()
         );
     }

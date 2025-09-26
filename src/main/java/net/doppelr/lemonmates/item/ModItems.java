@@ -75,7 +75,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> LABEL_RASPBERRY_LEMONADE = ITEMS.register("label_raspberry_lemonade",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> LABEL_SUMMER_MIX = ITEMS.register("label_summer_mix",
+    public static final DeferredItem<Item> LABEL_SUMMERMIX_LEMONADE = ITEMS.register("label_summermix_lemonade",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> LABEL_WATERMELON_LEMONADE = ITEMS.register("label_watermelon_lemonade",
             () -> new Item(new Item.Properties()));
