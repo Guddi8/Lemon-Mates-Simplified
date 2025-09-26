@@ -8,6 +8,7 @@ import net.doppelr.lemonmates.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
@@ -133,5 +134,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             .requires(ModItems.BOTTLE_MOLD_WITH_BOTTLE.get()).unlockedBy("has_mold", has(ModItems.BOTTLE_MOLD)).save(recipeOutput);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BOTTLE_CAP.get(), 1)
             .requires(ModItems.CAP_MOLD_WITH_CAP.get()).unlockedBy("has_cap_mold", has(ModItems.CAP_MOLD)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.LABEL_EMPTY.get(), 1)
+            .requires(Items.PAPER).requires(Items.LIME_DYE).unlockedBy("has_paper", has(Items.PAPER)).save(recipeOutput);
+
     }
 }
