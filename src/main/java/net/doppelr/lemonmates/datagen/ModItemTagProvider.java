@@ -151,7 +151,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(AllModTags.ItemTags.LEMONADES_SUMMERMIX).add(
             ModItems.BOTTLE_SUMMERMIX_LEMONADE_CAP_LABEL.get()
         );
-        tag(AllModTags.ItemTags.LEMONADES_RASPBERRY).add(
+        tag(AllModTags.ItemTags.LEMONADES_WATERMELON).add(
             ModItems.BOTTLE_WATERMELON_LEMONADE_CAP_LABEL.get()
         );
         tag(AllModTags.ItemTags.LABELS).add(
