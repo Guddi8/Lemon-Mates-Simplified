@@ -5,7 +5,7 @@
     {
       "fluid": "minecraft:water",
       "type": "fluid_stack",
-      "amount": 250
+      "amount": 150
     },
     {
       "item": "lemonmates:citron_slice"
@@ -24,11 +24,14 @@
     },
     {
       "item": "minecraft:sugar"
+    },
+    {
+      "tag": "c:doughs/wheat"
     }
   ],
   "results": [
     {
-      "amount": 250,
+      "amount": 200,
       "id": "lemonmates:summermix_lemonade"
     }
   ]

@@ -5,7 +5,7 @@
     {
       "fluid": "minecraft:water",
       "type": "fluid_stack",
-      "amount": 250
+      "amount": 150
     },
     {
       "item": "minecraft:sugar"
@@ -14,18 +14,18 @@
       "item": "minecraft:sugar"
     },
     {
-      "item": "minecraft:sugar"
+      "item": "minecraft:melon_slice"
     },
     {
-      "item": "minecraft:watermelon_slice"
+      "tags": "c:fruits/citron"
     },
     {
-      "item": "minecraft:watermelon_slice"
+      "item": "c:fruits/orange"
     }
   ],
   "results": [
     {
-      "amount": 250,
+      "amount": 200,
       "id": "lemonmates:watermelon_lemonade"
     }
   ]
