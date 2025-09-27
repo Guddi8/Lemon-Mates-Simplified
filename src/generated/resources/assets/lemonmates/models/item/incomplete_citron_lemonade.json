@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:item/generated",
+  "overrides": [
+    {
+      "model": "lemonmates:item/incomplete_citron_lemonade_cap",
+      "predicate": {
+        "lemonmates:assembly_step": 2.0
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "lemonmates:item/bottle_fluid/citron",
+    "layer1": "lemonmates:item/bottle_empty"
+  }
+}
