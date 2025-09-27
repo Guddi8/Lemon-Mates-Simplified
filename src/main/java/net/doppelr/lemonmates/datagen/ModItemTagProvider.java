@@ -106,49 +106,49 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(AllModTags.ItemTags.BOTTLES).add(
             ModItems.BOTTLE_EMPTY.get().asItem(),
 
-            ModItems.BOTTLE_CITRON_LEMONADE_CAP_LABEL.get(),
-            ModItems.BOTTLE_CITRON_CAP_LABEL.get(),
+            ModItems.CITRON_LEMONADE_BOTTLE.get(),
+            ModItems.EMPTY_CITRON_LEMONADE_BOTTLE.get(),
 
-            ModItems.BOTTLE_ORANGE_LEMONADE_CAP_LABEL.get(),
-            ModItems.BOTTLE_ORANGE_CAP_LABEL.get(),
+            ModItems.ORANGE_LEMONADE_BOTTLE.get(),
+            ModItems.EMPTY_ORANGE_LEMONADE_BOTTLE.get(),
 
-            ModItems.BOTTLE_RASPBERRY_CAP_LABEL.get(),
-            ModItems.BOTTLE_RASPBERRY_LEMONADE_CAP_LABEL.get(),
+            ModItems.EMPTY_RASPBERRY_LEMONADE_BOTTLE.get(),
+            ModItems.RASPBERRY_LEMONADE_BOTTLE.get(),
 
-            ModItems.BOTTLE_SUMMERMIX_LEMONADE_CAP_LABEL.get(),
-            ModItems.BOTTLE_SUMMERMIX_CAP_LABEL.get(),
+            ModItems.SUMMERMIX_LEMONADE_BOTTLE.get(),
+            ModItems.EMPTY_SUMMERMIX_LEMONADE_BOTTLE.get(),
 
-            ModItems.BOTTLE_WATERMELON_CAP_LABEL.get(),
-            ModItems.BOTTLE_WATERMELON_LEMONADE_CAP_LABEL.get()
+            ModItems.EMPTY_WATERMELON_LEMONADE_BOTTLE.get(),
+            ModItems.WATERMELON_LEMONADE_BOTTLE.get()
         );
         tag(AllModTags.ItemTags.LEMONADES_EMPTY).add(
-                ModItems.BOTTLE_CITRON_CAP_LABEL.get(),
-                ModItems.BOTTLE_ORANGE_CAP_LABEL.get(),
-                ModItems.BOTTLE_RASPBERRY_CAP_LABEL.get(),
-                ModItems.BOTTLE_SUMMERMIX_CAP_LABEL.get(),
-                ModItems.BOTTLE_WATERMELON_CAP_LABEL.get()
+                ModItems.EMPTY_CITRON_LEMONADE_BOTTLE.get(),
+                ModItems.EMPTY_ORANGE_LEMONADE_BOTTLE.get(),
+                ModItems.EMPTY_RASPBERRY_LEMONADE_BOTTLE.get(),
+                ModItems.EMPTY_SUMMERMIX_LEMONADE_BOTTLE.get(),
+                ModItems.EMPTY_WATERMELON_LEMONADE_BOTTLE.get()
         );
         tag(AllModTags.ItemTags.LEMONADES).add(
-            ModItems.BOTTLE_CITRON_LEMONADE_CAP_LABEL.get(),
-            ModItems.BOTTLE_ORANGE_LEMONADE_CAP_LABEL.get(),
-            ModItems.BOTTLE_RASPBERRY_LEMONADE_CAP_LABEL.get(),
-            ModItems.BOTTLE_SUMMERMIX_LEMONADE_CAP_LABEL.get(),
-            ModItems.BOTTLE_WATERMELON_LEMONADE_CAP_LABEL.get()
+            ModItems.CITRON_LEMONADE_BOTTLE.get(),
+            ModItems.ORANGE_LEMONADE_BOTTLE.get(),
+            ModItems.RASPBERRY_LEMONADE_BOTTLE.get(),
+            ModItems.SUMMERMIX_LEMONADE_BOTTLE.get(),
+            ModItems.WATERMELON_LEMONADE_BOTTLE.get()
         );
         tag(AllModTags.ItemTags.LEMONADES_CITRON).add(
-            ModItems.BOTTLE_CITRON_LEMONADE_CAP_LABEL.get()
+            ModItems.CITRON_LEMONADE_BOTTLE.get()
         );
         tag(AllModTags.ItemTags.LEMONADES_ORANGE).add(
-            ModItems.BOTTLE_ORANGE_LEMONADE_CAP_LABEL.get()
+            ModItems.ORANGE_LEMONADE_BOTTLE.get()
         );
         tag(AllModTags.ItemTags.LEMONADES_RASPBERRY).add(
-            ModItems.BOTTLE_RASPBERRY_LEMONADE_CAP_LABEL.get()
+            ModItems.RASPBERRY_LEMONADE_BOTTLE.get()
         );
         tag(AllModTags.ItemTags.LEMONADES_SUMMERMIX).add(
-            ModItems.BOTTLE_SUMMERMIX_LEMONADE_CAP_LABEL.get()
+            ModItems.SUMMERMIX_LEMONADE_BOTTLE.get()
         );
         tag(AllModTags.ItemTags.LEMONADES_WATERMELON).add(
-            ModItems.BOTTLE_WATERMELON_LEMONADE_CAP_LABEL.get()
+            ModItems.WATERMELON_LEMONADE_BOTTLE.get()
         );
         tag(AllModTags.ItemTags.LABELS).add(
             ModItems.LABEL_EMPTY.get(),

@@ -81,34 +81,34 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     // Citron
-    public static final DeferredItem<Item> BOTTLE_CITRON_CAP_LABEL = ITEMS.register("bottle_citron_cap_label",
+    public static final DeferredItem<Item> EMPTY_CITRON_LEMONADE_BOTTLE = ITEMS.register("empty_citron_lemonade_bottle",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> BOTTLE_CITRON_LEMONADE_CAP_LABEL = ITEMS.register("bottle_citron_lemonade_cap_label",
-            () -> new LemonadeDrinkItem(AllFoodProperties.lemonadeDrinks(ModItems.BOTTLE_CITRON_CAP_LABEL)));
+    public static final DeferredItem<Item> CITRON_LEMONADE_BOTTLE = ITEMS.register("citron_lemonade_bottle",
+            () -> new LemonadeDrinkItem(AllFoodProperties.lemonadeDrinks(ModItems.EMPTY_CITRON_LEMONADE_BOTTLE)));
 
     // Orange
-    public static final DeferredItem<Item> BOTTLE_ORANGE_CAP_LABEL = ITEMS.register("bottle_orange_cap_label",
+    public static final DeferredItem<Item> EMPTY_ORANGE_LEMONADE_BOTTLE = ITEMS.register("empty_orange_lemonade_bottle",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> BOTTLE_ORANGE_LEMONADE_CAP_LABEL = ITEMS.register("bottle_orange_lemonade_cap_label",
-            () -> new LemonadeDrinkItem(AllFoodProperties.lemonadeDrinks(ModItems.BOTTLE_ORANGE_CAP_LABEL)));
+    public static final DeferredItem<Item> ORANGE_LEMONADE_BOTTLE = ITEMS.register("orange_lemonade_bottle",
+            () -> new LemonadeDrinkItem(AllFoodProperties.lemonadeDrinks(ModItems.EMPTY_ORANGE_LEMONADE_BOTTLE)));
 
     // Raspberry
-    public static final DeferredItem<Item> BOTTLE_RASPBERRY_CAP_LABEL = ITEMS.register("bottle_raspberry_cap_label",
+    public static final DeferredItem<Item> EMPTY_RASPBERRY_LEMONADE_BOTTLE = ITEMS.register("empty_raspberry_lemonade_bottle",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> BOTTLE_RASPBERRY_LEMONADE_CAP_LABEL = ITEMS.register("bottle_raspberry_lemonade_cap_label",
-            () -> new LemonadeDrinkItem(AllFoodProperties.lemonadeDrinks(ModItems.BOTTLE_RASPBERRY_CAP_LABEL)));
+    public static final DeferredItem<Item> RASPBERRY_LEMONADE_BOTTLE = ITEMS.register("raspberry_lemonade_bottle",
+            () -> new LemonadeDrinkItem(AllFoodProperties.lemonadeDrinks(ModItems.EMPTY_RASPBERRY_LEMONADE_BOTTLE)));
 
     // Summer Mix
-    public static final DeferredItem<Item> BOTTLE_SUMMERMIX_CAP_LABEL = ITEMS.register("bottle_summermix_cap_label",
+    public static final DeferredItem<Item> EMPTY_SUMMERMIX_LEMONADE_BOTTLE = ITEMS.register("empty_summermix_lemonade_bottle",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> BOTTLE_SUMMERMIX_LEMONADE_CAP_LABEL = ITEMS.register("bottle_summermix_lemonade_cap_label",
-            () -> new LemonadeDrinkItem(AllFoodProperties.lemonadeDrinks(ModItems.BOTTLE_SUMMERMIX_CAP_LABEL)));
+    public static final DeferredItem<Item> SUMMERMIX_LEMONADE_BOTTLE = ITEMS.register("summermix_lemonade_bottle",
+            () -> new LemonadeDrinkItem(AllFoodProperties.lemonadeDrinks(ModItems.EMPTY_SUMMERMIX_LEMONADE_BOTTLE)));
 
     // Watermelon
-    public static final DeferredItem<Item> BOTTLE_WATERMELON_CAP_LABEL = ITEMS.register("bottle_watermelon_cap_label",
+    public static final DeferredItem<Item> EMPTY_WATERMELON_LEMONADE_BOTTLE = ITEMS.register("empty_watermelon_lemonade_bottle",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> BOTTLE_WATERMELON_LEMONADE_CAP_LABEL = ITEMS.register("bottle_watermelon_lemonade_cap_label",
-            () -> new LemonadeDrinkItem(AllFoodProperties.lemonadeDrinks(ModItems.BOTTLE_WATERMELON_CAP_LABEL)));
+    public static final DeferredItem<Item> WATERMELON_LEMONADE_BOTTLE = ITEMS.register("watermelon_lemonade_bottle",
+            () -> new LemonadeDrinkItem(AllFoodProperties.lemonadeDrinks(ModItems.EMPTY_WATERMELON_LEMONADE_BOTTLE)));
 
     // Plants
     public static final DeferredItem<Item> CITRON = ITEMS.register("citron",

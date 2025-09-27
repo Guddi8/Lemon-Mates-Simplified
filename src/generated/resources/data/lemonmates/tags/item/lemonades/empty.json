@@ -1,9 +1,9 @@
 {
   "values": [
-    "lemonmates:bottle_citron_cap_label",
-    "lemonmates:bottle_orange_cap_label",
-    "lemonmates:bottle_raspberry_cap_label",
-    "lemonmates:bottle_summermix_cap_label",
-    "lemonmates:bottle_watermelon_cap_label"
+    "lemonmates:empty_citron_lemonade_bottle",
+    "lemonmates:empty_orange_lemonade_bottle",
+    "lemonmates:empty_raspberry_lemonade_bottle",
+    "lemonmates:empty_summermix_lemonade_bottle",
+    "lemonmates:empty_watermelon_lemonade_bottle"
   ]
 }

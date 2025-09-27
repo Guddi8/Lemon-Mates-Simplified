@@ -1,15 +1,15 @@
 {
   "values": [
     "lemonmates:bottle_empty",
-    "lemonmates:bottle_citron_lemonade_cap_label",
-    "lemonmates:bottle_citron_cap_label",
-    "lemonmates:bottle_orange_lemonade_cap_label",
-    "lemonmates:bottle_orange_cap_label",
-    "lemonmates:bottle_raspberry_cap_label",
-    "lemonmates:bottle_raspberry_lemonade_cap_label",
-    "lemonmates:bottle_summermix_lemonade_cap_label",
-    "lemonmates:bottle_summermix_cap_label",
-    "lemonmates:bottle_watermelon_cap_label",
-    "lemonmates:bottle_watermelon_lemonade_cap_label"
+    "lemonmates:citron_lemonade_bottle",
+    "lemonmates:empty_citron_lemonade_bottle",
+    "lemonmates:orange_lemonade_bottle",
+    "lemonmates:empty_orange_lemonade_bottle",
+    "lemonmates:empty_raspberry_lemonade_bottle",
+    "lemonmates:raspberry_lemonade_bottle",
+    "lemonmates:summermix_lemonade_bottle",
+    "lemonmates:empty_summermix_lemonade_bottle",
+    "lemonmates:empty_watermelon_lemonade_bottle",
+    "lemonmates:watermelon_lemonade_bottle"
   ]
 }

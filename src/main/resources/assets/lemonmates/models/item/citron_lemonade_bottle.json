@@ -10,7 +10,7 @@
   "overrides": [
     {
       "predicate": { "lemonmates:drinking_stage": 1.0 },
-      "model": "lemonmates:item/bottle_citron_lemonade_label"
+      "model": "lemonmates:item/citron_lemonade_label"
     }
   ]
 }
