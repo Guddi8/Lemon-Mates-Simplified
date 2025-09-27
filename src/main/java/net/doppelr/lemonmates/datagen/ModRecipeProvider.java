@@ -56,6 +56,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             .unlockedBy("has_citron_planks", has(ModBlocks.CITRON_PLANKS)).save(recipeOutput);
         trapdoorBuilder(ModBlocks.CITRON_TRAPDOOR, Ingredient.of(ModBlocks.CITRON_PLANKS))
             .unlockedBy("has_citron_planks", has(ModBlocks.CITRON_PLANKS)).save(recipeOutput);
+        signBuilder(ModBlocks.CITRON_SIGN, Ingredient.of(ModBlocks.CITRON_PLANKS))
+            .unlockedBy("has_citron_planks", has(ModBlocks.CITRON_PLANKS)).save(recipeOutput);
+        hangingSign(recipeOutput, ModBlocks.CITRON_HANGING_SIGN, ModBlocks.CITRON_PLANKS);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModItems.ORANGE.get())
             .pattern("##")
@@ -91,6 +94,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             .unlockedBy("has_orange_planks", has(ModBlocks.ORANGE_PLANKS)).save(recipeOutput);
         trapdoorBuilder(ModBlocks.ORANGE_TRAPDOOR, Ingredient.of(ModBlocks.ORANGE_PLANKS))
             .unlockedBy("has_orange_planks", has(ModBlocks.ORANGE_PLANKS)).save(recipeOutput);
+        signBuilder(ModBlocks.ORANGE_SIGN, Ingredient.of(ModBlocks.ORANGE_PLANKS))
+            .unlockedBy("has_orange_planks", has(ModBlocks.ORANGE_PLANKS)).save(recipeOutput);
+        hangingSign(recipeOutput, ModBlocks.ORANGE_HANGING_SIGN, ModBlocks.ORANGE_PLANKS);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RASPBERRY_CRATE.get())
                 .pattern("###")
