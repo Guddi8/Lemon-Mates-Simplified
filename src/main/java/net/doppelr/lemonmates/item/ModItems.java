@@ -32,6 +32,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BIOPLASTIC_MASS = ITEMS.register("bioplastic_mass",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BROKEN_BOTTLE = ITEMS.register("broken_bottle",
+            () -> new Item(new Item.Properties()));
 
     // Molds
     public static final DeferredItem<Item> PREFORM_MOLD = ITEMS.register("preform_mold",

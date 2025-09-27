@@ -44,6 +44,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.SEED_FLOUR.get());
         basicItem(ModItems.STARCH.get());
         basicItem(ModItems.BIOPLASTIC_MASS.get());
+        basicItem(ModItems.BROKEN_BOTTLE.get());
 
         basicItem(ModItems.PREFORM_MOLD.get());
         basicItem(ModItems.PREFORM_MOLD_WITH_PREFORM.get());

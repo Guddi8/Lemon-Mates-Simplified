@@ -93,6 +93,7 @@ public class AllCreativeModeTabs {
                 output.accept(ModItems.SEED_FLOUR);
                 output.accept(ModItems.STARCH);
                 output.accept(ModItems.BIOPLASTIC_MASS);
+                output.accept(ModItems.BROKEN_BOTTLE);
                 output.accept(ModFluids.PLASTIC_BUCKET.get());
 
                 // Bottle form related
