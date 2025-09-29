@@ -1,0 +1,9 @@
+// 1.21.1	2025-09-23T19:56:02.2747092	Tags for minecraft:fluid mod id lemonmates
+d02e0913bd24509bf42d7bbf3e5afc79b1308d0d data/c/tags/fluid/lemonades.json
+1775fdb1a4dd4e32d298cedc51d1ddb302716abf data/c/tags/fluid/plastic.json
+d02e0913bd24509bf42d7bbf3e5afc79b1308d0d data/lemonmates/tags/fluid/lemonades.json
+f9f24f02e8e2660efaed82b992bc7aa420cec624 data/lemonmates/tags/fluid/lemonades/citron.json
+9686b83b2b04f84aaa26d6bc91c1701fd06d0f92 data/lemonmates/tags/fluid/lemonades/orange.json
+d8bb55f4bfea2b032cdae04529d084c0152ee567 data/lemonmates/tags/fluid/lemonades/raspberry.json
+7970b51f6ebfec6c87c91e94486381d6ad207d51 data/lemonmates/tags/fluid/lemonades/summermix.json
+3fcf0081df9e307c8e3b3cc72a4d4400833f5d40 data/lemonmates/tags/fluid/lemonades/watermelon.json

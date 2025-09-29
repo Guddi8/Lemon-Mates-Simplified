@@ -1,0 +1,22 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "tag": "lemonmates:lemonades/empty"
+    }
+  ],
+  "results": [
+    {
+      "chance": 0.65,
+      "id": "lemonmates:bottle_cap"
+    },
+    {
+      "chance": 0.65,
+      "id": "lemonmates:bottle_empty"
+    },
+    {
+      "chance": 0.45,
+      "id": "lemonmates:broken_bottle"
+    }
+  ]
+}

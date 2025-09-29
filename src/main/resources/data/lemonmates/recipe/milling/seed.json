@@ -1,0 +1,21 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "minecraft:wheat_seeds"
+    }
+  ],
+  "processingTime": 120,
+  "results": [
+    {
+      "chance": 0.70,
+      "count": 1,
+      "id": "lemonmates:seed_flour"
+    },
+    {
+      "chance": 0.20,
+      "count": 1,
+      "id": "lemonmates:seed_flour"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 package net.doppelr.lemonmates;
 
 import net.doppelr.lemonmates.block.ModBlocks;
+import net.doppelr.lemonmates.fluid.ModFluids;
 import net.doppelr.lemonmates.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -12,88 +13,20 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
 public class AllCreativeModeTabs {
-    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
-            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, LemonMates.MOD_ID);
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
+        DeferredRegister.create(Registries.CREATIVE_MODE_TAB, LemonMates.MOD_ID);
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> LEMONMATES_TAB = CREATIVE_MODE_TAB.register("lemonmates_tab",
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> BASE_CREATIVE_TAB = CREATIVE_MODE_TABS.register("base",
         () -> CreativeModeTab.builder()
-            .title(Component.translatable("itemGroup." + LemonMates.MOD_ID + ".lemonmates"))
+            .title(Component.translatable("itemGroup." + LemonMates.MOD_ID + ".base"))
             .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
-            .icon(() -> new ItemStack(ModItems.BOTTLE_WATERMELON_LEMONADE_CAP_LABEL.get()))
-            .displayItems((params, output) -> {
-                // Finished Lemonades
-                output.accept(ModItems.BOTTLE_CITRON_LEMONADE_CAP_LABEL);
-                output.accept(ModItems.BOTTLE_ORANGE_LEMONADE_CAP_LABEL);
-                output.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE_CAP_LABEL);
-                output.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE_CAP_LABEL);
-                output.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_CAP_LABEL);
-
-                // Bottle Basics
-                output.accept(ModItems.BOTTLE_CAP);
-                output.accept(ModItems.BOTTLE_EMPTY);
-                output.accept(ModItems.BOTTLE_CAPPED);
-                output.accept(ModItems.BOTTLE_INCOMPLETE);
-                output.accept(ModItems.FORMABLE_PLASTIC);
-                output.accept(ModItems.BOTTLE_FORM);
-
-                // Labels
-                output.accept(ModItems.LABEL_EMPTY);
-                output.accept(ModItems.LABEL_TEXT);
-                output.accept(ModItems.LABEL_TEXT_COMPANY);
-
-                output.accept(ModItems.LABEL_CITRON_LEMONADE);
-                output.accept(ModItems.LABEL_ORANGE_LEMONADE);
-                output.accept(ModItems.LABEL_RASPBERRY_LEMONADE);
-                output.accept(ModItems.LABEL_SUMMER_MIX);
-                output.accept(ModItems.LABEL_WATERMELON_LEMONADE);
-
-                // Bottle with Label
-                output.accept(ModItems.BOTTLE_CITRON_LABEL);
-                output.accept(ModItems.BOTTLE_ORANGE_LABEL);
-                output.accept(ModItems.BOTTLE_RASPBERRY_LABEL);
-                output.accept(ModItems.BOTTLE_SUMMERMIX_LABEL);
-                output.accept(ModItems.BOTTLE_WATERMELON_LABEL);
-
-                // Bottle with Lemonade
-                output.accept(ModItems.BOTTLE_CITRON_LEMONADE);
-                output.accept(ModItems.BOTTLE_ORANGE_LEMONADE);
-                output.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE);
-                output.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE);
-                output.accept(ModItems.BOTTLE_WATERMELON_LEMONADE);
-
-                // Bottle with Cap and Label
-                output.accept(ModItems.BOTTLE_CITRON_CAP_LABEL);
-                output.accept(ModItems.BOTTLE_ORANGE_CAP_LABEL);
-                output.accept(ModItems.BOTTLE_RASPBERRY_CAP_LABEL);
-                output.accept(ModItems.BOTTLE_SUMMERMIX_CAP_LABEL);
-                output.accept(ModItems.BOTTLE_WATERMELON_CAP_LABEL);
-
-                // Bottle with Lemonade and Cap
-                output.accept(ModItems.BOTTLE_CITRON_LEMONADE_CAP);
-                output.accept(ModItems.BOTTLE_ORANGE_LEMONADE_CAP);
-                output.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE_CAP);
-                output.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE_CAP);
-                output.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_CAP);
-
-                // Bottle with Lemonade and Label
-                output.accept(ModItems.BOTTLE_CITRON_LEMONADE_LABEL);
-                output.accept(ModItems.BOTTLE_ORANGE_LEMONADE_LABEL);
-                output.accept(ModItems.BOTTLE_RASPBERRY_LEMONADE_LABEL);
-                output.accept(ModItems.BOTTLE_SUMMERMIX_LEMONADE_LABEL);
-                output.accept(ModItems.BOTTLE_WATERMELON_LEMONADE_LABEL);
-            })
-            .build()
-    );
-
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> LEMONMATES_PLANTS_TAB = CREATIVE_MODE_TAB.register("lemonmates_plants_tab",
-        () -> CreativeModeTab.builder()
-            .title(Component.translatable("itemGroup." + LemonMates.MOD_ID + ".lemonmates_plants"))
-            .withTabsBefore(LEMONMATES_TAB.getKey())
-            .icon(() -> new ItemStack(ModItems.ORANGE.get()))
+            .icon(() -> new ItemStack(ModItems.WATERMELON_LEMONADE_BOTTLE.get()))
             .displayItems((params, output) -> {
                 // Fruits
                 output.accept(ModItems.CITRON);
+                output.accept(ModItems.CITRON_SLICE);
                 output.accept(ModItems.ORANGE);
+                output.accept(ModItems.ORANGE_SLICE);
                 output.accept(ModItems.RASPBERRY);
 
                 // Crates
@@ -101,10 +34,12 @@ public class AllCreativeModeTabs {
                 output.accept(ModBlocks.ORANGE_CRATE);
                 output.accept(ModBlocks.RASPBERRY_CRATE);
 
-                // Juices
-                output.accept(ModItems.CITRON_JUICE);
-                output.accept(ModItems.ORANGE_JUICE);
-                output.accept(ModItems.RASPBERRY_JUICE);
+                // Finished Lemonades
+                output.accept(ModItems.CITRON_LEMONADE_BOTTLE);
+                output.accept(ModItems.ORANGE_LEMONADE_BOTTLE);
+                output.accept(ModItems.RASPBERRY_LEMONADE_BOTTLE);
+                output.accept(ModItems.SUMMERMIX_LEMONADE_BOTTLE);
+                output.accept(ModItems.WATERMELON_LEMONADE_BOTTLE);
 
                 // Citron Wood Stuffs
                 output.accept(ModBlocks.CITRON_SAPLING);
@@ -149,10 +84,75 @@ public class AllCreativeModeTabs {
                 output.accept(ModItems.ORANGE_BOAT);
                 output.accept(ModItems.ORANGE_CHEST_BOAT);
             })
-            .build()
+        .build()
+    );
+
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> PROCESSING_CREATIVE_TAB = CREATIVE_MODE_TABS.register("processing",
+        () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup." + LemonMates.MOD_ID + ".processing"))
+            .withTabsBefore(AllCreativeModeTabs.BASE_CREATIVE_TAB.getKey())
+            .icon(() -> new ItemStack(ModItems.BOTTLE_MOLD_WITH_BOTTLE.get()))
+            .displayItems((params, output) -> {
+                // Plastic
+                output.accept(ModItems.SEED_FLOUR);
+                output.accept(ModItems.STARCH);
+                output.accept(ModItems.BIOPLASTIC_MASS);
+                output.accept(ModItems.BROKEN_BOTTLE);
+                output.accept(ModFluids.PLASTIC_BUCKET.get());
+
+                // Bottle form related
+                output.accept(ModItems.PREFORM_MOLD);
+                output.accept(ModItems.PREFORM_MOLD_WITH_PREFORM);
+                output.accept(ModItems.PREFORM);
+                output.accept(ModItems.BOTTLE_MOLD);
+                output.accept(ModItems.BOTTLE_MOLD_WITH_PREFORM);
+                output.accept(ModItems.BOTTLE_MOLD_WITH_BOTTLE);
+                output.accept(ModItems.BOTTLE_EMPTY);
+                output.accept(ModItems.CAP_MOLD);
+                output.accept(ModItems.CAP_MOLD_WITH_CAP);
+                output.accept(ModItems.BOTTLE_CAP);
+
+                // Liquids
+                output.accept(ModFluids.CITRON_LEMONADE_BUCKET.get());
+                output.accept(ModFluids.ORANGE_LEMONADE_BUCKET.get());
+                output.accept(ModFluids.RASPBERRY_LEMONADE_BUCKET.get());
+                output.accept(ModFluids.SUMMERMIX_LEMONADE_BUCKET.get());
+                output.accept(ModFluids.WATERMELON_LEMONADE_BUCKET.get());
+
+                // Labels
+                output.accept(ModItems.LABEL_EMPTY);
+                output.accept(ModItems.LABEL_TEXT);
+                output.accept(ModItems.LABEL_TEXT_COMPANY);
+                output.accept(ModItems.LABEL_CITRON_LEMONADE);
+                output.accept(ModItems.LABEL_ORANGE_LEMONADE);
+                output.accept(ModItems.LABEL_RASPBERRY_LEMONADE);
+                output.accept(ModItems.LABEL_SUMMERMIX_LEMONADE);
+                output.accept(ModItems.LABEL_WATERMELON_LEMONADE);
+
+                // Citron
+                output.accept(ModItems.CITRON_LEMONADE_BOTTLE);
+                output.accept(ModItems.EMPTY_CITRON_LEMONADE_BOTTLE);
+
+                // Orange
+                output.accept(ModItems.ORANGE_LEMONADE_BOTTLE);
+                output.accept(ModItems.EMPTY_ORANGE_LEMONADE_BOTTLE);
+
+                // Raspberry
+                output.accept(ModItems.RASPBERRY_LEMONADE_BOTTLE);
+                output.accept(ModItems.EMPTY_RASPBERRY_LEMONADE_BOTTLE);
+
+                // Summer-Mix
+                output.accept(ModItems.SUMMERMIX_LEMONADE_BOTTLE); //
+                output.accept(ModItems.EMPTY_SUMMERMIX_LEMONADE_BOTTLE);
+
+                // Watermelon
+                output.accept(ModItems.WATERMELON_LEMONADE_BOTTLE);
+                output.accept(ModItems.EMPTY_WATERMELON_LEMONADE_BOTTLE);
+            })
+        .build()
     );
 
     public static void register(IEventBus eventBus) {
-        CREATIVE_MODE_TAB.register(eventBus);
+        CREATIVE_MODE_TABS.register(eventBus);
     }
 }

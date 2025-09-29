@@ -1,0 +1,67 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "lemonmates:bottle_empty"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "lemonmates:citron_lemonade_bottle"
+    }
+  ],
+  "transitional_item": {
+    "id": "lemonmates:incomplete_citron_lemonade"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "lemonmates:bottle_empty"
+        },
+        {
+          "type": "fluid_tag",
+          "amount": 500,
+          "fluid_tag": "lemonmates:lemonades/citron"
+        }
+      ],
+      "results": [
+        {
+          "id": ""
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "lemonmates:incomplete_citron_lemonade"
+        },
+        {
+          "item": "lemonmates:bottle_cap"
+        }
+      ],
+      "results": [
+        {
+          "id": ""
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "lemonmates:incomplete_citron_lemonade"
+        },
+        {
+          "item": "lemonmates:label_citron_lemonade"
+        }
+      ],
+      "results": [
+        {
+          "id": ""
+        }
+      ]
+    }
+  ]
+}

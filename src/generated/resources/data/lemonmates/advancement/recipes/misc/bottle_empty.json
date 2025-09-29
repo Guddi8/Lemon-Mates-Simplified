@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mold": {
+      "conditions": {
+        "items": [
+          {
+            "items": "lemonmates:bottle_mold"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "lemonmates:bottle_empty"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mold"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "lemonmates:bottle_empty"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "fluid": "minecraft:water",
+      "type": "fluid_stack",
+      "amount": 250
+    },
+    {
+      "item": "lemonmates:citron_slice"
+    },
+    {
+      "item": "lemonmates:orange_slice"
+    },
+    {
+      "item": "minecraft:melon_slice"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "results": [
+    {
+      "amount": 250,
+      "id": "lemonmates:summermix_lemonade"
+    }
+  ]
+}

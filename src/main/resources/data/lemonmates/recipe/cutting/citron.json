@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],"type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "lemonmates:citron"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 4,
+        "id": "lemonmates:citron_slice"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

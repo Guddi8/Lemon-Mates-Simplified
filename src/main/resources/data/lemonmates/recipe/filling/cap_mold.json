@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "lemonmates:cap_mold"
+    },
+    {
+      "type": "fluid_tag",
+      "amount": 20,
+      "fluid_tag": "c:plastic"
+    }
+  ],
+  "results": [
+    {
+      "id": "lemonmates:cap_mold_with_cap"
+    }
+  ]
+}

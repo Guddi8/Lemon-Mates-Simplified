@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.0,
+  "ingredient": {
+    "item": "lemonmates:bottle_mold_with_preform"
+  },
+  "result": {
+    "id": "lemonmates:bottle_mold_with_bottle"
+  }
+}

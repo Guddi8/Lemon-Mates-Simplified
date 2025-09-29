@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "lemonmates:preform_mold_with_preform"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "lemonmates:preform"
+  }
+}

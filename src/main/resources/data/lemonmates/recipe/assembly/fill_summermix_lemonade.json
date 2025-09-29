@@ -1,0 +1,67 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "lemonmates:bottle_empty"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "lemonmates:summermix_lemonade_bottle"
+    }
+  ],
+  "transitional_item": {
+    "id": "lemonmates:incomplete_summermix_lemonade"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "lemonmates:bottle_empty"
+        },
+        {
+          "type": "fluid_tag",
+          "amount": 500,
+          "fluid_tag": "lemonmates:lemonades/summermix"
+        }
+      ],
+      "results": [
+        {
+          "id": ""
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "lemonmates:incomplete_summermix_lemonade"
+        },
+        {
+          "item": "lemonmates:bottle_cap"
+        }
+      ],
+      "results": [
+        {
+          "id": ""
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "lemonmates:incomplete_summermix_lemonade"
+        },
+        {
+          "item": "lemonmates:label_summermix_lemonade"
+        }
+      ],
+      "results": [
+        {
+          "id": ""
+        }
+      ]
+    }
+  ]
+}

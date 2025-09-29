@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "lemonmates:bottle_mold"
+    },
+    {
+      "item": "lemonmates:preform"
+    }
+  ],
+  "results": [
+    {
+      "id": "lemonmates:bottle_mold_with_preform"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/generated",
+  "overrides": [
+    {
+      "model": "lemonmates:item/citron_lemonade_bottle_drinking",
+      "predicate": {
+        "lemonmates:drinking_stage": 1.0
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "lemonmates:item/bottle_empty_cap",
+    "layer1": "lemonmates:item/bottle_fluid/citron",
+    "layer2": "lemonmates:item/label/bottle_empty",
+    "layer3": "lemonmates:item/label/company",
+    "layer4": "lemonmates:item/label/citron"
+  }
+}

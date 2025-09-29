@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "lemonmates:item/watermelon_lemonade_bucket"
+  }
+}

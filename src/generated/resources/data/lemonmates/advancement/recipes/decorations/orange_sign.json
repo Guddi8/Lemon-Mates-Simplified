@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_orange_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "lemonmates:orange_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "lemonmates:orange_sign"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_orange_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "lemonmates:orange_sign"
+    ]
+  }
+}

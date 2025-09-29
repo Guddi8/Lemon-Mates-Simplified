@@ -1,0 +1,16 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "lemonmates:broken_bottle"
+    }
+  ],
+  "results": [
+    {
+      "type": "fluid_stack",
+      "id": "lemonmates:plastic",
+      "amount": 40
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create_enchantment_industry"
+    }
+  ],
+  "type": "create_enchantment_industry:printing",
+  "ingredients": [
+    {
+      "item": "lemonmates:label_empty"
+    },
+    {
+      "item": "minecraft:name_tag"
+    },
+    {
+      "type": "fluid_tag",
+      "amount": 100,
+      "fluid_tag": "c:dyes/gray"
+    }
+  ],
+  "results": [
+    {
+      "id": "lemonmates:label_text"
+    }
+  ],
+  "sound": "entity.generic.eat"
+}

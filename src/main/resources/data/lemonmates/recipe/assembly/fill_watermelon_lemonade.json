@@ -1,0 +1,67 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "lemonmates:bottle_empty"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "lemonmates:watermelon_lemonade_bottle"
+    }
+  ],
+  "transitional_item": {
+    "id": "lemonmates:incomplete_watermelon_lemonade"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "lemonmates:bottle_empty"
+        },
+        {
+          "type": "fluid_tag",
+          "amount": 500,
+          "fluid_tag": "lemonmates:lemonades/watermelon"
+        }
+      ],
+      "results": [
+        {
+          "id": ""
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "lemonmates:incomplete_watermelon_lemonade"
+        },
+        {
+          "item": "lemonmates:bottle_cap"
+        }
+      ],
+      "results": [
+        {
+          "id": ""
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "lemonmates:incomplete_watermelon_lemonade"
+        },
+        {
+          "item": "lemonmates:label_watermelon_lemonade"
+        }
+      ],
+      "results": [
+        {
+          "id": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "c:ingots/iron"
+    },
+    "S": {
+      "tag": "c:plates/iron"
+    }
+  },
+  "pattern": [
+    "#S#",
+    "#S#",
+    "#S#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "lemonmates:bottle_mold"
+  }
+}
