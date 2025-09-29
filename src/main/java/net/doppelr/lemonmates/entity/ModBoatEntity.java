@@ -58,7 +58,7 @@ public class ModBoatEntity extends Boat {
 
     protected void readAdditionalSaveData(CompoundTag compound) {
         if (compound.contains("Type", 8)) {
-            setVariant(Boat.Type.byName(compound.getString("Type")));
+            setVariant(Type.byName(compound.getString("Type")));
         }
     }
 
@@ -83,7 +83,6 @@ public class ModBoatEntity extends Boat {
             this.planks = () -> planks;
             this.raft = raft;
         }
-
 
         @Override
         public String getSerializedName() {

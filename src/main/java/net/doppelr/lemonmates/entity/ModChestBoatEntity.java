@@ -53,7 +53,7 @@ public class ModChestBoatEntity extends ChestBoat {
 
     protected void readAdditionalSaveData(CompoundTag compound) {
         if (compound.contains("Type", 8)) {
-            setVariant(Boat.Type.byName(compound.getString("Type")));
+            setVariant(ModBoatEntity.Type.byName(compound.getString("Type")));
         }
     }
 }
