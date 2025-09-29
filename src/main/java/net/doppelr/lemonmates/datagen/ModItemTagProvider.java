@@ -8,6 +8,7 @@ import net.doppelr.lemonmates.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -69,6 +70,16 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(net.minecraft.tags.ItemTags.SLABS).add(
             ModBlocks.ORANGE_SLAB.get().asItem(),
             ModBlocks.CITRON_SLAB.get().asItem()
+        );
+        tag(net.minecraft.tags.ItemTags.BOATS).add(
+            ModItems.CITRON_BOAT.get(),
+            ModItems.ORANGE_BOAT.get(),
+            ModItems.CITRON_CHEST_BOAT.get(),
+            ModItems.ORANGE_CHEST_BOAT.get()
+        );
+        tag(net.minecraft.tags.ItemTags.CHEST_BOATS).add(
+            ModItems.CITRON_CHEST_BOAT.get(),
+            ModItems.ORANGE_CHEST_BOAT.get()
         );
         tag(AllModTags.ItemTags.ORANGE_LOGS).add(
             ModBlocks.ORANGE_LOG.get().asItem(),
