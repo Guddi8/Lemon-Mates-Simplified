@@ -3,8 +3,11 @@ package net.doppelr.lemonmates;
 import net.doppelr.lemonmates.block.ModBlocks;
 import net.doppelr.lemonmates.block.entity.ModBlockEntities;
 import net.doppelr.lemonmates.fluid.ModFluids;
+import net.doppelr.lemonmates.entity.ModEntities;
+import net.doppelr.lemonmates.entity.client.ModBoatRenderer;
 import net.doppelr.lemonmates.item.ModItems;
 import net.minecraft.client.renderer.Sheets;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 
@@ -37,6 +40,8 @@ public class LemonMates {
         ModFluids.register(modEventBus);
 
         ModBlockEntities.register(modEventBus);
+
+        ModEntities.register(modEventBus);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
@@ -58,6 +63,9 @@ public class LemonMates {
         static void onClientSetup(FMLClientSetupEvent event) {
             Sheets.addWoodType(AllWoodTypes.CITRON);
             Sheets.addWoodType(AllWoodTypes.ORANGE);
+
+            EntityRenderers.register(ModEntities.MOD_BOAT.get(), context -> new ModBoatRenderer(context, false));
+            EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), context -> new ModBoatRenderer(context, true));
         }
     }
 }

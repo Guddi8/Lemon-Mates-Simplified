@@ -9,7 +9,8 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
-import net.neoforged.neoforge.client.model.generators.*;
+import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
+import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -29,6 +30,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModBlocks.CITRON_DOOR.asItem());
         basicItem(ModItems.CITRON_SIGN.get());
         basicItem(ModItems.CITRON_HANGING_SIGN.get());
+        basicItem(ModItems.CITRON_BOAT.get());
+        basicItem(ModItems.CITRON_CHEST_BOAT.get());
 
         basicItem(ModItems.ORANGE.get());
         basicItem(ModItems.ORANGE_SLICE.get());
@@ -38,6 +41,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModBlocks.ORANGE_DOOR.asItem());
         basicItem(ModItems.ORANGE_SIGN.get());
         basicItem(ModItems.ORANGE_HANGING_SIGN.get());
+        basicItem(ModItems.ORANGE_BOAT.get());
+        basicItem(ModItems.ORANGE_CHEST_BOAT.get());
 
         basicItem(ModItems.RASPBERRY.get());
 

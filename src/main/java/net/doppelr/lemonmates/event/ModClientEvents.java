@@ -6,6 +6,9 @@ import net.doppelr.lemonmates.LemonMates;
 import net.doppelr.lemonmates.block.entity.ModBlockEntities;
 import net.doppelr.lemonmates.item.LemonadeDrinkItem;
 import net.doppelr.lemonmates.item.ModItems;
+import net.doppelr.lemonmates.entity.client.ModModelLayers;
+import net.minecraft.client.model.BoatModel;
+import net.minecraft.client.model.ChestBoatModel;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.client.renderer.item.ItemProperties;
@@ -19,6 +22,14 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 
 @EventBusSubscriber(modid = LemonMates.MOD_ID, value = Dist.CLIENT)
 public class ModClientEvents {
+    @SubscribeEvent
+    public static void registerLayer(EntityRenderersEvent.RegisterLayerDefinitions event) {
+        event.registerLayerDefinition(ModModelLayers.CITRON_BOAT_LAYER, BoatModel::createBodyModel);
+        event.registerLayerDefinition(ModModelLayers.CITRON_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);
+        event.registerLayerDefinition(ModModelLayers.ORANGE_BOAT_LAYER, BoatModel::createBodyModel);
+        event.registerLayerDefinition(ModModelLayers.ORANGE_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);
+    }
+
     @SubscribeEvent
     public static void registerBlockEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerBlockEntityRenderer(ModBlockEntities.SIGN.get(), SignRenderer::new);

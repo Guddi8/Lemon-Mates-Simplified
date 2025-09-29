@@ -60,6 +60,8 @@ public class AllCreativeModeTabs {
                 output.accept(ModBlocks.CITRON_SIGN);
                 output.accept(ModItems.CITRON_SIGN);
                 output.accept(ModItems.CITRON_HANGING_SIGN);
+                output.accept(ModItems.CITRON_BOAT);
+                output.accept(ModItems.CITRON_CHEST_BOAT);
 
                 // Orange Wood Stuffs
                 output.accept(ModBlocks.ORANGE_SAPLING);
@@ -79,6 +81,8 @@ public class AllCreativeModeTabs {
                 output.accept(ModBlocks.ORANGE_BUTTON);
                 output.accept(ModItems.ORANGE_SIGN);
                 output.accept(ModItems.ORANGE_HANGING_SIGN);
+                output.accept(ModItems.ORANGE_BOAT);
+                output.accept(ModItems.ORANGE_CHEST_BOAT);
             })
         .build()
     );

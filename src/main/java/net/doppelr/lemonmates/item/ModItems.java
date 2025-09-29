@@ -4,6 +4,8 @@ import com.simibubi.create.content.processing.sequenced.SequencedAssemblyItem;
 import net.doppelr.lemonmates.LemonMates;
 import net.doppelr.lemonmates.AllFoodProperties;
 import net.doppelr.lemonmates.block.ModBlocks;
+import net.doppelr.lemonmates.entity.ModBoatEntity;
+import net.doppelr.lemonmates.entity.ModChestBoatEntity;
 import net.minecraft.world.entity.vehicle.Boat;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
@@ -127,15 +129,19 @@ public class ModItems {
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.CITRON_SIGN.get(), ModBlocks.CITRON_WALL_SIGN.get()));
     public static final DeferredItem<HangingSignItem> CITRON_HANGING_SIGN = ITEMS.register("citron_hanging_sign",
             () -> new HangingSignItem(ModBlocks.CITRON_HANGING_SIGN.get(), ModBlocks.CITRON_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+    public static final DeferredItem<Item> CITRON_BOAT = ITEMS.register("citron_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.CITRON, new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> CITRON_CHEST_BOAT = ITEMS.register("citron_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.CITRON, new Item.Properties().stacksTo(1)));
+
     public static final DeferredItem<SignItem> ORANGE_SIGN = ITEMS.register("orange_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ORANGE_SIGN.get(), ModBlocks.ORANGE_WALL_SIGN.get()));
     public static final DeferredItem<HangingSignItem> ORANGE_HANGING_SIGN = ITEMS.register("orange_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ORANGE_HANGING_SIGN.get(), ModBlocks.ORANGE_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
-
-    public static final DeferredItem<BoatItem> CITRON_BOAT = ITEMS.register("citron_boat",
-            () -> new BoatItem(false, Boat.Type.OAK, new Item.Properties()));
-    public static final DeferredItem<BoatItem> ORANGE_BOAT = ITEMS.register("orange_boat",
-            () -> new BoatItem(false, Boat.Type.OAK, new Item.Properties()));
+    public static final DeferredItem<Item> ORANGE_BOAT = ITEMS.register("orange_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.ORANGE, new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> ORANGE_CHEST_BOAT = ITEMS.register("orange_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.ORANGE, new Item.Properties().stacksTo(1)));
 
 
     public static void register(IEventBus eventBus) {

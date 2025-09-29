@@ -59,6 +59,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         signBuilder(ModBlocks.CITRON_SIGN, Ingredient.of(ModBlocks.CITRON_PLANKS))
             .unlockedBy("has_citron_planks", has(ModBlocks.CITRON_PLANKS)).save(recipeOutput);
         hangingSign(recipeOutput, ModBlocks.CITRON_HANGING_SIGN, ModBlocks.CITRON_PLANKS);
+        woodenBoat(recipeOutput, ModItems.CITRON_BOAT, ModBlocks.CITRON_PLANKS);
+        chestBoat(recipeOutput, ModItems.CITRON_CHEST_BOAT, ModItems.CITRON_BOAT);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModItems.ORANGE.get())
             .pattern("##")
@@ -97,6 +99,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         signBuilder(ModBlocks.ORANGE_SIGN, Ingredient.of(ModBlocks.ORANGE_PLANKS))
             .unlockedBy("has_orange_planks", has(ModBlocks.ORANGE_PLANKS)).save(recipeOutput);
         hangingSign(recipeOutput, ModBlocks.ORANGE_HANGING_SIGN, ModBlocks.ORANGE_PLANKS);
+        woodenBoat(recipeOutput, ModItems.ORANGE_BOAT, ModBlocks.ORANGE_PLANKS);
+        chestBoat(recipeOutput, ModItems.ORANGE_CHEST_BOAT, ModItems.ORANGE_BOAT);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RASPBERRY_CRATE.get())
                 .pattern("###")
