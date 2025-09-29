@@ -133,11 +133,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
             ModItems.WATERMELON_LEMONADE_BOTTLE.get()
         );
         tag(AllModTags.ItemTags.LEMONADES_EMPTY).add(
-                ModItems.EMPTY_CITRON_LEMONADE_BOTTLE.get(),
-                ModItems.EMPTY_ORANGE_LEMONADE_BOTTLE.get(),
-                ModItems.EMPTY_RASPBERRY_LEMONADE_BOTTLE.get(),
-                ModItems.EMPTY_SUMMERMIX_LEMONADE_BOTTLE.get(),
-                ModItems.EMPTY_WATERMELON_LEMONADE_BOTTLE.get()
+            ModItems.EMPTY_CITRON_LEMONADE_BOTTLE.get(),
+            ModItems.EMPTY_ORANGE_LEMONADE_BOTTLE.get(),
+            ModItems.EMPTY_RASPBERRY_LEMONADE_BOTTLE.get(),
+            ModItems.EMPTY_SUMMERMIX_LEMONADE_BOTTLE.get(),
+            ModItems.EMPTY_WATERMELON_LEMONADE_BOTTLE.get()
         );
         tag(AllModTags.ItemTags.LEMONADES).add(
             ModItems.CITRON_LEMONADE_BOTTLE.get(),
@@ -161,6 +161,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(AllModTags.ItemTags.LEMONADES_WATERMELON).add(
             ModItems.WATERMELON_LEMONADE_BOTTLE.get()
         );
+
         tag(AllModTags.ItemTags.LABELS).add(
             ModItems.LABEL_EMPTY.get(),
             ModItems.LABEL_TEXT.get(),
@@ -170,6 +171,21 @@ public class ModItemTagProvider extends ItemTagsProvider {
             ModItems.LABEL_RASPBERRY_LEMONADE.get(),
             ModItems.LABEL_SUMMERMIX_LEMONADE.get(),
             ModItems.LABEL_WATERMELON_LEMONADE.get()
+        );
+        tag(Tags.Items.DRINKS).addTag(
+            AllModTags.ItemTags.LEMONADES
+        );
+        tag(Tags.Items.FOODS).addTag(
+            AllModTags.ItemTags.LEMONADES
+        );
+        tag(Tags.Items.FOODS_FRUIT).add(
+            ModItems.CITRON.get(),
+            ModItems.CITRON_SLICE.get(),
+            ModItems.ORANGE.get(),
+            ModItems.ORANGE_SLICE.get()
+        );
+        tag(Tags.Items.FOODS_BERRY).add(
+            ModItems.RASPBERRY.get()
         );
     }
 }
