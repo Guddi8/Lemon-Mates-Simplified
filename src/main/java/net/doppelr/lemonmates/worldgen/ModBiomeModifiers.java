@@ -22,19 +22,20 @@ public class ModBiomeModifiers {
         var biomes = context.lookup(Registries.BIOME);
 
         context.register(ADD_RASPBERRY_BUSH, new BiomeModifiers.AddFeaturesBiomeModifier(
-                HolderSet.direct(biomes.getOrThrow(Biomes.FOREST)),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.RASPBERRY_BUSH_PLACED_KEY)),
-                GenerationStep.Decoration.VEGETAL_DECORATION));
+            HolderSet.direct(biomes.getOrThrow(Biomes.FOREST)),
+            HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.RASPBERRY_BUSH_PLACED_KEY)),
+            GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_CITRON_TREE, new BiomeModifiers.AddFeaturesBiomeModifier(
+            HolderSet.direct(biomes.getOrThrow(Biomes.SPARSE_JUNGLE)),
+            HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.CITRON_TREE_PLACED_KEY)),
+            GenerationStep.Decoration.VEGETAL_DECORATION
+        ));
 
         context.register(ADD_ORANGE_TREE, new BiomeModifiers.AddFeaturesBiomeModifier(
-                HolderSet.direct(biomes.getOrThrow(Biomes.SPARSE_JUNGLE)),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.ORANGE_TREE_PLACED_KEY)),
-                GenerationStep.Decoration.VEGETAL_DECORATION
-        ));
-        context.register(ADD_CITRON_TREE, new BiomeModifiers.AddFeaturesBiomeModifier(
-                HolderSet.direct(biomes.getOrThrow(Biomes.BIRCH_FOREST)),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.CITRON_TREE_PLACED_KEY)),
-                GenerationStep.Decoration.VEGETAL_DECORATION
+            HolderSet.direct(biomes.getOrThrow(Biomes.DESERT)),
+            HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.ORANGE_TREE_PLACED_KEY)),
+            GenerationStep.Decoration.VEGETAL_DECORATION
         ));
     }
 

@@ -10,7 +10,6 @@ import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.minecraft.world.level.levelgen.feature.VegetationPatchFeature;
 import net.minecraft.world.level.levelgen.placement.*;
 
 import java.util.List;
@@ -26,10 +25,11 @@ public class ModPlacedFeatures {
         register(context, RASPBERRY_BUSH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RASPBERRY_BUSH_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(64), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
+                //                      countExtra: tree attempt per chunk, chance for extra trees, extra trees
         register(context, ORANGE_TREE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ORANGE_TREE_KEY),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.05f, 1), ModBlocks.ORANGE_SAPLING.get()));
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.05f, 2), ModBlocks.ORANGE_SAPLING.get()));
         register(context, CITRON_TREE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CITRON_TREE_KEY),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.05f, 1), ModBlocks.CITRON_SAPLING.get()));
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.05f, 2), ModBlocks.CITRON_SAPLING.get()));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {
