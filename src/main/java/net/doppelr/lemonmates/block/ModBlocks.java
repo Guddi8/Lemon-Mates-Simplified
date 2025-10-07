@@ -37,7 +37,7 @@ public class ModBlocks {
     public static final DeferredBlock<LeavesBlock> ORANGE_LEAVES = registerBlock("orange_leaves",
             () -> new ModFlammableLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
     public static final DeferredBlock<SaplingBlock> ORANGE_SAPLING = registerBlock("orange_sapling",
-        () -> new SaplingBlock(ModTreeGrowers.ORANGE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)) {
+        () -> new SaplingBlock(ModTreeGrowers.ORANGE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
             @Override
             protected boolean mayPlaceOn(BlockState state, BlockGetter level, BlockPos pos) {
                 return super.mayPlaceOn(state, level, pos) || state.is(Blocks.SAND);
@@ -82,7 +82,7 @@ public class ModBlocks {
     public static final DeferredBlock<LeavesBlock> CITRON_LEAVES = registerBlock("citron_leaves",
             () -> new ModFlammableLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
     public static final DeferredBlock<SaplingBlock> CITRON_SAPLING = registerBlock("citron_sapling",
-        () -> new SaplingBlock(ModTreeGrowers.CITRON, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
+        () -> new SaplingBlock(ModTreeGrowers.CITRON, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
     public static final DeferredBlock<Block> CITRON_PLANKS = registerBlock("citron_planks",
         () -> new ModFlammablePlanksBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)));
     public static final DeferredBlock<StairBlock> CITRON_STAIRS = registerBlock("citron_stairs",
