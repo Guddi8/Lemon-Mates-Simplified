@@ -5,8 +5,6 @@ import net.doppelr.lemonmates.LemonMates;
 import net.doppelr.lemonmates.AllFoodProperties;
 import net.doppelr.lemonmates.block.ModBlocks;
 import net.doppelr.lemonmates.entity.ModBoatEntity;
-import net.doppelr.lemonmates.entity.ModChestBoatEntity;
-import net.minecraft.world.entity.vehicle.Boat;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;

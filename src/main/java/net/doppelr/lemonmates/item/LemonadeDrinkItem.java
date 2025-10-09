@@ -1,13 +1,10 @@
 package net.doppelr.lemonmates.item;
 
-import net.doppelr.lemonmates.LemonMates;
-import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.UseAnim;
-import net.neoforged.fml.loading.FMLEnvironment;
 import org.jetbrains.annotations.NotNull;
 
 public class LemonadeDrinkItem extends Item {
