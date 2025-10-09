@@ -1,9 +1,25 @@
 {
-  "feature": "lemonmates:orange_tree",
+  "feature": "lemonmates:small_orange_tree",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 256
+      "chance": 128
+    },
+    {
+      "type": "minecraft:count",
+      "count": {
+        "type": "minecraft:weighted_list",
+        "distribution": [
+          {
+            "data": 3,
+            "weight": 19
+          },
+          {
+            "data": 5,
+            "weight": 1
+          }
+        ]
+      }
     },
     {
       "type": "minecraft:surface_water_depth_filter",

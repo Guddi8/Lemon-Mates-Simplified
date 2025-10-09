@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "minecraft:sparse_jungle",
+  "features": "lemonmates:small_citron_tree_placed",
+  "step": "vegetal_decoration"
+}

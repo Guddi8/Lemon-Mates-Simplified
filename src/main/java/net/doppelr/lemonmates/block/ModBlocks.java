@@ -38,11 +38,6 @@ public class ModBlocks {
             () -> new ModFlammableLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
     public static final DeferredBlock<SaplingBlock> ORANGE_SAPLING = registerBlock("orange_sapling",
         () -> new SaplingBlock(ModTreeGrowers.ORANGE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
-            @Override
-            protected boolean mayPlaceOn(BlockState state, BlockGetter level, BlockPos pos) {
-                return super.mayPlaceOn(state, level, pos) || state.is(Blocks.SAND);
-            }
-        });
     public static final DeferredBlock<Block> ORANGE_PLANKS = registerBlock("orange_planks",
         () -> new ModFlammablePlanksBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)));
     public static final DeferredBlock<StairBlock> ORANGE_STAIRS = registerBlock("orange_stairs",
