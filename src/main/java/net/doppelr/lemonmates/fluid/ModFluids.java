@@ -1,13 +1,21 @@
 package net.doppelr.lemonmates.fluid;
 
 import net.doppelr.lemonmates.LemonMates;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.dispenser.BlockSource;
+import net.minecraft.core.dispenser.DefaultDispenseItemBehavior;
+import net.minecraft.core.dispenser.DispenseItemBehavior;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BucketItem;
+import net.minecraft.world.item.DispensibleContainerItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DispenserBlock;
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.FlowingFluid;
@@ -19,6 +27,7 @@ import net.neoforged.neoforge.fluids.FluidType;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
+import org.jetbrains.annotations.NotNull;
 import org.joml.Vector3f;
 
 public class ModFluids {
@@ -127,6 +136,23 @@ public class ModFluids {
             .slopeFindDistance(2).levelDecreasePerBlock(1)
             .block(WATERMELON_LEMONADE_BLOCK).bucket(WATERMELON_LEMONADE_BUCKET);
 
+    private static final DispenseItemBehavior FLUID_BEHAVIOR = new DefaultDispenseItemBehavior() {
+        private final DefaultDispenseItemBehavior defaultDispenseItemBehavior = new DefaultDispenseItemBehavior();
+
+        @Override
+        public @NotNull ItemStack execute(BlockSource source, ItemStack itemStack) {
+            DispensibleContainerItem dispensiblecontaineritem = (DispensibleContainerItem) itemStack.getItem();
+            BlockPos blockpos = source.pos().relative(source.state().getValue(DispenserBlock.FACING));
+            Level level = source.level();
+            if (dispensiblecontaineritem.emptyContents(null, level, blockpos, null, itemStack)) {
+                dispensiblecontaineritem.checkExtraContent(null, level, itemStack, blockpos);
+                return this.consumeWithRemainder(source, itemStack, new ItemStack(Items.BUCKET));
+            } else {
+                return this.defaultDispenseItemBehavior.dispense(source, itemStack);
+            }
+        }
+    };
+
     public static void register(IEventBus modbus) {
         FLUID_TYPES.register(modbus);
         FLUIDS.register(modbus);
@@ -142,5 +168,11 @@ public class ModFluids {
         event.registerFluidType(((BaseFluidType) RASPBERRY_LEMONADE_TYPE.get()).getClientFluidTypeExtensions(), RASPBERRY_LEMONADE_TYPE.get());
         event.registerFluidType(((BaseFluidType) SUMMERMIX_LEMONADE_TYPE.get()).getClientFluidTypeExtensions(), SUMMERMIX_LEMONADE_TYPE.get());
         event.registerFluidType(((BaseFluidType) WATERMELON_LEMONADE_TYPE.get()).getClientFluidTypeExtensions(), WATERMELON_LEMONADE_TYPE.get());
+        DispenserBlock.registerBehavior(PLASTIC_BUCKET.get(), FLUID_BEHAVIOR);
+        DispenserBlock.registerBehavior(CITRON_LEMONADE_BUCKET.get(), FLUID_BEHAVIOR);
+        DispenserBlock.registerBehavior(ORANGE_LEMONADE_BUCKET.get(), FLUID_BEHAVIOR);
+        DispenserBlock.registerBehavior(RASPBERRY_LEMONADE_BUCKET.get(), FLUID_BEHAVIOR);
+        DispenserBlock.registerBehavior(SUMMERMIX_LEMONADE_BUCKET.get(), FLUID_BEHAVIOR);
+        DispenserBlock.registerBehavior(WATERMELON_LEMONADE_BUCKET.get(), FLUID_BEHAVIOR);
     }
 }
