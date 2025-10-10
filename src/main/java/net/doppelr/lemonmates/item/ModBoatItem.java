@@ -2,6 +2,10 @@ package net.doppelr.lemonmates.item;
 
 import net.doppelr.lemonmates.entity.ModBoatEntity;
 import net.doppelr.lemonmates.entity.ModChestBoatEntity;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.core.dispenser.BlockSource;
+import net.minecraft.core.dispenser.DefaultDispenseItemBehavior;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
@@ -15,6 +19,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.DispenserBlock;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.HitResult;
@@ -32,6 +37,55 @@ public class ModBoatItem extends Item {
         super(properties);
         this.hasChest = hasChest;
         this.type = type;
+        DispenserBlock.registerBehavior(this, new ModBoatDispenseItemBehavior(this.type, this.hasChest));
+    }
+
+    private static class ModBoatDispenseItemBehavior extends DefaultDispenseItemBehavior {
+        private final DefaultDispenseItemBehavior defaultDispenseItemBehavior;
+        private final ModBoatEntity.Type type;
+        private final boolean isChestBoat;
+
+        public ModBoatDispenseItemBehavior(ModBoatEntity.Type type, boolean isChestBoat) {
+            this.defaultDispenseItemBehavior = new DefaultDispenseItemBehavior();
+            this.type = type;
+            this.isChestBoat = isChestBoat;
+        }
+
+        public ItemStack execute(BlockSource blockSource, ItemStack item) {
+            Direction direction = (Direction)blockSource.state().getValue(DispenserBlock.FACING);
+            ServerLevel serverlevel = blockSource.level();
+            Vec3 vec3 = blockSource.center();
+            double d0 = 0.5625F + EntityType.BOAT.getWidth() / 2.0F;
+            double d1 = vec3.x() + direction.getStepX() * d0;
+            double d2 = vec3.y() + (direction.getStepY() * 1.125F);
+            double d3 = vec3.z() + direction.getStepZ() * d0;
+            BlockPos blockpos = blockSource.pos().relative(direction);
+            Boat boat;
+            if (this.isChestBoat) {
+                ModChestBoatEntity modChestBoat = new ModChestBoatEntity(serverlevel, d1, d2, d3);
+                modChestBoat.setVariant(this.type);
+                boat = modChestBoat;
+            } else {
+                ModBoatEntity modBoat = new ModBoatEntity(serverlevel, d1, d2, d3);
+                modBoat.setVariant(this.type);
+                boat = modBoat;
+            }
+            EntityType.createDefaultStackConfig(serverlevel, item, null).accept(boat);
+            boat.setYRot(direction.toYRot());
+            double d4;
+            if (boat.canBoatInFluid(serverlevel.getFluidState(blockpos))) {
+                d4 = 1.0F;
+            } else {
+                if (!serverlevel.getBlockState(blockpos).isAir() || !boat.canBoatInFluid(serverlevel.getFluidState(blockpos.below()))) {
+                    return this.defaultDispenseItemBehavior.dispense(blockSource, item);
+                }
+                d4 = 0.0F;
+            }
+            boat.setPos(d1, d2 + d4, d3);
+            serverlevel.addFreshEntity(boat);
+            item.shrink(1);
+            return item;
+        }
     }
 
     @Override
