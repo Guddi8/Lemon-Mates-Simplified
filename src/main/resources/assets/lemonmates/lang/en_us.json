@@ -12,6 +12,7 @@
   "item.lemonmates.starch": "Starch",
   "item.lemonmates.bioplastic_mass": "Bio-plastic Mass",
   "item.lemonmates.broken_bottle": "Broken Bottle",
+  "item.lemonmates.plastic_bucket": "Plastic Bucket",
 
   "item.lemonmates.preform_mold": "Preform Mold",
   "item.lemonmates.preform_mold_with_preform": "Preform Mold with Preform",
@@ -46,6 +47,7 @@
   "item.lemonmates.watermelon_lemonade_bottle": "Watermelon Lemonade",
 
   "item.lemonmates.citron": "Citron",
+  "item.lemonmates.citron_slice": "Citron Slice",
   "block.lemonmates.citron_log": "Citron Log",
   "block.lemonmates.citron_wood": "Citron Wood",
   "block.lemonmates.stripped_citron_log": "Stripped Citron Log",
@@ -67,6 +69,7 @@
   "item.lemonmates.citron_chest_boat": "Citron Chest Boat",
 
   "item.lemonmates.orange": "Orange",
+  "item.lemonmates.orange_slice": "Orange Slice",
   "block.lemonmates.orange_log": "Orange Log",
   "block.lemonmates.orange_wood": "Orange Wood",
   "block.lemonmates.stripped_orange_log": "Stripped Orange Log",
