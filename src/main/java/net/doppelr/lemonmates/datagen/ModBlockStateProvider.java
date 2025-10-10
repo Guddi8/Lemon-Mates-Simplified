@@ -13,7 +13,6 @@ import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Function;
 
@@ -105,7 +104,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void saplingBlock(DeferredBlock<SaplingBlock> deferredBlock) {
         simpleBlock(deferredBlock.get(),
             models().cross(blockName(deferredBlock),
-                blockTexture(deferredBlock.get())).renderType("cutout"));
+                    blockTexture(deferredBlock.get())).renderType("cutout"));
     }
 
     public void makeBush(SweetBerryBushBlock block, String modelName, String textureName) {

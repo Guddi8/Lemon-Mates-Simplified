@@ -12,7 +12,7 @@ public class AllModTags {
         public static final TagKey<Block> CITRON_LOGS = createTag("citron_logs");
 
         private static TagKey<Block> createTag(String name) {
-            return net.minecraft.tags.BlockTags.create(ResourceLocation.fromNamespaceAndPath(LemonMates.MOD_ID, name));
+            return net.minecraft.tags.BlockTags.create(LemonMates.rl(name));
         }
     }
 
@@ -30,9 +30,8 @@ public class AllModTags {
         public static final TagKey<Item> LABELS = createTag("labels");
         public static final TagKey<Item> MOLDS = createTag("molds");
 
-
         private static TagKey<Item> createTag(String name) {
-            return net.minecraft.tags.ItemTags.create(ResourceLocation.fromNamespaceAndPath(LemonMates.MOD_ID, name));
+            return net.minecraft.tags.ItemTags.create(LemonMates.rl(name));
         }
     }
 
@@ -47,7 +46,7 @@ public class AllModTags {
         public static final TagKey<Fluid> C_PLASTIC = createTag("c", "plastic");
 
         private static TagKey<Fluid> createTag(String name) {
-            return net.minecraft.tags.FluidTags.create(ResourceLocation.fromNamespaceAndPath(LemonMates.MOD_ID, name));
+            return net.minecraft.tags.FluidTags.create(LemonMates.rl(name));
         }
 
         private static TagKey<Fluid> createTag(String namespace, String name) {

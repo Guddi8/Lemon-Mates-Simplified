@@ -2,15 +2,20 @@ package net.doppelr.lemonmates.event;
 
 import com.simibubi.create.AllDataComponents;
 import com.simibubi.create.content.processing.sequenced.SequencedAssemblyItem;
+import net.doppelr.lemonmates.AllWoodTypes;
 import net.doppelr.lemonmates.LemonMates;
 import net.doppelr.lemonmates.block.entity.ModBlockEntities;
+import net.doppelr.lemonmates.entity.ModEntities;
+import net.doppelr.lemonmates.entity.client.ModBoatRenderer;
 import net.doppelr.lemonmates.item.LemonadeDrinkItem;
 import net.doppelr.lemonmates.item.ModItems;
 import net.doppelr.lemonmates.entity.client.ModModelLayers;
 import net.minecraft.client.model.BoatModel;
 import net.minecraft.client.model.ChestBoatModel;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.world.item.Item;
 import net.neoforged.api.distmarker.Dist;
@@ -38,6 +43,12 @@ public class ModClientEvents {
 
     @SubscribeEvent
     public static void onClientSetup(net.neoforged.fml.event.lifecycle.FMLClientSetupEvent event) {
+        Sheets.addWoodType(AllWoodTypes.CITRON);
+        Sheets.addWoodType(AllWoodTypes.ORANGE);
+
+        EntityRenderers.register(ModEntities.MOD_BOAT.get(), context -> new ModBoatRenderer(context, false));
+        EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), context -> new ModBoatRenderer(context, true));
+
         for (DeferredHolder<Item, ?> entry : ModItems.ITEMS.getEntries()) {
             if (entry.get() instanceof SequencedAssemblyItem item) {
                 ItemProperties.register(
@@ -52,6 +63,7 @@ public class ModClientEvents {
                 );
             }
         }
+
         for (DeferredHolder<Item, ?> entry : ModItems.ITEMS.getEntries()) {
             if (entry.get() instanceof LemonadeDrinkItem item) {
                 ItemProperties.register(

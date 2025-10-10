@@ -57,7 +57,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.STRIPPED_ORANGE_LOG.get());
         dropSelf(ModBlocks.STRIPPED_ORANGE_WOOD.get());
         add(ModBlocks.ORANGE_LEAVES.get(),
-                block -> createFruitLeavesDrops(ModBlocks.ORANGE_LEAVES.get(), ModBlocks.ORANGE_SAPLING.get(), ModItems.ORANGE.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+            block -> createFruitLeavesDrops(ModBlocks.ORANGE_LEAVES.get(), ModBlocks.ORANGE_SAPLING.get(), ModItems.ORANGE.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         dropSelf(ModBlocks.ORANGE_SAPLING.get());
         dropSelf(ModBlocks.ORANGE_PLANKS.get());
         dropSelf(ModBlocks.ORANGE_STAIRS.get());
@@ -69,22 +69,22 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.ORANGE_FENCE_GATE.get());
         dropSelf(ModBlocks.ORANGE_TRAPDOOR.get());
         add(ModBlocks.ORANGE_DOOR.get(),
-                block -> createDoorTable(ModBlocks.ORANGE_DOOR.get()));
+            block -> createDoorTable(ModBlocks.ORANGE_DOOR.get()));
         add(ModBlocks.ORANGE_SIGN.get(),
-                block -> createSingleItemTable(ModItems.ORANGE_SIGN));
+            block -> createSingleItemTable(ModItems.ORANGE_SIGN));
         add(ModBlocks.ORANGE_WALL_SIGN.get(),
-                block -> createSingleItemTable(ModItems.ORANGE_SIGN));
+            block -> createSingleItemTable(ModItems.ORANGE_SIGN));
         add(ModBlocks.ORANGE_HANGING_SIGN.get(),
-                block -> createSingleItemTable(ModItems.ORANGE_HANGING_SIGN));
+            block -> createSingleItemTable(ModItems.ORANGE_HANGING_SIGN));
         add(ModBlocks.ORANGE_WALL_HANGING_SIGN.get(),
-                block -> createSingleItemTable(ModItems.ORANGE_HANGING_SIGN));
+            block -> createSingleItemTable(ModItems.ORANGE_HANGING_SIGN));
 
         dropSelf(ModBlocks.CITRON_LOG.get());
         dropSelf(ModBlocks.CITRON_WOOD.get());
         dropSelf(ModBlocks.STRIPPED_CITRON_LOG.get());
         dropSelf(ModBlocks.STRIPPED_CITRON_WOOD.get());
         add(ModBlocks.CITRON_LEAVES.get(),
-                block -> createFruitLeavesDrops(ModBlocks.CITRON_LEAVES.get(), ModBlocks.CITRON_SAPLING.get(), ModItems.CITRON.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+            block -> createFruitLeavesDrops(ModBlocks.CITRON_LEAVES.get(), ModBlocks.CITRON_SAPLING.get(), ModItems.CITRON.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         dropSelf(ModBlocks.CITRON_SAPLING.get());
         dropSelf(ModBlocks.CITRON_PLANKS.get());
         dropSelf(ModBlocks.CITRON_STAIRS.get());
@@ -96,30 +96,30 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.CITRON_FENCE_GATE.get());
         dropSelf(ModBlocks.CITRON_TRAPDOOR.get());
         add(ModBlocks.CITRON_DOOR.get(),
-                block -> createDoorTable(ModBlocks.CITRON_DOOR.get()));
+            block -> createDoorTable(ModBlocks.CITRON_DOOR.get()));
         add(ModBlocks.CITRON_SIGN.get(),
-                block -> createSingleItemTable(ModItems.CITRON_SIGN));
+            block -> createSingleItemTable(ModItems.CITRON_SIGN));
         add(ModBlocks.CITRON_WALL_SIGN.get(),
-                block -> createSingleItemTable(ModItems.CITRON_SIGN));
+            block -> createSingleItemTable(ModItems.CITRON_SIGN));
         add(ModBlocks.CITRON_HANGING_SIGN.get(),
-                block -> createSingleItemTable(ModItems.CITRON_HANGING_SIGN));
+            block -> createSingleItemTable(ModItems.CITRON_HANGING_SIGN));
         add(ModBlocks.CITRON_WALL_HANGING_SIGN.get(),
-                block -> createSingleItemTable(ModItems.CITRON_HANGING_SIGN));
+            block -> createSingleItemTable(ModItems.CITRON_HANGING_SIGN));
 
         add(ModBlocks.RASPBERRY_BUSH.get(), block -> applyExplosionDecay(
-                block,LootTable.lootTable().withPool(LootPool.lootPool().when(
-                                        LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.RASPBERRY_BUSH.get())
-                                                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 3))
-                                ).add(LootItem.lootTableItem(ModItems.RASPBERRY.get()))
-                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 3.0F)))
-                                .apply(ApplyBonusCount.addUniformBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE)))
+            block,LootTable.lootTable().withPool(LootPool.lootPool().when(
+                    LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.RASPBERRY_BUSH.get())
+                            .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 3))
+                        ).add(LootItem.lootTableItem(ModItems.RASPBERRY.get()))
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 3.0F)))
+                        .apply(ApplyBonusCount.addUniformBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE)))
                 ).withPool(LootPool.lootPool().when(
-                                        LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.RASPBERRY_BUSH.get())
-                                                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 2))
-                                ).add(LootItem.lootTableItem(ModItems.RASPBERRY.get()))
-                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F)))
-                                .apply(ApplyBonusCount.addUniformBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE)))
-                )));
+                        LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.RASPBERRY_BUSH.get())
+                                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 2))
+                        ).add(LootItem.lootTableItem(ModItems.RASPBERRY.get()))
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F)))
+                        .apply(ApplyBonusCount.addUniformBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE)))
+        )));
 
         dropSelf(ModBlocks.ORANGE_CRATE.get());
         dropSelf(ModBlocks.CITRON_CRATE.get());
