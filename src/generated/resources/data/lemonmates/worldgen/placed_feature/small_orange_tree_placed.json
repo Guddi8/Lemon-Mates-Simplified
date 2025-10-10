@@ -1,28 +1,32 @@
 {
-  "feature": "lemonmates:citron_tree",
+  "feature": "lemonmates:small_orange_tree",
   "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 128
+    },
     {
       "type": "minecraft:count",
       "count": {
         "type": "minecraft:weighted_list",
         "distribution": [
           {
-            "data": 1,
+            "data": 3,
             "weight": 19
           },
           {
-            "data": 3,
+            "data": 5,
             "weight": 1
           }
         ]
       }
     },
     {
-      "type": "minecraft:in_square"
-    },
-    {
       "type": "minecraft:surface_water_depth_filter",
       "max_water_depth": 0
+    },
+    {
+      "type": "minecraft:in_square"
     },
     {
       "type": "minecraft:heightmap",
@@ -36,10 +40,7 @@
       "predicate": {
         "type": "minecraft:would_survive",
         "state": {
-          "Name": "lemonmates:citron_sapling",
-          "Properties": {
-            "stage": "0"
-          }
+          "Name": "minecraft:dead_bush"
         }
       }
     }

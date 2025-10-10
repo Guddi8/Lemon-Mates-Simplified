@@ -4,10 +4,16 @@ import net.doppelr.lemonmates.AllWoodTypes;
 import net.doppelr.lemonmates.LemonMates;
 import net.doppelr.lemonmates.item.ModItems;
 import net.doppelr.lemonmates.worldgen.tree.ModTreeGrowers;
+import net.minecraft.core.BlockPos;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
@@ -31,7 +37,7 @@ public class ModBlocks {
     public static final DeferredBlock<LeavesBlock> ORANGE_LEAVES = registerBlock("orange_leaves",
         () -> new ModFlammableLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
     public static final DeferredBlock<SaplingBlock> ORANGE_SAPLING = registerBlock("orange_sapling",
-        () -> new SaplingBlock(ModTreeGrowers.ORANGE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
+        () -> new SaplingBlock(ModTreeGrowers.ORANGE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
     public static final DeferredBlock<Block> ORANGE_PLANKS = registerBlock("orange_planks",
         () -> new ModFlammablePlanksBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)));
     public static final DeferredBlock<StairBlock> ORANGE_STAIRS = registerBlock("orange_stairs",
@@ -70,7 +76,7 @@ public class ModBlocks {
     public static final DeferredBlock<LeavesBlock> CITRON_LEAVES = registerBlock("citron_leaves",
         () -> new ModFlammableLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
     public static final DeferredBlock<SaplingBlock> CITRON_SAPLING = registerBlock("citron_sapling",
-        () -> new SaplingBlock(ModTreeGrowers.CITRON, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
+        () -> new SaplingBlock(ModTreeGrowers.CITRON, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
     public static final DeferredBlock<Block> CITRON_PLANKS = registerBlock("citron_planks",
         () -> new ModFlammablePlanksBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)));
     public static final DeferredBlock<StairBlock> CITRON_STAIRS = registerBlock("citron_stairs",
