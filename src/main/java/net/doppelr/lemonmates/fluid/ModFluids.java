@@ -39,7 +39,7 @@ public class ModFluids {
         () -> new BaseFlowingFluid.Flowing(ModFluids.PLASTIC_PROPERTIES));
     public static final DeferredHolder<Item, BucketItem> PLASTIC_BUCKET = BUCKETS.register("plastic_bucket",
         () -> new BucketItem(PLASTIC_SOURCE.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final DeferredHolder<Block, LiquidBlock> PLASTIC_BLOCK = SOURCEBLOCKS.register("plastic_block",
+    public static final DeferredHolder<Block, LiquidBlock> PLASTIC_BLOCK = SOURCEBLOCKS.register("plastic_fluid_block",
         () -> new LiquidBlock(PLASTIC_SOURCE.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER)));
     public static final BaseFlowingFluid.Properties PLASTIC_PROPERTIES = new BaseFlowingFluid.Properties(
         PLASTIC_TYPE, PLASTIC_SOURCE, PLASTIC_FLOWING)
@@ -56,7 +56,7 @@ public class ModFluids {
         () -> new BaseFlowingFluid.Flowing(ModFluids.CITRON_LEMONADE_PROPERTIES));
     public static final DeferredHolder<Item, BucketItem> CITRON_LEMONADE_BUCKET = BUCKETS.register("citron_lemonade_bucket",
         () -> new BucketItem(CITRON_LEMONADE_SOURCE.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final DeferredHolder<Block, LiquidBlock> CITRON_LEMONADE_BLOCK = SOURCEBLOCKS.register("citron_lemonade_block",
+    public static final DeferredHolder<Block, LiquidBlock> CITRON_LEMONADE_BLOCK = SOURCEBLOCKS.register("citron_lemonade_fluid_block",
         () -> new LiquidBlock(CITRON_LEMONADE_SOURCE.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER)));
     public static final BaseFlowingFluid.Properties CITRON_LEMONADE_PROPERTIES = new BaseFlowingFluid.Properties(
         CITRON_LEMONADE_TYPE, CITRON_LEMONADE_SOURCE, CITRON_LEMONADE_FLOWING)
@@ -72,7 +72,7 @@ public class ModFluids {
         () -> new BaseFlowingFluid.Flowing(ModFluids.ORANGE_LEMONADE_PROPERTIES));
     public static final DeferredHolder<Item, BucketItem> ORANGE_LEMONADE_BUCKET = BUCKETS.register("orange_lemonade_bucket",
         () -> new BucketItem(ORANGE_LEMONADE_SOURCE.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final DeferredHolder<Block, LiquidBlock> ORANGE_LEMONADE_BLOCK = SOURCEBLOCKS.register("orange_lemonade_block",
+    public static final DeferredHolder<Block, LiquidBlock> ORANGE_LEMONADE_BLOCK = SOURCEBLOCKS.register("orange_lemonade_fluid_block",
         () -> new LiquidBlock(ORANGE_LEMONADE_SOURCE.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER)));
     public static final BaseFlowingFluid.Properties ORANGE_LEMONADE_PROPERTIES = new BaseFlowingFluid.Properties(
         ORANGE_LEMONADE_TYPE, ORANGE_LEMONADE_SOURCE, ORANGE_LEMONADE_FLOWING)
@@ -88,7 +88,7 @@ public class ModFluids {
         () -> new BaseFlowingFluid.Flowing(ModFluids.RASPBERRY_LEMONADE_PROPERTIES));
     public static final DeferredHolder<Item, BucketItem> RASPBERRY_LEMONADE_BUCKET = BUCKETS.register("raspberry_lemonade_bucket",
         () -> new BucketItem(RASPBERRY_LEMONADE_SOURCE.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final DeferredHolder<Block, LiquidBlock> RASPBERRY_LEMONADE_BLOCK = SOURCEBLOCKS.register("raspberry_lemonade_block",
+    public static final DeferredHolder<Block, LiquidBlock> RASPBERRY_LEMONADE_BLOCK = SOURCEBLOCKS.register("raspberry_lemonade_fluid_block",
         () -> new LiquidBlock(RASPBERRY_LEMONADE_SOURCE.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER)));
     public static final BaseFlowingFluid.Properties RASPBERRY_LEMONADE_PROPERTIES = new BaseFlowingFluid.Properties(
             RASPBERRY_LEMONADE_TYPE, RASPBERRY_LEMONADE_SOURCE, RASPBERRY_LEMONADE_FLOWING)
@@ -104,7 +104,7 @@ public class ModFluids {
         () -> new BaseFlowingFluid.Flowing(ModFluids.SUMMERMIX_LEMONADE_PROPERTIES));
     public static final DeferredHolder<Item, BucketItem> SUMMERMIX_LEMONADE_BUCKET = BUCKETS.register("summermix_lemonade_bucket",
         () -> new BucketItem(SUMMERMIX_LEMONADE_SOURCE.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final DeferredHolder<Block, LiquidBlock> SUMMERMIX_LEMONADE_BLOCK = SOURCEBLOCKS.register("summermix_lemonade_block",
+    public static final DeferredHolder<Block, LiquidBlock> SUMMERMIX_LEMONADE_BLOCK = SOURCEBLOCKS.register("summermix_lemonade_fluid_block",
         () -> new LiquidBlock(SUMMERMIX_LEMONADE_SOURCE.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER)));
     public static final BaseFlowingFluid.Properties SUMMERMIX_LEMONADE_PROPERTIES = new BaseFlowingFluid.Properties(
             SUMMERMIX_LEMONADE_TYPE, SUMMERMIX_LEMONADE_SOURCE, SUMMERMIX_LEMONADE_FLOWING)
@@ -120,7 +120,7 @@ public class ModFluids {
         () -> new BaseFlowingFluid.Flowing(ModFluids.WATERMELON_LEMONADE_PROPERTIES));
     public static final DeferredHolder<Item, BucketItem> WATERMELON_LEMONADE_BUCKET = BUCKETS.register("watermelon_lemonade_bucket",
         () -> new BucketItem(WATERMELON_LEMONADE_SOURCE.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final DeferredHolder<Block, LiquidBlock> WATERMELON_LEMONADE_BLOCK = SOURCEBLOCKS.register("watermelon_lemonade_block",
+    public static final DeferredHolder<Block, LiquidBlock> WATERMELON_LEMONADE_BLOCK = SOURCEBLOCKS.register("watermelon_lemonade_fluid_block",
         () -> new LiquidBlock(WATERMELON_LEMONADE_SOURCE.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER)));
     public static final BaseFlowingFluid.Properties WATERMELON_LEMONADE_PROPERTIES = new BaseFlowingFluid.Properties(
             WATERMELON_LEMONADE_TYPE, WATERMELON_LEMONADE_SOURCE, WATERMELON_LEMONADE_FLOWING)
