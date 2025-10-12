@@ -23,7 +23,7 @@ public class BaseFluidType extends FluidType {
         super(Properties.create().descriptionId(WordUtils.capitalizeFully(name_id.replace("_", " "))));
         this.stillTexture = LemonMates.rl("block/fluid/" + name_id + "_still");
         this.flowingTexture = LemonMates.rl("block/fluid/" + name_id + "_flow");
-        this.tintColor = 0x00FFFFFF; // No Tint
+        this.tintColor = 0xFFFFFFFF; // No Tint
         this.fogColor = new Color(fogColor).asVectorF();
     }
 
@@ -31,7 +31,7 @@ public class BaseFluidType extends FluidType {
         super(Properties.create().descriptionId(name));
         this.stillTexture = LemonMates.rl("block/fluid/" + id + "_still");
         this.flowingTexture = LemonMates.rl("block/fluid/" + id + "_flow");
-        this.tintColor = 0x00FFFFFF; // No Tint
+        this.tintColor = 0xFFFFFFFF; // No Tint
         this.fogColor = new Color(fogColor).asVectorF();
     }
 
