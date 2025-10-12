@@ -103,9 +103,9 @@
   "item.lemonmates.watermelon_lemonade_bucket": "Watermelon Lemonade Bucket",
 
   "block.lemonmates.plastic_fluid_block": "Plastic",
-  "block.lemonmates.citron_lemonade_fluid_block": "Citron Lemonade Bucket",
-  "block.lemonmates.orange_lemonade_fluid_block": "Orange Lemonade Bucket",
-  "block.lemonmates.raspberry_lemonade_fluid_block": "Raspberry Lemonade Bucket",
-  "block.lemonmates.summermix_lemonade_fluid_block": "Summer-Mix Lemonade Bucket",
-  "block.lemonmates.watermelon_lemonade_fluid_block": "Watermelon Lemonade Bucket"
+  "block.lemonmates.citron_lemonade_fluid_block": "Citron Lemonade",
+  "block.lemonmates.orange_lemonade_fluid_block": "Orange Lemonade",
+  "block.lemonmates.raspberry_lemonade_fluid_block": "Raspberry Lemonade",
+  "block.lemonmates.summermix_lemonade_fluid_block": "Summer-Mix Lemonade",
+  "block.lemonmates.watermelon_lemonade_fluid_block": "Watermelon Lemonade"
 }
