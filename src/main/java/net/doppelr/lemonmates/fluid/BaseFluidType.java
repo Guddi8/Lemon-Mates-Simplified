@@ -2,41 +2,44 @@ package net.doppelr.lemonmates.fluid;
 
 import com.mojang.blaze3d.shaders.FogShape;
 import com.mojang.blaze3d.systems.RenderSystem;
+import net.createmod.catnip.theme.Color;
+import net.doppelr.lemonmates.LemonMates;
 import net.minecraft.client.Camera;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.FogRenderer;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
 import net.neoforged.neoforge.fluids.FluidType;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
+import org.apache.commons.lang3.text.WordUtils;
 import org.joml.Vector3f;
 
-/**
- * Basic implementation of {@link FluidType} that supports specifying still and flowing textures in the constructor.
- *
- * @author Choonster (<a href="https://github.com/Choonster-Minecraft-Mods/TestMod3/blob/1.19.x/LICENSE.txt">MIT License</a>)
- */
-/**
- * Basic implementation of {@link FluidType} that supports specifying still and flowing textures in the constructor.
- *
- * @author Choonster (<a href="https://github.com/Choonster-Minecraft-Mods/TestMod3/blob/1.19.x/LICENSE.txt">MIT License</a>)
- * Change by: Kaupenjoe
- * Added overlayTexture and tintColor as well. Also converts tint color into fog color
- */
 public class BaseFluidType extends FluidType {
     private final ResourceLocation stillTexture;
     private final ResourceLocation flowingTexture;
-    private final ResourceLocation overlayTexture;
     private final int tintColor;
     private final Vector3f fogColor;
+
+    public BaseFluidType(final String name_id, final int fogColor) {
+        super(Properties.create().descriptionId(WordUtils.capitalizeFully(name_id.replace("_", " "))));
+        this.stillTexture = LemonMates.rl("block/fluid/" + name_id + "_still");
+        this.flowingTexture = LemonMates.rl("block/fluid/" + name_id + "_flow");
+        this.tintColor = 0x00FFFFFF; // No Tint
+        this.fogColor = new Color(fogColor).asVectorF();
+    }
+
+    public BaseFluidType(final String id, final int fogColor, String name) {
+        super(Properties.create().descriptionId(name));
+        this.stillTexture = LemonMates.rl("block/fluid/" + id + "_still");
+        this.flowingTexture = LemonMates.rl("block/fluid/" + id + "_flow");
+        this.tintColor = 0x00FFFFFF; // No Tint
+        this.fogColor = new Color(fogColor).asVectorF();
+    }
 
     public BaseFluidType(final ResourceLocation stillTexture, final ResourceLocation flowingTexture, final ResourceLocation overlayTexture,
                          final int tintColor, final Vector3f fogColor, final Properties properties) {
         super(properties);
         this.stillTexture = stillTexture;
         this.flowingTexture = flowingTexture;
-        this.overlayTexture = overlayTexture;
         this.tintColor = tintColor;
         this.fogColor = fogColor;
     }
@@ -54,26 +57,22 @@ public class BaseFluidType extends FluidType {
             }
 
             @Override
-            public @Nullable ResourceLocation getOverlayTexture() {
-                return overlayTexture;
-            }
-
-            @Override
             public int getTintColor() {
                 return tintColor;
             }
 
             @Override
-            public @NotNull Vector3f modifyFogColor(Camera camera, float partialTick, ClientLevel level,
-                                                    int renderDistance, float darkenWorldAmount, Vector3f fluidFogColor) {
+            public Vector3f modifyFogColor(Camera camera, float partialTick, ClientLevel level,
+                                           int renderDistance, float darkenWorldAmount, Vector3f fluidFogColor) {
                 return fogColor;
             }
 
             @Override
             public void modifyFogRender(Camera camera, FogRenderer.FogMode mode, float renderDistance, float partialTick,
                                         float nearDistance, float farDistance, FogShape shape) {
-                RenderSystem.setShaderFogStart(1f);
-                RenderSystem.setShaderFogEnd(6f); // distance when the fog starts
+                RenderSystem.setShaderFogShape(FogShape.CYLINDER);
+                RenderSystem.setShaderFogStart(-6.0F);
+                RenderSystem.setShaderFogEnd(6.0F);
             }
         };
     }
