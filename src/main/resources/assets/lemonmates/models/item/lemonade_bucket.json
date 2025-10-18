@@ -1,0 +1,7 @@
+{
+  "parent": "neoforge:item/default",
+  "textures": {
+    "base": "item/bucket",
+    "fluid": "lemonmates:item/mask/lemonade_bucket_fluid"
+  }
+}

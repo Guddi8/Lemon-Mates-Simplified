@@ -1,6 +1,5 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "lemonmates:item/plastic_bucket"
-  }
+  "parent": "neoforge:item/bucket_drip",
+  "fluid": "lemonmates:plastic",
+  "loader": "neoforge:fluid_container"
 }

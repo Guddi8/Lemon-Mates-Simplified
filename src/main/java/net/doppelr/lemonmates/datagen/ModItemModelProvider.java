@@ -7,12 +7,16 @@ import net.doppelr.lemonmates.fluid.ModFluids;
 import net.doppelr.lemonmates.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.material.Fluid;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
+import net.neoforged.neoforge.client.model.generators.loaders.DynamicFluidContainerModelBuilder;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 public class ModItemModelProvider extends ItemModelProvider {
@@ -90,7 +94,17 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.BOTTLE_CAP.get());
         basicItem(ModItems.BOTTLE_EMPTY.get());
 
-        ModFluids.BUCKETS.getEntries().forEach(item -> basicItem(item.get()));
+        ModFluids.BUCKETS.getEntries().forEach(item -> bucketItem((DeferredHolder<Item, BucketItem>) item));
+    }
+
+    private void bucketItem(DeferredHolder<Item, BucketItem> item) {
+        BucketItem bucketItem = item.get();
+        String parent = item.getRegisteredName().contains("lemonade")
+            ? "lemonmates:item/lemonade_bucket"
+            : "neoforge:item/bucket_drip";
+        withExistingParent(item.getId().getPath(), parent)
+            .customLoader(DynamicFluidContainerModelBuilder::begin)
+            .fluid(bucketItem.content);
     }
 
     private void labelItem(DeferredItem<Item> item, String... types) {
