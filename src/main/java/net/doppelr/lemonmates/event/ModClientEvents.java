@@ -17,11 +17,16 @@ import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.client.renderer.item.ItemProperties;
+import net.minecraft.network.chat.Component;
+import net.minecraft.server.packs.PackType;
+import net.minecraft.server.packs.repository.Pack;
+import net.minecraft.server.packs.repository.PackSource;
 import net.minecraft.world.item.Item;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.event.AddPackFindersEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
 
@@ -79,5 +84,17 @@ public class ModClientEvents {
                 );
             }
         }
+    }
+
+    @SubscribeEvent
+    public static void addFeaturePacks(final AddPackFindersEvent event) {
+        event.addPackFinders(
+            LemonMates.rl("resourcepacks/betterleaves"),
+            PackType.CLIENT_RESOURCES,
+            Component.literal("Better-Leaves Compat"),
+            PackSource.FEATURE,
+            false,
+            Pack.Position.TOP
+        );
     }
 }
