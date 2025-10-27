@@ -29,9 +29,14 @@ public class AllModTags {
         public static final TagKey<Item> LEMONADES_WATERMELON = createTag("lemonades/watermelon");
         public static final TagKey<Item> LABELS = createTag("labels");
         public static final TagKey<Item> MOLDS = createTag("molds");
+        public static final TagKey<Item> C_PLATES_IRON = createTag("c", "plates/iron");
 
         private static TagKey<Item> createTag(String name) {
             return net.minecraft.tags.ItemTags.create(LemonMates.rl(name));
+        }
+
+        private static TagKey<Item> createTag(String namespace, String name) {
+            return net.minecraft.tags.ItemTags.create(ResourceLocation.fromNamespaceAndPath(namespace, name));
         }
     }
 

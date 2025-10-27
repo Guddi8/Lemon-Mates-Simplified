@@ -1,6 +1,5 @@
 package net.doppelr.lemonmates.datagen;
 
-import com.simibubi.create.AllTags;
 import net.doppelr.lemonmates.AllModTags;
 import net.doppelr.lemonmates.LemonMates;
 import net.doppelr.lemonmates.block.ModBlocks;
@@ -118,21 +117,21 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("#S#")
                 .pattern("#S#")
                 .define('#', Tags.Items.INGOTS_IRON)
-                .define('S', AllTags.commonItemTag("plates/iron"))
+                .define('S', AllModTags.ItemTags.C_PLATES_IRON)
                 .unlockedBy("has_iron", has(Tags.Items.INGOTS_IRON))
                 .save(recipeOutput);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PREFORM_MOLD.get())
                 .pattern("#S#")
                 .pattern("#S#")
                 .define('#', Tags.Items.INGOTS_IRON)
-                .define('S', AllTags.commonItemTag("plates/iron"))
+                .define('S', AllModTags.ItemTags.C_PLATES_IRON)
                 .unlockedBy("has_iron", has(Tags.Items.INGOTS_IRON))
                 .save(recipeOutput);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CAP_MOLD.get())
                 .pattern("SS")
                 .pattern("##")
                 .define('#', Tags.Items.INGOTS_IRON)
-                .define('S', AllTags.commonItemTag("plates/iron"))
+                .define('S', AllModTags.ItemTags.C_PLATES_IRON)
                 .unlockedBy("has_iron", has(Tags.Items.INGOTS_IRON))
                 .save(recipeOutput);
 
