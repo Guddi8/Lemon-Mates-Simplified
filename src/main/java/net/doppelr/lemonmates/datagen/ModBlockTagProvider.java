@@ -1,6 +1,6 @@
 package net.doppelr.lemonmates.datagen;
 
-import net.doppelr.lemonmates.AllModTags;
+import net.doppelr.lemonmates.AllTags;
 import net.doppelr.lemonmates.LemonMates;
 import net.doppelr.lemonmates.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
@@ -119,13 +119,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
             ModBlocks.ORANGE_TRAPDOOR.get(),
             ModBlocks.CITRON_TRAPDOOR.get()
         );
-        tag(AllModTags.BlockTags.ORANGE_LOGS).add(
+        tag(AllTags.BlockTags.ORANGE_LOGS).add(
             ModBlocks.ORANGE_LOG.get(),
             ModBlocks.ORANGE_WOOD.get(),
             ModBlocks.STRIPPED_ORANGE_LOG.get(),
             ModBlocks.STRIPPED_ORANGE_WOOD.get()
         );
-        tag(AllModTags.BlockTags.CITRON_LOGS).add(
+        tag(AllTags.BlockTags.CITRON_LOGS).add(
             ModBlocks.CITRON_LOG.get(),
             ModBlocks.CITRON_WOOD.get(),
             ModBlocks.STRIPPED_CITRON_LOG.get(),

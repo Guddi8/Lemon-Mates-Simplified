@@ -6,7 +6,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.material.Fluid;
 
-public class AllModTags {
+public class AllTags {
     public static class BlockTags {
         public static final TagKey<Block> ORANGE_LOGS = createTag("orange_logs");
         public static final TagKey<Block> CITRON_LOGS = createTag("citron_logs");

@@ -1,6 +1,6 @@
 package net.doppelr.lemonmates.datagen;
 
-import net.doppelr.lemonmates.AllModTags;
+import net.doppelr.lemonmates.AllTags;
 import net.doppelr.lemonmates.LemonMates;
 import net.doppelr.lemonmates.block.ModBlocks;
 import net.doppelr.lemonmates.item.ModItems;
@@ -38,7 +38,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             .save(recipeOutput);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CITRON.get(), 9)
             .requires(ModBlocks.CITRON_CRATE.get()).unlockedBy("has_citron", has(ModItems.CITRON)).save(recipeOutput, LemonMates.rl("citron_from_crate"));
-        planksFromLog(recipeOutput, ModBlocks.CITRON_PLANKS, AllModTags.ItemTags.CITRON_LOGS, 4);
+        planksFromLog(recipeOutput, ModBlocks.CITRON_PLANKS, AllTags.ItemTags.CITRON_LOGS, 4);
         woodFromLogs(recipeOutput, ModBlocks.CITRON_WOOD, ModBlocks.CITRON_LOG);
         woodFromLogs(recipeOutput, ModBlocks.STRIPPED_CITRON_WOOD, ModBlocks.STRIPPED_CITRON_LOG);
         stairBuilder(ModBlocks.CITRON_STAIRS.get(), Ingredient.of(ModBlocks.CITRON_PLANKS))
@@ -78,7 +78,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             .save(recipeOutput);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ORANGE.get(), 9)
             .requires(ModBlocks.ORANGE_CRATE.get()).unlockedBy("has_orange", has(ModItems.ORANGE)).save(recipeOutput, LemonMates.rl("orange_from_crate"));
-        planksFromLog(recipeOutput, ModBlocks.ORANGE_PLANKS, AllModTags.ItemTags.ORANGE_LOGS, 4);
+        planksFromLog(recipeOutput, ModBlocks.ORANGE_PLANKS, AllTags.ItemTags.ORANGE_LOGS, 4);
         woodFromLogs(recipeOutput, ModBlocks.ORANGE_WOOD, ModBlocks.ORANGE_LOG);
         woodFromLogs(recipeOutput, ModBlocks.STRIPPED_ORANGE_WOOD, ModBlocks.STRIPPED_ORANGE_LOG);
         stairBuilder(ModBlocks.ORANGE_STAIRS.get(), Ingredient.of(ModBlocks.ORANGE_PLANKS))
@@ -117,21 +117,21 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("#S#")
                 .pattern("#S#")
                 .define('#', Tags.Items.INGOTS_IRON)
-                .define('S', AllModTags.ItemTags.C_PLATES_IRON)
+                .define('S', AllTags.ItemTags.C_PLATES_IRON)
                 .unlockedBy("has_iron", has(Tags.Items.INGOTS_IRON))
                 .save(recipeOutput);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PREFORM_MOLD.get())
                 .pattern("#S#")
                 .pattern("#S#")
                 .define('#', Tags.Items.INGOTS_IRON)
-                .define('S', AllModTags.ItemTags.C_PLATES_IRON)
+                .define('S', AllTags.ItemTags.C_PLATES_IRON)
                 .unlockedBy("has_iron", has(Tags.Items.INGOTS_IRON))
                 .save(recipeOutput);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CAP_MOLD.get())
                 .pattern("SS")
                 .pattern("##")
                 .define('#', Tags.Items.INGOTS_IRON)
-                .define('S', AllModTags.ItemTags.C_PLATES_IRON)
+                .define('S', AllTags.ItemTags.C_PLATES_IRON)
                 .unlockedBy("has_iron", has(Tags.Items.INGOTS_IRON))
                 .save(recipeOutput);
 

@@ -1,14 +1,12 @@
 package net.doppelr.lemonmates.datagen;
 
-import com.simibubi.create.AllTags;
-import net.doppelr.lemonmates.AllModTags;
+import net.doppelr.lemonmates.AllTags;
 import net.doppelr.lemonmates.LemonMates;
 import net.doppelr.lemonmates.block.ModBlocks;
 import net.doppelr.lemonmates.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -81,22 +79,22 @@ public class ModItemTagProvider extends ItemTagsProvider {
             ModItems.CITRON_CHEST_BOAT.get(),
             ModItems.ORANGE_CHEST_BOAT.get()
         );
-        tag(AllModTags.ItemTags.ORANGE_LOGS).add(
+        tag(AllTags.ItemTags.ORANGE_LOGS).add(
             ModBlocks.ORANGE_LOG.get().asItem(),
             ModBlocks.ORANGE_WOOD.get().asItem(),
             ModBlocks.STRIPPED_ORANGE_LOG.get().asItem(),
             ModBlocks.STRIPPED_ORANGE_WOOD.get().asItem()
         );
-        tag(AllModTags.ItemTags.CITRON_LOGS).add(
+        tag(AllTags.ItemTags.CITRON_LOGS).add(
             ModBlocks.CITRON_LOG.get().asItem(),
             ModBlocks.CITRON_WOOD.get().asItem(),
             ModBlocks.STRIPPED_CITRON_LOG.get().asItem(),
             ModBlocks.STRIPPED_CITRON_WOOD.get().asItem()
         );
-        tag(AllTags.AllItemTags.UPRIGHT_ON_BELT.tag).addTag(
-            AllModTags.ItemTags.BOTTLES
+        tag(com.simibubi.create.AllTags.AllItemTags.UPRIGHT_ON_BELT.tag).addTag(
+            AllTags.ItemTags.BOTTLES
         );
-        tag(AllTags.AllItemTags.UPRIGHT_ON_BELT.tag).add(
+        tag(com.simibubi.create.AllTags.AllItemTags.UPRIGHT_ON_BELT.tag).add(
             ModItems.PREFORM_MOLD.get().asItem(),
             ModItems.PREFORM_MOLD_WITH_PREFORM.get().asItem(),
             ModItems.BOTTLE_MOLD.get().asItem(),
@@ -109,12 +107,12 @@ public class ModItemTagProvider extends ItemTagsProvider {
             ModItems.INCOMPLETE_SUMMERMIX_LEMONADE.get(),
             ModItems.INCOMPLETE_WATERMELON_LEMONADE.get()
         );
-        tag(AllModTags.ItemTags.MOLDS).add(
+        tag(AllTags.ItemTags.MOLDS).add(
             ModItems.PREFORM_MOLD.get().asItem(),
             ModItems.BOTTLE_MOLD.get().asItem(),
             ModItems.CAP_MOLD.get().asItem()
         );
-        tag(AllModTags.ItemTags.BOTTLES).add(
+        tag(AllTags.ItemTags.BOTTLES).add(
             ModItems.BOTTLE_EMPTY.get().asItem(),
 
             ModItems.CITRON_LEMONADE_BOTTLE.get(),
@@ -132,37 +130,37 @@ public class ModItemTagProvider extends ItemTagsProvider {
             ModItems.EMPTY_WATERMELON_LEMONADE_BOTTLE.get(),
             ModItems.WATERMELON_LEMONADE_BOTTLE.get()
         );
-        tag(AllModTags.ItemTags.LEMONADES_EMPTY).add(
+        tag(AllTags.ItemTags.LEMONADES_EMPTY).add(
             ModItems.EMPTY_CITRON_LEMONADE_BOTTLE.get(),
             ModItems.EMPTY_ORANGE_LEMONADE_BOTTLE.get(),
             ModItems.EMPTY_RASPBERRY_LEMONADE_BOTTLE.get(),
             ModItems.EMPTY_SUMMERMIX_LEMONADE_BOTTLE.get(),
             ModItems.EMPTY_WATERMELON_LEMONADE_BOTTLE.get()
         );
-        tag(AllModTags.ItemTags.LEMONADES).add(
+        tag(AllTags.ItemTags.LEMONADES).add(
             ModItems.CITRON_LEMONADE_BOTTLE.get(),
             ModItems.ORANGE_LEMONADE_BOTTLE.get(),
             ModItems.RASPBERRY_LEMONADE_BOTTLE.get(),
             ModItems.SUMMERMIX_LEMONADE_BOTTLE.get(),
             ModItems.WATERMELON_LEMONADE_BOTTLE.get()
         );
-        tag(AllModTags.ItemTags.LEMONADES_CITRON).add(
+        tag(AllTags.ItemTags.LEMONADES_CITRON).add(
             ModItems.CITRON_LEMONADE_BOTTLE.get()
         );
-        tag(AllModTags.ItemTags.LEMONADES_ORANGE).add(
+        tag(AllTags.ItemTags.LEMONADES_ORANGE).add(
             ModItems.ORANGE_LEMONADE_BOTTLE.get()
         );
-        tag(AllModTags.ItemTags.LEMONADES_RASPBERRY).add(
+        tag(AllTags.ItemTags.LEMONADES_RASPBERRY).add(
             ModItems.RASPBERRY_LEMONADE_BOTTLE.get()
         );
-        tag(AllModTags.ItemTags.LEMONADES_SUMMERMIX).add(
+        tag(AllTags.ItemTags.LEMONADES_SUMMERMIX).add(
             ModItems.SUMMERMIX_LEMONADE_BOTTLE.get()
         );
-        tag(AllModTags.ItemTags.LEMONADES_WATERMELON).add(
+        tag(AllTags.ItemTags.LEMONADES_WATERMELON).add(
             ModItems.WATERMELON_LEMONADE_BOTTLE.get()
         );
 
-        tag(AllModTags.ItemTags.LABELS).add(
+        tag(AllTags.ItemTags.LABELS).add(
             ModItems.LABEL_EMPTY.get(),
             ModItems.LABEL_TEXT.get(),
             ModItems.LABEL_TEXT_COMPANY.get(),
@@ -173,10 +171,10 @@ public class ModItemTagProvider extends ItemTagsProvider {
             ModItems.LABEL_WATERMELON_LEMONADE.get()
         );
         tag(Tags.Items.DRINKS).addTag(
-            AllModTags.ItemTags.LEMONADES
+            AllTags.ItemTags.LEMONADES
         );
         tag(Tags.Items.FOODS).addTag(
-            AllModTags.ItemTags.LEMONADES
+            AllTags.ItemTags.LEMONADES
         );
         tag(Tags.Items.FOODS_FRUIT).add(
             ModItems.CITRON.get(),
