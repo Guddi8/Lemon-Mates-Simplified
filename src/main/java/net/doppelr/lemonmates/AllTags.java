@@ -28,6 +28,7 @@ public class AllTags {
         public static final TagKey<Item> LEMONADES_SUMMERMIX = createTag("lemonades/summermix");
         public static final TagKey<Item> LEMONADES_WATERMELON = createTag("lemonades/watermelon");
         public static final TagKey<Item> LABELS = createTag("labels");
+        public static final TagKey<Item> LABELS_COMPLETE = createTag("labels/complete");
         public static final TagKey<Item> MOLDS = createTag("molds");
         public static final TagKey<Item> C_PLATES_IRON = createTag("c", "plates/iron");
 

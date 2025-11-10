@@ -3,10 +3,6 @@
     "lemonmates:label_empty",
     "lemonmates:label_text",
     "lemonmates:label_text_company",
-    "lemonmates:label_citron_lemonade",
-    "lemonmates:label_orange_lemonade",
-    "lemonmates:label_raspberry_lemonade",
-    "lemonmates:label_summermix_lemonade",
-    "lemonmates:label_watermelon_lemonade"
+    "#lemonmates:labels/complete"
   ]
 }
