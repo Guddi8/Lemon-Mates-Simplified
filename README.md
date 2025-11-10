@@ -32,7 +32,6 @@ Use them in your automated bottling lines for a modern touch!
 
 ### Recipes
 All recipes and Create processes can be viewed using JEI.
-> Note: Fluid uses are shown with "Show Recipes" not "Show Uses" buttons
 
 ### Requirements
 - Create v6

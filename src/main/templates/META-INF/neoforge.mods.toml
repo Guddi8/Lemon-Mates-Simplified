@@ -59,7 +59,7 @@ description='''${mod_description}'''
 # The coremods config file path is not configurable and is always loaded from META-INF/coremods.json
 
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.${mod_id}]] #optional
+[[dependencies."${mod_id}"]] #optional
     # the modid of the dependency
     modId="neoforge" #mandatory
     # The type of the dependency. Can be one of "required", "optional", "incompatible" or "discouraged" (case-insensitive).
@@ -90,7 +90,7 @@ description='''${mod_description}'''
 [[dependencies."${mod_id}"]]
     modId="create"
     type="required"
-    versionRange="[6.0.6,6.1.0)"
+    versionRange="[6.0.3,6.1)"
     ordering="NONE"
     side="BOTH"
 
@@ -98,27 +98,9 @@ description='''${mod_description}'''
 [[dependencies."${mod_id}"]]
 modId="create_enchantment_industry"
 type="optional"
-versionRange="[2.2.2,3.0)"
+versionRange="[2.0,)"
 ordering="NONE"
 side="BOTH"
-
-# Farmer's Delight
-[[dependencies."${mod_id}"]]
-modId="farmersdelight"
-type="optional"
-versionRange="[1.2.8,1.2.10)"
-ordering="NONE"
-side="BOTH"
-
-# The Factory Must Grow
-[[dependencies."${mod_id}"]]
-modId="tfmg"
-type="optional"
-versionRange="[1.0.0,1.0.3)"
-ordering="NONE"
-side="BOTH"
-
-
 
 # Features are specific properties of the game environment, that you may want to declare you require. This example declares
 # that your mod requires GL version 3.2 or higher. Other features will be added. They are side aware so declaring this won't
