@@ -27,10 +27,18 @@ public class AllTags {
         public static final TagKey<Item> LEMONADES_RASPBERRY = createTag("lemonades/raspberry");
         public static final TagKey<Item> LEMONADES_SUMMERMIX = createTag("lemonades/summermix");
         public static final TagKey<Item> LEMONADES_WATERMELON = createTag("lemonades/watermelon");
+        public static final TagKey<Item> BUCKETS_LEMONADES = createTag("buckets/lemonades");
+        public static final TagKey<Item> BUCKETS_LEMONADES_CITRON = createTag("buckets/lemonades/citron");
+        public static final TagKey<Item> BUCKETS_LEMONADES_ORANGE = createTag("buckets/lemonades/orange");
+        public static final TagKey<Item> BUCKETS_LEMONADES_RASPBERRY = createTag("buckets/lemonades/raspberry");
+        public static final TagKey<Item> BUCKETS_LEMONADES_SUMMERMIX = createTag("buckets/lemonades/summermix");
+        public static final TagKey<Item> BUCKETS_LEMONADES_WATERMELON = createTag("buckets/lemonades/watermelon");
         public static final TagKey<Item> LABELS = createTag("labels");
         public static final TagKey<Item> LABELS_COMPLETE = createTag("labels/complete");
         public static final TagKey<Item> MOLDS = createTag("molds");
         public static final TagKey<Item> C_PLATES_IRON = createTag("c", "plates/iron");
+        public static final TagKey<Item> C_BUCKETS = createTag("c", "buckets");
+        public static final TagKey<Item> C_BUCKETS_PLASTIC = createTag("c", "buckets/plastic");
 
         private static TagKey<Item> createTag(String name) {
             return net.minecraft.tags.ItemTags.create(LemonMates.rl(name));

@@ -3,6 +3,7 @@ package net.doppelr.lemonmates.datagen;
 import net.doppelr.lemonmates.AllTags;
 import net.doppelr.lemonmates.LemonMates;
 import net.doppelr.lemonmates.block.ModBlocks;
+import net.doppelr.lemonmates.fluid.ModFluids;
 import net.doppelr.lemonmates.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -172,6 +173,36 @@ public class ModItemTagProvider extends ItemTagsProvider {
             ModItems.LABEL_TEXT_COMPANY.get()
         ).addTag(
             AllTags.ItemTags.LABELS_COMPLETE
+        );
+
+        tag(AllTags.ItemTags.BUCKETS_LEMONADES).add(
+            ModFluids.CITRON_LEMONADE_BUCKET.get(),
+            ModFluids.ORANGE_LEMONADE_BUCKET.get(),
+            ModFluids.RASPBERRY_LEMONADE_BUCKET.get(),
+            ModFluids.SUMMERMIX_LEMONADE_BUCKET.get(),
+            ModFluids.WATERMELON_LEMONADE_BUCKET.get()
+        );
+        tag(AllTags.ItemTags.C_BUCKETS_PLASTIC).add(
+            ModFluids.PLASTIC_BUCKET.get()
+        );
+        tag(AllTags.ItemTags.C_BUCKETS).addTag(
+            AllTags.ItemTags.BUCKETS_LEMONADES).addTag(
+            AllTags.ItemTags.C_BUCKETS_PLASTIC
+        );
+        tag(AllTags.ItemTags.BUCKETS_LEMONADES_CITRON).add(
+            ModFluids.CITRON_LEMONADE_BUCKET.get()
+        );
+        tag(AllTags.ItemTags.BUCKETS_LEMONADES_ORANGE).add(
+            ModFluids.ORANGE_LEMONADE_BUCKET.get()
+        );
+        tag(AllTags.ItemTags.BUCKETS_LEMONADES_RASPBERRY).add(
+            ModFluids.RASPBERRY_LEMONADE_BUCKET.get()
+        );
+        tag(AllTags.ItemTags.BUCKETS_LEMONADES_SUMMERMIX).add(
+            ModFluids.SUMMERMIX_LEMONADE_BUCKET.get()
+        );
+        tag(AllTags.ItemTags.BUCKETS_LEMONADES_WATERMELON).add(
+            ModFluids.WATERMELON_LEMONADE_BUCKET.get()
         );
         tag(Tags.Items.DRINKS).addTag(
             AllTags.ItemTags.LEMONADES

@@ -1,5 +1,7 @@
-// 1.21.1	2025-11-10T22:45:12.495655	Tags for minecraft:item mod id lemonmates
+// 1.21.1	2025-11-10T23:57:41.7773696	Tags for minecraft:item mod id lemonmates
 486ad6088782cd2cff04585f851a4ef3076bd93f data/create/tags/item/upright_on_belt.json
+28511dee5e7f0634f2aece3397d9ffd9274aefed data/c/tags/item/buckets.json
+0c38161e712608c74a46b6afa4e53a0a4e1ee80f data/c/tags/item/buckets/plastic.json
 82c82b1bb47c267ab2926e6ce0705705f1ae5c7e data/c/tags/item/drinks.json
 82c82b1bb47c267ab2926e6ce0705705f1ae5c7e data/c/tags/item/foods.json
 db917da7a0f998e0cde9f7982205090c68d552b0 data/c/tags/item/foods/berry.json
@@ -7,6 +9,12 @@ afb8689d2cbe8355d91da153dfe0e9e1a9ee327f data/c/tags/item/foods/fruit.json
 c2aeba83a0cd5589021128b260951b1f5dd5c10a data/c/tags/item/stripped_logs.json
 831234b532b3190e02bdad6ca92f1c79e6e8d9e1 data/c/tags/item/stripped_woods.json
 b119fd0e5acd726bcf7cfbdd27da27542d8038c4 data/lemonmates/tags/item/bottles.json
+01e2d23fc2f2aa23b097a2ea98d64ccfd75c4808 data/lemonmates/tags/item/buckets/lemonades.json
+bffd6c90dddca12854483cf6f8bb36de2af09630 data/lemonmates/tags/item/buckets/lemonades/citron.json
+9c477ed104b717869b3d90371813293e8ebe6bf3 data/lemonmates/tags/item/buckets/lemonades/orange.json
+e034dfab8511891122d052d22efa0fb5794a4e35 data/lemonmates/tags/item/buckets/lemonades/raspberry.json
+e53caef50e78c6fa935300643ac79d6206d00ba0 data/lemonmates/tags/item/buckets/lemonades/summermix.json
+6f3218ef1f8c023da1e08ed2f6d6fd48ba250228 data/lemonmates/tags/item/buckets/lemonades/watermelon.json
 ec001d932df2810d44f728a91637e46f25deb9e1 data/lemonmates/tags/item/citron_logs.json
 4bd3e7ee6be7471e6b586717a06bd7f7b3685609 data/lemonmates/tags/item/labels.json
 b92e8d94a107ec18ab57fc80fada2bd197820665 data/lemonmates/tags/item/labels/complete.json
