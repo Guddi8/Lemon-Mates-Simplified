@@ -5,7 +5,7 @@
       "item": "minecraft:wheat_seeds"
     }
   ],
-  "processingTime": 120,
+  "processing_time": 120,
   "results": [
     {
       "chance": 0.70,
