@@ -20,6 +20,8 @@ public class AllTags {
         public static final TagKey<Item> ORANGE_LOGS = createTag("orange_logs");
         public static final TagKey<Item> CITRON_LOGS = createTag("citron_logs");
         public static final TagKey<Item> BOTTLES = createTag("bottles");
+        public static final TagKey<Item> LEMONADE_FRUITS = createTag("lemonade_fruits");
+        public static final TagKey<Item> LEMONADE_LABEL_DYES = createTag("lemonade_label_dyes");
         public static final TagKey<Item> LEMONADES = createTag("lemonades");
         public static final TagKey<Item> LEMONADES_EMPTY = createTag("lemonades/empty");
         public static final TagKey<Item> LEMONADES_CITRON = createTag("lemonades/citron");

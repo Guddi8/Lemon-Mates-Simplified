@@ -8,6 +8,8 @@ import net.doppelr.lemonmates.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -130,6 +132,19 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
             ModItems.EMPTY_WATERMELON_LEMONADE_BOTTLE.get(),
             ModItems.WATERMELON_LEMONADE_BOTTLE.get()
+        );
+        tag(AllTags.ItemTags.LEMONADE_FRUITS).add(
+            ModItems.CITRON_SLICE.get(),
+            ModItems.ORANGE_SLICE.get(),
+            ModItems.RASPBERRY.get(),
+            Items.MELON_SLICE
+        );
+        tag(AllTags.ItemTags.LEMONADE_LABEL_DYES).add(
+            Items.YELLOW_DYE,
+            Items.ORANGE_DYE,
+            Items.RED_DYE,
+            Items.LIME_DYE,
+            Items.MAGENTA_DYE
         );
         tag(AllTags.ItemTags.LEMONADES_EMPTY).add(
             ModItems.EMPTY_CITRON_LEMONADE_BOTTLE.get(),
